@@ -17,3 +17,8 @@ dialog{max-width:550px;padding:28px;border:1px solid var(--stroke);border-radius
 
 .exercise-guide-preview{margin:14px 0;font-size:12px}.exercise-guide-preview summary{cursor:pointer;color:var(--text)}.exercise-guide-preview img{display:block;width:100%;height:auto;background:#fffff5;margin-top:8px;border-radius:4px}
 .exercise-coordinate-input{display:flex;gap:.5rem;align-items:stretch}.exercise-coordinate-input input{flex:1;min-width:0;margin:0}.exercise-coordinate-input .exercise-pick{flex:0 0 2.75rem;width:2.75rem;height:2.75rem;padding:.55rem;margin:0;display:grid;place-items:center}.exercise-pick svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.6}
+
+/* The brand mark retains its own contrast on light and dark backgrounds. */
+.brand img.brandmark{display:block;width:36px;height:36px;flex:none}
+@media(max-width:800px){.brand img.brandmark{width:29px;height:29px}}
+@media(max-width:380px){.brand img.brandmark{width:25px;height:25px}}
