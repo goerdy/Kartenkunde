@@ -42,6 +42,21 @@ test('Restored exercise data rejects malformed coordinates and unbounded names',
 
 test('Invalid exercises fail before rendering any map',async()=>{let calls=0;const render=async()=>{calls++;throw Error('must not render');};const p=plan();await assert.rejects(createPDF({...p,scale:10000},{render}));await assert.rejects(createPDF({...p,exercise:{points:[]}},{render}));await assert.rejects(createPDF({...p,exercise:{points:[{...a,lon:0,lat:0}]}},{render}));assert.equal(calls,0);});
 
-test('Answer keys paginate all solutions without empty first page on every paper and orientation',async()=>{for(const paper of Object.keys(PAPER))for(const landscape of [false,true]){const p=plan(Array.from({length:20},(_,i)=>({...a,id:String(i),name:`Hof ${i+1}`})),{paper,landscape}),pdf=await createExerciseSolutionPDF(p);const capacity=Math.floor((p.paper[1]-16-48)/17);assert.equal(pdf.getNumberOfPages(),Math.ceil(20/capacity));}});
+test('Twenty mixed answers fit a single A4 portrait page regardless of map format or scale',async()=>{
+ for(const paper of Object.keys(PAPER))for(const landscape of [false,true])for(const scale of [25000,50000]){
+ const p=plan(Array.from({length:20},(_,i)=>({...a,id:String(i),kind:i%2?'place':'coordinate',name:`Kirche ${i+1} in einem Ort mit einer ausführlichen Bezeichnung und einem Ortsteil`})),{paper,landscape,scale}),pdf=await createExerciseSolutionPDF(p);
+ assert.equal(pdf.getNumberOfPages(),1);assert.ok(Math.abs(pdf.internal.pageSize.getWidth()-210)<.01);assert.ok(Math.abs(pdf.internal.pageSize.getHeight()-297)<.01);
+ }
+});
+test('Answer key distinguishes given values from requested answers in both task directions',async()=>{
+ const ctor=ctx.jspdf.jsPDF,drawn=[];
+ globalThis.jspdf={jsPDF:function(...args){const pdf=new ctor(...args),original=pdf.text;pdf.text=function(value,x,y,...rest){drawn.push({value:(Array.isArray(value)?value:[value]).join(' '),x,y,font:this.getFont().fontStyle});return original.call(this,value,x,y,...rest);};return pdf;}};
+ try{for(const lang of ['de','en','fr']){
+ setLanguage(lang);drawn.length=0;await createExerciseSolutionPDF(plan());
+ const givenName=drawn.find(v=>v.value===a.name),answerCoordinate=drawn.find(v=>v.value===exerciseCoordinate(a,50000)),givenCoordinate=drawn.find(v=>v.value===exerciseCoordinate(b,50000)),answerName=drawn.find(v=>v.value===b.name);
+ assert.ok(givenName.x<answerCoordinate.x);assert.equal(givenName.font,'normal');assert.equal(answerCoordinate.font,'bold');assert.ok(givenCoordinate.x<answerName.x);assert.equal(givenCoordinate.font,'normal');assert.equal(answerName.font,'bold');
+ if(lang==='de'){assert.ok(drawn.some(v=>v.value==='Gegeben'));assert.ok(drawn.some(v=>v.value==='Gesucht / Lösung'));}
+ }}finally{globalThis.jspdf=ctx.jspdf;setLanguage('de');}
+});
 
 test('Exercises allow exactly twenty points, reject twenty-one and fit one worksheet in every format',()=>{for(const paper of Object.keys(PAPER))for(const landscape of [false,true]){const p=plan(Array.from({length:20},()=>a),{paper,landscape});validateExercisePlan(p);assert.equal(exerciseTaskPageCount(p),1);assert.throws(()=>validateExercisePlan({...p,exercise:{points:[...p.exercise.points,a]}}));}assert.equal(normalizeExercisePoints(Array.from({length:21},()=>a)).length,20);});

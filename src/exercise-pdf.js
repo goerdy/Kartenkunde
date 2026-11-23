@@ -55,26 +55,38 @@ export function appendExercisePages(pdf,plan,{solution=false,signal}={}){
 }
 export async function createExerciseSolutionPDF(plan,{signal}={}){
  validateExercisePlan(plan);aborted(signal);
- const p={...plan,createdAt:plan.createdAt||new Date()},pdf=new jsPDF({orientation:p.landscape?'landscape':'portrait',unit:'mm',format:p.paper,compress:true,precision:6});
+ const p={...plan,createdAt:plan.createdAt||new Date()},pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4',compress:true,precision:6});
  if(MAP_STYLES[p.style]?.monochrome)applyPDFMonochrome(pdf);
  pdf.setProperties({title:`${p.title||'KARTENKUNDE.app'} · ${t('exerciseSolutionTitle')}`,creator:'KARTENKUNDE.app',subject:t('exerciseSolutionTitle'),creationDate:p.createdAt});
- const [w,h]=p.paper,m=16,inner=w-2*m,top=48,rowH=17,capacity=Math.max(1,Math.floor((h-m-top)/rowH)),points=p.exercise.points,count=Math.ceil(points.length/capacity);
- const nameX=m+11,coordX=m+inner*.53,sheetX=m+inner*.89;
- for(let page=0;page<count;page++){
- aborted(signal);if(page)pdf.addPage(p.paper,p.landscape?'landscape':'portrait');
+ const w=210,h=297,m=16,inner=w-2*m,top=48,rowH=10.8,points=p.exercise.points;
+ const givenX=m+10,answerX=givenX+72,sheetX=w-m-22;
  pdf.setDrawColor(37,65,57);pdf.setLineWidth(.3);pdf.rect(9,9,w-18,h-18);
- exerciseText(pdf,t('exerciseSolutionTitle'),m,18,13,true);pdf.setFontSize(10);pdf.setFont('helvetica','bold');const title=pdf.splitTextToSize(p.title||'KARTENKUNDE.app',inner);pdf.text(title.slice(0,2),m,25);
+ exerciseText(pdf,t('exerciseSolutionTitle'),m,18,13,true);pdf.setFontSize(10);pdf.setFont('helvetica','bold');
+ pdf.text(pdf.splitTextToSize(p.title||'KARTENKUNDE.app',inner).slice(0,2),m,25);
  exerciseText(pdf,t('exerciseCreatedAt',{date:p.createdAt.toLocaleString(getLanguage())}),m,37,7);
- pdf.setFontSize(7);pdf.text(`${page+1}/${count}`,w-m,37,{align:'right'});
- exerciseText(pdf,'#',m+2,44,7,true);exerciseText(pdf,t('exercisePlaceAnswer'),nameX,44,7,true);exerciseText(pdf,t('exerciseCoordinateAnswer'),coordX,44,7,true);exerciseText(pdf,t('pdfSheet'),sheetX,44,7,true);
- for(let row=0;row<capacity;row++){
- const i=page*capacity+row;if(i>=points.length)break;const point=points[i],y=top+row*rowH;
- pdf.setDrawColor(180,187,180);pdf.setLineWidth(.15);pdf.line(m,y+rowH,w-m,y+rowH);
- exerciseText(pdf,String(i+1),m+2,y+6,8);pdf.setFontSize(8);pdf.setFont('helvetica','normal');const name=pdf.splitTextToSize(point.name,coordX-nameX-4);pdf.text(name.slice(0,3),nameX,y+6);
- exerciseText(pdf,exerciseCoordinate(point,p.scale),coordX,y+6,8,true);pdf.setFontSize(7);pdf.setFont('helvetica','normal');const sheets=pdf.splitTextToSize(exercisePointSheets(p,point).join(', '),w-m-sheetX);pdf.text(sheets.slice(0,3),sheetX,y+6);
+ pdf.setFont('helvetica','normal');pdf.setFontSize(7);pdf.text(`1:${p.scale.toLocaleString(getLanguage())}`,w-m,42,{align:'right'});
+ exerciseText(pdf,t('exerciseNumber'),m+1,46,7,true);
+ exerciseText(pdf,t('exerciseGiven'),givenX+2,46,8,true);
+ exerciseText(pdf,t('exerciseSoughtSolution'),answerX+2,46,8,true);
+ exerciseText(pdf,t('pdfSheet'),sheetX+2,46,7,true);
+ // Fit complete cell contents, including long object names, without clipping lines.
+ const cell=(value,x,y,width,bold=false)=>{
+  pdf.setFont('helvetica',bold?'bold':'normal');let size=8,lines;
+  do{pdf.setFontSize(size);lines=pdf.splitTextToSize(value,width-4);if(lines.length*size*.3528*1.15<=rowH-2)break;size-=.25;}while(size>5);
+  pdf.setTextColor(37,65,57);pdf.text(lines,x+2,y+rowH/2-(lines.length-1)*size*.3528*1.15/2+size*.3528*.33,{lineHeightFactor:1.15});
+ };
+ for(let i=0;i<points.length;i++){
+  aborted(signal);const point=points[i],y=top+i*rowH,coordinate=exerciseCoordinate(point,p.scale),findCoordinate=point.kind==='coordinate';
+  pdf.setFillColor(i%2?249:242,i%2?249:246,i%2?245:241);pdf.rect(m,y,inner,rowH,'F');
+  // The requested answer is bold; the given value remains regular weight.
+  cell(String(i+1),m,y,givenX-m);
+  cell(findCoordinate?point.name:coordinate,givenX,y,answerX-givenX);
+  cell(findCoordinate?coordinate:point.name,answerX,y,sheetX-answerX,true);
+  cell(exercisePointSheets(p,point).join(', '),sheetX,y,w-m-sheetX);
+  pdf.setDrawColor(180,187,180);pdf.setLineWidth(.15);pdf.line(m,y+rowH,w-m,y+rowH);
  }
  exerciseText(pdf,'KARTENKUNDE.app · kartenkunde.app',m,h-5,6);pdf.link?.(m,h-8,80,4,{url:ATLAS_URL});
- }
+
  pdf.exportWarnings=[];return pdf;
 }
 
