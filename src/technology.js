@@ -12,3 +12,18 @@ function renderAppVersion(){
  document.getElementById('techBuildId').textContent=build||t('techDevelopment');
 }
 renderAppVersion();document.addEventListener('languagechange',renderAppVersion);
+
+let testExportController;
+const testExportButton=document.getElementById('testExport'),testExportCancel=document.getElementById('testExportCancel'),testExportStatus=document.getElementById('testExportStatus'),testExportProgress=document.getElementById('testExportProgress');
+testExportCancel.onclick=()=>testExportController?.abort();
+testExportButton.onclick=async()=>{
+ if(testExportController)return;testExportController=new AbortController();const signal=testExportController.signal;
+ testExportButton.disabled=true;testExportCancel.hidden=false;testExportProgress.hidden=false;testExportProgress.value=0;document.getElementById('language').disabled=true;testExportStatus.textContent=t('techTestLoading');
+ try{
+ const {loadTestExport}=await import('./test-export-loader.js'),{createMapTestPDF}=await loadTestExport();
+ const pdf=await createMapTestPDF({signal,...document.documentElement.dataset,onProgress:(done,total,label)=>{testExportProgress.max=total;testExportProgress.value=done;testExportStatus.textContent=`${done}/${total} · ${label}`;}});
+ pdf.save(`Kartenkunde-Testexport-1-50k-${new Date().toISOString().slice(0,10)}.pdf`);
+ testExportStatus.textContent=pdf.exportWarnings.length?t('techTestWarnings',{count:pdf.exportWarnings.length}):t('created');
+ }catch(error){testExportStatus.textContent=signal.aborted?t('cancelled'):error.message;}
+ finally{testExportController=null;testExportButton.disabled=false;testExportCancel.hidden=true;testExportProgress.hidden=true;document.getElementById('language').disabled=false;}
+};
