@@ -1,0 +1,5 @@
+<h1 data-i18n="diagTitle">Datenquellen testen</h1><p><a href="./technik.html" data-i18n="diagBack">Zur Technikseite</a></p>
+<p data-i18n="diagIntro">Der Test ruft die Dienste nacheinander aus diesem Browser ab. Kacheldienste werden mit einer Beispielkachel geprüft. Die Anfragen sind klein und liefern keine Aussage über die Vollständigkeit aller Kartendaten.</p>
+<p data-i18n="diagNotice">Ein Fehler kann auch durch CORS, Browser-Erweiterungen, eine Netzsperre oder ein Zeitlimit entstehen. Er bedeutet nicht zwangsläufig, dass der Dienst weltweit ausgefallen ist. Der Test startet erst auf Knopfdruck.</p>
+<div class="diagnostic-actions"><button id="diagnosticStart" class="primary" data-i18n="diagStart">Test starten</button><button id="diagnosticStop" class="quiet" disabled data-i18n="diagStop">Abbrechen</button></div><p id="diagnosticSummary" role="status" aria-live="polite"></p>
+<div class="table-scroll"><table class="tech-table diagnostic-table"><thead><tr><th data-i18n="techService">Dienst</th><th data-i18n="diagStatus">Status</th><th data-i18n="diagDetails">Details</th></tr></thead><tbody id="diagnosticResults"></tbody></table></div>

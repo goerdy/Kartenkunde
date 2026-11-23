@@ -1,0 +1,23 @@
+# Application files are public; deployment files, caches and directory listings are not.
+Options -Indexes
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L]
+  RewriteRule (^|/)(?:var|backups?|tests|tools)(?:/|$) - [F,L,NC]
+</IfModule>
+<FilesMatch "(?:^\.|\.(?:bak|old|orig|save|swp|sql|log|env|ini|ya?ml|map|pem|key|p12|pfx)$|^proxy-security\.php$)">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header always unset X-Powered-By
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "no-referrer"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "default-src 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' __LIBRARY_SCRIPT_SOURCES__ __START_SCRIPT_HASH__; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: blob: https://tiles.openfreemap.org https://sgx.geodatenzentrum.de https://opendata.lgln.niedersachsen.de https://s3.amazonaws.com; font-src 'self' data:; connect-src 'self' blob: data: https://cdn.jsdelivr.net https://tiles.openfreemap.org https://sgx.geodatenzentrum.de https://opendata.lgln.niedersachsen.de https://s3.amazonaws.com https://www.geoboundaries.org https://geoboundaries.org https://github.com https://raw.githubusercontent.com https://media.githubusercontent.com https://postpass.geofabrik.de https://overpass-api.de; worker-src 'self' blob:; frame-src 'none'; manifest-src 'self'"
+  <FilesMatch "\.(html?|js|css|json)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,23 @@
+{
+  "name": "kartenkunde-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browserbasierter UTMREF-Kartenatlas für statischen Webspace / LAMP",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "build": "node tools/site.mjs && node tools/standalone.mjs && node tools/build.mjs",
+    "vendor": "node tools/vendor.mjs",
+    "test": "node --test tests/*.test.js",
+    "check:dist": "node tools/check-dist.mjs",
+    "test:exercise": "node tools/browser-exercise.mjs",
+    "test:simulator": "node tools/browser-simulator.mjs",
+    "test:security": "node --test tests/security.test.js",
+    "audit:vendor": "node tools/audit-vendor.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goerdy/Kartenkunde.git"
+  },
+  "homepage": "https://kartenkunde.app"
+}

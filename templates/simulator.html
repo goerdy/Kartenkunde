@@ -1,0 +1,10 @@
+<h1 class="sr-only" data-i18n="site_simulator">Planzeiger-Simulator</h1>
+<div class="sim-toolbar" role="group" data-i18n-label="simControls">
+<div><label for="simStyle" data-i18n="mapType">Kartentyp</label><select id="simStyle"></select></div>
+<div><label for="simScale" data-i18n="scale">Maßstab</label><select id="simScale"><option value="50000">1 : 50.000</option><option value="25000">1 : 25.000</option></select></div>
+<div><label for="simType" data-i18n="simType">Planzeiger</label><select id="simType"></select></div>
+<label class="sim-check"><input id="simSnap" type="checkbox" checked><span data-i18n="simSnap">An horizontalen Gitterlinien einrasten</span></label>
+<button id="simReset" class="quiet" data-i18n="simReset">Planzeiger zentrieren</button><button id="simFullscreen" class="draw" data-i18n="simFullscreen">Vollbild</button>
+<div class="sim-readout"><span id="simView"></span><span id="simSnapState" role="status"></span></div></div>
+<div id="simStage" class="sim-stage"><div id="simMap" data-i18n-label="simMap" aria-label="Übungskarte"></div><svg id="simGrid" class="sim-overlay" aria-hidden="true"></svg><svg id="simRuler" class="sim-overlay" tabindex="0" role="group" data-i18n-title="simMove" data-i18n-label="simType" aria-label="Planzeiger"></svg><p id="simStatus" class="sim-status" role="status" aria-live="polite" data-i18n="simLoading">Karte wird geladen …</p></div>
+<details class="sim-help"><summary data-i18n="simGuide">Bedienung</summary><p data-i18n="simGuideText">Planzeiger am Rahmen mit Maus oder Finger verschieben. Der Nullpunkt liegt unten rechts. Die waagerechte Kante rastet nahe einer horizontalen Gitterlinie ein. Mit Pfeiltasten lässt sich der fokussierte Planzeiger fein verschieben; Umschalt vergrößert die Schritte. Die Skala folgt beim Zoomen dem 1-km-Gitter. Der gewählte Maßstab bezeichnet den Planzeiger, nicht die physische Bildschirmgröße.</p></details>

@@ -1,0 +1,8 @@
+# Nur in den ALTEN Ordner /pq5/UTMREF-MAP/ auf pq5.de hochladen.
+# Vorhandene .htaccess in diesem Ordner dadurch ersetzen.
+# Query-Parameter bleiben erhalten; Browser übernehmen URL-Fragmente (#...).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^index\.html$ https://kartenkunde.app/ [R=301,L]
+  RewriteRule ^(.*)$ https://kartenkunde.app/$1 [R=301,L]
+</IfModule>

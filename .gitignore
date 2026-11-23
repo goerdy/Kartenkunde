@@ -1,0 +1,46 @@
+# Generated website, standalone bundle and deployment output
+/dist/
+/Start.html
+/index.html
+/karten.html
+/uebungen.html
+/planzeiger.html
+/lehrmaterial.html
+/impressum.html
+/hilfe.html
+/technik.html
+/diagnose.html
+
+# Local dependencies and verification output
+node_modules/
+test-results/
+coverage/
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.zip
+.DS_Store
+Thumbs.db
+
+# Credentials and local deployment configuration (never commit)
+.env
+.env.*
+!.env.example
+*credentials*
+*Credentials*
+*secrets*
+deployment*.json
+.ftpconfig
+.ftppass
+.netrc
+.git-credentials
+*.pem
+*.key
+*.p12
+*.pfx
+/.vscode/
+/.idea/
+/backups/
+/private/
