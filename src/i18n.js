@@ -291,3 +291,10 @@ const legalMessages={
   }
 };
 for(const [lang,entries]of Object.entries(legalMessages))Object.assign(messages[lang],entries);
+
+const appVersionMessages={
+ de:{techAppVersion:'Anwendungsversion',techCommit:'Commit',techDirty:'mit lokalen Änderungen',techBuildFingerprint:'Build-Fingerabdruck',techNoCommit:'Keine Git-Informationen im Build',techDevelopment:'Entwicklungsansicht'},
+ en:{techAppVersion:'Application version',techCommit:'Commit',techDirty:'with local changes',techBuildFingerprint:'Build fingerprint',techNoCommit:'No Git information in this build',techDevelopment:'Development view'},
+ fr:{techAppVersion:'Version de l’application',techCommit:'Commit',techDirty:'avec modifications locales',techBuildFingerprint:'Empreinte de compilation',techNoCommit:'Aucune information Git dans cette compilation',techDevelopment:'Vue de développement'}
+};
+for(const [lang,entries]of Object.entries(appVersionMessages))Object.assign(messages[lang],entries);

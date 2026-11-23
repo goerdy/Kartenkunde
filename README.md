@@ -37,7 +37,7 @@ npm run check:dist
 npm test
 ```
 
-`check:dist` prüft den Build gegen Quell- und Ausgabedateien. Die Unit-Tests prüfen unter anderem Projektionen, Blattaufteilung, Koordinaten, PDF-Inhalte, Kartengestaltung, Übersetzungen und Sicherheitsgrenzen.
+`check:dist` prüft den Build gegen Quell- und Ausgabedateien sowie den Git-Stand. Die Technikseite zeigt den kurzen Commit-Hash als Anwendungsversion mit einem Link zum vollständigen Commit. Builds mit noch nicht eingecheckten Änderungen werden ausdrücklich gekennzeichnet. Ohne Git-Metadaten bleibt der Build möglich; als Kennung steht weiterhin der Build-Fingerabdruck zur Verfügung. Für eine Veröffentlichung erst committen, dann neu bauen. Die Unit-Tests prüfen unter anderem Projektionen, Blattaufteilung, Koordinaten, PDF-Inhalte, Kartengestaltung, Übersetzungen und Sicherheitsgrenzen.
 
 Für die zusätzlichen Browserprüfungen werden Chromium und ein laufender lokaler Server benötigt:
 
