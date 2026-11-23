@@ -47,7 +47,7 @@ test('Real PHP HTTP endpoint rejects unsupported methods, cross-site calls and h
  const server=createServer();await new Promise(r=>server.listen(0,'127.0.0.1',r));const port=server.address().port;await new Promise(r=>server.close(r));
  const php=spawn('php',['-S',`127.0.0.1:${port}`,'-t',process.cwd()],{stdio:['ignore','ignore','pipe']});
  try{await new Promise((resolve,reject)=>{php.once('error',reject);php.stderr.once('data',resolve);});const base=`http://127.0.0.1:${port}/api/farms.php`;
- for(const query of ['','?bbox[]=1','?bbox=nan,0,1,1','?bbox=0,0,1,99','?bbox=0;system(id),0,1,1']){const r=await fetch(base+query);assert.equal(r.status,400);assert.match(r.headers.get('content-type'),/application\/json/);const body=await r.json();assert.ok(body.error);assert.ok(!JSON.stringify(body).includes(process.cwd()));}
+ for(const query of ['','?bbox[]=1','?bbox=nan,0,1,1','?bbox=0,0,1,99','?bbox=0;system(id),0,1,1','?bbox=0,0,1,1&farms=1','?bbox=0,0,1,1&farms[]=0','?bbox=0,0,1,1&extra=0']){const r=await fetch(base+query);assert.equal(r.status,400);assert.match(r.headers.get('content-type'),/application\/json/);const body=await r.json();assert.ok(body.error);assert.ok(!JSON.stringify(body).includes(process.cwd()));}
  let r=await fetch(base,{method:'POST',body:'hostile'});assert.equal(r.status,405);assert.equal(r.headers.get('allow'),'GET');r=await fetch(base+'?bbox=0,0,1,1',{headers:{'Sec-Fetch-Site':'cross-site'}});assert.equal(r.status,403);
  }finally{php.kill('SIGTERM');}
 });

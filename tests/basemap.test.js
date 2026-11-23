@@ -11,7 +11,7 @@ test('basemap uses its own official schema and PQ5 palette; roads only label num
 });
 test('basemap POIs share all existing controls, print scaling and clean cover overview',()=>{
  const off=Object.fromEntries(TK_FEATURE_KEYS.map(k=>[k,false]));
- for(const mode of ['screen','print']){const style=createPQ5BasemapStyle(off,mode);assert.deepEqual(style.layers.find(l=>l.id==='tk-landmarks').filter,['==',1,0]);assert.equal(style.layers.find(l=>l.id==='tk-named-farms').layout.visibility,'none');assert.equal(style.layers.find(l=>l.id==='tk-cemetery-fill').layout.visibility,'none');}
+ for(const mode of ['screen','print']){const style=createPQ5BasemapStyle(off,mode);assert.deepEqual(style.layers.find(l=>l.id==='tk-landmarks').filter,['==',1,0]);assert.ok(!style.layers.some(l=>l.id==='tk-named-farms'));assert.equal(style.layers.find(l=>l.id==='tk-cemetery-fill').layout.visibility,'none');}
  const printed=createPQ5BasemapStyle({},'print');assert.equal(printed.metadata['pq5:printScale'],4);
  const overview=createPQ5BasemapStyle({},'overview');assert.ok(!overview.sources['named-farms']);assert.ok(overview.layers.every(l=>l.source!=='named-farms'));assert.ok(!overview.layers.some(l=>l.id==='tk-small-settlements'));
  assert.equal(tkLegendLayout([210,297],186,{},'pq5basemap').name,'PQ5-Default-GER');
@@ -46,4 +46,9 @@ test('Settlement names reserve space before contours and supplementary POIs in p
  assert.ok(index('tk-cities')>index('tk-villages')||index('bm-cities')>index('tk-villages'));
  assert.ok(village.layout['text-variable-anchor'].length>=5);assert.notEqual(village.layout['text-allow-overlap'],true);
  }
+});
+
+test('BKG farm names use the native map only while OSM keeps supplementary farms',()=>{
+ for(const mode of ['screen','print']){const bkg=createPQ5BasemapStyle({},mode);assert.ok(!bkg.layers.some(l=>l.id==='tk-named-farms'));assert.ok(bkg.layers.some(l=>l.id==='tk-small-settlements'&&l.source==='basemap'));assert.ok(bkg.layers.some(l=>l.id==='tk-landmarks'));}
+ assert.ok(styleURL('pq5tk').layers.some(l=>l.id==='tk-named-farms'));
 });

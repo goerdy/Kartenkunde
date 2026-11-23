@@ -6,7 +6,7 @@ export function basemapCredit(year=new Date().getFullYear()){return `© GeoBasis
 // Own PQ5 cartography for the published basemap.de V2 schema; no copied provider style.
 export function createPQ5BasemapStyle(options={},mode='screen'){
  const withContours=mode!=='overview'&&options.contours!==false,contourLayers=withContours?createContourLayers(options.scale):[];
- const c=PQ5_TK_COLORS,base=createPQ5TKStyle(options),layers=[],supplement=base.layers.filter(l=>l.source==='named-farms');
+ const c=PQ5_TK_COLORS,base=createPQ5TKStyle(options),layers=[],supplement=base.layers.filter(l=>l.source==='named-farms'&&l.id!=='tk-named-farms');
  const cls=(...values)=>['in',['get','klasse'],['literal',values]],zoom=(...stops)=>['interpolate',['exponential',1.5],['zoom'],...stops];
  const fill=(id,sl,color,filter,minzoom=0)=>layers.push({id,type:'fill',source:'basemap','source-layer':sl,minzoom,...(filter?{filter}:{}),paint:{'fill-color':color}});
  const line=(id,sl,color,width,filter,minzoom=0,paint={})=>layers.push({id,type:'line',source:'basemap','source-layer':sl,minzoom,...(filter?{filter}:{}),layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':color,'line-width':width,...paint}});

@@ -28,10 +28,10 @@ export function farmQueryBounds(bounds){
  const box=[Math.max(-90,Math.floor(bounds.getSouth()*10)/10),Math.max(-180,Math.floor(bounds.getWest()*10)/10),Math.min(90,Math.ceil(bounds.getNorth()*10)/10),Math.min(180,Math.ceil(bounds.getEast()*10)/10)];
  try{tkPostpassSQL(box);return box;}catch{return null;}
 }
-export async function loadFarmFeatures(box,signal,fetcher=globalThis.fetch){
- const sql=tkPostpassSQL(box),key='tk-v5:'+box.join(',');if(signal?.aborted)throw abortError();
+export async function loadFarmFeatures(box,signal,fetcher=globalThis.fetch,{farms=true}={}){
+ const sql=tkPostpassSQL(box,{farms}),key='tk-v6:'+Number(farms)+':'+box.join(',');if(signal?.aborted)throw abortError();
  const cached=farmCache.get(key);if(cached&&Date.now()-cached.time<300000)return cached.features;
- const covering=[...farmCache.values()].find(entry=>Date.now()-entry.time<300000&&entry.box&&box[0]>=entry.box[0]&&box[1]>=entry.box[1]&&box[2]<=entry.box[2]&&box[3]<=entry.box[3]);if(covering)return covering.features;
+ const covering=[...farmCache.values()].find(entry=>entry.farms===farms&&Date.now()-entry.time<300000&&entry.box&&box[0]>=entry.box[0]&&box[1]>=entry.box[1]&&box[2]<=entry.box[2]&&box[3]<=entry.box[3]);if(covering)return covering.features;
  const failure=farmFailures.get(key);if(failure&&Date.now()-failure.time<30000)throw failure.error;
  // Requests without external cancellation (server calls) can share a pending result.
  if(!signal&&pending.has(key))return pending.get(key);
@@ -43,17 +43,17 @@ export async function loadFarmFeatures(box,signal,fetcher=globalThis.fetch){
  if(signal?.aborted)throw abortError();
  const request=new AbortController(),abort=()=>request.abort();signal?.addEventListener('abort',abort,{once:true});const timer=setTimeout(abort,endpoint===proxy?38000:15000);
  try{
- const params=endpoint===proxy?{bbox:box.join(',')}:endpoint===POSTPASS_ENDPOINT?{data:sql}:{data:tkOverpassQuery(box)};
+ const params=endpoint===proxy?{bbox:box.join(','),...(!farms?{farms:'0'}:{})}:endpoint===POSTPASS_ENDPOINT?{data:sql}:{data:tkOverpassQuery(box,{farms})};
  const headers=globalThis.document?{}:{'User-Agent':'KARTENKUNDE.app/1.0 (OSM topographic print tool)','Accept':'application/json'};
  const response=await fetcher(`${endpoint}?${new URLSearchParams(params)}`,{signal:request.signal,headers});
  if(!response.ok){let detail='';try{detail=(await response.json()).error||'';}catch{}throw Error(`HTTP ${response.status}${detail?': '+detail:''}`);}
- return farmFeatures(await response.json());
+ const data=farmFeatures(await response.json());return farms?data:{...data,features:data.features.filter(f=>f.properties.class!=='farm')};
  }finally{clearTimeout(timer);signal?.removeEventListener('abort',abort);}
  };
  try{
  let features;
  if(endpoint===POSTPASS_ENDPOINT){const next=postpassQueue.then(execute,execute);postpassQueue=next.catch(()=>{});features=await next;}else features=await execute();
- farmFailures.delete(key);farmCache.set(key,{time:Date.now(),features,box:[...box]});if(farmCache.size>24)farmCache.delete(farmCache.keys().next().value);return features;
+ farmFailures.delete(key);farmCache.set(key,{time:Date.now(),features,farms,box:[...box]});if(farmCache.size>24)farmCache.delete(farmCache.keys().next().value);return features;
  }catch(error){if(signal?.aborted)throw abortError();lastError=error;}
  }
  const error=Error(t('farmLoadError'));error.detailKey=lastError?.name==='AbortError'?'mapTimeout':lastError?.name==='TypeError'?'network':lastError?.name==='SyntaxError'?'invalidJSON':lastError?.message===t('farmLoadError')?'invalidJSON':null;error.detail=lastError?.message;error.message=formatFarmError(error);
@@ -63,13 +63,13 @@ export async function loadFarmFeatures(box,signal,fetcher=globalThis.fetch){
  try{return await task;}finally{if(!signal)pending.delete(key);}
 }
 export function installFarmLabels(map,options={}){
- farmLoaders.get(map)?.();if(!Object.values(normalizeTKOptions(options)).some(Boolean))return Promise.resolve();
+ farmLoaders.get(map)?.();const enabled=normalizeTKOptions(options);if(map.getStyle?.()?.metadata?.['pq5:basemap'])enabled.farms=false;if(!Object.values(enabled).some(Boolean))return Promise.resolve();
  let timer,request,revision=0,disposed=false;const sourceId='named-farms';
  const refresh=async()=>{
  const version=++revision;request?.abort();const source=map.getSource(sourceId);if(!source||disposed)return;
  const box=farmQueryBounds(map.getBounds());if(!box){source.setData({type:'FeatureCollection',features:[]});return;}
  request=new AbortController();const abortTimer=setTimeout(()=>request.abort(),55000);
- try{const features=await loadFarmFeatures(box,request.signal);if(!disposed&&version===revision&&map.getSource(sourceId)===source){source.setData(features);const farms=features.features.filter(f=>f.properties.class==='farm');map.fire('farmdata',{count:farms.length,names:farms.map(f=>f.properties.name),symbols:features.features.length-farms.length});}}
+ try{const features=await loadFarmFeatures(box,request.signal,globalThis.fetch,{farms:enabled.farms});if(!disposed&&version===revision&&map.getSource(sourceId)===source){source.setData(features);const farms=features.features.filter(f=>f.properties.class==='farm');map.fire('farmdata',{count:farms.length,names:farms.map(f=>f.properties.name),symbols:features.features.length-farms.length});}}
  catch(error){if(disposed||version!==revision)return;map.fire('farmwarning',{error,message:t('farmUnavailable')});}
  finally{clearTimeout(abortTimer);}
  };

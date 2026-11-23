@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {tkPostpassSQL,tkOverpassQuery,TK_FEATURE_KEYS} from '../src/tk-features.js';
 import {farmFeatures,farmQueryBounds,loadFarmFeatures,installFarmLabels} from '../src/farm-labels.js';
 const bounds=(s,w,n,e)=>({getSouth:()=>s,getWest:()=>w,getNorth:()=>n,getEast:()=>e});
 test('Named farms include nodes and area centres, without unnamed objects or duplicate IDs',()=>{
@@ -52,4 +53,18 @@ test('Same-origin farm proxy handles raw PHP and normalized Node responses befor
  const calls=[];const data=await loadFarmFeatures([51+i/10,10,51.05+i/10,10.1],undefined,async url=>{calls.push(new URL(url));return {ok:true,json:async()=>payload};});
  assert.equal(calls.length,1);assert.equal(calls[0].pathname,'/pq5/UTMREF-MAP/api/farms.php');assert.ok(calls[0].searchParams.has('bbox'));assert.equal(data.features[0].properties.name,'Fixture Farm');
  }}finally{globalThis.document=previous;}
+});
+
+test('Farm-free queries retain landmark filters and cannot reuse the OSM farm cache',async()=>{
+ const box=[50.71,8.71,50.72,8.72];
+ for(const query of [tkPostpassSQL(box,{farms:false}),tkOverpassQuery(box,{farms:false})]){assert.ok(!query.includes('"farm"'));assert.ok(query.includes('"church"'));assert.ok(query.includes('"hospital"'));}
+ let calls=0;const fetcher=async()=>{calls++;return {ok:true,json:async()=>({elements:[{type:'node',id:991,lat:50.715,lon:8.715,tags:{place:'farm',name:'Test Farm'}},{type:'node',id:992,lat:50.716,lon:8.716,tags:{building:'church'}}]})};};
+ const osm=await loadFarmFeatures(box,undefined,fetcher);assert.equal(osm.features.length,2);
+ const bkg=await loadFarmFeatures(box,undefined,fetcher,{farms:false});assert.equal(calls,2);assert.equal(bkg.features.length,1);assert.equal(bkg.features[0].properties.class,'church');
+ assert.equal(await loadFarmFeatures(box,undefined,fetcher),osm);assert.equal(calls,2);
+});
+test('BKG never starts an extra request when only farm names are enabled',async()=>{
+ const off=Object.fromEntries(TK_FEATURE_KEYS.map(k=>[k,false]));
+ const map={getStyle:()=>({metadata:{'pq5:basemap':true}}),getBounds:()=>assert.fail('BKG farm-only selection must not fetch')};
+ await installFarmLabels(map,{...off,farms:true});
 });
