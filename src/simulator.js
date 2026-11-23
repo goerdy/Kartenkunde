@@ -1,3 +1,4 @@
+import {installCoverageNotice} from './coverage.js';
 import {maplibregl,mgrs} from './vendor.js';
 import {MAP_STYLES,styleURL,applyMapStyle,setPreviewStyle,styleCredit} from './render.js';
 import {zoneBoundarySegments,project,unproject,gridEdgeLabel,clipLine} from './geo.js';
@@ -13,6 +14,7 @@ translatedOptions();styleSelect.value=style;typeSelect.value=settings.instrument
 const initialCenter=Array.isArray(settings.center)&&settings.center.length===2&&settings.center.every(Number.isFinite)&&Math.abs(settings.center[0])<=179&&settings.center[1]>=-79&&settings.center[1]<=83?settings.center:[7.92,53.67];
 const tkOptions=()=>({scale,contours:true,streetNames:false});
 const map=new maplibregl.Map({container:simEl('simMap'),style:styleURL(style,tkOptions()),center:initialCenter,zoom:Number.isFinite(settings.zoom)?Math.max(10,Math.min(18,settings.zoom)):13,minZoom:10,maxZoom:18,maxBounds:[[-179.9,-79.8],[179.9,83.8]],renderWorldCopies:false,pitch:0,bearing:0,dragRotate:false,touchZoomRotate:true,attributionControl:false,fadeDuration:0});
+const coverageNotice=installCoverageNotice({container:stage,map,getStyle:()=>style,onSwitch:id=>{styleSelect.value=id;styleSelect.dispatchEvent(new Event('change'));}});
 map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-left');map.addControl(new maplibregl.ScaleControl({unit:'metric'}),'bottom-left');
 map.getCanvas().setAttribute('aria-label',t('simMap'));
 function store(){try{localStorage.setItem('kartenkunde-simulator-v1',JSON.stringify({instrumentVersion:2,scale,style,type:typeSelect.value,snap:simEl('simSnap').checked,center:map.getCenter().toArray(),zoom:map.getZoom()}));}catch{}}
@@ -101,7 +103,7 @@ function endDrag(event){if(!drag||event.pointerId!==drag.id)return;drag=null;map
 for(const element of [handle]){element.addEventListener('pointerdown',startDrag);element.addEventListener('pointermove',duringDrag);element.addEventListener('pointerup',endDrag);element.addEventListener('pointercancel',endDrag);element.addEventListener('lostpointercapture',event=>{if(drag?.id===event.pointerId){drag=null;map.dragPan.enable();}});}
 handle.addEventListener('keydown',event=>{const direction={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,1],ArrowDown:[0,-1]}[event.key];if(!direction)return;event.preventDefault();const step=(scale===25000?10:100)*(event.shiftKey?10:1);moveAnchor(anchor.easting+direction[0]*step,anchor.northing+direction[1]*step,direction[1]===0);store();});
 simEl('simSnap').onchange=()=>{moveAnchor(anchor.easting,anchor.northing);store();};
-styleSelect.onchange=()=>{style=styleSelect.value;setPreviewStyle(map,simEl('simMap'),style,tkOptions());simEl('simMap').style.filter='';credit();store();status('simLoading');};
+styleSelect.onchange=()=>{style=styleSelect.value;coverageNotice.update();setPreviewStyle(map,simEl('simMap'),style,tkOptions());simEl('simMap').style.filter='';credit();store();status('simLoading');};
 scaleSelect.onchange=()=>{const previous=scale;scale=Number(scaleSelect.value);map.setZoom(map.getZoom()+Math.log2(previous/scale));setPreviewStyle(map,simEl('simMap'),style,tkOptions());simEl('simMap').style.filter='';credit();store();schedule();};
 typeSelect.onchange=()=>{simEl('simReset').click();store();schedule();};
 simEl('simReset').onclick=()=>{const c=map.getCenter(),v=viewport(),metresPerPixel=(typeSelect.value==='frame'?rulerSpan('frame',scale)*1.56:1000)/(Math.min(v.width,v.height)*(typeSelect.value==='frame'?.78:.48)),zoom=Math.log2(40075016.68557849*Math.cos(c.lat*Math.PI/180)/(512*metresPerPixel));map.jumpTo({zoom});centreAnchor();if(typeSelect.value==='frame'){const half=rulerSpan('frame',scale)/2;map.jumpTo({center:rulerCoordinate(anchor,half,half)});}schedule();};

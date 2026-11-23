@@ -1,3 +1,4 @@
+import {installCoverageNotice} from './coverage.js';
 import {exerciseSnapshot,createExerciseShare,readExerciseShare} from './exercise-share.js';
 import {exportFileNames} from './export-names.js';
 import {createPDFArchive} from './zip.js';
@@ -39,7 +40,8 @@ function renderFarmStatus(){
 }
 
 let currentMapAttribution='';
-function updateMapCredit(){document.querySelector('[data-tk-option="farms"]')?.closest('label')?.toggleAttribute('hidden',isBasemap($('style').value));$('contoursControl').hidden=!isBasemap($('style').value);$('contourIntervalHint').textContent=t('contourIntervalHint',{interval:contourInterval(+$('scale').value).toLocaleString(getLanguage())});$('streetNamesControl').hidden=$('scale').value!=='5000'||!isPQ5($('style').value);$('tkOptions').hidden=!isPQ5($('style').value);if(!isPQ5($('style').value))$('farmStatus').hidden=true;if(currentMapAttribution)map.attributionControl.removeAttribution(currentMapAttribution);currentMapAttribution=isBasemap($('style').value)?`© GeoBasis-DE / <a href="https://www.bkg.bund.de/">BKG</a> (${new Date().getFullYear()}) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · ${t('basemapChanges')} · ${osmAttribution()}`:isLGLN($('style').value)?`<a href="https://www.lgln.niedersachsen.de/">${lglnCredit()}</a> · <a href="https://creativecommons.org/licenses/by/4.0/">${t('licenseLabel')}</a>`:osmAttribution();map.attributionControl.addAttribution(currentMapAttribution);$('styleHint').textContent=t(isBasemap($('style').value)?'basemapHint':isPQ5($('style').value)?'pq5Hint':isLGLN($('style').value)?'lglnHint':$('style').value==='bright'?'reliefHint':'sourceHint');}
+let coverageNotice;
+function updateMapCredit(){coverageNotice?.update();document.querySelector('[data-tk-option="farms"]')?.closest('label')?.toggleAttribute('hidden',isBasemap($('style').value));$('contoursControl').hidden=!isBasemap($('style').value);$('contourIntervalHint').textContent=t('contourIntervalHint',{interval:contourInterval(+$('scale').value).toLocaleString(getLanguage())});$('streetNamesControl').hidden=$('scale').value!=='5000'||!isPQ5($('style').value);$('tkOptions').hidden=!isPQ5($('style').value);if(!isPQ5($('style').value))$('farmStatus').hidden=true;if(currentMapAttribution)map.attributionControl.removeAttribution(currentMapAttribution);currentMapAttribution=isBasemap($('style').value)?`© GeoBasis-DE / <a href="https://www.bkg.bund.de/">BKG</a> (${new Date().getFullYear()}) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · ${t('basemapChanges')} · ${osmAttribution()}`:isLGLN($('style').value)?`<a href="https://www.lgln.niedersachsen.de/">${lglnCredit()}</a> · <a href="https://creativecommons.org/licenses/by/4.0/">${t('licenseLabel')}</a>`:osmAttribution();map.attributionControl.addAttribution(currentMapAttribution);$('styleHint').textContent=t(isBasemap($('style').value)?'basemapHint':isPQ5($('style').value)?'pq5Hint':isLGLN($('style').value)?'lglnHint':$('style').value==='bright'?'reliefHint':'sourceHint');}
 updateMapCredit();
 const zoomControl=L.control.zoom({zoomInTitle:t('zoomIn'),zoomOutTitle:t('zoomOut')}).addTo(map);
 for(const [selector,key]of [['.leaflet-control-zoom-in','zoomIn'],['.leaflet-control-zoom-out','zoomOut']]){const button=zoomControl.getContainer().querySelector(selector);button.dataset.i18nTitle=key;button.dataset.i18nLabel=key;button.setAttribute('aria-label',t(key));}
@@ -49,11 +51,14 @@ worldOverview=installWorldOverview(L,map,{onChange:projection=>{
  $('projectionBadge').textContent=t(projection==='equalEarth'?'projectionEqualEarth':'projectionMercator');$('projectionBadge').dataset.projection=projection;
  },onError:()=>setStatus(t('overviewUnavailable'),true)});
 
+coverageNotice=installCoverageNotice({container:document.querySelector('.map-wrap'),map,getStyle:()=>$('style').value,getSelection:()=>exerciseUI?.options?.fit?exerciseBounds(exerciseUI.options.points,+$('scale').value):selection,onSwitch:id=>{$('style').value=id;$('style').dispatchEvent(new Event('change'));}});
+
 function setStatus(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
 function readTKOptions(){return {...normalizeTKOptions(Object.fromEntries([...document.querySelectorAll('[data-tk-option]')].map(input=>[input.dataset.tkOption,input.checked]))),scale:+$('scale').value,streetNames:$('streetNames').checked,contours:$('contours').checked};}
 function options(){return {exercise:exerciseUI?.options,utmLabels:$('utmLabels').checked,dmsLabels:$('dmsLabels').checked,tkOptions:readTKOptions(),streetNames:$('streetNames').checked,contours:$('contours').checked,scale:+$('scale').value,paper:$('paper').value,landscape:orientation,style:$('style').value,overlap:+$('overlap').value,dpi:+$('dpi').value,title:$('title').value,notes:$('notes').value,feature:selectedArea?.feature,boundaryAttribution:selectedArea?.attribution,areaName:selectedArea?.name,boundarySelection:selectedArea?.reference};}
 function store(){try{localStorage.setItem('utmref-settings-v1',JSON.stringify({selection,...options()}));}catch{/* Private mode and storage limits must not prevent export. */}}
 function update(){
+ coverageNotice?.update();
  exerciseUI?.invalidate();
  pages.clearLayers();zoneLayer.clearLayers();plan=null;$('export').disabled=true;$('pageCount').textContent='—';$('gridSize').textContent=gridSpacing(Number($('scale').value))>=1000?`${gridSpacing(Number($('scale').value))/1000} km`:`${gridSpacing(Number($('scale').value))} m`;
  const exercise=exerciseUI?.options,automatic=!!exercise?.fit;let effectiveSelection;try{effectiveSelection=automatic?exerciseBounds(exercise.points,Number($('scale').value)):selection;}catch(error){setStatus(error.message,true);store();return;}
