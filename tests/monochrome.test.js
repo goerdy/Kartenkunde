@@ -16,6 +16,6 @@ test('PDF vector colours, including hexadecimal legend swatches, become neutral 
  assert.ok(recorded.length>20);for(const colour of recorded)assert.ok(colour.length===1||colour[0]===colour[1]&&colour[1]===colour[2]);
 });
 test('Requested provider names appear in all languages and PDF legend variant titles remain distinct',()=>{
- try{for(const lang of ['de','en','fr']){setLanguage(lang);assert.equal(styleName('pq5tk'),'PQ5-Default (Topo OSM)');assert.equal(styleName('pq5gray'),'PQ5-grau (Topo OSM)');for(const id of ['liberty','bright','positron','fiord','dark','mono','plain'])assert.ok(styleName(id).endsWith('(Openfreemap)'));assert.ok(styleName('lgln50').startsWith('DTK50 (LGLN'));}}finally{setLanguage('de');}
+ try{for(const lang of ['de','en','fr']){setLanguage(lang);assert.equal(styleName('pq5tk'),'PQ5-Default (Topo OSM)');assert.equal(styleName('pq5gray'),'PQ5-grau (Topo OSM)');for(const id of ['liberty','bright','positron','mono','plain'])assert.ok(styleName(id).endsWith('(Openfreemap)'));assert.ok(styleName('lgln50').startsWith('DTK50 (LGLN'));}}finally{setLanguage('de');}
  assert.equal(tkLegendLayout([210,297],186,{},'pq5gray').name,'PQ5-grau');
 });

@@ -17,6 +17,6 @@ test('Regional maps warn outside their territory, including foreign areas inside
 });
 test('Partial coverage warns while worldwide styles and missing selections never warn',()=>{
  assert.equal(outsideMapCoverage('pq5basemap',{w:5.7,e:7,s:50.7,n:51}),true);
- for(const style of ['pq5tk','pq5gray','liberty','bright','positron','plain','fiord','dark','mono'])assert.equal(outsideMapCoverage(style,box(16.37,48.21)),false);
+ for(const style of ['pq5tk','pq5gray','liberty','bright','positron','plain','mono'])assert.equal(outsideMapCoverage(style,box(16.37,48.21)),false);
  assert.equal(outsideMapCoverage('pq5basemap',null),false);
 });

@@ -23,6 +23,7 @@ test('Share import rejects prototype keys, coerced booleans, malformed points, d
  const s=valid();s.settings.url='javascript:alert(1)';s.arbitrary={secret:'discard'};assert.ok(!('url'in validateExerciseSnapshot(s).settings));assert.ok(!('arbitrary'in validateExerciseSnapshot(s)));
  const previous=getLanguage();setLanguage('__proto__');assert.equal(getLanguage(),previous);
 });
+test('Retired Fiord and Dark exercise links migrate to the default map without accepting unknown styles',()=>{for(const style of ['fiord','dark']){const input=valid();input.settings.style=style;assert.equal(validateExerciseSnapshot(input).settings.style,'pq5basemap');}});
 test('Compressed input is bounded after inflation and before decoding',async()=>{
  const bomb=deflateSync(Buffer.from(' '.repeat(1048576))).toString('base64url');await assert.rejects(decodeExerciseSnapshot(bomb));await assert.rejects(decodeExerciseSnapshot('a'.repeat(16385)));
 });

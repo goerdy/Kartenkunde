@@ -12,7 +12,7 @@ Die Copyright- und Lizenzhinweise in Bibliotheksdateien bleiben erhalten. Die be
 
 ## Onlinequellen
 
-- OpenFreeMap: https://openfreemap.org/quick_start/ – Styles Liberty, Bright, Positron, Fiord und Dark; OpenMapTiles / OpenStreetMap-Daten.
+- OpenFreeMap: https://openfreemap.org/quick_start/ – Styles Liberty, Bright und Positron; OpenMapTiles / OpenStreetMap-Daten.
 - OSM-Daten: © OpenStreetMap-Mitwirkende, ODbL, https://www.openstreetmap.org/copyright
 - OpenMapTiles: https://openmaptiles.org/ – Lizenz-/Attributionshinweise der jeweiligen Styles beachten.
 - Relief: AWS Terrain Tiles / Mapzen, https://registry.opendata.aws/terrain-tiles/ und https://github.com/tilezen/joerd/blob/master/docs/attribution.md . Enthält u.a. SRTM, GMTED und 3DEP; Quellen sind regional verschieden.

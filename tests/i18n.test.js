@@ -15,14 +15,14 @@ test('A1 at 300 dpi is split into bounded sections with exact coverage and geogr
  const last=regions.at(-1);assert.equal(last.x+last.drawWidth,width);assert.equal(last.y+last.drawHeight,height);assert.equal(last.sheet.x1,sheet.x1);assert.equal(last.sheet.y0,sheet.y0);
 });
 
-test('All twelve map styles have translated labels and public key-free sources; no-labels changes only symbols',()=>{
- assert.equal(Object.keys(MAP_STYLES).length,12);for(const config of Object.values(MAP_STYLES))for(const lang of Object.keys(languages))assert.ok(messages[lang][config.label]);
- assert.equal(styleURL('mono'),'https://tiles.openfreemap.org/styles/positron');assert.equal(styleURL('dark'),'https://tiles.openfreemap.org/styles/dark');assert.equal(styleURL('fiord'),'https://tiles.openfreemap.org/styles/fiord');
+test('All ten map styles have translated labels and public key-free sources; no-labels changes only symbols',()=>{
+ assert.equal(Object.keys(MAP_STYLES).length,10);for(const config of Object.values(MAP_STYLES))for(const lang of Object.keys(languages))assert.ok(messages[lang][config.label]);
+ assert.equal(styleURL('mono'),'https://tiles.openfreemap.org/styles/positron');assert.ok(!Object.hasOwn(MAP_STYLES,'dark'));assert.ok(!Object.hasOwn(MAP_STYLES,'fiord'));
  const changed=[];applyMapStyle({getStyle:()=>({layers:[{id:'roads',type:'line'},{id:'labels',type:'symbol'}]}),setLayoutProperty:(...args)=>changed.push(args)},'plain');assert.deepEqual(changed,[['labels','visibility','none']]);
 });
 
 test('All literal translation calls resolve and placeholders agree across languages',()=>{
- for(const file of ['main','admin','pdf','render','farm-labels','tk-features','world-overview','boot','tk-legend','exercise','exercise-ui','exercise-pdf','simulator','simulator-boot','diagnostics','technology']){
+ for(const file of ['main','admin','pdf','render','farm-labels','tk-features','world-overview','boot','tk-legend','exercise','exercise-ui','exercise-pdf','simulator','simulator-boot','diagnostics','technology','test-export','test-export-loader','coverage']){
  const source=readFileSync(new URL(`../src/${file}.js`,import.meta.url),'utf8');
  for(const match of source.matchAll(/\bt\(['"]([^'"]+)['"]/g))for(const lang of Object.keys(languages))assert.ok(Object.hasOwn(messages[lang],match[1]),`${file}: ${lang}.${match[1]}`);
  }

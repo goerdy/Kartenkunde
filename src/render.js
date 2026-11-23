@@ -10,7 +10,7 @@ import {maplibregl} from './vendor.js';
 import {extent,sheetGeo,unproject,project} from './geo.js';
 export const sourceCredit=()=>`${t('osmAttribution')} (ODbL) · OpenMapTiles · OpenFreeMap`;
 export function reliefCredit(){return t('pdfRelief');}
-export const MAP_STYLES={pq5basemap:{label:'stylePQ5Basemap',tk:true,basemap:true},pq5tk:{label:'stylePQ5TK',source:'pq5tk',tk:true},pq5gray:{label:'stylePQ5Gray',source:'pq5tk',tk:true,monochrome:true},liberty:{source:'liberty',label:'liberty'},bright:{source:'bright',label:'bright',relief:true},positron:{source:'positron',label:'positron'},fiord:{source:'fiord',label:'styleFiord'},dark:{source:'dark',label:'styleDark'},mono:{source:'positron',label:'styleMono',monochrome:true},plain:{source:'liberty',label:'stylePlain',labels:false},lgln50:{wmsLayer:'ni_dtk50_farbe',label:'styleLGLN50'},lgln50gray:{wmsLayer:'ni_dtk50_grau',label:'styleLGLN50Gray',monochrome:true}};
+export const MAP_STYLES={pq5basemap:{label:'stylePQ5Basemap',tk:true,basemap:true},pq5tk:{label:'stylePQ5TK',source:'pq5tk',tk:true},pq5gray:{label:'stylePQ5Gray',source:'pq5tk',tk:true,monochrome:true},liberty:{source:'liberty',label:'liberty'},bright:{source:'bright',label:'bright',relief:true},positron:{source:'positron',label:'positron'},mono:{source:'positron',label:'styleMono',monochrome:true},plain:{source:'liberty',label:'stylePlain',labels:false},lgln50:{wmsLayer:'ni_dtk50_farbe',label:'styleLGLN50'},lgln50gray:{wmsLayer:'ni_dtk50_grau',label:'styleLGLN50Gray',monochrome:true}};
 export const STYLES=Object.fromEntries(Object.keys(MAP_STYLES).map(id=>[id,()=>t(MAP_STYLES[id].label)]));
 export function styleName(id){return STYLES[id]?.()||id;}
 export const LGLN_WMS='https://opendata.lgln.niedersachsen.de/doorman/noauth/dtk50_wms';

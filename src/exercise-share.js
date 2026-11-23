@@ -8,10 +8,10 @@ export function validateExerciseSnapshot(value){
  if(!object(value)||value.v!==1||!object(value.settings)||!object(value.exercise))fail();
  // Reject pollution keys even in otherwise ignored properties; cap work before traversing.
  const queue=[value];let visited=0;while(queue.length){const item=queue.pop();if(++visited>1000)fail();if(item&&typeof item==='object'){for(const key of Object.keys(item)){if(['__proto__','constructor','prototype'].includes(key))fail();const child=item[key];if(child&&typeof child==='object')queue.push(child);}}}
- const s=value.settings,e=value.exercise,styles=['pq5basemap','pq5tk','pq5gray','liberty','bright','positron','fiord','dark','mono','lgln50','lgln50gray','plain'];
- if(![25000,50000].includes(s.scale)||!['A4','A3','A2','A1'].includes(s.paper)||!styles.includes(s.style)||![96,150,200,300].includes(s.dpi)||![0,5,10,15].includes(s.overlap))fail();
+ const s=value.settings,e=value.exercise,style=['fiord','dark'].includes(s.style)?'pq5basemap':s.style,styles=['pq5basemap','pq5tk','pq5gray','liberty','bright','positron','mono','lgln50','lgln50gray','plain'];
+ if(![25000,50000].includes(s.scale)||!['A4','A3','A2','A1'].includes(s.paper)||!styles.includes(style)||![96,150,200,300].includes(s.dpi)||![0,5,10,15].includes(s.overlap))fail();
  if(typeof s.title!=='string'||s.title.length>80||typeof s.notes!=='string'||s.notes.length>600)fail();
- const settings={scale:s.scale,paper:s.paper,dpi:s.dpi,overlap:s.overlap,style:s.style,title:s.title,notes:s.notes};
+ const settings={scale:s.scale,paper:s.paper,dpi:s.dpi,overlap:s.overlap,style,title:s.title,notes:s.notes};
  for(const key of ['landscape','utmLabels','dmsLabels','streetNames','contours'])if(Object.hasOwn(s,key)){if(typeof s[key]!=='boolean')fail();settings[key]=s[key];}
  if(s.areaName!==undefined){if(typeof s.areaName!=='string'||s.areaName.length>160)fail();settings.areaName=s.areaName;}
  if(Object.hasOwn(s,'tkOptions')){if(!object(s.tkOptions))fail();settings.tkOptions={};const allowed=['farms','churches','wind','transmitters','castles','ruins','waterTowers','chimneys','substations','pylons','powerLines','militaryAreas','lighthouses','locks','hospitals','fireStations','police','viewTowers','cemeteries','peaks','streetNames','contours'];for(const key of Object.keys(s.tkOptions)){if(key==='scale'){if(s.tkOptions[key]!==s.scale)fail();settings.tkOptions[key]=s.scale;}else{if(!allowed.includes(key)||typeof s.tkOptions[key]!=='boolean')fail();settings.tkOptions[key]=s.tkOptions[key];}}}
