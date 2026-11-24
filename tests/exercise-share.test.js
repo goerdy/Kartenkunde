@@ -28,3 +28,11 @@ test('Damaged links and over-limit snapshots fail explicitly without partially l
  assert.throws(()=>exerciseSnapshot({...settings,notes:'x'.repeat(601)},bounds,'de'));
 
 });
+
+test('Hazard layer and opacity round-trip in exercise links without accepting arbitrary services',async()=>{
+ const snapshot=exerciseSnapshot({...settings,hazard:{id:'rainExtreme',opacity:.65}},bounds,'de');
+ const restored=await decodeExerciseSnapshot(await encodeExerciseSnapshot(snapshot));
+ assert.deepEqual(restored.settings.hazard,{id:'rainExtreme',opacity:.65});
+ assert.throws(()=>exerciseSnapshot({...settings,hazard:{id:'https://example.org/wms',opacity:.5}},bounds,'de'));
+ assert.throws(()=>exerciseSnapshot({...settings,hazard:{id:'coastExtreme',opacity:2}},bounds,'de'));
+});

@@ -1,3 +1,4 @@
+import {composeHazard} from './hazards.js';
 import {installStreetNameLabels} from './street-labels.js';
 import {installPrintTileLoader,printTileRequest,waitForPrintableMap} from './map-loading.js';
 import {installShortContourLabels} from './contours.js';
@@ -48,6 +49,9 @@ export function applyMapStyle(map,id,options,streetClip){const config=MAP_STYLES
 export function aborted(signal){if(signal?.aborted)throw new DOMException(t('cancelled'),'AbortError');}
 export const breathe=()=>new Promise(resolve=>setTimeout(resolve,0));
 export async function renderMap(plan,sheet,width,height,signal){
+ const canvas=await renderBaseMap(plan,sheet,width,height,signal);try{return await composeHazard(canvas,plan,sheet,signal);}catch(error){canvas.width=canvas.height=1;throw error;}
+}
+async function renderBaseMap(plan,sheet,width,height,signal){
  aborted(signal);
  if(width<=3800&&height<=3800&&width*height<=16000000)return renderSingleMap(plan,sheet,width,height,signal);
  if(width>32760||height>32760||width*height>120000000)throw Error(t('imageLimit'));

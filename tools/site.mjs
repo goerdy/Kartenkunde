@@ -2,17 +2,21 @@ import {readFile,writeFile} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);
 const app=await readFile(new URL('templates/app.html',root),'utf8');
 const escapeHtml=value=>value.replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const inlineMarkdown=value=>escapeHtml(value).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/  $/,'<br>');
+const headingId=value=>value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const inlineMarkdown=value=>escapeHtml(value).replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|#[a-z0-9-]+)\)/g,(_,label,href)=>href.startsWith('#')?`<a href="${href}">${label}</a>`:`<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/  $/,'<br>');
 const renderHandoutMarkdown=markdown=>{
- const lines=markdown.replace(/\r/g,'').split('\n'),html=[];let paragraph=[],list=false;
+ const lines=markdown.replace(/\r/g,'').split('\n'),html=[];let paragraph=[],listType=null;
  const flushParagraph=()=>{if(paragraph.length){html.push(`<p>${paragraph.map(inlineMarkdown).join(' ')}</p>`);paragraph=[];}};
- const closeList=()=>{if(list){html.push('</ol>');list=false;}};
+ const closeList=()=>{if(listType){html.push(`</${listType}>`);listType=null;}};
  for(const line of lines){
-  const heading=line.match(/^(#{1,6})\s+(.+)$/),item=line.match(/^\d+\.\s+(.+)$/);
+  const heading=line.match(/^(#{1,6})\s+(.+)$/),item=line.match(/^((?:\d+\.|[-*]))\s+(.+)$/);
   if(!line.trim()){flushParagraph();closeList();continue;}
-  if(heading){flushParagraph();closeList();const level=heading[1].length;html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);continue;}
+  const picture=line.match(/^!\[([^\]]*)\]\((\.\/assets\/[a-zA-Z0-9_./-]+\.(?:png|jpe?g|webp))(?: "([^"]*)")?\)$/);
+  if(picture&&!picture[2].split('/').includes('..')){flushParagraph();closeList();const caption=picture[3]?`<figcaption>${inlineMarkdown(picture[3])} · KI-generiert · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" rel="license">CC0 1.0</a></figcaption>`:'';html.push(`<figure class="handout-figure"><img src="${escapeHtml(picture[2])}" alt="${escapeHtml(picture[1])}" loading="lazy" decoding="async">${caption}</figure>`);continue;}
+  if(heading){flushParagraph();closeList();const level=heading[1].length,id=headingId(heading[2]);html.push(`<h${level} id="${id}">${inlineMarkdown(heading[2])}</h${level}>`);continue;}
+  if(line==='>'){flushParagraph();closeList();continue;}
   if(line.startsWith('> ')){flushParagraph();closeList();html.push(`<blockquote>${inlineMarkdown(line.slice(2))}</blockquote>`);continue;}
-  if(item){flushParagraph();if(!list){html.push('<ol>');list=true;}html.push(`<li>${inlineMarkdown(item[1])}</li>`);continue;}
+  if(item){flushParagraph();const nextType=/^\d/.test(item[1])?'ol':'ul';if(listType!==nextType){closeList();html.push(`<${nextType}>`);listType=nextType;}html.push(`<li>${inlineMarkdown(item[2])}</li>`);continue;}
   closeList();paragraph.push(line.trim());
  }
  flushParagraph();closeList();return html.join('\n');

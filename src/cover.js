@@ -1,3 +1,4 @@
+import {hazardConfig,hazardName,hazardLegend,hazardCredit,hazardSourceURL,normalizeHazard} from './hazards.js';
 import {drawExerciseOverviewPoints,exercisePrecision} from './exercise.js';
 import {drawNorthDiagram} from './north.js';
 import {t,getLanguage} from './i18n.js';
@@ -21,13 +22,15 @@ export function coverLayout(p){
  map={x:m,y:contentY,w:inner-sideW-gap,h:contentH};
  if(legend){const available=contentH-northH-gap;legend.columns=Math.max(3,Math.floor(legend.width/43));legend.rowHeight=Math.min(5,(available-17-legend.titleHeight)/Math.ceil(legend.entries.length/legend.columns));legend.fontSize=Math.min(6.5,Math.max(5,legend.rowHeight*2));legend.height=legend.titleHeight+Math.ceil(legend.entries.length/legend.columns)*legend.rowHeight;legendBox={x:sideX,y:contentY,w:sideW,h:available};}
  }else{
- if(legend){legend.columns=Math.max(2,Math.floor(legend.width/43));legend.rowHeight=4;legend.fontSize=5.8;legend.height=legend.titleHeight+Math.ceil(legend.entries.length/legend.columns)*legend.rowHeight;}
+ if(legend){legend.columns=Math.max(2,Math.floor(legend.width/43));legend.rowHeight=hazardConfig(p.hazard)?3:4;legend.fontSize=hazardConfig(p.hazard)?5.3:5.8;legend.height=legend.titleHeight+Math.ceil(legend.entries.length/legend.columns)*legend.rowHeight;}
  const rowH=Math.max(northH,legend?legend.height+17:0),rowY=contentY+contentH-rowH;
  north={x:legend?m+legendW+gap:m,y:rowY,w:legend?inner-legendW-gap:inner,h:rowH};
  if(legend)legendBox={x:m,y:rowY,w:legendW,h:rowH};
  map={x:m,y:contentY,w:inner,h:rowY-gap-contentY};
  }
- return {w,h,m,compact,inner,sources,print,notes,map,legendBox,legend,north};
+ let hazardBox=null;
+ if(hazardConfig(p.hazard)){const hw=Math.min(70,Math.max(54,map.w*.36));hazardBox={x:map.x+map.w-hw,y:map.y,w:hw,h:map.h};map={...map,w:map.w-hw-gap};}
+ return {w,h,m,compact,inner,sources,print,notes,map,legendBox,legend,north,hazardBox};
 }
 
 function coverText(pdf,value,x,y,size=7,bold=false){pdf.setTextColor(...coverInk);pdf.setFont('helvetica',bold?'bold':'normal');pdf.setFontSize(size);pdf.text(Array.isArray(value)?value:String(value),x,y);}
@@ -50,7 +53,7 @@ export function drawCoverQR(pdf,x,y,size){
  pdf.link(x,y,size,size,{url:ATLAS_URL});
 }
 export async function drawAtlasCover(pdf,p,signal,render){
- const l=coverLayout(p),{w,h,m,compact}=l,fs=compact?5.3:6.3,stamp=p.createdAt||new Date();
+ const l=coverLayout(p),{w,h,m,compact}=l,fs=hazardConfig(p.hazard)?5.1:compact?5.3:6.3,stamp=p.createdAt||new Date();
  pdf.setDrawColor(...coverInk);pdf.setLineWidth(.45);pdf.rect(7,7,w-14,h-14);pdf.setLineWidth(.12);pdf.rect(8.4,8.4,w-16.8,h-16.8);
  coverText(pdf,'KARTENKUNDE.app',m,16,12,true);
  pdf.setFont('helvetica','bold');pdf.setFontSize(compact?16:24);let title=pdf.splitTextToSize((p.title||'KARTENKUNDE.app').trim(),l.inner);let titleSize=compact?16:24;
@@ -71,14 +74,18 @@ export async function drawAtlasCover(pdf,p,signal,render){
  const nx=b.x+b.w-8,ny=b.y+10;pdf.setFillColor(255,255,255);pdf.rect(nx-5,ny-7,10,19,'F');coverText(pdf,'N',nx-1.4,ny-3,7,true);pdf.setFillColor(...coverInk);pdf.triangle(nx,ny,nx-2.5,ny+9,nx,ny+7,'F');pdf.setDrawColor(...coverInk);pdf.triangle(nx,ny,nx+2.5,ny+9,nx,ny+7,'S');
  if(l.legend){coverBox(pdf,l.legendBox,'',compact);drawTKLegend(pdf,l.legend,l.legendBox.x+4,l.legendBox.y+(compact?2:4));drawCoverScale(pdf,p,l.legendBox.x+4,l.legendBox.y+l.legendBox.h-6,Math.min(75,l.legendBox.w-14));}
  else{const sb={x:b.x+3,y:b.y+b.h-13,w:Math.min(b.w-6,86),h:11};pdf.setFillColor(255,255,255);pdf.rect(sb.x,sb.y,sb.w,sb.h,'F');drawCoverScale(pdf,p,sb.x+3,sb.y+5,sb.w-10);}
+ if(l.hazardBox){const b=l.hazardBox,c=hazardConfig(p.hazard),rows=hazardLegend(p.hazard),h=normalizeHazard(p.hazard);coverBox(pdf,b,t('hazardPdfTitle'),false);let y=coverLines(pdf,hazardName(h),b.x+3,b.y+9,b.w-6,5.5);coverText(pdf,t('hazardOpacity')+': '+Math.round(h.opacity*100)+' %',b.x+3,y+1,5.5);y+=5;
+ const step=Math.min(3.5,Math.max(2.5,(b.h-(y-b.y)-22)/rows.length));for(const row of rows){const rgb=row.color.match(/[a-f0-9]{2}/gi).map(x=>parseInt(x,16));pdf.setFillColor(...rgb);pdf.rect(b.x+3,y-2,5,2.5,'F');coverText(pdf,row.label,b.x+10,y,5.3);y+=step;}
+ coverLines(pdf,t(c.kind==='rain'?'hazardRainNote':'hazardFloodNote'),b.x+3,y+2,b.w-6,5.1);coverLines(pdf,t('hazardLegendNote'),b.x+3,y+10,b.w-6,4.8);if(c.kind==='rain'){pdf.link(b.x+3,b.y,b.w-6,b.h,{url:'https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_hwk_srg.pdf'});}}
  drawNorthDiagram(pdf,p,l.north);
  coverBox(pdf,l.print,t('coverPrint'),compact);const paperName=Object.entries({A4:[210,297],A3:[297,420],A2:[420,594],A1:[594,841]}).find(([,v])=>v.includes(w)&&v.includes(h))?.[0]||'';const paperLabel=`${paperName} · ${w} × ${h} mm · ${t(p.landscape?'landscape':'portrait')}`;
  coverLines(pdf,t('coverPrintLine',{format:paperLabel}),l.print.x+3,l.print.y+8,l.print.w-6,fs);
  const cy=l.print.y+l.print.h-6;pdf.setDrawColor(...coverInk);pdf.setLineWidth(.25);pdf.line(m+3,cy,m+103,cy);for(let i=0;i<=10;i++)pdf.line(m+3+i*10,cy,m+3+i*10,cy+(i%5?1:2));coverText(pdf,t('pdfCheck'),m+3,cy+4,4.8);
  coverBox(pdf,l.sources,t('coverSources'),compact);const qrSize=compact?22:27,qx=l.sources.x+l.sources.w-qrSize-2,qy=l.sources.y+3,tx=m+3,tw=l.sources.w-qrSize-10;drawCoverQR(pdf,qx,qy,qrSize);
- let sy=l.sources.y+8;sy=coverLines(pdf,styleCredit(p.style)+(p.style==='bright'?` · ${t('pdfReliefSourceFull')}`:'')+(p.boundaryAttribution?` · ${p.boundaryAttribution.name||'geoBoundaries'}: ${p.boundaryAttribution.source} / ${p.boundaryAttribution.license} / ${p.boundaryAttribution.year}`:''),tx,sy,tw,fs);
+ let sy=l.sources.y+8;sy=coverLines(pdf,(hazardConfig(p.hazard)?hazardCredit(p.hazard)+' · '+t('hazardChanged')+' · ':'')+styleCredit(p.style)+(p.style==='bright'?` · ${t('pdfReliefSourceFull')}`:'')+(p.boundaryAttribution?` · ${p.boundaryAttribution.name||'geoBoundaries'}: ${p.boundaryAttribution.source} / ${p.boundaryAttribution.license} / ${p.boundaryAttribution.year}`:''),tx,sy,tw,fs);
  const sourceURL=isBasemap(p.style)?'bkg.bund.de · CC BY 4.0 · openstreetmap.org/copyright':isLGLN(p.style)?'creativecommons.org/licenses/by/4.0/':'openstreetmap.org/copyright · openfreemap.org';sy=coverLines(pdf,sourceURL,tx,sy+.4,tw,fs);pdf.link(tx,sy-fs*.4,tw,3,{url:isBasemap(p.style)||isLGLN(p.style)?'https://creativecommons.org/licenses/by/4.0/':'https://www.openstreetmap.org/copyright'});
  if(p.boundaryAttribution?.sourcesURL){const label='BKG VG250 · dl-de/by-2-0 · '+t('boundaryDataSources');sy=coverLines(pdf,label,tx,sy+.4,tw,fs);pdf.link(tx,sy-fs*.4,tw,3,{url:p.boundaryAttribution.sourcesURL});}
+ if(hazardConfig(p.hazard)){pdf.link(tx,l.sources.y+3,tw,6,{url:hazardSourceURL(p.hazard)});}
  const dataDate=isLGLN(p.style)?t('coverLGLNAge'):t('coverUnknownAge');sy=coverLines(pdf,`${t('coverPrinted')}: ${stamp.toLocaleString(getLanguage())} · ${dataDate}`,tx,sy+1,tw,fs);
  sy=coverLines(pdf,t('coverAuthor'),tx,sy+1,tw,fs);sy=coverLines(pdf,t('coverDisclaimer'),tx,sy+1,tw,fs);
  pdf.setTextColor(...coverAccent);pdf.setFontSize(fs);pdf.text(ATLAS_URL,tx,sy+1);pdf.link(tx,sy-2,Math.min(tw,pdf.getTextWidth(ATLAS_URL)),4,{url:ATLAS_URL});

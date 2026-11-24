@@ -1,3 +1,4 @@
+import {hazardCredit,hazardName,hazardConfig} from './hazards.js';
 import {drawExerciseSheetPoints,validateExercisePlan} from './exercise.js';
 import {appendExercisePages,exerciseTaskPageCount} from './exercise-pdf.js';
 import {drawCoordinateLabels} from './coordinates.js';
@@ -37,7 +38,7 @@ export async function createPDF(plan,{signal,onProgress=()=>{},render=renderMap}
  drawCoverScale(pdf,plan,MARGIN,plan.paper[1]-9,Math.min(65,plan.width/2-12),false);
  if(plan.warnings.size){pdf.setFontSize(4.5);pdf.text(t('farmWarningShort'),plan.paper[0]-MARGIN,plan.paper[1]-8,{align:'right'});}
  const footY=plan.paper[1]-5,licenseURL=isBasemap(plan.style)||isLGLN(plan.style)?'https://creativecommons.org/licenses/by/4.0/':'https://www.openstreetmap.org/copyright';
- const credits=styleCredit(plan.style)+(isBasemap(plan.style)?' · CC BY 4.0 / ODbL':isLGLN(plan.style)?' · creativecommons.org/licenses/by/4.0/':' · openstreetmap.org/copyright')+(plan.boundaryAttribution?` · ${plan.boundaryAttribution.name==='BKG VG250'?plan.boundaryAttribution.source+' / dl-de/by-2-0':'geoBoundaries'}`:'')+(plan.style==='bright'?' · Mapzen / AWS Terrain Tiles':'');
+ const credits=(hazardConfig(plan.hazard)?hazardName(plan.hazard)+' · '+hazardCredit(plan.hazard)+' · ':'')+styleCredit(plan.style)+(isBasemap(plan.style)?' · CC BY 4.0 / ODbL':isLGLN(plan.style)?' · creativecommons.org/licenses/by/4.0/':' · openstreetmap.org/copyright')+(plan.boundaryAttribution?` · ${plan.boundaryAttribution.name==='BKG VG250'?plan.boundaryAttribution.source+' / dl-de/by-2-0':'geoBoundaries'}`:'')+(plan.style==='bright'?' · Mapzen / AWS Terrain Tiles':'');
  const footer=t('pdfFooter',{date:plan.createdAt.toLocaleString(getLanguage()),credits})+' · kartenkunde.app';
  pdf.setFont('helvetica','normal');pdf.setFontSize(6);const measured=pdf.getTextWidth(footer),size=Math.min(6,6*(plan.paper[0]-2*MARGIN)/measured);
  text(pdf,footer,MARGIN,footY,size);pdf.link?.(MARGIN,footY-2,plan.paper[0]-2*MARGIN,3,{url:licenseURL});const linkWidth=pdf.getTextWidth('kartenkunde.app');pdf.link?.(MARGIN+pdf.getTextWidth(footer)-linkWidth,footY-2,linkWidth,3,{url:ATLAS_URL});

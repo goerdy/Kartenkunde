@@ -1,6 +1,8 @@
 import {tkPostpassSQL,tkOverpassQuery} from './tk-features.js';
 // Shared catalogue: documentation and diagnostics use the same list.
 export const EXTERNAL_SERVICES=[
+ {id:'hazard-nds',name:'MU / NLWKN · Hochwasser Niedersachsen',purpose:'svcHazards',home:'https://www.nlwkn.niedersachsen.de/',license:'Datenlizenz Deutschland Namensnennung 2.0',kind:'image',url:'https://www.umweltkarten-niedersachsen.de/arcgis/services/HWSchutz_wms/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=Wassertiefen_K%C3%BCste_HWextrem61160&STYLES=&CRS=EPSG:25832&BBOX=425000,5946000,427000,5948000&WIDTH=64&HEIGHT=64&FORMAT=image/png'},
+ {id:'hazard-bkg',name:'BKG · Starkregengefahren',purpose:'svcHazards',home:'https://bkg.bund.de/starkregengefahren',license:'BKG · Datenlizenz Deutschland Namensnennung 2.0',kind:'image',url:'https://sgx.geodatenzentrum.de/wms_starkregen?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=tiefe_extrem&STYLES=&CRS=EPSG:25832&BBOX=425000,5946000,427000,5948000&WIDTH=64&HEIGHT=64&FORMAT=image/png'},
  {id:'ofm-style',name:'OpenFreeMap · Stile',labelKey:'svcNameStyles',purpose:'svcMapStyles',home:'https://openfreemap.org/',license:'OpenStreetMap ODbL · OpenMapTiles',kind:'json',url:'https://tiles.openfreemap.org/styles/liberty'},
  {id:'ofm-tiles',name:'OpenFreeMap · Vektorkacheln',labelKey:'svcNameTiles',purpose:'svcVector',home:'https://openfreemap.org/',license:'OpenStreetMap ODbL · OpenMapTiles',kind:'tilejson',url:'https://tiles.openfreemap.org/planet'},
  {id:'ofm-fonts',name:'OpenFreeMap · Schriftzeichen',labelKey:'svcNameFonts',purpose:'svcFonts',home:'https://openfreemap.org/',license:'Noto Sans · SIL OFL',kind:'binary',url:'https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/0-255.pbf'},

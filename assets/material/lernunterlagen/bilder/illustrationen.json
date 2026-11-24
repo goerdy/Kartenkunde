@@ -1,0 +1,144 @@
+{
+  "generator": "OpenAI – integrierte Bildgenerierung",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.de",
+  "rightsNotice": "Soweit Rechte an der Auswahl oder Bearbeitung dieser Illustrationen bestehen, werden sie unter CC0 1.0 freigegeben. Die Freigabe gilt nur für die hier aufgeführten Illustrationen, nicht für Kartenquellen, Präsentationen oder sonstige Inhalte.",
+  "styleReference": "kartenkunde-titelbild-v1.png",
+  "stylePrompt": "Use case: scientific-educational. Create an original German map-reading handbook illustration, landscape format, matching the supplied cover STYLE ONLY: fine dark outlines, subtle warm paper texture, muted sage forest, pale pink settlements, pale yellow roads, blue water and grid, clean restrained educational editorial illustration. Generous whitespace, no logos, no watermark, no license text. Use schematic fictional terrain, not real maps. Precise uncluttered geometry and readable German labels. Do not depict the radio or cover composition unless requested. ",
+  "images": [
+    {
+      "id": 1,
+      "caption": "Titelbild: Karte, Funkgerät und Planzeiger",
+      "alt": "Ein schwarzes Handfunkgerät und ein transparenter blauer Planzeiger liegen auf einer fiktiven topografischen Karte.",
+      "file": "kartenkunde-titelbild-v1.png",
+      "prompt": "Generic handheld radio and transparent blue Planzeiger on fictional topographic map; fine dark outlines, muted sage forest, pale pink settlements, subtle paper texture. Original composition inspired by the user's presentation title slide."
+    },
+    {
+      "id": 2,
+      "caption": "Kartenarten im Vergleich",
+      "alt": "Drei Karten desselben fiktiven Gebiets betonen Straßen, topografische Geländeangaben beziehungsweise die Einsatzlage.",
+      "file": "02-kartenarten.png",
+      "prompt": "Three aligned map panels of exactly the same fictional village with central curved river, road bridge, wooded hill on left and church on right. Panels labelled Straßenkarte, Topografische Karte, Lagekarte. Road map emphasizes roads; topographic includes contour lines and woods; situation map adds blue staging area and route. Keep identical underlying geography."
+    },
+    {
+      "id": 3,
+      "caption": "Maßstab, Gebietsausschnitt und Detailgrad",
+      "alt": "Drei gleich große Kartenausschnitte zeigen bei 1:25.000, 1:50.000 und 1:100.000 zunehmend größere Gebiete mit weniger Einzelheiten.",
+      "file": "03-massstab.png",
+      "prompt": "Three equally sized square map frames labelled 1:25.000, 1:50.000, 1:100.000. All share same central church. At 1:25k the area is smallest with detailed houses; at 1:50k show twice the ground width, at 1:100k four times the width relative to first. Detail is generalized as scale decreases. Clear teaching comparison, no numerical scale bars that could depend on display size."
+    },
+    {
+      "id": 4,
+      "caption": "Kartenzeichen und ihre Legende",
+      "alt": "Eine topografische Beispielkarte mit zugehörigen Symbolen für Kirche, Wald, Gewässer, Bahn, Straße, Weg und Stromleitung.",
+      "file": "04-legende.png",
+      "prompt": "Left fictional topographic map, right neatly aligned legend with exactly seven rows: Kirche (small cross at church), Wald (sage tree area), Gewässer (blue line), Bahn (black dashed rail), Straße (yellow outlined line), Weg (thin dashed line), Stromleitung (red line with small red squares). Each symbol in legend must match the map. No real places."
+    },
+    {
+      "id": 5,
+      "caption": "Höhenlinien und Geländeformen",
+      "alt": "Räumliche Ansichten von Kuppe, Tal und Senke stehen den entsprechenden Höhenlinien gegenüber; engere Linien zeigen steilere Hänge.",
+      "file": "05-hoehenlinien.png",
+      "prompt": "Three columns labelled Kuppe, Tal, Senke. Each shows small oblique 3D terrain above and its matching contour plan below. Hill contours closed, heights increase inward 100,110,120; valley contours V shapes point upstream uphill; depression closed contours heights decrease inward 120,110,100 with inward hachures. Add small separate comparison steep slope closely spaced contours versus gentle slope widely spaced. Technically consistent terrain geometry.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 6,
+      "caption": "Von der Karte zum Höhenprofil",
+      "alt": "Eine eingezeichnete Strecke schneidet Höhenlinien; die Schnittpunkte werden als Höhen entlang einer Entfernungsachse in ein Profil übertragen.",
+      "file": "06-hoehenprofil.png",
+      "prompt": "Educational two-part diagram: upper topographic map with a straight A–B transect crossing hill contours. Lower matching height profile with distance horizontal and height vertical. Mark corresponding sampling points using thin pale blue vertical guide lines. Simple profile rises from A over a single hill then falls to B. Labels Entfernung and Höhe. Profile and contour intersections correspond exactly.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 7,
+      "caption": "Schematische Übertragung der Erde auf eine Karte",
+      "alt": "Globus, hervorgehobener Projektionsbereich und flacher Kartenstreifen verdeutlichen das Prinzip der Kartenprojektion.",
+      "file": "07-projektion.png",
+      "prompt": "Three stages left to right: globe with one narrow meridional zone highlighted blue; transverse cylinder schematic aligned to that zone; flattened narrow map strip with grid. German headings Globus, Projektionsstreifen, Karte. Show approximation of curved earth as plane, not orange-peel segments as a literal UTM method. Sparse and conceptual.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 8,
+      "caption": "Nordrichtungen und Winkel – schematische Darstellung",
+      "alt": "Drei Pfeile unterscheiden geografischen, magnetischen und Gitternorden; eine Kompassrose zeigt Winkel im Uhrzeigersinn ab Norden.",
+      "file": "08-nordrichtungen.png",
+      "prompt": "Two panels: left three arrows from common origin geographic north straight up, magnetic north 12 degrees right, grid north 8 degrees left, clearly exaggerated angles labelled schematisch; label Geografisch, Magnetisch, Gitter near arrowheads. Right an accurate compass rose N top 0°, NO upper right 45°, O right 90°, SO lower right 135°, S bottom 180°, SW lower left 225°, W left 270°, NW upper left 315°. Subtle clockwise direction arrow. No other numbers."
+    },
+    {
+      "id": 9,
+      "caption": "Die Karte mit dem Kompass einnorden",
+      "alt": "Eine Bildfolge zeigt das Anlegen des Kompasses, das gemeinsame Drehen von Karte und Kompass sowie den Abgleich mit dem Gelände.",
+      "file": "09-einnorden.png",
+      "prompt": "Three-step illustrated sequence with top-down paper map and transparent baseplate compass: 1 Anlegen, edge aligned to blue north-south map grid; 2 Drehen, rotate map and compass together indicated curved blue arrow; 3 Ausrichten, map north now aligns with real landscape landmarks in small backdrop. Same compass each panel with distinct red north needle and pale south needle. Simplified instructional diagram, omit numerical angle claims.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 10,
+      "caption": "Eine Kartenrichtung ins Gelände übertragen",
+      "alt": "Die Verbindung von Start und Ziel auf der Karte wird mithilfe eines Kompasses auf ein sichtbares Zwischenziel übertragen.",
+      "file": "10-richtung.png",
+      "prompt": "Three-step sequence: on left paper map with start A and target B northeast, compass edge aligned A to B; center close view compass setting aligning orienting lines to north grid; right gloved hand holding same compass toward a church landmark in landscape. Labels Karte, Kompass, Gelände. All direction arrows consistently point northeast, no numerical bearings."
+    },
+    {
+      "id": 11,
+      "caption": "360 Grad und 6400 Strich im Vergleich",
+      "alt": "Zwei Kreisskalen ordnen den Hauptrichtungen 0, 90, 180 und 270 Grad beziehungsweise 0, 1600, 3200 und 4800 Strich zu.",
+      "file": "11-strich.png",
+      "prompt": "Two large exact circular compass scales side by side, equal orientation, north at top, clockwise. Left labelled Grad with N 0° top, O 90° right, S 180° bottom, W 270° left. Right labelled Strich (6400) with N 0 / 6400 top, O 1600 right, S 3200 bottom, W 4800 left. Blue emphasis at cardinal directions, thin radial ticks, no extra random numbers."
+    },
+    {
+      "id": 12,
+      "caption": "Vom Zonenfeld zur UTMREF-Koordinate",
+      "alt": "Eine Vergrößerungsfolge ordnet Zonenfeld 32U, 100-km-Quadrat ME und die Ost- und Nordwerte einer Beispielkoordinate räumlich zu.",
+      "file": "12-utmref.png",
+      "prompt": "Four-stage zoom diagram: globe highlighting narrow zone, regional rectangle labelled 32U, 100-km square labelled ME, kilometre grid square with left border 39 east and bottom border 36 north. Final coordinate displayed clearly as 32U ME 391 365 with color-coded parts and labels Zonenfeld, 100-km-Quadrat, Ostwert, Nordwert. Connect nested regions with fine blue guides. No falsely precise real-world geography.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 13,
+      "caption": "Mit dem Planzeiger eine Koordinate bestimmen",
+      "alt": "Vier Schritte zeigen das Finden des Kilometerquadrats, das Anlegen und Verschieben des Planzeigers sowie das Ablesen von Ost- und Nordanteil.",
+      "file": "13-planzeiger.png",
+      "prompt": "Four panels of same 1-km grid square, lower left corner E39 N36, target 100m east and 500m north within square. Steps labelled Quadrat finden, Anlegen, Verschieben, Ablesen. Transparent blue planzeiger ruler with zero at bottom right of aperture, horizontal scale extends left from zero and vertical scale extends up. Horizontal measuring baseline stays on lower gridline; slide horizontally until vertical zero-axis reaches target. Final coordinate 32U ME 391 365. Clean orthographic views, do not rotate ruler, avoid fictional tick numbers.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 14,
+      "caption": "Eine vorgegebene Koordinate auf der Karte finden",
+      "alt": "Im Kilometerquadrat 39/36 wird das durch 32U ME 391 365 bezeichnete 100-Meter-Feld anhand von Ost- und Nordanteil gesucht.",
+      "file": "14-koordinate.png",
+      "prompt": "Instructional diagram showing inverse coordinate lookup. Top coordinate 32U ME 391 365. Below square kilometre map grid with left boundary labelled 39 and bottom boundary 36. At offset 0.1 square width right and 0.5 square height up shade a small 0.1 by 0.1 square blue representing 100m raster cell, not a pinpoint. Horizontal measurement arrow 100 m from left edge and vertical arrow 500 m from bottom. Subtle transparent blue planzeiger on lower baseline.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 15,
+      "caption": "Luftlinienentfernung und Richtungswinkel",
+      "alt": "Ein rechtwinkliges Dreieck verbindet 200 Meter nach Osten und 120 Meter nach Süden mit etwa 233 Metern Luftlinie und einem Richtungswinkel von etwa 121 Grad.",
+      "file": "15-entfernung.png",
+      "prompt": "Accurate right triangle on schematic gridded map: A at upper left, B 200m east and 120m south of A. East leg horizontal right labelled 200 m, south leg downward labelled 120 m, diagonal A to B labelled ≈ 233 m. At A separate north arrow up and clockwise bearing arc from north around east to diagonal labelled ≈ 121°. Clearly geometric and legible. Keep angle and lengths consistent.",
+      "revision": "KI-gestützte Korrektur von Beschriftung bzw. schematischer Geometrie nach Sichtprüfung."
+    },
+    {
+      "id": 16,
+      "caption": "Kreuzpeilung und Fehlerdreieck",
+      "alt": "Rückpeillinien von bekannten Landmarken schneiden sich am gesuchten Standort; eine dritte Peilung verdeutlicht das mögliche Fehlerdreieck.",
+      "file": "16-kreuzpeilung.png",
+      "prompt": "Two side-by-side top-down map diagrams: left unknown observer at lower center, known church upper left and known hill upper right, two blue return bearing lines from landmarks intersect at observer. Label Standort at intersection, Kirche and Gipfel. Right smaller control diagram with three landmarks and three bearing lines forming small shaded blue error triangle labelled Fehlerdreieck. Do not draw intersecting rays as decorative arbitrary routes. Clear technically plausible geometry."
+    },
+    {
+      "id": 17,
+      "caption": "Gemeinsam in eine Karte einweisen",
+      "alt": "Eine Person erklärt mehreren Teilnehmenden eine Karte mit einem Zeigestift, ohne die wichtigen Karteninhalte mit der Hand zu verdecken.",
+      "file": "17-einweisung.png",
+      "prompt": "Warm restrained educational illustration: three generic civil-protection trainees in plain unbranded dark blue clothing gathered around tabletop paper map. One explains using a slim pointer pen pointing at a landmark, hands kept off important map details, others have unobstructed view. Large map has prominent blue north arrow and a church as shared reference. Inclusive mixed adults, calm professional classroom, no organization badges."
+    },
+    {
+      "id": 18,
+      "caption": "Beispiel einer Einsatzskizze ohne Maßstab",
+      "alt": "Eine vereinfachte Einsatzskizze enthält Nordpfeil, die Angabe o. M., Straßennamen in Großbuchstaben, Zufahrt und Einsatzstelle.",
+      "file": "18-skizze.png",
+      "prompt": "Hand-drawn but tidy instructional incident sketch on off-white paper. North arrow upper left, o. M. upper right. A main street left to right labelled HAUPTSTRASSE and branching street labelled WALDWEG. Small buildings, stream, wooded patch and incident site marked Einsatzstelle, clear blue approach arrow labelled Zufahrt. Compact legend lower right matching drawn symbols. Plain schematic fictional setting, limited symbols, dark lettering uppercase street names."
+    }
+  ]
+}

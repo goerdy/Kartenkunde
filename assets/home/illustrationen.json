@@ -1,0 +1,42 @@
+{
+  "generator": "OpenAI – integrierte Bildgenerierung",
+  "license": "CC0-1.0",
+  "styleReference": "../material/lernunterlagen/bilder/kartenkunde-titelbild-v1.png",
+  "images": [
+    {
+      "id": "hero",
+      "file": "hero.png",
+      "prompt": "Wide landscape 16:9 editorial illustration, flood response in a fictional German river valley reminiscent of the Ahr flood aftermath, respectful calm coordination, no casualties. Foreground THREE emergency workers seen from behind gathered at a paper topographic map on a vehicle bonnet while looking across flood aftermath: one woman firefighter dark navy turnout jacket with fluorescent yellow bands and white helmet, one woman THW volunteer in blue uniform with yellow reflective bands and helmet, one paramedic in red-white reflective uniform. Midground THREE clearly different unbranded German response vehicles: red fire engine, blue THW truck, white ambulance with red accents. Background muddy river valley, damaged road, inundated houses and wooded hills. Focus on shared map and collaborative overview, not destruction spectacle. No real organization logos, no text or letters, no recognizable real disaster location. Fine dark outlines, subtle warm paper texture, muted sage/pink/blue palette matching reference.",
+      "caption": "Gemeinsame Lageübersicht im Bevölkerungsschutz – fiktives Szenario.",
+      "alt": "Drei Einsatzkräfte von Feuerwehr, THW und Rettungsdienst betrachten gemeinsam eine Karte vor einer fiktiven Hochwasserlage."
+    },
+    {
+      "id": "kartendruck",
+      "file": "kartendruck.png",
+      "prompt": "Landscape educational illustration of a desktop printer producing a paper topographic map with blue square coordinate grid, beside a stack of neatly aligned atlas sheets, transparent blue planzeiger and simple dark compass. Overhead slight oblique view, muted sage forests, pale pink village, blue stream. No people, no text or numbers, no brands. Clean uncluttered same warm paper illustration style as reference.",
+      "caption": "Karten für den Druck erstellen.",
+      "alt": "Ein Drucker gibt topografische Karten mit Koordinatengitter aus; daneben liegen Kartenblätter und ein Planzeiger."
+    },
+    {
+      "id": "aufgaben",
+      "file": "aufgaben.png",
+      "prompt": "Landscape educational illustration: learner's hands at desk working on a map-reading worksheet beside a fictional topographic map with blue grid. Worksheet contains orderly blank table rows and numbered marker circles without legible lettering; a pencil and translucent blue planzeiger sit beside it. Show thinking and practice rather than answer key. Same fine dark contours, subtle paper grain, muted sage green/pink/blue palette. No logos, no prose, no random lettering.",
+      "caption": "Koordinaten und Kartenlesen üben.",
+      "alt": "Eine Person bearbeitet einen Übungsbogen neben einer Karte und einem Planzeiger."
+    },
+    {
+      "id": "simulator",
+      "file": "simulator.png",
+      "prompt": "Landscape classroom illustration: a woman instructor in plain dark blue polo seen three-quarter from back at a large SMARTBOARD, moving a large translucent blue L-shaped plotting ruler over a topographic map with blue grid on the screen, hand near ruler, a few learners partially visible from behind. Large readable graphic composition, no technical text or labels, no logos, same warm paper and fine-line educational illustration style as reference. Screen clearly interactive rather than conventional chalkboard.",
+      "caption": "Den Planzeiger im Unterricht zeigen.",
+      "alt": "Eine Lehrkraft bewegt einen Planzeiger auf einer Karte am interaktiven Bildschirm."
+    },
+    {
+      "id": "lehrunterlage",
+      "file": "lehrunterlage.png",
+      "prompt": "Landscape editorial educational illustration of an open map-reading handbook on desk, pages showing a clean schematic blue compass rose, terrain hill with contour lines and paper topographic map detail, transparent blue planzeiger nearby. Small pen, restrained overhead composition. No readable text, no logos, no brands. Same muted sage/pale pink/blue colors, fine dark outlines and warm lightly textured paper as reference.",
+      "caption": "Kartenkunde Schritt für Schritt lernen.",
+      "alt": "Eine aufgeschlagene Lehrunterlage zeigt Karten, Himmelsrichtungen und Geländeformen."
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {HAZARD_LAYERS,normalizeHazard} from './hazards.js';
 import {normalizeExercisePoints} from './exercise.js';
 import {administrativeReference} from './admin.js';
 import {t} from './i18n.js';
@@ -11,7 +12,8 @@ export function validateExerciseSnapshot(value){
  const s=value.settings,e=value.exercise,style=['fiord','dark'].includes(s.style)?'pq5basemap':s.style,styles=['pq5basemap','pq5tk','pq5gray','liberty','bright','positron','mono','lgln50','lgln50gray','plain'];
  if(![25000,50000].includes(s.scale)||!['A4','A3','A2','A1'].includes(s.paper)||!styles.includes(style)||![96,150,200,300].includes(s.dpi)||![0,5,10,15].includes(s.overlap))fail();
  if(typeof s.title!=='string'||s.title.length>80||typeof s.notes!=='string'||s.notes.length>600)fail();
- const settings={scale:s.scale,paper:s.paper,dpi:s.dpi,overlap:s.overlap,style,title:s.title,notes:s.notes};
+ if(s.hazard!==undefined&&(!object(s.hazard)||!['none',...Object.keys(HAZARD_LAYERS)].includes(s.hazard.id)||!Number.isFinite(s.hazard.opacity)||s.hazard.opacity<.1||s.hazard.opacity>1))fail();
+ const settings={...(s.hazard?{hazard:normalizeHazard(s.hazard)}:{}),scale:s.scale,paper:s.paper,dpi:s.dpi,overlap:s.overlap,style,title:s.title,notes:s.notes};
  for(const key of ['landscape','utmLabels','dmsLabels','streetNames','contours'])if(Object.hasOwn(s,key)){if(typeof s[key]!=='boolean')fail();settings[key]=s[key];}
  if(s.areaName!==undefined){if(typeof s.areaName!=='string'||s.areaName.length>160)fail();settings.areaName=s.areaName;}
  if(Object.hasOwn(s,'tkOptions')){if(!object(s.tkOptions))fail();settings.tkOptions={};const allowed=['farms','churches','wind','transmitters','castles','ruins','waterTowers','chimneys','substations','pylons','powerLines','militaryAreas','lighthouses','locks','hospitals','fireStations','police','viewTowers','cemeteries','peaks','streetNames','contours'];for(const key of Object.keys(s.tkOptions)){if(key==='scale'){if(s.tkOptions[key]!==s.scale)fail();settings.tkOptions[key]=s.scale;}else{if(!allowed.includes(key)||typeof s.tkOptions[key]!=='boolean')fail();settings.tkOptions[key]=s.tkOptions[key];}}}
