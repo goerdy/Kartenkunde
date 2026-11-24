@@ -88,3 +88,17 @@ Sicherheitsstand: jsPDF 4.2.1 enthält die bis März 2026 veröffentlichten Sich
 - Niedersachsen: Umweltministerium / NLWKN, Hochwasserschutz-WMS, HWRM-RL 2. Zyklus 2016–2021. Datenlizenz Deutschland – Namensnennung 2.0. Quelle: https://www.umweltkarten-niedersachsen.de/arcgis/services/HWSchutz_wms/MapServer/WMSServer . Hintergrund: https://www.nlwkn.niedersachsen.de/wasserwirtschaft/eghochwasserrisikomanagementrichtlinie/gefahren_und_risikokarten/gefahren--und-risikokarten-116763.html . Geschützte Bereiche sind grob zur Orientierung ermittelt; Farben und Klassen werden im Layerlegendenschlüssel wiedergegeben.
 - BKG: Hinweiskarte Starkregengefahren, https://sgx.geodatenzentrum.de/wms_starkregen . © BKG, Jahr des Datenbezugs; dl-de/by-2-0. Datenquellen: https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_hwk_srg.pdf . Produkt und Nutzungsbedingungen: https://gdz.bkg.bund.de/index.php/default/wms-hinweiskarte-starkregengefahren-wms-starkregen.html . Regionale Abdeckung und Modellannahmen unterscheiden sich; keine aktuelle Lageinformation.
 - Darstellung geändert: Ausschnitt, ggf. Projektion, Transparenz, Überlagerung mit Grundkarte und Koordinatengitter. Quellen und Lizenz werden in Kartenansicht, PDF-Deckblatt und Blattfuß genannt. Keine Übernahme in OSM, keine serverseitige Speicherung. WMS-Abfragen erfolgen bei ausgewähltem Layer direkt vom Browser.
+
+## 3D-Orientierungstrainer
+
+- Babylon.js **9.37.2**, Apache License 2.0. Quelle: https://www.babylonjs.com/ und https://registry.npmjs.org/babylonjs/-/babylonjs-9.37.2.tgz. Lokal: `vendor/babylon.js`; vollständige Lizenz: `vendor/babylon-LICENSE.md`. Die lokale Browserbibliothek wird mit SHA-384 geprüft.
+- Poly Haven **Leafy Grass**, **Gravel Floor**, **Bark Brown 02**, **Clay Roof Tiles 02**, **White Plaster Rough 01** und **Weathered Brown Planks**, CC0 1.0 (https://polyhaven.com/license). Lokale 1K-/2K-Diffus- und Normaltexturen unter `assets/trainer/textures/`. Original-URLs und SHA-256-Prüfsummen: `assets/trainer/dependencies.json`.
+- Das Gelände, die übrigen prozeduralen Texturen und die Instrumente werden lokal erzeugt. Die fiktive Karte verwendet die vorhandenen PQ5-Topo-Farben und die Maßteilung des vorhandenen Rahmenplanzeigers. Es werden zur Laufzeit keine externen Karten-, Modell- oder Texturdienste abgefragt.
+
+Die zusätzlichen lokal mitgelieferten Geländeoberflächen **Grass Ground** und
+**Aerial Grass Rock** stammen von Poly Haven und sind CC0-1.0:
+https://polyhaven.com/a/grass_ground und https://polyhaven.com/a/aerial_grass_rock.
+Diffuse- und OpenGL-Normalmaps, Quell-URLs und SHA-256-Prüfsummen stehen in
+`assets/trainer/dependencies.json`. Die bisherige Leafy-Grass-Oberfläche dient
+weiterhin als Waldboden, Grass Ground für offene Wiesen und Aerial Grass Rock
+für die Hochlagen.

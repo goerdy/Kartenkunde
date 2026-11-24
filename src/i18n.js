@@ -1,3 +1,4 @@
+import {trainerMessages} from './trainer-messages.js';
 export const languages={de:'Deutsch',en:'English',fr:'Français'};
 let language='de';
 try{const stored=globalThis.window?globalThis.localStorage?.getItem('utmref-language'):null;if(languages[stored])language=stored;else if(globalThis.navigator?.language?.startsWith('fr'))language='fr';else if(globalThis.navigator?.language&&!globalThis.navigator.language.startsWith('de'))language='en';}catch{}
@@ -461,3 +462,5 @@ const hazardMessages={
 };
 for(const [lang,entries]of Object.entries(hazardMessages))Object.assign(messages[lang],entries);
 
+
+for(const [lang,entries] of Object.entries(trainerMessages)) Object.assign(messages[lang],entries);
