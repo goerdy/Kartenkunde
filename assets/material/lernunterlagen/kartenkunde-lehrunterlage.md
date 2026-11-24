@@ -8,7 +8,7 @@
 
 **Stand:** 23. November 2026
 
-> Arbeitsentwurf: Die Unterlage wird schrittweise ergänzt.
+> Arbeitsentwurf: Die Unterlage wird schrittweise ergänzt. Sie enthält noch offensichtliche Fehler; einige Illustrationen sind derzeit sogar grob fehlerhaft. Bitte Inhalte und Abbildungen kritisch prüfen und noch nicht ungeprüft für die Ausbildung übernehmen.
 
 ![Ein schwarzes Handfunkgerät und ein transparenter blauer Planzeiger liegen auf einer fiktiven topografischen Karte.](./assets/material/lernunterlagen/bilder/kartenkunde-titelbild-v1.png "Abbildung 1: Titelbild: Karte, Funkgerät und Planzeiger")
 
