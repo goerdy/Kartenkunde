@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
-export const COPY_ENTRIES=['index.html','karten.html','uebungen.html','planzeiger.html','koordinaten.html','orientierung.html','lehrmaterial.html','lehrunterlage.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html','src','modules','api','assets','vendor','README.md','THIRD_PARTY.md','.htaccess'];
+export const COPY_ENTRIES=['index.html','karten.html','uebungen.html','planzeiger.html','koordinaten.html','orientierung.html','lehrmaterial.html','lehrunterlage.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html','src','modules','api','assets','vendor','README.md','THIRD_PARTY.md','.htaccess','beta'];
 export const BUILD_INPUTS=[...COPY_ENTRIES,'templates','tools/site.mjs','package.json','tools/build.mjs','tools/build-orientation.mjs','tools/standalone.mjs','tools/build-snapshot.mjs'];
 export const digest=buffer=>createHash('sha256').update(buffer).digest('hex');
 export async function snapshot(root,entries){

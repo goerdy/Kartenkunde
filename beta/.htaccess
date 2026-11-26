@@ -1,0 +1,8 @@
+# The retired beta remains addressable, but all public links use production.
+Options -Indexes
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L]
+  RewriteRule (^|/)(?:var|backups?|tests|tools)(?:/|$) - [F,L,NC]
+  RewriteRule ^(.*)$ /$1 [R=302,L]
+</IfModule>

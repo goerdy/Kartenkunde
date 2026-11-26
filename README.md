@@ -343,4 +343,4 @@ Query-Parameter bleiben erhalten, ebenso browserseitige Sprungmarken.
 Die Weiterleitung ist vorübergehend, damit später wieder eine eigene Beta
 bereitgestellt werden kann. Vorhandene Beta-Dateien und gespeicherte
 Serverdaten bleiben auf dem Webspace erhalten. Für eine neue separate Beta
-muss die entsprechend kommentierte RewriteRule entfernt werden.
+müssen die entsprechend kommentierte RewriteRule in der zentralen `.htaccess` und die Weiterleitung in `beta/.htaccess` entfernt bzw. durch die neue Beta-Konfiguration ersetzt werden.
