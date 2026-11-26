@@ -316,3 +316,21 @@ Die Hauptseite bleibt die Source of Truth für Sprache, Topo-Farben, Planzeiger-
 `npm run build:orientation` erzeugt einen eigenständig hostbaren Export unter `dist-orientation/`;
 `npm run check:orientation` prüft dessen Integrität und Aktualität.
 Die vollständige Abhängigkeits- und Änderungsliste steht in der Modul-Dokumentation.
+
+### Koordinaten-Tools
+
+`koordinaten.html` ist die responsive Koordinatenhilfe für PC und Smartphone.
+Die Vorlage liegt in `templates/coordinate-tools.html`; `src/coordinate-tools*`
+enthält Oberfläche, Bibliotheksstart und Gestaltung. `coordinate-tool-model.js`
+konvertiert WGS-84-Koordinaten mit den gemeinsamen proj4-/MGRS-Bibliotheken
+und berücksichtigt UTM-Sonderzonen. Kartenstile stammen aus `src/render.js`.
+UTMREF/UTM werden zwischen 80° Süd und unter 84° Nord angezeigt; geografische
+Koordinaten funktionieren auch außerhalb dieses Bereichs. Verkürzte
+UTMREF-Eingaben behalten ihre Stellenzahl in Anzeige und gespeichertem Punkt. Die Position entspricht der südwestlichen Gitterfeldecke, ohne Versatz zur Feldmitte.
+
+Die Punktliste wird lokal unter `kartenkunde-coordinate-points-v1` gespeichert und beim nächsten Besuch wiederhergestellt. „Alle löschen“ leert auch den gespeicherten Bestand. Geolocation startet
+nur nach Klick und Browserfreigabe, benötigt HTTPS (oder localhost) und ist
+durch `Permissions-Policy: geolocation=(self)` auf die eigene Herkunft begrenzt.
+Kartenanbieter erhalten weiterhin die normalen Kartenabrufe.
+Prüfen: `node --test tests/coordinate-tool.test.js` und `npm run test:coordinates`
+(standardmäßig gegen `http://127.0.0.1:8081/dist/`).

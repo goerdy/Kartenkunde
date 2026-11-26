@@ -293,3 +293,13 @@ Edit the FIRST image, the current illustrated homepage landscape. The SECOND ima
 - Koordinatensuche: zehnmal zehn Rasterfelder, gesuchtes Feld 100 m östlich und 500 m nördlich vom Quadratursprung.
 
 - Entfernung: unzutreffende numerische Maßstabsleiste entfernt; schematische Darstellung kenntlich gemacht.
+
+### coordinates – Koordinaten-Tools
+
+Datei: `assets/home/koordinaten-tools.png`
+
+Integrierte OpenAI-Bildgenerierung, Stilreferenz `assets/home/kartendruck.png`. KI-generiert, CC0 1.0.
+
+**Motivprompt:**
+
+Use case: illustration-story. Create a new landscape 3:2 homepage illustration for Kartenkunde.app's coordinate lookup tool. The supplied image is a STYLE REFERENCE ONLY: match its fine dark ink outlines, subtle warm paper grain, cream background, muted sage forests, pale pink buildings and blue grid/water, gently shaded hand-drawn educational look. New subject: an unbranded open laptop on a simple cream desk, plus a smartphone standing beside it to communicate mobile support. Slightly overhead oblique view. Laptop screen clearly shows a topographic map with a blue square UTM coordinate grid, a centered crosshair and three numbered location dots, and a simple narrow sidebar with three point rows. Smartphone shows the same map and crosshair in a mobile layout. Keep screens schematic illustrated maps, not a screenshot, no illegible blocks of tiny text. Small cream coordinate cards near the laptop with only the short labels 'UTMREF', 'UTM', 'GPS' neatly printed; no other words or coordinate numbers required. No compass, no printer, no people, no brands, no logo, no watermark. Balanced uncluttered composition that reads well at small homepage image sizes, edge-to-edge warm lightly textured background. Make map and coordinate lookup the clear focus.

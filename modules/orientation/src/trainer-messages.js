@@ -1,5 +1,11 @@
 export const trainerMessages = {
   "de": {
+    "fpDesktopTitle": "Nur für PC mit Maus und Tastatur",
+    "fpMouseRelease": "Escape gibt die Maus frei.",
+    "fpLoadWorld": "Übungsgelände laden",
+    "fpLoadOnDemand": "Karte, Gelände und weitere Simulationsdaten werden erst nach deinem Klick geladen.",
+    "fpReloadPage": "Seite neu laden",
+
     "fpDevelopmentTitle": "Simulation in Entwicklung",
     "fpDevelopmentNotice": "Diese Simulation wird noch entwickelt und enthält Fehler sowie unvollständige Funktionen. Deine Anmerkungen sind ausdrücklich willkommen! Nutze dafür im Funkgerät (Taste 9) „Fehler / Verbesserungsvorschlag melden“.",
     "trSubtitle": "Karte · Kompass · Gelände",
@@ -135,7 +141,7 @@ export const trainerMessages = {
     "fpMouseLook": "Maus · Umschauen",
     "fpQuickSlots": "Feste Ausrüstung",
     "fpEnter": "Gelände betreten",
-    "fpDesktop": "Für PC mit Maus und Tastatur. Escape gibt die Maus frei.",
+    "fpDesktop": "Die Bedienung benötigt eine Maus und eine Tastatur. Smartphones und Tablets werden nicht unterstützt.",
     "fpResume": "Weiter · Esc",
     "fpResetTask": "Aufgabe am aktuellen Standort neu beginnen",
     "fpQuality": "Grafikqualität",
@@ -236,6 +242,12 @@ export const trainerMessages = {
     "fpBoardChanged": "Smartboard: nächstes Thema"
   },
   "en": {
+    "fpDesktopTitle": "PC with mouse and keyboard only",
+    "fpMouseRelease": "Escape releases the mouse.",
+    "fpLoadWorld": "Load training ground",
+    "fpLoadOnDemand": "The map, terrain and other simulation data will only load after you click.",
+    "fpReloadPage": "Reload page",
+
     "fpDevelopmentTitle": "Simulation under development",
     "fpDevelopmentNotice": "This simulation is still under development and contains errors and unfinished features. Your feedback is very welcome! Use “Report a bug / improvement suggestion” on the radio (key 9).",
     "trSubtitle": "Map · Compass · Landscape",
@@ -371,7 +383,7 @@ export const trainerMessages = {
     "fpMouseLook": "Mouse · Look around",
     "fpQuickSlots": "Fixed equipment slots",
     "fpEnter": "Enter the landscape",
-    "fpDesktop": "For PC with mouse and keyboard. Escape releases the mouse.",
+    "fpDesktop": "A mouse and keyboard are required. Smartphones and tablets are not supported.",
     "fpResume": "Resume · Esc",
     "fpResetTask": "Restart exercise at current position",
     "fpQuality": "Graphics quality",
@@ -472,6 +484,12 @@ export const trainerMessages = {
     "fpBoardChanged": "Smartboard: next lesson"
   },
   "fr": {
+    "fpDesktopTitle": "PC avec souris et clavier uniquement",
+    "fpMouseRelease": "Échap libère la souris.",
+    "fpLoadWorld": "Charger le terrain d’exercice",
+    "fpLoadOnDemand": "La carte, le terrain et les autres données de simulation ne seront chargés qu’après votre clic.",
+    "fpReloadPage": "Recharger la page",
+
     "fpDevelopmentTitle": "Simulation en cours de développement",
     "fpDevelopmentNotice": "Cette simulation est encore en développement et comporte des erreurs et des fonctionnalités inachevées. Vos remarques sont les bienvenues ! Utilisez « Signaler une erreur / suggestion » sur la radio (touche 9).",
     "trSubtitle": "Carte · Boussole · Terrain",
@@ -607,7 +625,7 @@ export const trainerMessages = {
     "fpMouseLook": "Souris · Regarder",
     "fpQuickSlots": "Équipement fixe",
     "fpEnter": "Entrer sur le terrain",
-    "fpDesktop": "Pour PC avec souris et clavier. Échap libère la souris.",
+    "fpDesktop": "Une souris et un clavier sont nécessaires. Les smartphones et les tablettes ne sont pas pris en charge.",
     "fpResume": "Reprendre · Échap",
     "fpResetTask": "Recommencer à la position actuelle",
     "fpQuality": "Qualité graphique",

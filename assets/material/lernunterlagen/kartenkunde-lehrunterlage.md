@@ -36,7 +36,6 @@ Für unsere Arbeit sind vier Aspekte besonders wichtig: Die **Projektion** über
 6. [Andere in die Karte einweisen](#6-andere-in-die-karte-einweisen)
 7. [Exkurs: Skizzen erstellen](#7-exkurs-skizzen-erstellen)
 
-- [Übungen](#ubungen)
 - [Unsortiert TODO](#unsortiert-todo)
 
 ## 1. Karten verstehen und lesen
@@ -279,6 +278,8 @@ Lies zuerst den Ostanteil und danach den Nordanteil ab. Im Beispiel liegt der Pu
 
 Die Anzahl der Ziffern je Zahlenblock bestimmt die Größe des bezeichneten Rasterfelds: **zwei Ziffern** je Wert stehen für 1 km, **drei Ziffern** für 100 m und **vier Ziffern** für 10 m. Beim Planzeiger muss die abgelesene Genauigkeit zur Karte passen. Auf einer gedruckten Karte im Maßstab **1 : 50.000** sind meist höchstens drei Ziffern je Wert zuverlässig ablesbar; bei **1 : 25.000** sind meist vier Ziffern möglich. Mehr Ziffern machen eine ungenaue Karte oder Messung nicht genauer.
 
+**Beim Verkürzen werden die überzähligen Stellen abgeschnitten, nicht gerundet.** Aus **32U ME 3917 3654** wird bei drei Stellen je Wert **32U ME 391 365**. Behalte diese Stellenzahl beim Notieren und Übermitteln bei. **Hänge keine Nullen an**, um die Angabe scheinbar zu vervollständigen: Zusätzliche Ziffern würden eine höhere Genauigkeit ausdrücken, die nicht bestimmt wurde.
+
 > **Merksatz: Ran an den Baum, rauf auf den Baum.**
 
 ![Vier Schritte zeigen das Finden des Kilometerquadrats, das Anlegen und Verschieben des Planzeigers sowie das Ablesen von Ost- und Nordanteil.](./assets/material/lernunterlagen/bilder/13-planzeiger.png "Abbildung 13: Mit dem Planzeiger eine Koordinate bestimmen")
@@ -288,6 +289,8 @@ Die Anzahl der Ziffern je Zahlenblock bestimmt die Größe des bezeichneten Rast
 Beim Suchen gehst du den Weg umgekehrt. Prüfe zuerst Zonenfeld und 100-km-Quadrat. Teile dann beide Zahlenblöcke in den Kilometeranteil und die feineren Stellen auf. Bei **32U ME 391 365** sind das die Gitterwerte **39 Ost** und **36 Nord** sowie **100 m nach Osten** und **500 m nach Norden** innerhalb dieses Kilometerquadrats.
 
 Suche die senkrechte Gitterlinie 39 und die waagerechte Gitterlinie 36. Lege die passende Skala des Planzeigers an die untere Gitterlinie und verschiebe ihn so, dass die waagerechte Skala an der linken Quadratbegrenzung 100 m anzeigt. An der senkrechten Skala findest du den gesuchten Punkt 500 m oberhalb der unteren Gitterlinie. Kontrolliere das Ergebnis anhand der Kartenzeichen: Passt der Punkt zum genannten Ort oder Objekt? Eine dreistellige Angabe je Wert bezeichnet ein 100-m-Feld und legt daher nicht jeden einzelnen Meter darin fest.
+
+**Der so aufgetragene Punkt liegt an der unteren linken, also südwestlichen Ecke des bezeichneten Gitterfeldes.** Im Beispiel beginnt dort das 100-m-Feld, das sich nach Osten und Norden erstreckt. Verschiebe den Punkt nicht in die Feldmitte: Über die weggelassenen Stellen ist nichts bekannt. Die Angabe bleibt **32U ME 391 365**; der tatsächliche Ort kann innerhalb des bezeichneten Feldes liegen.
 
 ![Im Kilometerquadrat 39/36 wird das durch 32U ME 391 365 bezeichnete 100-Meter-Feld anhand von Ost- und Nordanteil gesucht.](./assets/material/lernunterlagen/bilder/14-koordinate.png "Abbildung 14: Eine vorgegebene Koordinate auf der Karte finden")
 
@@ -359,12 +362,10 @@ Zeige Stellen auf der Karte nicht mit der Hand oder dem Finger. Sie verdecken De
 ![Eine vereinfachte Einsatzskizze enthält Nordpfeil, die Angabe o. M., Straßennamen in Großbuchstaben, Zufahrt und Einsatzstelle.](./assets/material/lernunterlagen/bilder/18-skizze.png "Abbildung 18: Beispiel einer Einsatzskizze ohne Maßstab")
 
 
-## Übungen
-
-[Beispielübungen in Jever öffnen](https://kartenkunde.app/#uebung=eJyNls1u3DYQx1_F4Fk2yBl-6uYC_UCTNgXitkCDHGjtZJewRKkkZccJ9k1y7GP0lhcruElWuxs03iNH5MxP__kPpffsnrWiYZl66koYI2vfswfWmitrrBNojUMnFULDaBe12gqOHAxKNLphmbUKr7ThFsGg5VqjUw2Ln8NSWKtqDmfVtmF-NYQYckm-hHtibZz7vhYvJcR1rrVz53tiLSjOecMmP1FiLbuWrGGrKbBWKN6w8Z5S76e6alguj_UEm_5Wtz7T4CfWsBLKLvjMp0Lxbo4ruvj44XaO64sbyoU1LI6FMmsZa1jv4yp3fiLWljRTw-YyPPe31OcvgdWQjwO5JKLyqx9oH-rGWMY57dfl7sVUFd291kT-bv_kjU_Dcmwzp26zpHkIcbVPkXzMQyiFlrSdz6Vftqc5xOWsL5RuxofD7ZswRHpcwOfbXPxnrk-h6bE_XNXjz0NcSgyhD8Wnx-tEfh_sw3pTNuOcl3392C3vuBnzFIpfFHsTEr08rTz2odurfh_o4QSeBiqUwlLj2B5PdmG7bRi9pdSFTLUNvvvkuy9IZZ937OcjtBMfjiGWzNpX71lYVa_V9SWvNvJD9dnNT39evEgl31O69XF18TPdU2INu9t1k3XjmFYh-kLVbnXKzJXjxnBuFKAUYEW1YdlNjbKKO6UstxqsbNiUqAt5N5uqOUzVMoTff_kejHYCjROKbZsjQLEA_nDz13lQ1hjHFYBErfUBlHHKKSENWCnlWVRGIRrkcEoFC9XLbtOPOZ-STb3vjqDAWA5OCicEh0Mo4M6gAoFa1WvnaSiUiFoaeQqFC9RvYx_eUThHLmuN4dpJtCC5OeyhAYMCuNBotD0DTKPUqJXmp2ByAbt-S32-eNZ__Cf52Ps1_a9iVlmtwAqJ1impDr1lEQGAa-64OUcxKRVHi6BPwdSBufwQev9UFwVyqSxY1ALwUCsttNQOeGU7B8lyrlAhF6dIekH6gxKFGNZzXH9DJaEQueaAaDQemb2WQKutduYMInQa0ID7SiSzENXr4Q3NlB5ok84ylxMOQVoOIJyqyiyKWcs1SLAWpTjHXVo41EK4Uz678H2X_FxF-8YYCie0BouIok7bIpcGa1AIAdzCOVMIDlE7-VUD3YGn5ng3-FwurmMZ4-WPH_-NZUPp8mV58gpTWjurhHVciKMrjAupAYXkus7q05gKBWpQkm1fb3e_Ceu5Tl3LVrVe_V7Vj0pHsdS_lFe7GtIZ7Xa3p3BNvSEApRFcO0Tl1OuGvRvHgbUCt9v_ADfP2Xs)
-
-Die Beispielaufgaben werden mit ihren gespeicherten Einstellungen im Übungsbogengenerator geladen und können dort angepasst werden.
 
 ## Unsortiert TODO
 
-- Nummerierung der Bundesautobahnen (BAB) in Ost-West- und Nord-Süd-Richtung erklären.
+- Navigieren über große Strecken auf Straßen und Autobahnen
+  - Nummerierung der Bundesautobahnen (BAB) in Ost-West- und Nord-Süd-Richtung erklären.
+  - Marschwegbeschreibung
+- Leitlinie und Auffanglinie

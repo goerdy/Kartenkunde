@@ -21,6 +21,12 @@ Es gibt keine von Hand synchronisierten Kopien dieser Definitionen.
 - `api/patches.php` und `api/feedback.php`: ausschließlich Modul-Backends.
 - `var/patches/` und `var/feedback/`: private Laufzeitdaten, keine Build-Assets.
 
+Beim Öffnen der Orientierungsseite erscheint zunächst nur die Einstiegsseite.
+Erst ein Klick auf „Übungsgelände laden“ lädt Babylon, Spielcode, Gelände,
+Modelle, Texturen, Audio und Sprachdaten. Danach werden Start und gegebenenfalls
+Fortsetzen freigegeben. Das gilt auch nach erneutem Aufrufen der Seite und im
+eigenständigen Export.
+
 Die Ressourcen und PHP-Endpunkte bleiben bewusst an ihren bestehenden URLs.
 Der eigenständige Export nimmt sie vollständig mit. Eine zweite Karten-App,
 MapLibre, Leaflet, PDF-Erzeugung oder ein OSM-Dienst werden für das Spiel nicht

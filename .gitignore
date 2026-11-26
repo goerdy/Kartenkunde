@@ -52,3 +52,5 @@ deployment*.json
 
 # Independently deployable 3D module export
 /dist-orientation/
+
+/koordinaten.html

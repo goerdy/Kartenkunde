@@ -49,6 +49,16 @@
       "caption": "Karte und Kompass im virtuellen Gelände praktisch anwenden – illustrative Szene.",
       "alt": "Blick aus der Ich-Perspektive mit Karte und flachem Kartenkompass auf einen Aussichtsturm in einer einfach gestalteten Landschaft.",
       "revision": "Simplified toward the actual low-poly simulation, using a screenshot of the campus as geometry/detail reference; mirror compass replaced by a flat baseplate map compass."
+    },
+    {
+      "id": "coordinates",
+      "file": "koordinaten-tools.png",
+      "prompt": "Use case: illustration-story. Create a new landscape 3:2 homepage illustration for Kartenkunde.app's coordinate lookup tool. The supplied image is a STYLE REFERENCE ONLY: match its fine dark ink outlines, subtle warm paper grain, cream background, muted sage forests, pale pink buildings and blue grid/water, gently shaded hand-drawn educational look. New subject: an unbranded open laptop on a simple cream desk, plus a smartphone standing beside it to communicate mobile support. Slightly overhead oblique view. Laptop screen clearly shows a topographic map with a blue square UTM coordinate grid, a centered crosshair and three numbered location dots, and a simple narrow sidebar with three point rows. Smartphone shows the same map and crosshair in a mobile layout. Keep screens schematic illustrated maps, not a screenshot, no illegible blocks of tiny text. Small cream coordinate cards near the laptop with only the short labels 'UTMREF', 'UTM', 'GPS' neatly printed; no other words or coordinate numbers required. No compass, no printer, no people, no brands, no logo, no watermark. Balanced uncluttered composition that reads well at small homepage image sizes, edge-to-edge warm lightly textured background. Make map and coordinate lookup the clear focus.",
+      "caption": "Koordinaten finden, umrechnen und Punkte merken.",
+      "alt": "Laptop und Smartphone zeigen eine topografische Karte mit Koordinatengitter, Fadenkreuz und einer Punktliste.",
+      "styleReferences": [
+        "kartendruck.png"
+      ]
     }
   ]
 }

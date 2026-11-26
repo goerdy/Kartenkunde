@@ -491,3 +491,13 @@ export function registerMessages(catalog){
  }
 }
 for(const [lang,label] of Object.entries({de:'Virtuelles Übungsgelände',en:'Virtual training ground',fr:'Terrain d’exercice virtuel'}))messages[lang].site_trainer=label;
+
+for(const [lang,label] of Object.entries({de:'Koordinaten-Tools',en:'Coordinate tools',fr:'Outils de coordonnées'}))messages[lang].site_coordinateTools=label;
+const coordinateHomeMessages={
+ de:{homeFeature_coordinates:'Koordinaten-Tools',site_homeCoordinates:'Mit den <a href="./koordinaten.html">Koordinaten-Tools</a> findest du schnell die passende Position: Karte antippen oder Koordinaten in UTMREF, UTM, Grad/Minuten/Sekunden oder Dezimalgrad eingeben. Das UTM-Gitter hilft beim Ablesen. Deine Punktliste wird lokal gespeichert – auch auf dem Smartphone.',homeAlt_coordinates:'Laptop und Smartphone zeigen eine topografische Karte mit Koordinatengitter, Fadenkreuz und einer Punktliste.',homeCaption_coordinates:'Koordinaten finden, umrechnen und Punkte merken.'},
+ en:{homeFeature_coordinates:'Coordinate tools',site_homeCoordinates:'Use the <a href="./koordinaten.html">coordinate tools</a> to find a position quickly: tap the map or enter MGRS, UTM, degrees/minutes/seconds or decimal degrees. The UTM grid helps you read coordinates. Your point list is saved locally – on smartphones too.',homeAlt_coordinates:'A laptop and smartphone display a topographic map with a coordinate grid, crosshair and point list.',homeCaption_coordinates:'Find and convert coordinates, and save points.'},
+ fr:{homeFeature_coordinates:'Outils de coordonnées',site_homeCoordinates:'Les <a href="./koordinaten.html">outils de coordonnées</a> permettent de trouver rapidement une position : touchez la carte ou saisissez des coordonnées MGRS, UTM, en degrés/minutes/secondes ou en degrés décimaux. Le quadrillage UTM facilite la lecture. Votre liste de points est enregistrée localement, également sur smartphone.',homeAlt_coordinates:'Un ordinateur portable et un smartphone affichent une carte topographique avec un quadrillage, un réticule et une liste de points.',homeCaption_coordinates:'Trouver et convertir des coordonnées, mémoriser des points.'}
+};
+for(const [lang,entries] of Object.entries(coordinateHomeMessages))Object.assign(messages[lang],entries);
+
+for(const [lang,entries] of Object.entries({de:{navPurpose_einsatz:'Einsatz',navPurpose_ausbildung:'Ausbildung'},en:{navPurpose_einsatz:'Operations',navPurpose_ausbildung:'Training'},fr:{navPurpose_einsatz:'Intervention',navPurpose_ausbildung:'Formation'}}))Object.assign(messages[lang],entries);

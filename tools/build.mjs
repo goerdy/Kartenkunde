@@ -19,7 +19,7 @@ async function versionModules(directory){
  }
 }
 await versionModules('src/');await versionModules('modules/');
-for(const file of ['index.html','karten.html','uebungen.html','planzeiger.html','orientierung.html','lehrmaterial.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html']){
+for(const file of ['index.html','karten.html','uebungen.html','planzeiger.html','koordinaten.html','orientierung.html','lehrmaterial.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html']){
  const url=new URL(file,dist);let html=await readFile(url,'utf8');
  html=html.replace('<html lang="de"',`<html lang="de" data-build="${version}"${git?` data-commit="${git.commit}" data-dirty="${git.dirty}"`:''}`).replace('id="buildId" data-i18n-title="buildDetails" title="Versionskennung dieser Ausgabe">dev',`id="buildId" data-i18n-title="buildDetails" title="Versionskennung dieser Ausgabe">${version}`);
  html=html.replace(/((?:src|href)="\.\.?\/[^"?]+\.(?:js|css))(?:\?[^\"]*)?"/g,`$1?v=${version}"`);

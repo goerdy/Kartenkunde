@@ -45,3 +45,5 @@
 @media(max-width:540px){#fpRadioPanel{padding:12px}.fp-field-terminal.fp-radio-panel{width:100%;padding-left:16px;padding-right:16px}.fp-field-terminal header button{max-width:110px;font-size:10px}.fp-device-controls button{font-size:11px}.fp-device-screen{font-size:11px}}
 
 .fp-development-notice{margin:16px 0;padding:14px 16px;border:2px solid #e5bd7c;border-left-width:6px;border-radius:4px;background:#3c2c18;color:#fff0cf;text-align:left}.fp-development-notice strong{display:block;font-size:17px;color:#ffd78e}.fp-welcome .fp-development-notice p{margin:7px 0 0;font-size:14px;line-height:1.55;color:#fff0cf}
+
+.fp-desktop-notice{margin:16px 0;padding:14px 16px;border:2px solid #8fc4d2;border-radius:4px;background:#193942;text-align:left}.fp-desktop-notice strong{display:block;font-size:19px;line-height:1.35;color:#e2f5ff}.fp-welcome .fp-desktop-notice p{margin:7px 0 0;font-size:14px;line-height:1.5;color:#d4e7ec}.fp-game #fpLoadWorld{display:block;width:100%;min-height:52px;margin:14px 0}.fp-welcome #fpLoadHint{font-size:13px;color:#d3dfd6}.fp-game[data-load-state=idle]>:not(#fpWelcome){visibility:hidden}

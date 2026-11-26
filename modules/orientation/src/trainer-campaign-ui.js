@@ -12,7 +12,7 @@ export class CampaignUI{
  constructor({state,scene,audio,persist,update,enterExplore,release,hasSave}){
   Object.assign(this,{state,scene,audio,persist,update,enterExplore,release});this.lastTranscript=[];
   this.speech=new TrainingSpeech({preferences:()=>state.speech,enabled:()=>state.soundEnabled,onLine:line=>this.line(line),onBusy:busy=>this.busy(busy),onVoices:()=>this.voices(),onStatus:text=>{$('fpSpeechStatus').textContent=text;},duck:active=>{audio.externalSpeech=active;}});
-  $('fpContinue').disabled=!hasSave;$('fpContinue').hidden=!hasSave;$('fpContinue').onclick=()=>enterExplore();
+  $('fpContinue').disabled=true;$('fpContinue').hidden=!hasSave;$('fpContinue').onclick=()=>enterExplore();
   $('fpStart').onclick=()=>this.startCentre();
   $('fpNextAssignment').onclick=()=>this.radio('next');$('fpCampaignReport').onclick=()=>this.radio('report');$('fpCampaignHint').onclick=()=>this.radio('hint');$('fpRepeatStation').onclick=()=>this.radio('station');
   $('fpRequestVehicle').onclick=()=>this.radio('vehicle');$('fpRequestHelicopter').onclick=()=>this.radio('helicopter');$('fpRecallMaterial').onclick=()=>this.radio('material');

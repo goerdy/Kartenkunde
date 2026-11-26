@@ -259,5 +259,5 @@ const speechReady=campaignUI.speech.preload(value=>{speechProgress=value;loading
 await scene.initialize(({value,key,done,total})=>{worldProgress=value;loading(t(key,{done,total}));});
 if(speechProgress<1)loading('Sprachausgabe wird vorgeladen …');await speechReady;
 $('fpLoadProgress').value=100;$('fpLoadPercent').textContent='100 %';$('fpLoadStatus').textContent=t('fpLoadReady');
-canvas.dataset.ready='true';root.dataset.engine='babylon';root.setAttribute('aria-busy','false');$('fpLoading').dataset.ready='true';$('fpStart').disabled=false;campaignUI.speech.warmModels();
+canvas.dataset.ready='true';root.dataset.engine='babylon';root.setAttribute('aria-busy','false');$('fpLoading').dataset.ready='true';$('fpStart').disabled=false;$('fpContinue').disabled=$('fpContinue').hidden;campaignUI.speech.warmModels();
 window.addEventListener('pagehide',()=>{campaignUI.speech.dispose();try{localStorage.setItem(STORAGE,JSON.stringify(state));}catch{}scene.keys.clear();audio.dispose();});
