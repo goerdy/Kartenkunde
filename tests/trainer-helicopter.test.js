@@ -44,3 +44,13 @@ test('Helicopter radio switch survives exit, re-entry, recall and saved-game res
  const old=JSON.parse(JSON.stringify(s));delete old.helicopter.radioOn;assert.equal(restoreGameState(old).helicopter.radioOn,false);
  old.helicopter.radioOn='true';assert.equal(restoreGameState(old).helicopter.radioOn,false);
 });
+
+test('Vertical travel gains height quickly in both directions and brakes promptly into hover',()=>{
+ for(const [input,sign] of [['Space',1],['ControlLeft',-1]]){
+  const s=ready(),h=s.helicopter;h.rotor=1;h.altitude=800;const start=h.altitude;
+  steps(s,[input],120);assert.ok((h.altitude-start)*sign>125,'Six seconds cover more than 125 vertical metres');
+  assert.equal(h.verticalSpeed,sign*24);
+  const released=h.altitude;steps(s,[],20);assert.equal(h.verticalSpeed,0);assert.ok(Math.abs(h.altitude-released)<7,'Release stops within seven metres');
+  const hovered=h.altitude;steps(s,[],20);assert.equal(h.altitude,hovered);
+ }
+});

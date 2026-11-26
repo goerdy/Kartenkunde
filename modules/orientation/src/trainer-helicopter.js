@@ -48,7 +48,10 @@ export function flyHelicopter(s,keys,elapsed){
   const turn=Number(keys.has('KeyD'))-Number(keys.has('KeyA')),forward=Number(keys.has('KeyW'))-Number(keys.has('KeyS')),up=Number(keys.has('Space'))-Number(keys.has('ControlLeft')||keys.has('ControlRight'));
   const beforeYaw=h.heading;h.heading=mod(h.heading+turn*42*dt);s.yaw=mod(s.yaw+angleDifference(h.heading,beforeYaw));if(s.mapLocation==='hand')s.paperAngle=mod(s.paperAngle+angleDifference(h.heading,beforeYaw));
   h.speed=approach(h.speed,h.rotor>.65&&helicopterAGL(h)>1.5?forward*(forward<0?12:keys.has('ShiftLeft')||keys.has('ShiftRight')?300/3.6:42):0,dt*(forward?9:12));
-  h.verticalSpeed=approach(h.verticalSpeed,h.rotor>.65?up*8:0,dt*6);
+  // Brisk vertical travel, with stronger braking on release/reversal to keep hovering precise.
+  const verticalTarget=h.rotor>.65?up*24:0;
+  const verticalAcceleration=up&&Math.sign(h.verticalSpeed||up)===up?24:48;
+  h.verticalSpeed=approach(h.verticalSpeed,verticalTarget,dt*verticalAcceleration);
   const newAltitude=Math.min(1500,h.altitude+h.verticalSpeed*dt),ground=heightAt(h.e,h.n);
   // Descent is refused over a building or canopy; terrain itself is a landing surface.
   if(h.verticalSpeed<0&&helicopterObstacle(h.e,h.n,Math.max(ground,newAltitude),3)){h.verticalSpeed=0;}else h.altitude=Math.max(ground,newAltitude);
