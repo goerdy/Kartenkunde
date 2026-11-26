@@ -12,7 +12,8 @@ const integrated=await readFile(new URL('orientierung.html',built),'utf8');
 const main=integrated.match(/<main\b[\s\S]*?<\/main>/)?.[0];
 if(!main)throw Error('Trainer mount point missing');
 const head=integrated.match(/<head>[\s\S]*?<\/head>/)?.[0];
-const html=`<!doctype html>\n<html lang="de" data-build="${parent.version}">${head}<body class="utmref-page site-page" data-page="trainer-standalone"><header class="site-header"><div class="site-brand-row"><a class="brand" href="https://kartenkunde.app/">KARTENKUNDE.app</a><label>Sprache / Language <select id="language"><option value="de">DE</option><option value="en">EN</option><option value="fr">FR</option></select></label></div></header>${main}<footer class="site-footer"><a href="https://kartenkunde.app/impressum.html">Impressum / Datenschutz</a></footer><script type="module" src="./modules/orientation/standalone.js?v=${parent.version}"></script></body></html>\n`;
+const brand=(await readFile(new URL('templates/brand.html',root),'utf8')).trim().replace('{{brandHref}}','https://kartenkunde.app/');
+const html=`<!doctype html>\n<html lang="de" data-build="${parent.version}">${head}<body class="utmref-page site-page" data-page="trainer-standalone"><header class="site-header"><div class="site-brand-row">${brand}<label>Sprache / Language <select id="language"><option value="de">DE</option><option value="en">EN</option><option value="fr">FR</option></select></label></div></header>${main}<footer class="site-footer"><a href="https://kartenkunde.app/impressum.html">Impressum / Datenschutz</a></footer><script type="module" src="./modules/orientation/standalone.js?v=${parent.version}"></script></body></html>\n`;
 await writeFile(new URL('index.html',out),html);
 // Keep the established entry URL usable in a separately hosted export too.
 await writeFile(new URL('orientierung.html',out),html);

@@ -47,3 +47,5 @@
 .home-feature-reverse .home-illustration{order:-1;}
 .home-feature h2{margin-top:0;}
 @media(max-width:640px){.site-content .home-feature{grid-template-columns:1fr;gap:1rem;}.home-feature-reverse .home-illustration{order:0;}}
+
+.site-content .home-development{padding:12px 16px;border-left:3px solid var(--accent);border-radius:0 6px 6px 0;background:var(--surface);color:var(--text)}

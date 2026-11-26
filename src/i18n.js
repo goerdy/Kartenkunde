@@ -146,19 +146,19 @@ const homeAudienceMessages={
   "de": {
     "site_homeAudience": "Die Seite und die Materialien sind bewusst organisationsübergreifend gestaltet: für THW, Feuerwehr, DLRG, Rotes Kreuz und alle weiteren Hilfsorganisationen. Ob hauptamtlich oder ehrenamtlich – das Angebot unterstützt die gemeinsame Ausbildung und den Einsatz im Bevölkerungsschutz.",
     "site_homeAuthor": "Hinter Kartenkunde.app steht Philipp „goerdy“ Gürth – hauptamtlich bei der Feuerwehr und ehrenamtlich als „Hilfswichtel“ im Bevölkerungsschutz aktiv.",
-    "site_homeSEO": "Kostenlose Kartenkunde für Feuerwehr, THW, DLRG, Rotes Kreuz und alle Hilfsorganisationen: UTMREF-Karten drucken, Übungsbögen und Planzeiger-Simulator.",
+    "site_homeSEO": "Kostenlose Kartenkunde für Feuerwehr, THW, DLRG, Rotes Kreuz und alle Hilfsorganisationen: UTMREF-Karten drucken, Übungsbögen, Planzeiger-Simulator und virtuelles Übungsgelände.",
     "site_homeTitle": "Kartenkunde für Einsatz und Ausbildung"
   },
   "en": {
     "site_homeAudience": "The site and its materials are deliberately designed for use across organisations: THW, fire services, DLRG, the Red Cross and all other aid organisations. Whether you are a professional or a volunteer, the resources support joint training and civil protection operations.",
     "site_homeAuthor": "Kartenkunde.app is created by Philipp “goerdy” Gürth, a professional firefighter and an active civil protection volunteer.",
-    "site_homeSEO": "Free map-reading tools for fire services, THW, DLRG, the Red Cross and all aid organisations: printable MGRS maps, worksheets and a romer simulator.",
+    "site_homeSEO": "Free map-reading tools for fire services, THW, DLRG, the Red Cross and all aid organisations: printable MGRS maps, worksheets, a romer simulator and a virtual training ground.",
     "site_homeTitle": "Map reading for operations and training"
   },
   "fr": {
     "site_homeAudience": "Le site et ses supports sont conçus pour toutes les organisations : THW, services d’incendie, DLRG, Croix-Rouge et toutes les autres organisations de secours. Professionnels ou bénévoles, ces ressources accompagnent la formation commune et les interventions de protection civile.",
     "site_homeAuthor": "Kartenkunde.app est créé par Philipp « goerdy » Gürth, pompier professionnel et bénévole actif dans la protection civile.",
-    "site_homeSEO": "Outils gratuits de cartographie pour les pompiers, le THW, la DLRG, la Croix-Rouge et les secours : cartes MGRS à imprimer, exercices et simulateur de rapporteur.",
+    "site_homeSEO": "Outils gratuits de cartographie pour les pompiers, le THW, la DLRG, la Croix-Rouge et les secours : cartes MGRS à imprimer, exercices, simulateur de rapporteur et terrain d’exercice virtuel.",
     "site_homeTitle": "Cartographie pour les interventions et la formation"
   }
 };
@@ -320,6 +320,13 @@ for(const [lang,entries]of Object.entries(bayernMaterialMessages))Object.assign(
 
 const homeIllustrationMessages={
   "de": {
+    "homeDevelopmentNotice": "Beta-Version: Kartenkunde.app wird aktiv weiterentwickelt. Funktionen und Inhalte können sich noch ändern und Fehler enthalten. Danke fürs Ausprobieren und für eure Rückmeldungen!",
+    "homeFeature_training": "Virtuelles Übungsgelände",
+    "site_homeTraining": "Im <a href=\"./orientierung.html\">Virtuellen Übungsgelände</a> wendest du Kartenkunde direkt an: Karte einnorden, mit dem Kompass peilen, Koordinaten bestimmen und Einsatzaufträge lösen. Erkunde die fiktive Welt zu Fuß, im Fahrzeug oder im Hubschrauber.",
+    "homeTrainingDevelopment": "Für PC mit Maus und Tastatur. Die Simulation befindet sich noch in Entwicklung.",
+    "homeCaption_training": "Karte und Kompass im virtuellen Gelände praktisch anwenden – illustrative Szene.",
+    "homeAlt_training": "Blick aus der Ich-Perspektive mit Karte und flachem Kartenkompass auf einen Aussichtsturm in einer einfach gestalteten Landschaft.",
+
     "imageAiGenerated": "KI-generiert",
     "homeFeature_kartendruck": "Druckbare UTMREF-Karten",
     "homeFeature_aufgaben": "Übungsbögen",
@@ -340,6 +347,13 @@ const homeIllustrationMessages={
     "homeAlt_lehrunterlage": "Eine aufgeschlagene Lehrunterlage zeigt Karten, Himmelsrichtungen und Geländeformen."
   },
   "en": {
+    "homeDevelopmentNotice": "Beta version: Kartenkunde.app is under active development. Features and content may still change and contain errors. Thank you for trying it out and sharing your feedback!",
+    "homeFeature_training": "Virtual training ground",
+    "site_homeTraining": "Put map-reading skills into practice in the <a href=\"./orientierung.html\">virtual training ground</a>: orient your map, take compass bearings, determine coordinates and complete operational assignments. Explore the fictional world on foot, in a vehicle or by helicopter.",
+    "homeTrainingDevelopment": "For PC with mouse and keyboard. The simulation is still under development.",
+    "homeCaption_training": "Practise using a map and compass in virtual terrain – illustrative scene.",
+    "homeAlt_training": "First-person view with a map and flat baseplate compass aimed at an observation tower in a simply rendered landscape.",
+
     "imageAiGenerated": "AI-generated",
     "homeFeature_kartendruck": "Printable MGRS maps",
     "homeFeature_aufgaben": "Exercise sheets",
@@ -360,6 +374,13 @@ const homeIllustrationMessages={
     "homeAlt_lehrunterlage": "An open training guide shows maps, compass directions and terrain forms."
   },
   "fr": {
+    "homeDevelopmentNotice": "Version bêta : Kartenkunde.app est en cours de développement actif. Les fonctionnalités et les contenus peuvent encore évoluer et comporter des erreurs. Merci de tester le site et de partager vos remarques !",
+    "homeFeature_training": "Terrain d’exercice virtuel",
+    "site_homeTraining": "Mettez vos connaissances en pratique sur le <a href=\"./orientierung.html\">terrain d’exercice virtuel</a> : orienter une carte, prendre des relèvements à la boussole, déterminer des coordonnées et accomplir des missions. Explorez un monde fictif à pied, en véhicule ou en hélicoptère.",
+    "homeTrainingDevelopment": "Pour PC avec souris et clavier. La simulation est encore en développement.",
+    "homeCaption_training": "Utiliser une carte et une boussole en terrain virtuel – scène illustrative.",
+    "homeAlt_training": "Vue à la première personne avec une carte et une boussole à plaquette dirigée vers une tour d’observation dans un paysage simplifié.",
+
     "imageAiGenerated": "Généré par IA",
     "homeFeature_kartendruck": "Cartes MGRS à imprimer",
     "homeFeature_aufgaben": "Fiches d’exercice",
@@ -469,4 +490,4 @@ export function registerMessages(catalog){
   for(const [key,value] of Object.entries(entries))if(!Object.hasOwn(messages[lang],key))messages[lang][key]=value;
  }
 }
-for(const [lang,label] of Object.entries({de:'3D-Orientierung',en:'3D orientation',fr:'Orientation 3D'}))messages[lang].site_trainer=label;
+for(const [lang,label] of Object.entries({de:'Virtuelles Übungsgelände',en:'Virtual training ground',fr:'Terrain d’exercice virtuel'}))messages[lang].site_trainer=label;

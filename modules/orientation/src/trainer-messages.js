@@ -2,8 +2,6 @@ export const trainerMessages = {
   "de": {
     "fpDevelopmentTitle": "Simulation in Entwicklung",
     "fpDevelopmentNotice": "Diese Simulation wird noch entwickelt und enthält Fehler sowie unvollständige Funktionen. Deine Anmerkungen sind ausdrücklich willkommen! Nutze dafür im Funkgerät (Taste 9) „Fehler / Verbesserungsvorschlag melden“.",
-    "trTitle": "3D-Orientierungstrainer",
-    "site_trainer": "3D-Orientierung",
     "trSubtitle": "Karte · Kompass · Gelände",
     "trView": "Ansicht",
     "trTable": "Kartenarbeit",
@@ -240,8 +238,6 @@ export const trainerMessages = {
   "en": {
     "fpDevelopmentTitle": "Simulation under development",
     "fpDevelopmentNotice": "This simulation is still under development and contains errors and unfinished features. Your feedback is very welcome! Use “Report a bug / improvement suggestion” on the radio (key 9).",
-    "trTitle": "3D orientation trainer",
-    "site_trainer": "3D orientation",
     "trSubtitle": "Map · Compass · Landscape",
     "trView": "View",
     "trTable": "Map work",
@@ -478,8 +474,6 @@ export const trainerMessages = {
   "fr": {
     "fpDevelopmentTitle": "Simulation en cours de développement",
     "fpDevelopmentNotice": "Cette simulation est encore en développement et comporte des erreurs et des fonctionnalités inachevées. Vos remarques sont les bienvenues ! Utilisez « Signaler une erreur / suggestion » sur la radio (touche 9).",
-    "trTitle": "Entraînement à l’orientation 3D",
-    "site_trainer": "Orientation 3D",
     "trSubtitle": "Carte · Boussole · Terrain",
     "trView": "Vue",
     "trTable": "Travail sur carte",

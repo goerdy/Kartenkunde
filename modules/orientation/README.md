@@ -1,4 +1,4 @@
-# 3D-Orientierung als eigenständiges Modul
+# Virtuelles Übungsgelände als eigenständiges Modul
 
 Die **Hauptseite ist die Source of Truth**. Allgemeine Kartenregeln, Farben,
 Planzeiger-Skalen, Sprache, Branding und rechtliche Angaben werden zuerst dort
@@ -26,7 +26,8 @@ Der eigenständige Export nimmt sie vollständig mit. Eine zweite Karten-App,
 MapLibre, Leaflet, PDF-Erzeugung oder ein OSM-Dienst werden für das Spiel nicht
 benötigt. Die Hauptseite importiert keinen Simulationscode; nur die
 Orientierungsseite bindet den Moduleinstieg ein. Die Navigation hat ihren eigenen
-kanonischen Übersetzungsschlüssel `site_trainer`.
+kanonischen Übersetzungsschlüssel `site_trainer` (auch für Seitentitel und Ladebildschirm).
+Der Name wird ausschließlich in `src/i18n.js` gepflegt, nicht im Modulkatalog.
 
 ## Bauen, prüfen und lokal öffnen
 
@@ -72,7 +73,7 @@ versehen. Generierte Dateien in `dist*` werden niemals von Hand bearbeitet.
 | Sprachdienst oder allgemeine Begriffe | `src/i18n.js` | Dienst und allgemeine Schlüssel werden direkt verwendet. Modulspezifische Texte in `modules/orientation/src/trainer-messages.js` bei fachlichen Änderungen nachziehen. Vorhandene Hauptseiten-Schlüssel haben Vorrang. |
 | Logo, Favicon, Schriftarten | `assets/brand/`, `assets/fonts/` | Automatisch beim neuen Export übernommen. Im Spiel fest gezeichnete Schilder/Lehrmittel und den eigenständigen Header bei zusätzlichem Brandingwechsel prüfen. |
 | Allgemeine Gestaltung | `assets/css/site.css`, `src/style.css`, `src/site.css` | Wird automatisch übernommen. Ladebildschirm, Menüs, Funkgerät und Schriftgrößen prüfen; nötige Spielanpassungen ausschließlich in `modules/orientation/src/trainer.css`. |
-| Navigation oder Website-Shell | `tools/site.mjs`, `templates/app.html`, `src/site.js` | Integrierter Host übernimmt Änderungen automatisch. Eigenständigen Header/Footer im Generator `tools/build-orientation.mjs` bei relevanten Struktur-/Markenänderungen nachziehen. Das Spiel selbst benötigt `site.js` nicht. |
+| Navigation oder Website-Shell | `tools/site.mjs`, `templates/app.html`, `templates/brand.html`, `src/site.js` | Integrierter Host übernimmt Änderungen automatisch. Logo, Schriftzug und Beta-Kennzeichnung stammen auch eigenständig aus `templates/brand.html`. Weitere Header-/Footer-Änderungen im Generator `tools/build-orientation.mjs` bei Bedarf nachziehen. Das Spiel selbst benötigt `site.js` nicht. |
 | Impressum / Datenschutz | Hauptseiten-Inhalte und `tools/site.mjs` | Export verlinkt auf die Hauptseite. Falls die Datenerhebung der Simulation geändert wird, zusätzlich Datenschutzhinweis im Funkgerät/Feedbackformular und `api/feedback.php` prüfen. |
 | Koordinatenregeln, UTMREF-Darstellung | Kartenwerkzeuge, insbesondere `src/geo.js`, `src/coordinates.js` | Fiktive Spielwelt hat eigene Koordinatenlogik in `trainer-grid.js` und Lehrtexte in `trainer-campaign.js`. Bei fachlichen Änderungen bewusst angleichen; keine realen Ortskoordinaten für das fiktive Gelände übernehmen. |
 | Sicherheitsheader / Hosting | `.htaccess` | Wird aus dem Hauptseiten-Build übernommen. PHP-Endpunkte, private Ordner, Piper-Worker/WASM, Audio und WebGL prüfen; Export nicht ohne seine Schutzdateien ausliefern. |
@@ -83,10 +84,12 @@ Texte mit `tools/render-trainer-speech.py` neu erzeugen. Der Katalog steht in
 `tools/trainer-speech-catalog.mjs`; Modelle unter `assets/trainer/piper/`.
 Die 3D-Welt übernimmt keine Änderungen an der Lehrunterlage automatisch.
 
-## Arbeiten mit main und Feature-Branch
+## Arbeiten mit main und künftigen Feature-Branches
 
+Das virtuelle Übungsgelände ist Bestandteil von `main`. Größere neue Features
+können weiterhin in eigenen Branches und Worktrees entwickelt werden.
 Änderungen an den gemeinsamen Grundlagen zuerst in `main` vornehmen. Danach
-`main` in den 3D-Feature-Branch übernehmen und den Export neu bauen/testen.
+`main` bei Bedarf in den jeweiligen Feature-Branch übernehmen und den Export neu bauen/testen.
 Nicht die Hauptseite aus einem älteren 3D-Export zurückkopieren. Der normale
 Hauptseiten-Deploy aktualisiert einen separat gehosteten 3D-Export nicht:
 Dieser muss danach eigens neu gebaut und vollständig deployed werden.

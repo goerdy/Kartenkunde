@@ -37,6 +37,18 @@
       "prompt": "Landscape editorial educational illustration of an open map-reading handbook on desk, pages showing a clean schematic blue compass rose, terrain hill with contour lines and paper topographic map detail, transparent blue planzeiger nearby. Small pen, restrained overhead composition. No readable text, no logos, no brands. Same muted sage/pale pink/blue colors, fine dark outlines and warm lightly textured paper as reference.",
       "caption": "Kartenkunde Schritt für Schritt lernen.",
       "alt": "Eine aufgeschlagene Lehrunterlage zeigt Karten, Himmelsrichtungen und Geländeformen."
+    },
+    {
+      "id": "training",
+      "file": "uebungsgelaende.png",
+      "prompt": "Edit the FIRST image, the current illustrated homepage landscape. The SECOND image is a supporting reference for the actual SIMPLE GAME GEOMETRY and level of environmental detail, not a composition to copy. User correction: the first illustration promises a much richer, prettier world than our modest browser simulation. Make it substantially plainer and more faithful to a basic low-poly training game, while retaining a light ink-and-paper illustration treatment compatible with the website. Preserve the landscape 3:2 aspect ratio and general first-person map-and-compass composition. REPLACE the entire upright black mirror/sighting compass with a FLAT TRANSPARENT BASEPLATE MAP COMPASS (Kartenkompass): clear faintly blue rectangular acrylic ruler plate, rotating round black-rimmed compass capsule, red-and-white needle and a simple direction-of-travel arrow on the long plastic plate. NO mirror, NO hinged lid, NO upright frame, NO sighting window, NO duplicated tower reflection. Hold this flat instrument low in the right hand, with visible top surface, the plate pointing toward the distant tower. Left hand holds the folded topographic map. Simplify hands and sleeves into plain drawn shapes with minimal shading. Reduce landscape detail by at least 80 percent: broad almost uniform muted green ground planes, very gentle angular hills, a simple beige path, sparse clusters of geometric conical evergreen trees and a few rounded low-poly trees, a handful of basic box-shaped houses. One small uncomplicated blocky training/observation tower is the recognizable distant target. A plain light gray-blue sky with only minimal cloud shapes and a hazy simple horizon. Remove the huge detailed foreground oak, decorative wildflowers, stone textures, intricate fields, dramatic rolling valley, winding scenic river and distant wind farm. No rich foliage, painterly scenic scenery, realistic textures, idyllic postcard look or realistic lighting. Still present a tidy modest educational illustration, not a polished fantasy game or photoreal scene. Limited muted green/beige/blue palette, thin simple outlines, slight paper grain only. No UI, no text, no numbers, no logos, no watermark.",
+      "styleReferences": [
+        "hero.png",
+        "simulator.png"
+      ],
+      "caption": "Karte und Kompass im virtuellen Gelände praktisch anwenden – illustrative Szene.",
+      "alt": "Blick aus der Ich-Perspektive mit Karte und flachem Kartenkompass auf einen Aussichtsturm in einer einfach gestalteten Landschaft.",
+      "revision": "Simplified toward the actual low-poly simulation, using a screenshot of the campus as geometry/detail reference; mirror compass replaced by a flat baseplate map compass."
     }
   ]
 }
