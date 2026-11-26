@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {WORLD_SIZE,MAP_SCALE,VEHICLE_START,STATIONS,BUILDINGS,SETTLEMENTS,PLACE_LABELS,TREES,WATERCOURSES,BRIDGES,deepWater,walkingHeightAt,treeBlocks,restoreState,mod,angleDifference} from '../src/trainer-world.js';
-import {defaultGameState,restoreGameState,walkingStep} from '../src/trainer-game-state.js';
-import {vehiclePoint,vehicleAttitude,vehicleCompass,vehicleBlocked,enterVehicle,exitVehicle,driveVehicle,walkerHitsVehicle,requestVehicle,resetTrip} from '../src/trainer-vehicle.js';
+import {WORLD_SIZE,MAP_SCALE,VEHICLE_START,STATIONS,BUILDINGS,SETTLEMENTS,PLACE_LABELS,TREES,WATERCOURSES,BRIDGES,deepWater,walkingHeightAt,treeBlocks,restoreState,mod,angleDifference} from '../modules/orientation/src/trainer-world.js';
+import {defaultGameState,restoreGameState,walkingStep} from '../modules/orientation/src/trainer-game-state.js';
+import {vehiclePoint,vehicleAttitude,vehicleCompass,vehicleBlocked,enterVehicle,exitVehicle,driveVehicle,walkerHitsVehicle,requestVehicle,resetTrip} from '../modules/orientation/src/trainer-vehicle.js';
 const keys=(...codes)=>new Set(codes);
 const driving=()=>{const s=defaultGameState();s.player=vehiclePoint(s.vehicle,-1.8,0);s.started=true;s.paused=false;assert.equal(enterVehicle(s).ok,true);return s;};
 
@@ -64,8 +64,8 @@ test('Trip meter counts only completed movement, includes reverse, persists and 
 });
 
 test('Town services have physical footprints and signs use names of actual streets',async()=>{
- const {SERVICE_SITES,STREET_SIGNS,ROAD_FEATURES,distanceToPath}=await import('../src/trainer-world.js');
- assert.deepEqual(SERVICE_SITES.map(p=>p.id),['fire','police','hospital','thw']);
+ const {SERVICE_SITES,STREET_SIGNS,ROAD_FEATURES,distanceToPath}=await import('../modules/orientation/src/trainer-world.js');
+ assert.deepEqual(SERVICE_SITES.map(p=>p.id),['fire','police','hospital','thw','rescue','education']);
  for(const site of SERVICE_SITES){assert.ok(BUILDINGS.some(b=>b.service&&b.e===site.e&&b.n===site.n));assert.equal(vehicleBlocked({...VEHICLE_START,e:site.e,n:site.n}),true);}
  for(const sign of STREET_SIGNS)assert.ok(ROAD_FEATURES.some(r=>r.name===sign.name&&distanceToPath(sign.e,sign.n,r.points).distance<8));
  for(const b of BUILDINGS.filter(b=>b.name==='Sankt Florian'))assert.ok(ROAD_FEATURES.some(r=>['street','highway'].includes(r.kind)&&distanceToPath(b.e,b.n,r.points).distance<31),'House has a nearby street frontage');
@@ -73,11 +73,28 @@ test('Town services have physical footprints and signs use names of actual stree
 });
 
 test('Authored landscape has a real summit, a valley, a quarry and individually selectable wind turbines',async()=>{
- const {heightAt,LANDMARKS,QUARRY,FIELDS}=await import('../src/trainer-world.js');
+ const {heightAt,LANDMARKS,QUARRY,FIELDS}=await import('../modules/orientation/src/trainer-world.js');
  assert.ok(heightAt(6750,6500)>600);assert.ok(heightAt(6750,6500)-heightAt(4700,6600)>500);
  assert.ok(heightAt(3250,3250)-heightAt(4300,3400)>85);
  assert.ok(heightAt(QUARRY.e,QUARRY.n)<heightAt(QUARRY.e+350,QUARRY.n)-20);
  const turbines=LANDMARKS.filter(p=>p.kind==='turbine');assert.equal(turbines.length,3);assert.equal(new Set(turbines.map(p=>p.id)).size,3);
  assert.ok(TREES.length>120000);assert.ok(TREES.some(p=>p.species==='broadleaf'&&p.roadside));assert.ok(TREES.every(p=>heightAt(p.e,p.n)<420));assert.ok(FIELDS.length>=8);
  const raw=defaultGameState();raw.target=LANDMARKS.length-1;assert.equal(restoreGameState(raw).target,LANDMARKS.length-1);
+});
+
+
+test('Strong brakes stop from 120 km/h within 25 metres; opposite throttle stops before reversing',()=>{
+  for(const [input,deceleration,limit] of [[keys('Space','KeyW'),24,25],[keys('KeyS'),18,32]]){
+    const s=driving();Object.assign(s.vehicle,{e:4210,n:3400,heading:90,speed:33.3,steer:0});
+    let distance=0,time=0;
+    while(s.vehicle.speed>0&&time<3){
+      const previous=s.vehicle.speed;distance+=driveVehicle(s,input,.05);time+=.05;
+      assert.ok(Math.abs(s.vehicle.speed-Math.max(0,previous-deceleration*.05))<1e-9,'Deceleration comes from braking, not a collision');
+    }
+    assert.equal(s.vehicle.speed,0);assert.ok(time<2);assert.ok(distance>20&&distance<limit,`${distance} m`);
+    if(input.has('KeyS')){driveVehicle(s,input,.05);assert.ok(s.vehicle.speed<0);}
+  }
+  const s=driving();s.vehicle.speed=-5.5;
+  for(let i=0;i<5;i++)driveVehicle(s,keys('Space'),.05);
+  assert.equal(s.vehicle.speed,0);
 });

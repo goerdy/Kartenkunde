@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {LANDMARKS,STATIONS,mod,bearing,angleDifference,toUnit,fromUnit,pointAlong,intersectRays,visibleFrom,defaultState,restoreState,assess,expectedCourse} from '../src/trainer-world.js';
-import {trainerMessages} from '../src/trainer-messages.js';
+import {LANDMARKS,STATIONS,mod,bearing,angleDifference,toUnit,fromUnit,pointAlong,intersectRays,visibleFrom,defaultState,restoreState,assess,expectedCourse} from '../modules/orientation/src/trainer-world.js';
+import {trainerMessages} from '../modules/orientation/src/trainer-messages.js';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 
@@ -36,7 +36,7 @@ test('Stored sessions bound inputs and reject malformed coordinates and referenc
 });
 test('All trainer text and template labels resolve in all three languages',()=>{
   const keys=Object.keys(trainerMessages.de);for(const lang of ['en','fr'])assert.deepEqual(Object.keys(trainerMessages[lang]),keys);
-  const source=['templates/trainer.html','src/trainer.js','src/trainer-art.js','src/trainer-boot.js','src/trainer-game-state.js'].map(p=>readFileSync(p,'utf8')).join('\n');
+  const source=['modules/orientation/template.html','modules/orientation/src/trainer.js','modules/orientation/src/trainer-art.js','modules/orientation/src/trainer-boot.js','modules/orientation/src/trainer-game-state.js'].map(p=>readFileSync(p,'utf8')).join('\n');
   for(const match of source.matchAll(/(?:data-i18n(?:-label|-placeholder)?="|\bt\(')((?:tr|fp)[A-Za-z]+)/g))for(const lang of ['de','en','fr'])assert.ok(trainerMessages[lang][match[1]],`${lang}: ${match[1]}`);
 });
 test('Babylon engine and local CC0 textures match their pinned checksums',()=>{
@@ -53,7 +53,7 @@ test('Radio program ships local PCM music, licensing and valid announcement path
 });
 
 test('Topo contours cover the mountain summit and retain ten-metre intervals',async()=>{
- const {contours}=await import('../src/trainer-art.js');const lines=contours(),summit=lines.filter(p=>p.level===650);
+ const {contours}=await import('../modules/orientation/src/trainer-art.js');const lines=contours(),summit=lines.filter(p=>p.level===650);
  assert.ok(summit.length>0,'Peak must remain visible above the former 130 m contour limit');
  assert.ok(summit.every(p=>p.points.every(([e,n])=>Math.hypot(e-6750,n-6500)<150)));
  assert.ok(lines.every(p=>p.level%10===0));

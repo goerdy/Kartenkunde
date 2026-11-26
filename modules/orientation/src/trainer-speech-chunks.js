@@ -1,0 +1,1 @@
+export function speechChunks(text){return text.trim().split(/(?<=[.!?])\s+/).flatMap(sentence=>{const words=sentence.trim().split(/\s+/),out=[];let chunk='';for(const word of words){if(chunk.length+word.length>240&&chunk){out.push(chunk);chunk='';}chunk+=(chunk?' ':'')+word;}if(chunk)out.push(chunk);return out;});}

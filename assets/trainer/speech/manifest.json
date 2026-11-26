@@ -1,0 +1,3431 @@
+{
+  "version": 1,
+  "voices": {
+    "instructor": "de_DE-ramona-low",
+    "dispatch": "de_DE-karlsson-low",
+    "self": "de_DE-thorsten-medium"
+  },
+  "generator": "piper-tts 1.8.0; libopus 32k mono",
+  "clips": {
+    "instructor\nWillkommen im Ausbildungszentrum für Bevölkerungsschutz von Kartenkunde.app!": {
+      "file": "c7200f24780b2f113210dacf.ogg",
+      "bytes": 16861,
+      "sha256": "d579c31e3340f931bdee36f4e841cdc8e062170d325fd488fb4986c8c442e910"
+    },
+    "instructor\nIch bin Ihre Ausbilderin.": {
+      "file": "f9fac7626189b7cd035c5c27.ogg",
+      "bytes": 6598,
+      "sha256": "940425a057deb47799f4d67a3683cbd04cfd9b0831fd59f1aae4294f077ae9ed"
+    },
+    "instructor\nMit W A S D bewegen Sie sich, mit der Maus schauen Sie sich um.": {
+      "file": "b055b3e6d48768b2b3c2e1ad.ogg",
+      "bytes": 17150,
+      "sha256": "322d891cdd3d14bda2f0a9f7b87e626c41cb6c84b5f929d0c217cfcd9d6d8aa1"
+    },
+    "instructor\nUmschalt beschleunigt, die Leertaste lässt Sie springen.": {
+      "file": "f4862c6bdca50e6a8cfdb69e.ogg",
+      "bytes": 12221,
+      "sha256": "13f8b99fdec4fb285dd73dce7e4fb512f1a1df87fe82b120f704e564b38a31d6"
+    },
+    "instructor\nMit E sprechen Sie Personen an, lesen Kontrollschilder oder steigen in Fahrzeuge.": {
+      "file": "85fcde6a6f5d18e9d067de99.ogg",
+      "bytes": 23635,
+      "sha256": "b3f28c0da4ff3f7f378030bc839da117819f35fa44f49763642e9cb78d2240cc"
+    },
+    "instructor\nDie festen Inventarplätze sind: eins Karte, zwei Kompass, drei Rahmenplanzeiger, vier Bleistift, fünf Notizblock, sechs Fernglas und neun Funkgerät.": {
+      "file": "19a7c896b007afa5f6a79c06.ogg",
+      "bytes": 38743,
+      "sha256": "d889401ecf6fc77f68150a22c1adf121254af7b3dc75dd81c1730edc990a0c53"
+    },
+    "instructor\nMit der rechten Maustaste betrachten Sie die Karte oder peilen mit dem Kompass.": {
+      "file": "5ff377cb5d7f371ff7800cfb.ogg",
+      "bytes": 16476,
+      "sha256": "076c08a465ed858a91290d61ce2010780c3e3e258f4039a79ab77e4c8da8fc69"
+    },
+    "instructor\nF öffnet die Kartenarbeit, C wechselt den Kompasstyp.": {
+      "file": "72b29f7beecd42e91647e824.ogg",
+      "bytes": 13377,
+      "sha256": "a3d03a0fa05a8e8eaf6729127092eb8839622d6bdea0dc2c661423e6620bb49a"
+    },
+    "instructor\nMit V schalten Sie das Vollbild ein.": {
+      "file": "193d8ae348943a37faa8f7e4.ogg",
+      "bytes": 8515,
+      "sha256": "d2b53e95d99064ff69952608cab85d0b9b7bd26fc4a0eb375f0d3f7739ca1e23"
+    },
+    "instructor\nEscape schließt Ansichten oder gibt die Maus frei.": {
+      "file": "28e2d3be12aad4f08cf1d9e4.ogg",
+      "bytes": 13253,
+      "sha256": "829801a2b58a26b7bec26ba5008a7fce4af0a511a95af102e2d7655c8e8df22a"
+    },
+    "instructor\nNeue Aufträge, Hinweise, Fahrzeuge und Ergebnismeldungen laufen über das Funkgerät auf Taste neun.": {
+      "file": "4266e69ae9adf9bfb277fba2.ogg",
+      "bytes": 23082,
+      "sha256": "d0d6b4efcb8b7b65663710f5e3fbc751e5b7d5838cff25510a94240d1385e798"
+    },
+    "instructor\nIm Notizblock finden Sie die Lückentexte zum aktuellen Auftrag.": {
+      "file": "1d2720c84ed7f12020abb72c.ogg",
+      "bytes": 14498,
+      "sha256": "d39898e8918a03dcea5dc2b302b0983944827d65b777a50ffdaab18b6c67956d"
+    },
+    "instructor\nLinks sehen Sie Ihren Fortschritt.": {
+      "file": "2802a2dc39c4a3f41dd9dd52.ogg",
+      "bytes": 6280,
+      "sha256": "09b7be72d6f605368bb08579036ded12c69d67b2301e42602df6ead36b6ff68e"
+    },
+    "instructor\nUTMREF der fiktiven Übungskarte: zweiunddreißig Ulrich": {
+      "file": "c95f1273a37021ba2a5f7906.ogg",
+      "bytes": 13697,
+      "sha256": "20c8a0eb417d1ecc47f8ac372aa315cefe329c2323ea9fee5b7bcc2a186ce788"
+    },
+    "instructor\nKaufmann Anton.": {
+      "file": "af014a954d8ff33efffe6356.ogg",
+      "bytes": 6347,
+      "sha256": "eea63fd33b807efc94c1349b91cb6b216e61d14e82775b6882bad5c62b37fd8c"
+    },
+    "instructor\nErst Ostwert, dann Nordwert; jeweils": {
+      "file": "d9c7abd8e709648236520976.ogg",
+      "bytes": 9420,
+      "sha256": "e0fb42622879d3cf25ae47777f5b007c1563ade439f36373b229cdda6cc66805"
+    },
+    "instructor\n3": {
+      "file": "3688c8860e4a88d760d1b9c5.ogg",
+      "bytes": 1743,
+      "sha256": "f47f3922ec12526a6aa9c04b92eef9322f91b018cb695a5695a6b2119f3785f9"
+    },
+    "instructor\nZiffern (": {
+      "file": "7a10e6c3dd0aed0e19949dad.ogg",
+      "bytes": 3843,
+      "sha256": "b7e20c4a34032437400df0b4cac53521549e9e3cc717237081040153cac59eda"
+    },
+    "instructor\n100": {
+      "file": "623df94198a083d79896c7a5.ogg",
+      "bytes": 3381,
+      "sha256": "8896dfe8f9f9ecd4ca244e2a8bdd67e2e9e1c1373e70edc3fce7f08ec8697db2"
+    },
+    "instructor\nMeter), optional": {
+      "file": "90fa7d352ea5aa22a0413682.ogg",
+      "bytes": 5219,
+      "sha256": "6129fe6642fbae6ba962de6d18fa316163f867d473426d20252c7af18edc46b7"
+    },
+    "instructor\n4": {
+      "file": "aa0106c108bcd0a0e2bf7103.ogg",
+      "bytes": 1895,
+      "sha256": "109d513fc7b43947ad35913766780f67bd98f864e731dbbcf01ab78fb3b9c7d4"
+    },
+    "instructor\n10": {
+      "file": "56ae4c756bd3adb45353a018.ogg",
+      "bytes": 1563,
+      "sha256": "3262ce61e208ae140ad49cd494d5f01211eb7899712a0c4f499eb1d3e536c9ee"
+    },
+    "instructor\nMeter).": {
+      "file": "acf5c0002587cfec13c12fde.ogg",
+      "bytes": 1765,
+      "sha256": "ae6c40751d9ef1019f846a9b64e4207c3932da8e5daf42fb3c74bd38860aff24"
+    },
+    "instructor\nBeispiel: zweiunddreißig Ulrich": {
+      "file": "06d691caef0b9958d8f09697.ogg",
+      "bytes": 7834,
+      "sha256": "4a768bf83938a5586570b1ce97f37670c22a6ae02bcbeaf0ef024e2ebebdb9dd"
+    },
+    "instructor\nKaufmann Anton": {
+      "file": "5c73e2fa6042aa7a6666fe79.ogg",
+      "bytes": 4194,
+      "sha256": "d7d658f10c03bb170d9198ca49ebc94f5a513cac4f6747a067d85169f963b88a"
+    },
+    "instructor\nnull eins neun null eins sechs": {
+      "file": "2573db3c180235673ff194ee.ogg",
+      "bytes": 6363,
+      "sha256": "d2df60e28ac11a17125f7ba3bcd3b45b5a669e20479271b1285d0c1d35cc7b61"
+    },
+    "instructor\nBeide Werte müssen gleich viele Stellen haben.": {
+      "file": "fcf835a8e2fede3fc1481641.ogg",
+      "bytes": 10251,
+      "sha256": "b64e40cd9adc8efa6b387be2cc6f17f57bdc72584cabac504ac70ef423a44b2c"
+    },
+    "instructor\nSprechen Sie mich während der Ausbildung jederzeit mit E an.": {
+      "file": "38f838f33c4c2a04b234da99.ogg",
+      "bytes": 14481,
+      "sha256": "1401200c5cb552bd741e264a7ffa4dceaf7b610500bce832bd3e2a161eacc50d"
+    },
+    "instructor\nFordern Sie nach der Einführung über Funk die Prüfung an.": {
+      "file": "a1c4559120030b2a0b72c0d4.ogg",
+      "bytes": 12421,
+      "sha256": "f807fc0a95b0ce81667132437940b6633cac513e7c9bbb457d4825a1d1c2d23e"
+    },
+    "instructor\nAn der großen Wandkarte erkennen Sie Kartenrand, Kilometergitter, Legende, Straßen, Gewässer, Siedlungen und Höhenlinien.": {
+      "file": "8d7365eb5d24eeec839951eb.ogg",
+      "bytes": 28129,
+      "sha256": "92a6ff8018b9ac5776a30836b2ca1cb00d2935bbb24860a05f516b8ac01daf95"
+    },
+    "instructor\nDer Maßstab ist eins zu fünfzigtausend.": {
+      "file": "eed6b398a2bcbe92596d7ea7.ogg",
+      "bytes": 9911,
+      "sha256": "629f80faf6c3e1aab3f0085b65c5c14feb5a39469f6ad7936991a80f69109813"
+    },
+    "instructor\nEin Zentimeter auf der maßstäblichen Handkarte entspricht fünfhundert Metern im Gelände.": {
+      "file": "9593471882098f8645001f3d.ogg",
+      "bytes": 20726,
+      "sha256": "174e8f2bf15404945bd51b6a971ce169eeb3519afa49d016417572c62824349b"
+    },
+    "instructor\nDas Gitter hat einen Abstand von eintausend Metern.": {
+      "file": "0726a503bc219da6cc8febbb.ogg",
+      "bytes": 11203,
+      "sha256": "ce94a4724748e190b0060c7b6f823aeeb62834b9db99336457eb23d48ad6fb07"
+    },
+    "instructor\nZwischen zwei benachbarten Höhenlinien liegen zehn Höhenmeter.": {
+      "file": "2f2f8c215a95843a852860dc.ogg",
+      "bytes": 14872,
+      "sha256": "5c2a2442eaf2d6973f9bc96cec9e0c220be2e13d9a94863e525d51fd2726d2ce"
+    },
+    "instructor\nNotieren Sie die drei gesuchten Werte mit Taste fünf und melden Sie die Ergebnisse über Funk.": {
+      "file": "1b699a63868ebf06efd86ed2.ogg",
+      "bytes": 19096,
+      "sha256": "f88089d81e1be206023a8769564176c7bf3d3b73cab77fb8c0b3de9808079b28"
+    },
+    "instructor\nWir sind am Übungspunkt eins.": {
+      "file": "b6ac91626d2395a13d158fe1.ogg",
+      "bytes": 6867,
+      "sha256": "406853fb55cbfc549fe43d801b5e1694bd27f5d90c396be67adbb23f4634e8f0"
+    },
+    "instructor\nLegen Sie mit eins und zwei Karte und Kompass an.": {
+      "file": "87879acc706223250e832367.ogg",
+      "bytes": 11024,
+      "sha256": "763e45d7440a69b0fde91fc2839c2a66552ad891e41feee68929c5cb4a65f31d"
+    },
+    "instructor\nÖffnen Sie mit F die Kartenarbeit.": {
+      "file": "eb5c94a85c9d99a55164d093.ogg",
+      "bytes": 7784,
+      "sha256": "1faf380c4c1183f740d9d9a3cccb457d5fa4e160a538607bc7047ab8ea1d1e6d"
+    },
+    "instructor\nBringen Sie die Karten-Nordrichtung und die Kompass-Nordrichtung zur Deckung.": {
+      "file": "0f7df3b0ce40f02504311855.ogg",
+      "bytes": 13513,
+      "sha256": "81c1680ece92e0a1ee3f002f3825edfb6ff6b6a08f0e474e964efc3b55f9c021"
+    },
+    "instructor\nAnschließend orientieren Sie die Karte ohne Hilfe der Nadel anhand des Kirchturms Sankt Florian.": {
+      "file": "2aa85665770198af07b52985.ogg",
+      "bytes": 24647,
+      "sha256": "759de4b47b2843cbcc45ed446f16ff71708f4acc406c55cd5a5f57ffcf71d724"
+    },
+    "instructor\nVergleichen Sie die Richtung vom eigenen Punkt zum Kirchturm auf der Karte mit der tatsächlichen Blickrichtung zum Kirchturm.": {
+      "file": "dbbe57b52d5322767f2be8a4.ogg",
+      "bytes": 22080,
+      "sha256": "75e523be9bc11e4595782e0e80fe21feef8f7dac9e5e3412598f8bcc91f75d42"
+    },
+    "instructor\nBeide Verfahren werden erkannt; den Abschluss melden Sie über Funk.": {
+      "file": "4ee66157969e3652ece993cb.ogg",
+      "bytes": 13990,
+      "sha256": "1b416b1d45261be412761cec7361963a65248c0c27e6ad30a3698c2003b96ca6"
+    },
+    "instructor\nDas Schild benennt Übungspunkt zwei.": {
+      "file": "01ef4d4fc200dcb9fa6aa840.ogg",
+      "bytes": 9946,
+      "sha256": "f1f2aab36dff698e479b59cc6cea1da165fc30ff40480713ff8f23708c0fe23d"
+    },
+    "instructor\nFinden Sie diesen Punkt auf der Topokarte.": {
+      "file": "5d1aa625a4e8613d1385f6b6.ogg",
+      "bytes": 8021,
+      "sha256": "c200cd2f9621ff8ba9973f1a64461f8afe7f67026e0dc619f679b32ae987c957"
+    },
+    "instructor\nLesen Sie erst den Ostwert, dann den Nordwert des Kilometerquadrats.": {
+      "file": "f411b0e8bca7ba57481c32ef.ogg",
+      "bytes": 17682,
+      "sha256": "83510ae20983da32f41d6bf2ab90e3f0b779ed538d11323682fdddc1f43625f9"
+    },
+    "instructor\nMit dem Rahmenplanzeiger auf Platz drei bestimmen Sie die restlichen Meter.": {
+      "file": "af4cb849cafbd4370eaec252.ogg",
+      "bytes": 14117,
+      "sha256": "50a6d80f8b2099aa14cddf5f143bf81a6232272d1b52ffea6490bfc1098ec36b"
+    },
+    "instructor\nTragen Sie beide Werte selbst im Notizblock ein.": {
+      "file": "4cd0057283f155f0c7d4d93c.ogg",
+      "bytes": 10712,
+      "sha256": "1ae9038a099d854390794707b559ac8301c3f57353688197a8b9ba6fb404b915"
+    },
+    "instructor\nDer Funkruf Ergebnisse melden lässt die Leitstelle Ihre Messung prüfen.": {
+      "file": "faa60bf5c861a8f103bf2087.ogg",
+      "bytes": 16325,
+      "sha256": "82189d5a0cb826702bfa8773f9acc37bf4892feb6a09954ea084b3fac1c99bb8"
+    },
+    "instructor\nÜbertragen Sie die Koordinate zweiunddreißig Ulrich": {
+      "file": "e2dab238dc2588c6c2784bf4.ogg",
+      "bytes": 11176,
+      "sha256": "a32eaeaf351c2e4808a47672762c29514ad4cf48c10d8356e6cc97255169a6df"
+    },
+    "instructor\nnull eins sechs null zwei vier": {
+      "file": "7842e8662fadf403792419d4.ogg",
+      "bytes": 7248,
+      "sha256": "cad31955a3c319f9580ac61ad81bf8a34dd6fa79fb5226da2b03d6254169c1c5"
+    },
+    "instructor\nauf die Karte.": {
+      "file": "5b04f7649157eac84d0d1e5b.ogg",
+      "bytes": 5726,
+      "sha256": "d3feb2b57bf575ad2d06596436fcec93464c9ec5551c28477dbd7331e872fae9"
+    },
+    "instructor\nBestimmen Sie die Marschrichtung mit dem Kompass und gehen Sie zum Kontrollpunkt.": {
+      "file": "2f736300cca006ce64c8648f.ogg",
+      "bytes": 15020,
+      "sha256": "a20120f32b2947c4813117746d1aa79e5c366a3e9e816d7b934d210338a085b1"
+    },
+    "instructor\nIch begleite Sie.": {
+      "file": "166963b74c7064cb09947050.ogg",
+      "bytes": 3886,
+      "sha256": "9707f85a125d6d44147a1901bef0860dbdbe1311c8c916483abd904733070eeb"
+    },
+    "instructor\nWenn Sie dort sind, lesen Sie die Kontrollzahl auf dem Schild.": {
+      "file": "8436d315785acba6fd46b033.ogg",
+      "bytes": 13163,
+      "sha256": "b22b7d920e03890cd249465e83fb93acba2adc665e771be889a9e934870f8166"
+    },
+    "instructor\nTragen Sie diese Zahl im Notizblock ein und melden Sie sie über Funk.": {
+      "file": "b4f0988fc8b4547fc6ff25e4.ogg",
+      "bytes": 15081,
+      "sha256": "c750916bd0cf501117f1aae6ae1c314b9ebc7d51a95b225349628775736ae630"
+    },
+    "instructor\nIhr Standort ist nun absichtlich nur als Übungspunkt drei bezeichnet.": {
+      "file": "07ec895acfc0e1b4c0f99201.ogg",
+      "bytes": 14048,
+      "sha256": "9330b98f8b6924a0743309bd5058b1ecc1970ca833235b651cc8c7cdb2447127"
+    },
+    "instructor\nPeilen Sie den Kirchturm Sankt Florian und die Melderwarte an.": {
+      "file": "315ed53cbd17aca6a57f1046.ogg",
+      "bytes": 12764,
+      "sha256": "adf02b343006176fd38c6d1b8669ccacd7bb2447d6f5df15fc96e77f7c29676d"
+    },
+    "instructor\nSie können den Kartenkompass, den Spiegel-Peilkompass oder die Kompassskala des Fernglases verwenden.": {
+      "file": "de36b0469f2f77ea54ca5fc2.ogg",
+      "bytes": 25741,
+      "sha256": "a6283d90835edf045ae13e06e08636e8ace1fd6f5295c53e7495e0aff4c825d0"
+    },
+    "instructor\nNotieren Sie die magnetischen Peilungen in Grad mit drei Ziffern, zum Beispiel null vier fünf.": {
+      "file": "c3977a09120653dd607c2320.ogg",
+      "bytes": 19215,
+      "sha256": "e30a85e0cf7a6e90cdb4ba1b59517e0ae470ab4cfaa9042701e233c9443e9dd2"
+    },
+    "instructor\nÜbertragen Sie die Rückrichtungen auf die Karte.": {
+      "file": "b88993ce59e95fa51d598787.ogg",
+      "bytes": 8309,
+      "sha256": "14e56deb1c0072679915d9df1a3c20f25762a7ce479e80ebc7e18420b6b4d62a"
+    },
+    "instructor\nDer Schnittpunkt liefert Ihren Standort.": {
+      "file": "58ee1a5b9fe079eff5fc3fde.ogg",
+      "bytes": 8171,
+      "sha256": "692de321a95b7e2d9bd96a1c7a37fd53f312a55cae580a90fc2afc9996761eab"
+    },
+    "instructor\nTragen Sie auch dessen Ost- und Nordwert in den Notizblock ein.": {
+      "file": "2287fe713974a5d71f7b1f3e.ogg",
+      "bytes": 11777,
+      "sha256": "0aa046253a54ead353464fc5dbe43529934530a65e0679a9fddd6d450a600e52"
+    },
+    "instructor\nDanach melden Sie alle Ergebnisse über Funk.": {
+      "file": "f936bd0580936b12732964ca.ogg",
+      "bytes": 8548,
+      "sha256": "66f4560c6bba42be5b6f191b9581d64ea30e5c855bbbc5c8100961bdca82d312"
+    },
+    "instructor\nSprechen Sie mit der Ausbilderin im Lehrsaal.": {
+      "file": "4beebc1b1ea3b639a02a4f67.ogg",
+      "bytes": 9401,
+      "sha256": "c0c1ba884a0e71629770b9819a75cfa8985060016f305ac867d273bef8a04904"
+    },
+    "instructor\nLassen Sie sich Steuerung und Ausrüstung erklären.": {
+      "file": "eecf035c2a7fdf2637ab1213.ogg",
+      "bytes": 11800,
+      "sha256": "5d95abdfcc075592e88dd1bca3bad244c6ab27447a6674c2116b0519c08c59e5"
+    },
+    "instructor\nBestätigen Sie die Einführung anschließend über Funk.": {
+      "file": "2a205fae1d6ec6cda1351c69.ogg",
+      "bytes": 10355,
+      "sha256": "3978069a3514ac5eb93b279ce6cd9e972aa60494459430bd22af33117088d094"
+    },
+    "instructor\nDie Ausbilderin steht vorne im Mittelgang.": {
+      "file": "80185d0d1522e0d79ef59dca.ogg",
+      "bytes": 10185,
+      "sha256": "727f783d688d8ff4bdf1769e1411695ea9f8306bea6e7c2e0a3121795ff792bd"
+    },
+    "instructor\nMit E sprechen Sie sie an.": {
+      "file": "abd81fa98ffbf3c6bb0ed014.ogg",
+      "bytes": 6863,
+      "sha256": "eefc538463dc6959d07a5f8432f9aa96c4a20e95be84975158d3c5a190d5d9a1"
+    },
+    "instructor\nInventar: Karte": {
+      "file": "65b5f2dae11815d8c5acc81f.ogg",
+      "bytes": 4834,
+      "sha256": "9187ef7cc9e80d98acb9b0a347d12dbf3ea16705d2e0dd6fd0e995bab2ca4f89"
+    },
+    "instructor\n1": {
+      "file": "74e7b2d4a0e0b3a24e51ed36.ogg",
+      "bytes": 2293,
+      "sha256": "d593f0e274e36eca8256e34912d8fe3552e015567cca8f085dd28672c2c49785"
+    },
+    "instructor\n, Kompass": {
+      "file": "9f539f6436debe9b053ccc4e.ogg",
+      "bytes": 2324,
+      "sha256": "4c535c4145126613c826a5b042776ebfc6bf9a02886966c78ed905a0096928e5"
+    },
+    "instructor\n2": {
+      "file": "80b4c7987df7269de2756eef.ogg",
+      "bytes": 1723,
+      "sha256": "4193d091aa5b2341cf1cd5f847ea7a18a07305f64aabe4174c6d52dcbc681d06"
+    },
+    "instructor\n, Planzeiger": {
+      "file": "7419428a73408e39f91dfaa3.ogg",
+      "bytes": 3290,
+      "sha256": "5027c1b99a7fa0f1abf26687b1b22feb84022202c848f4faa8ec5d42bd49caa0"
+    },
+    "instructor\n, Bleistift": {
+      "file": "82e9f8088640d2ca62f20721.ogg",
+      "bytes": 2914,
+      "sha256": "dc1b8d07618d6ae544422409078fec77c63b740362f38f7aac29d3bc50746559"
+    },
+    "instructor\n, Notizblock": {
+      "file": "35d389210bc476ac9d478337.ogg",
+      "bytes": 3862,
+      "sha256": "136c74d8897848ccbb4aadc609e45804cd786577fd709db6544811677cefbaf8"
+    },
+    "instructor\n5": {
+      "file": "3f14abafccc0c4ca3bb15cdd.ogg",
+      "bytes": 1345,
+      "sha256": "145af20a750ffdee83438d682c33b0f7653d64fe4cdcae348ba8f70e8c799011"
+    },
+    "instructor\n, Fernglas": {
+      "file": "f560120f21f12b920c980e4d.ogg",
+      "bytes": 4089,
+      "sha256": "56842e024e9b4b4aaa8bf2d6330db87c76bf44b7f1514a8420ba0cb604dfd273"
+    },
+    "instructor\n6": {
+      "file": "bc23af58646de8f40e6a1a5d.ogg",
+      "bytes": 2098,
+      "sha256": "f7a64898cab33cbfa433be56e7b0113b5838e1ef0e0493ac5b73240d9766e312"
+    },
+    "instructor\n, Funkgerät": {
+      "file": "a561bbf2530c745dff7dd0ce.ogg",
+      "bytes": 3037,
+      "sha256": "5e404bd66c934db388bc0d62cc3a656eb4b76bc49e7a53d34054d6e65405700a"
+    },
+    "instructor\n9": {
+      "file": "a612f39350a8aba6ec8b3e2b.ogg",
+      "bytes": 1805,
+      "sha256": "2b545b597d79ce9e9f09fe7ff069d080ad9c3c04398c9829b72403514686a98c"
+    },
+    "instructor\nVerstanden.": {
+      "file": "13d681cd99cd4f2e9da94134.ogg",
+      "bytes": 3825,
+      "sha256": "247d21f47fe0fb7ec1df65c261275afd35c26e9930b6c0e9d050b852e30c4d2c"
+    },
+    "instructor\nIhre Ergebnisse sind korrekt.": {
+      "file": "d2d89053f1dd81c69db09e18.ogg",
+      "bytes": 7001,
+      "sha256": "df9bde03ce2b0d25e35a0a2eca5161cd10a98390503cb67186c70d4edef5ad7f"
+    },
+    "instructor\nAuftrag abgeschlossen.": {
+      "file": "c5c424b96afd88a7cba0038c.ogg",
+      "bytes": 5563,
+      "sha256": "de1a18aff42e3652d576b1b32246149a23a5d97bd6468237a97ad46289a7f5e7"
+    },
+    "instructor\nFordern Sie den nächsten Auftrag an.": {
+      "file": "b45ed91351d762e93cbb19ee.ogg",
+      "bytes": 7666,
+      "sha256": "3f19be7960c2f8081d3a040c3c0e06d1baff2a2f01347b2d254562945a92be4a"
+    },
+    "instructor\nGehen Sie mit der Ausbilderin zur großen Wandkarte.": {
+      "file": "0d4ff4644631bf1426eada1c.ogg",
+      "bytes": 10803,
+      "sha256": "2577e127ce080a59855b335d6c307326eaa115ef732cbc8f16a530b46ef3182f"
+    },
+    "instructor\nTragen Sie Maßstabsnenner, Gitterabstand und Äquidistanz im Notizblock ein.": {
+      "file": "f080a471bfa7b7936bb678b0.ogg",
+      "bytes": 17686,
+      "sha256": "4796c6c406e996a14c01f03ba627c14cc227ad3f7eacb89fc6fa82e682580a55"
+    },
+    "instructor\nKartenrand, Legende und Höhenlinien liefern die gesuchten Angaben.": {
+      "file": "17f7913728d455084003606b.ogg",
+      "bytes": 15134,
+      "sha256": "8afb0bfe3102f6638207fc57b1438eece33becf44634cb718be3b38118d4b92c"
+    },
+    "instructor\nDer Nenner gehört hinter die": {
+      "file": "8d492ce4ad021a01e9ad2829.ogg",
+      "bytes": 5937,
+      "sha256": "cc11d8cde1bfa658809965e63bd15705e42ef5cd4a45fd626cbe739a830c91fc"
+    },
+    "instructor\nim Maßstab; Gitterlinien liegen einen Kilometer auseinander.": {
+      "file": "fa5a3bf5965ac453c165ab8f.ogg",
+      "bytes": 14758,
+      "sha256": "ac5202b7906635590241a1a1275266c48f37e57211bf5985af6887b813bfac21"
+    },
+    "instructor\nDie Angabe „Maßstabsnenner“ fehlt oder ist keine gültige Zahl.": {
+      "file": "f454134cab394d46d89f4226.ogg",
+      "bytes": 14739,
+      "sha256": "20861c2f913d42e4f3da98aa4958a7beabfd4604ca4333bac4d7e9595409b38b"
+    },
+    "instructor\nDie Angabe „Maßstabsnenner“ ist zu niedrig.": {
+      "file": "b9a3f39bd2739bf5ef400a37.ogg",
+      "bytes": 10224,
+      "sha256": "7b3cfb3436bad316c9b47f8f6e4f0fcfb0e708bcb7965029deaa36274ce49fc3"
+    },
+    "instructor\nPrüfen Sie die Einheit und lesen Sie die Beobachtung oder die Lehrtafel erneut.": {
+      "file": "f2284bfeb2bbf4f2deb541f0.ogg",
+      "bytes": 19281,
+      "sha256": "997e18e315908338cce8ccc71b230d0ce4cbe85bfd45f9c155e0badfe1f135f0"
+    },
+    "instructor\nDie Angabe „Maßstabsnenner“ ist zu hoch.": {
+      "file": "2cd292123aebdc1423f9eaa6.ogg",
+      "bytes": 9703,
+      "sha256": "61fc8e339714637b5311752315609d5fb60d3354b32ae1b0678b3fd177ad218a"
+    },
+    "instructor\nDie Angabe „Gitterabstand in Metern“ fehlt oder ist keine gültige Zahl.": {
+      "file": "c98df893b0ae071a5158274c.ogg",
+      "bytes": 15646,
+      "sha256": "bcc7a5820e05c11b9f34889cbb7a1cc4ff41b925e8376917ba42c2c74c917e14"
+    },
+    "instructor\nDie Angabe „Gitterabstand in Metern“ ist zu niedrig.": {
+      "file": "729e5a109a0e6f11646a313f.ogg",
+      "bytes": 11486,
+      "sha256": "fb5897ea69c7a45add4328e41b8d33bf03795a9332837436e52f09aa51cfa254"
+    },
+    "instructor\nDie Angabe „Gitterabstand in Metern“ ist zu hoch.": {
+      "file": "3c90e3dd7c875c6f2b43d6f9.ogg",
+      "bytes": 10850,
+      "sha256": "3863f89bf001b9a4d0ed91a66689670668d7d4ae45d1953cb4547a50659a1158"
+    },
+    "instructor\nDie Angabe „Äquidistanz in Metern“ fehlt oder ist keine gültige Zahl.": {
+      "file": "53c9938259dab3e512a0199a.ogg",
+      "bytes": 16244,
+      "sha256": "45ace0dfd55f1cfa85e795b2a4cfeb4a3068c89489c22ae091d12b2a511ae6c0"
+    },
+    "instructor\nDie Angabe „Äquidistanz in Metern“ ist zu niedrig.": {
+      "file": "6234b2c1375e5406f0696298.ogg",
+      "bytes": 10307,
+      "sha256": "ed6c969f9f0ec4a066ae45d76165bb64b787af8ba58317efd08ec52e6482f7d0"
+    },
+    "instructor\nDie Angabe „Äquidistanz in Metern“ ist zu hoch.": {
+      "file": "2efa8b2affe191ba2ff0b2b0.ogg",
+      "bytes": 11737,
+      "sha256": "5485b7f00779d68f1cb476dd18cd23d2af025fa97705962ec2d0ff87799b533c"
+    },
+    "instructor\nNorden Sie die Karte erst mit dem Kompass ein.": {
+      "file": "81ad65eae87783c7b19ca576.ogg",
+      "bytes": 9835,
+      "sha256": "30307d6fc558dd567c67bbb187d6363d4a1dcdcab36b4f24ca9dab6c4a03a080"
+    },
+    "instructor\nRichten Sie sie anschließend anhand des Kirchturms Sankt Florian aus.": {
+      "file": "4f2ae463f8211449a95b0f11.ogg",
+      "bytes": 15762,
+      "sha256": "7aa3ff2a002e489d960bc6a146cf15361a6048b84d1f568c982f0e740a26bfaf"
+    },
+    "instructor\nBeide Verfahren werden am Instrument geprüft.": {
+      "file": "af1621c2c631b9753e4e49d4.ogg",
+      "bytes": 11401,
+      "sha256": "626a1feb723046c82114afdd37892168a67b96825c464d52b399da769234a749"
+    },
+    "instructor\nMelden Sie den Abschluss über Funk.": {
+      "file": "d33e1ee675399c0b5bfc611f.ogg",
+      "bytes": 6644,
+      "sha256": "88315b8307be323166299201d7c1ea8384a5df9c703f4255ede7b58a170deb85"
+    },
+    "instructor\nMit": {
+      "file": "680499c7de3218d3cdb144b4.ogg",
+      "bytes": 1321,
+      "sha256": "84eb5d86d1e82042f47cad7d1f192dd1552aa3456f3272af278b872b8fb05177"
+    },
+    "instructor\ndie Karte halten und mit": {
+      "file": "386e64279a1eff412c1fe6f6.ogg",
+      "bytes": 5786,
+      "sha256": "e046b854e83c179df2b926903b8ef6403d2cb46866f19ea20e0c8514b26d61e3"
+    },
+    "instructor\nden Kompass nehmen.": {
+      "file": "7bb6e8ef8cf438bdc9019f79.ogg",
+      "bytes": 4699,
+      "sha256": "8619cd4777cd85201926b46eb18d063182cb904cd07fc11efe7d4fe5162c5205"
+    },
+    "instructor\nF öffnet die Kartenarbeit; Karte am Drehgriff ausrichten.": {
+      "file": "dfca59c74f2219232816a03c.ogg",
+      "bytes": 12038,
+      "sha256": "73cd6e0051c22e8617693569471a2202138a70f0515115e849ba749fd03f8f88"
+    },
+    "instructor\nDie rote Nadel zeigt zum eingestellten magnetischen Norden.": {
+      "file": "1bda6bd24932a85060ecc24a.ogg",
+      "bytes": 13751,
+      "sha256": "8e6dbdc26d8db6641cdea8d94cff933c380a67b479820edd01637bd01cec5ca9"
+    },
+    "instructor\nBeim Landmarkenverfahren muss die Kartenrichtung zum Kirchturm mit dem Gelände übereinstimmen.": {
+      "file": "1a637720cb5b31a687d7a329.ogg",
+      "bytes": 19707,
+      "sha256": "0a0073648aedc97a866d61343a7f04a402f9be204583d10aaab06219a4c286ca"
+    },
+    "instructor\nErkunden Sie Übungspunkt": {
+      "file": "dbb46f00ce6e82fc7bdf80c4.ogg",
+      "bytes": 4890,
+      "sha256": "870a9dd573135e0d35e7f7ed7037262a237bc472c85664f5d97220078f68ee55"
+    },
+    "instructor\nvor Ort.": {
+      "file": "34ef3fba823856dd4f5c6d5f.ogg",
+      "bytes": 2949,
+      "sha256": "2f15432b2fcc158ed7ccbc7e821184aad885d3da8b5c6c68d4bfd040c132c8e0"
+    },
+    "instructor\nDas Einnorden muss sowohl mit Kompass als auch anhand des Kirchturms gezeigt werden.": {
+      "file": "2e46101eedcfeaf47b0f3790.ogg",
+      "bytes": 19290,
+      "sha256": "86638482bc6d32ca9ebce204478dabe2ae51e71df29c09ddcdd098ace20109d1"
+    },
+    "instructor\nBestimmen Sie am Schild Übungspunkt": {
+      "file": "a09d11a8191e094ce3651e72.ogg",
+      "bytes": 7745,
+      "sha256": "ef2b93cb40b381abe2bb75f9d26cca0ca2283aee8cc3042708a97e524b4ff21d"
+    },
+    "instructor\nIhre Position aus der Topokarte mit dem Rahmenplanzeiger.": {
+      "file": "fc213030b98953d55bb20ed0.ogg",
+      "bytes": 11864,
+      "sha256": "4cdfd9aaba9544e13eb4cb5c47848006f9719b1ee09551acaf2dfdc40282e5d5"
+    },
+    "instructor\nNotieren Sie die vollständige UTMREF-Koordinate mit drei Ziffern je Wert, zuerst Ostwert, dann Nordwert.": {
+      "file": "cecd85294fba8c8e464ae0f5.ogg",
+      "bytes": 21265,
+      "sha256": "fd461dd6aea017dcc3ed634b2b1507e9f7929cc7943d4ae9be4ca5bf59bddbff"
+    },
+    "instructor\nÜbungspunkt": {
+      "file": "1c0f0eebd9d3e6e49100f78c.ogg",
+      "bytes": 4114,
+      "sha256": "f36408814658b5e5de1a71fe1e7c0fa16d1ffe19fe271fe1a78c5293d8fbd3ff"
+    },
+    "instructor\nist auf der Topokarte markiert.": {
+      "file": "6d335a26ee4b5d844cc0d29d.ogg",
+      "bytes": 7962,
+      "sha256": "6795a654f571d6ad0d703f04c42be5b5e3bf79a686b727ce9209d6e1c3a7958c"
+    },
+    "instructor\nden Planzeiger nehmen, mit": {
+      "file": "2fb69c321200974e10a26497.ogg",
+      "bytes": 5588,
+      "sha256": "43de6f0b9d097fd257d54e36ea22dc8973b91dc34a235c01f893dbad4a13b90e"
+    },
+    "instructor\ndie Werte notieren.": {
+      "file": "cfaf5ffdce09991a31060439.ogg",
+      "bytes": 5424,
+      "sha256": "1e73e98a29227d34037ea23465f87d19ca0f99a04048e2b9e74692c2593f7c1d"
+    },
+    "instructor\nZuerst Ostwert, dann Nordwert: Kilometerquadrat lesen und die restlichen Meter mit dem Planzeiger bestimmen.": {
+      "file": "e947623f5e0e2523b96fad49.ogg",
+      "bytes": 21508,
+      "sha256": "b6fde6dbe3c8dd68bd9018e9f8d79c3a9bffa1ae1b6ed5cdff5ba010b068be18"
+    },
+    "instructor\nBenutzen Sie den Rahmenplanzeiger zur Positionsbestimmung.": {
+      "file": "29d18cd693edf69fc1a84da9.ogg",
+      "bytes": 12652,
+      "sha256": "8d0e51309db60f1227668f9b8c9d06441ca3cff13d5d342dd048f9756201d392"
+    },
+    "instructor\nDie Angabe „Ostwert P2“ fehlt oder ist keine gültige Zahl.": {
+      "file": "14f73b26d12d0d346285ca41.ogg",
+      "bytes": 15965,
+      "sha256": "8a09015c4c8c83054c78b53c2f5268270c1082a76178f30c3da7d5ac9ab69b6c"
+    },
+    "instructor\nDer Ostwert für Übungspunkt": {
+      "file": "d627486886c4d2ba21a282c3.ogg",
+      "bytes": 5951,
+      "sha256": "3f7e45b472acc1415bea0640cef3b729992ce8a4066370dfe4a55addb59a0247"
+    },
+    "instructor\nliegt zu weit westlich.": {
+      "file": "10d3ef620fe079fcb633530f.ogg",
+      "bytes": 5968,
+      "sha256": "3a47b70a3329d45028aadfe0f28ac80b9080802bd113dab8ec51286d8b8e0fa7"
+    },
+    "instructor\nPrüfen Sie die linke beziehungsweise untere Kilometerlinie und die Reststrecke mit dem Planzeiger.": {
+      "file": "de15d6469e3a377f3f06c314.ogg",
+      "bytes": 21642,
+      "sha256": "605b1228434f87f866b776d4a5a6186621db8f45023680fd9533792010bcdb06"
+    },
+    "instructor\nliegt zu weit östlich.": {
+      "file": "666b611894d5c0d0967e22bd.ogg",
+      "bytes": 5085,
+      "sha256": "892b93bb2f80b86a25bbfd639893f8494eab986ab7cfcf2d454f8271a71736a9"
+    },
+    "instructor\nUTMREF: Tragen Sie nach zweiunddreißig Ulrich": {
+      "file": "2d287ab7cd44e3b76993cc59.ogg",
+      "bytes": 11036,
+      "sha256": "4bea3ff4c7da84bd67aff05a1b10aaaabcaaaee01e21d38a6a6e506963643ba6"
+    },
+    "instructor\nKaufmann Anton zwei gleich lange Zahlengruppen mit jeweils drei oder vier Ziffern ein.": {
+      "file": "9c529ee68925b413c4c9f270.ogg",
+      "bytes": 21258,
+      "sha256": "d3e09c16542d22bc7fc6990e7c42777b5bc831f4bc319874b244aaa1e37e7037"
+    },
+    "instructor\nDer Nordwert für Übungspunkt": {
+      "file": "dca159a30e367fef33492afc.ogg",
+      "bytes": 7599,
+      "sha256": "4a336129c13e2edc2130b2668a48a7126db96eb53a0f3c3d6edf3131904d5a8a"
+    },
+    "instructor\nliegt zu weit südlich.": {
+      "file": "6106ef4e79d32be08f897895.ogg",
+      "bytes": 6126,
+      "sha256": "fed246e359c6fd9bc5587d720163ddf0ff74f9f9fe318e091c7783a9472ff1e8"
+    },
+    "instructor\nliegt zu weit nördlich.": {
+      "file": "77b0b7cc6b853a6d4e202754.ogg",
+      "bytes": 8259,
+      "sha256": "8539baa2a7af4c93b44baae60d6ed08d8e273f8b35dcae23b3f7531df76be51f"
+    },
+    "instructor\nSuchen Sie den Kontrollpunkt bei UTMREF zweiunddreißig Ulrich": {
+      "file": "29ce2b07164c6d4803c0c485.ogg",
+      "bytes": 13778,
+      "sha256": "e514ae50621f3f6dec13b407934fca491f155cacf43fbccbb9ab6d4b18767711"
+    },
+    "instructor\nauf.": {
+      "file": "dad2cdd83652010ca6799907.ogg",
+      "bytes": 2095,
+      "sha256": "01ce5472b01c3b3d17040751a486a3415e7ea7261f0979cd3106efbc2bc2e48a"
+    },
+    "instructor\nLesen Sie die Kontrollzahl auf dem Schild am Ziel ab, notieren Sie sie und melden Sie die Zahl über Funk.": {
+      "file": "2070eb671546aeb5d54d8636.ogg",
+      "bytes": 23904,
+      "sha256": "ed2ac7fff6f0082262f25f77a56ffde6f1ecdde4d93779642344a87dd38b2032"
+    },
+    "instructor\nDas Ziel liegt nordöstlich von Übungspunkt": {
+      "file": "f08ecd5c691d65e2a442a405.ogg",
+      "bytes": 9972,
+      "sha256": "f0b1294e33816d0767df953e8189f258933f96e09dac78d83cd7393b2d0db401"
+    },
+    "instructor\nDie Ausbilderin begleitet Sie.": {
+      "file": "9157a91046b997200d489d26.ogg",
+      "bytes": 6099,
+      "sha256": "77b882880eb46f52015681ca8b0b72363db494418e738344e1438902f8ab71e1"
+    },
+    "instructor\nÜbertragen Sie zweiunddreißig Ulrich": {
+      "file": "0524a0fb5fde70ec06a6ba14.ogg",
+      "bytes": 8472,
+      "sha256": "2341bdcd841fcaedf493e923502530d6362fde2ee46bad44bf36d099318857e7"
+    },
+    "instructor\nauf die Karte, bestimmen Sie die Richtung und gehen Sie etwa": {
+      "file": "377990d405a8724048b6aa04.ogg",
+      "bytes": 11658,
+      "sha256": "90e4020b2402aeacf39f32410274c97a1f53d4b39941009b42bfa94dacf77528"
+    },
+    "instructor\n224": {
+      "file": "e967a419e659cf6f711181c1.ogg",
+      "bytes": 7891,
+      "sha256": "2ee96059202d7d21722203b37b7ac979379ca70240a05ada880dbc982cb73052"
+    },
+    "instructor\nMeter.": {
+      "file": "b2ad194720ab2e00ac23f70e.ogg",
+      "bytes": 3246,
+      "sha256": "b75d1adc0fb4fd906f79d73ebaf662e3e3ec63c137a83b89e7f3f16014056efe"
+    },
+    "instructor\nErkunden Sie Kontrollpunkt vor Ort.": {
+      "file": "cae1098719ce7d63c033ac15.ogg",
+      "bytes": 8403,
+      "sha256": "9df9cdf1fbf040f35ec8a15feac4cdbc211b0dff86b5c690252e7e9a61d94165"
+    },
+    "instructor\nDie Angabe „Kontrollzahl am Schild“ fehlt oder ist keine gültige Zahl.": {
+      "file": "69d3fd26608d3eadf353c76f.ogg",
+      "bytes": 14642,
+      "sha256": "bc94c06fb8057cbc1eb4d2e0d7074d894924462ce19b27c7fbe716ded94fec4d"
+    },
+    "instructor\nDie Angabe „Kontrollzahl am Schild“ ist zu niedrig.": {
+      "file": "ffa50deded6ff59553e1e223.ogg",
+      "bytes": 11356,
+      "sha256": "0a6621f1f1fc2d1c49e888e2a5b3ae81e63680ca75b886f6002b8c8c24a40421"
+    },
+    "instructor\nDie Angabe „Kontrollzahl am Schild“ ist zu hoch.": {
+      "file": "85980304587a70b26624c5c2.ogg",
+      "bytes": 12769,
+      "sha256": "249c3f9ca28b9907fde2be5dc4ff2ad70f5d0586092c8f63b038415be9cf64be"
+    },
+    "instructor\nBestimmen Sie Ihren Standort durch Peilung zum Kirchturm Sankt Florian und zur Melderwarte.": {
+      "file": "c96977a15b5c076cb983d7bc.ogg",
+      "bytes": 19113,
+      "sha256": "b1bca185cf22898c84edde9a4070d47e362913a33620920491a47b56038bd7f0"
+    },
+    "instructor\nNotieren Sie beide magnetischen Peilungen in Grad und den ermittelten Standort.": {
+      "file": "9ee9342e5de8e37159a0ed0a.ogg",
+      "bytes": 15781,
+      "sha256": "c3caa39a13a3dc92b2b48cb366d8ab9d72a86e4131f0ba9d638e16da2ad7e9a6"
+    },
+    "instructor\nPeilen Sie beide eindeutig erkannten Landmarken mit Kartenkompass, Spiegel-Peilkompass oder der Kompassskala des Fernglases.": {
+      "file": "cd908970d5dba25e188d79a4.ogg",
+      "bytes": 30622,
+      "sha256": "ebc1efb8ff3d9d21dd5b19478957eaebc9bc6753b6ee78c2352aeb3bc87c95fc"
+    },
+    "instructor\nNotieren Sie die Peilungen im Notizblock.": {
+      "file": "7bdb64d29809cd847fa7b558.ogg",
+      "bytes": 8185,
+      "sha256": "245d400d953dfd45adcff91d9811aede3780c86f1a348a18f138a6d53e130973"
+    },
+    "instructor\nDie Rückpeilungen sind jeweils um": {
+      "file": "68b2a73c49165ac84c747b3a.ogg",
+      "bytes": 9001,
+      "sha256": "300f6a88fcab22f1eb17cfea17c69fbdcb3c17cb70c655917811c3ee31950838"
+    },
+    "instructor\n180": {
+      "file": "1f449c88fa468af1dd6d7496.ogg",
+      "bytes": 4621,
+      "sha256": "38d34040af2741648e1de64e0917de500ef922724bf5f2903e2e2e32a1cf845e"
+    },
+    "instructor\nGrad versetzt.": {
+      "file": "58aa895196fb6628bbcc973f.ogg",
+      "bytes": 4584,
+      "sha256": "f55f0ac4c5cdd5e7571a91a586d0e78150f2065801bc72444a2944b3f429d9b7"
+    },
+    "instructor\nZwei von den bekannten Landmarken ausgehende Linien schneiden sich am gesuchten Standort.": {
+      "file": "b4edaec3f2b212eb288fd460.ogg",
+      "bytes": 16835,
+      "sha256": "e2bfa915d489135f346b91a36cb72329082a14369ac5ab4efaa44b0a2a6281e4"
+    },
+    "instructor\nAusbildung erfolgreich abgeschlossen.": {
+      "file": "8df252da24fd187afa375e46.ogg",
+      "bytes": 7934,
+      "sha256": "809b504bd1619ae2ead7e48bf70fcc49a6623ba837afd5c1d26df4f68ccae720"
+    },
+    "instructor\nSie können jetzt den ersten selbstständigen Einsatz anfordern.": {
+      "file": "0fd6ea3788106f033d3dde4f.ogg",
+      "bytes": 12253,
+      "sha256": "d6c12cef27b63c4f6c7eb5b20913eca869f07ae7ccf315e6d78777cc829100e9"
+    },
+    "instructor\nDie Angabe „Ostwert Standort“ fehlt oder ist keine gültige Zahl.": {
+      "file": "96c4361b2384a54127aa39a9.ogg",
+      "bytes": 16135,
+      "sha256": "edd5b95542c32154f3b44994c5638d47a713b7bc29e97053416b08676ac5a0bc"
+    },
+    "instructor\nDie Angabe „Peilung Kirchturm in Grad“ fehlt oder ist keine gültige Zahl.": {
+      "file": "c8d6a9db7e858b6ab239a5ed.ogg",
+      "bytes": 18348,
+      "sha256": "f1a9b576bd618e32b4cac9e020f1b4e7dcd8d71459a853a30a24b4b1e6a19a3e"
+    },
+    "instructor\nDie Peilung „Peilung Kirchturm in Grad“ passt noch nicht.": {
+      "file": "5863506a7d7e0f7161f9b8b3.ogg",
+      "bytes": 10903,
+      "sha256": "8918880cd43cb122ace692037118f3ce3b7ecf65522e54fa1b3150d26256f206"
+    },
+    "instructor\nPrüfen Sie Ziel, Nordrichtung und die Gradskala.": {
+      "file": "3fa08881acc8fdca137f99b2.ogg",
+      "bytes": 10558,
+      "sha256": "3b041a616825294fbd98b3a8a8f4eba13d5b3931014c7e4727dd2c48a68047b5"
+    },
+    "instructor\nDie Angabe „Peilung Melderwarte in Grad“ fehlt oder ist keine gültige Zahl.": {
+      "file": "bf61e90dc820b2dd31d04315.ogg",
+      "bytes": 16491,
+      "sha256": "fb9b5bb8efdfa40c994e2869eb9b3669baf270dd864c05c65ce3565a4f36c16b"
+    },
+    "instructor\nDie Peilung „Peilung Melderwarte in Grad“ passt noch nicht.": {
+      "file": "bd7ffb22d72be0af10caf41b.ogg",
+      "bytes": 12353,
+      "sha256": "98c31bc25bba71d98aa3d491f6980cbeffa09b7dda7f294f1af33f26865d2ce6"
+    },
+    "instructor\nErkunden Sie die L": {
+      "file": "3570f33cc87990b1b75c5693.ogg",
+      "bytes": 5223,
+      "sha256": "67683fe848ad6039ee28c28ff76c45e71d54c9cd3f0c85d806e27137cc770b27"
+    },
+    "instructor\n112": {
+      "file": "0b852483be004a9436652786.ogg",
+      "bytes": 6414,
+      "sha256": "a36fa6c9518723f50192f40632a95ecdec4e2e4ab5b66763ca1da3c023a34024"
+    },
+    "instructor\nzwischen Sankt Florian und dem Abzweig Am Eigenschutz.": {
+      "file": "10fd07ba0f13c000d2b0e69a.ogg",
+      "bytes": 11757,
+      "sha256": "6146b1345214bc6bb62ea4cce366ccb5b215b73c54c65fd29d66f5249bf4fe1a"
+    },
+    "instructor\nMelden Sie die Koordinaten aller drei gekennzeichneten Straßenschäden.": {
+      "file": "5d06cddb15540413e14fa1ec.ogg",
+      "bytes": 12526,
+      "sha256": "30d75a6f23db3624ae977cf31fa44954ac296914e554c4cfbc2cd60c8e600ac7"
+    },
+    "instructor\nBeginnen Sie am östlichen Ortsausgang von Sankt Florian und folgen Sie der L": {
+      "file": "b95201c8b5698ff6da76f3ca.ogg",
+      "bytes": 19450,
+      "sha256": "c6ab49cd2d1373a377e41f2567ebf173ecbec124659bd988e51227cf260ac486"
+    },
+    "instructor\nnach Osten.": {
+      "file": "3e3b4d0fafb62f033fb64719.ogg",
+      "bytes": 3337,
+      "sha256": "eed78984eeef0f57b53745098f7e6ac97ae4ab2744bbf701f658cd29f2a045c1"
+    },
+    "instructor\nDie Schäden sind durch orange Warnkegel gekennzeichnet.": {
+      "file": "d39fb53a30af0ea12f749b37.ogg",
+      "bytes": 14453,
+      "sha256": "a6ebeeb7f398df9b55b94d333e6bf9aef9a184b315d675871b53389d04b8189a"
+    },
+    "instructor\nFür jeden Schaden ist ein eigenes Koordinatenpaar erforderlich.": {
+      "file": "cb86bf1b6ad5a993d4a1d432.ogg",
+      "bytes": 13019,
+      "sha256": "cf7d84aa72646dc92574ce9b1b48f90cf53dd5683b0045f1e0685a1ec0744839"
+    },
+    "instructor\nErkunden Sie Schadstelle": {
+      "file": "93ae740af10b8ce12a6f1158.ogg",
+      "bytes": 5347,
+      "sha256": "072932f2236805784bd1af2b4e0bdb3e7566671df9913dfe724eb0cdd1522f0f"
+    },
+    "instructor\nKoordinate": {
+      "file": "612130219b8ade5471a1e538.ogg",
+      "bytes": 3883,
+      "sha256": "b8fecd51827328327f725119818e17148e3e4371bee412c28d0c14f09d65658e"
+    },
+    "instructor\nfehlt oder hat ein ungültiges Format.": {
+      "file": "d570f2aadc0919fb7d4d7a1d.ogg",
+      "bytes": 11910,
+      "sha256": "ba973c5881ac029f3cb200989c5038121efd53bb4853fc2703f5d31c5bf6f6cf"
+    },
+    "instructor\nist korrekt.": {
+      "file": "b3694a7877a330ad73f4a1f5.ogg",
+      "bytes": 2975,
+      "sha256": "fb4718f583a44195e9b9b16fb6f3b1189f6a7051e621885e80bc2a6a5cec3241"
+    },
+    "instructor\nliegt komplett daneben.": {
+      "file": "2cc067bd51e18fb4fc69c228.ogg",
+      "bytes": 5882,
+      "sha256": "43b9f291a9073f09bbb624e6869f92ad6f4e6cf6eeff4935b5fde8b22b1ae653"
+    },
+    "instructor\nSuchen Sie die gemeldete Rauchentwicklung am südlichen Rand des Rüstholzes.": {
+      "file": "110c8e0ceb93fab936209120.ogg",
+      "bytes": 15734,
+      "sha256": "0ba754454ac2c8e55b18bf5c578a2065b0464de6d5f0e7d452c78490ec988982"
+    },
+    "instructor\nErkunden Sie den sichtbaren Übungsrauch und melden Sie den Standort.": {
+      "file": "c7e02d1e7969cd4d5244f984.ogg",
+      "bytes": 14757,
+      "sha256": "57404632bf2dd7f331d98bc0774e6e8033c2fabdce4da9abbf1c4ee62b9be134"
+    },
+    "instructor\nVom Wasserturm aus liegt die Rauchentwicklung im nordöstlichen Waldsaum.": {
+      "file": "464a88e9f00b81738e3ff0bd.ogg",
+      "bytes": 16487,
+      "sha256": "800ab0a95c5636afd0a65b0ff90adbaa842d8af6940c02dee7e72a7ea24d9a43"
+    },
+    "instructor\nMit dem Fernglas können Sie die Rauchfahne erkennen.": {
+      "file": "43f5cc6048ce3d7924feee29.ogg",
+      "bytes": 9559,
+      "sha256": "15beb4838b4a1c0ac7c2094cbbb5b261b9e26b467d483cc26e1bf8b6c6aa01ac"
+    },
+    "instructor\nNähern Sie sich anschließend zur genauen Verortung.": {
+      "file": "83eb9f8722108be1a27ab826.ogg",
+      "bytes": 10330,
+      "sha256": "b7fbc6bfb8132fa070eb7f46a6c7fbe4b839fb141354cd518405c7f6c8490606"
+    },
+    "instructor\nErkunden Sie Rauchentwicklung vor Ort.": {
+      "file": "27615d5fbb19324f44caa7b7.ogg",
+      "bytes": 7642,
+      "sha256": "20c24440008635064799830647b9d753fc92b6a826a60722088d535bdc013504"
+    },
+    "instructor\nDie Angabe „Ostwert Rauch“ fehlt oder ist keine gültige Zahl.": {
+      "file": "2328b3b6625110dc87f23fce.ogg",
+      "bytes": 16123,
+      "sha256": "7199b44fcb0c32b4114677654f787be50ca82f426fbbb6db88209ebc7a0c217d"
+    },
+    "instructor\nDer Ostwert für Rauchentwicklung liegt zu weit westlich.": {
+      "file": "0616d24840cf498e3126120d.ogg",
+      "bytes": 14698,
+      "sha256": "e3fee2111ee8bacb4d491940fbce75bb95fc9702de973a1a918ace88c54df46b"
+    },
+    "instructor\nDer Ostwert für Rauchentwicklung liegt zu weit östlich.": {
+      "file": "22d6763d3c26ab8bcdace638.ogg",
+      "bytes": 11652,
+      "sha256": "41c60fccf03571bd3f2bf3e7702d071e9d3f70aace39e86aaa632b6fecbdb0d1"
+    },
+    "instructor\nDer Nordwert für Rauchentwicklung liegt zu weit südlich.": {
+      "file": "c115ffecccd1b31266336ab1.ogg",
+      "bytes": 13423,
+      "sha256": "143c8f99cf30e7628473f2b5b9f610b900de6e32239e08202c75076374a1ff8b"
+    },
+    "instructor\nDer Nordwert für Rauchentwicklung liegt zu weit nördlich.": {
+      "file": "5861f548119fb8983e5431b7.ogg",
+      "bytes": 15026,
+      "sha256": "56913dafa1b90c23653f3da40863ecc68f47ba27b770dfb5cd3aa7324832e814"
+    },
+    "instructor\nFahren Sie zur gemeldeten Unfallstelle zweiunddreißig Ulrich": {
+      "file": "b8eba095976af22e41685e48.ogg",
+      "bytes": 14964,
+      "sha256": "9af065be569ef12c028e4c03e45aeb3e9a4c380476a668e77adf2d290a76bf97"
+    },
+    "instructor\nnull fünf sechs null zwei drei": {
+      "file": "d6c36834452291c126b87454.ogg",
+      "bytes": 6346,
+      "sha256": "063616f97073a1e71f7b0c9c5d2b28bee9d0bcce7d674eb015f4f7107cd47511"
+    },
+    "instructor\nin Kupplingen.": {
+      "file": "9c48bd6cbbe394c6fdb53e25.ogg",
+      "bytes": 4041,
+      "sha256": "dc0c513385518923f5225ae74883c28ae48fd63fe4dfbb5a5eb23710ec5b443e"
+    },
+    "instructor\nSprechen Sie vor Ort mit der betroffenen Person und melden Sie Standort und Anzahl der Verletzten.": {
+      "file": "62d786f18feb0009883e18aa.ogg",
+      "bytes": 19371,
+      "sha256": "942a52ed10c550d4ad5520df3c595d96612901631491677395ec476775de7da4"
+    },
+    "instructor\nDie Unfallstelle liegt an der Langen Leitung im Ortskern von Kupplingen.": {
+      "file": "f78a0b02eef39cacac49aad2.ogg",
+      "bytes": 13999,
+      "sha256": "843f2eada7bcaf0150f0a6861ddbd68b72035f013da263eb7d7cafb80c3f38ff"
+    },
+    "instructor\nSteigen Sie aus und sprechen Sie die Person mit E an.": {
+      "file": "695f6e2ab13ab7732a38c5eb.ogg",
+      "bytes": 10022,
+      "sha256": "a95926ac2d3d13076c3b9dbb51edf4e3ae168465170446a959c29fa5c2dde15a"
+    },
+    "instructor\nIhre Aussage gehört in den Notizblock.": {
+      "file": "622928625dd88c850b91f947.ogg",
+      "bytes": 8865,
+      "sha256": "92435898c3d5e864095e7b4ab0d7d10605f555ed8d1da578f11d86bae2d5e645"
+    },
+    "instructor\nErkunden Sie Unfallstelle vor Ort.": {
+      "file": "83555d2fa9bfc9cb0ef0cacb.ogg",
+      "bytes": 9254,
+      "sha256": "907a5258683ef3fd73b4aac33dc09b428791759a5733229e2af3bd0cf9b3500c"
+    },
+    "instructor\nSprechen oder lesen Sie bei Unfallstelle mit E.": {
+      "file": "1f63699b224bf2e57c47830b.ogg",
+      "bytes": 12365,
+      "sha256": "24855e386eb2165da29c97983911197fcd0898620366c28df484c5e1fe4345a0"
+    },
+    "instructor\nDie Angabe „Ostwert Unfall“ fehlt oder ist keine gültige Zahl.": {
+      "file": "ac1ba0f898213caa969958bb.ogg",
+      "bytes": 17550,
+      "sha256": "91f28d5ec79719d99b1526dd7b0513d05e32ea339d9e683245ce31c2a3f1e873"
+    },
+    "instructor\nDer Ostwert für Unfallstelle liegt zu weit westlich.": {
+      "file": "566e055273911b20281be1b2.ogg",
+      "bytes": 13835,
+      "sha256": "1f12c39a486664de962e42e25abe3d304933e36dbf51f01ba3ca89928f16da61"
+    },
+    "instructor\nDer Ostwert für Unfallstelle liegt zu weit östlich.": {
+      "file": "34d1a6d1cd3c2e7b304cb15a.ogg",
+      "bytes": 13288,
+      "sha256": "69afcc277fa75963777d5073f758d5853af31af5e88cc50186ec633bf006e8b5"
+    },
+    "instructor\nDer Nordwert für Unfallstelle liegt zu weit südlich.": {
+      "file": "c6c3355507c10b5bbaab196f.ogg",
+      "bytes": 13965,
+      "sha256": "02b330d440b75265e89a7caf44858567bf646eb629e8b6a760e70ac26515428f"
+    },
+    "instructor\nDer Nordwert für Unfallstelle liegt zu weit nördlich.": {
+      "file": "c564bc774b04b38657b8bc90.ogg",
+      "bytes": 12799,
+      "sha256": "5ee98ed2e713c5e2232659388426428bbd0351c3f4db5cd0c208f5db8d8dc429"
+    },
+    "instructor\nDie Angabe „Anzahl Verletzte“ fehlt oder ist keine gültige Zahl.": {
+      "file": "3d9868082d8eff2183fca420.ogg",
+      "bytes": 14020,
+      "sha256": "ab0a6de2c9c6b1b5eb017d45785047ecb8c8b1cc4edc248fc4c01096a5a4afbd"
+    },
+    "instructor\nDie Angabe „Anzahl Verletzte“ ist zu niedrig.": {
+      "file": "10dfaf480a5494012c1c2be1.ogg",
+      "bytes": 10003,
+      "sha256": "63c2a4be215e350828a6b7b44bcd57c0e3b1ae0e87e0d05224a03176e4960d14"
+    },
+    "instructor\nDie Angabe „Anzahl Verletzte“ ist zu hoch.": {
+      "file": "9e3965236d19d7eceb0196f0.ogg",
+      "bytes": 11555,
+      "sha256": "0a48c01f9a12014008a04face59025423f97272ba076ef2938aae8406f912a17"
+    },
+    "instructor\nErkunden Sie die Kupplungsbrücke.": {
+      "file": "2b5ddd8a9353b86d89409345.ogg",
+      "bytes": 7040,
+      "sha256": "75779f1c25216eb55bfb3d4f2fab95d54fda35d3133469fee28af9b6dece2e94"
+    },
+    "instructor\nLesen Sie die verbliebene Durchfahrtsbreite am Kontrollschild ab und melden Sie Standort und Breite.": {
+      "file": "c52998e584d17a6351282952.ogg",
+      "bytes": 22855,
+      "sha256": "fec20f12e1a94da03d0aade5e7ef68167781556fbb8a76ad8747acdd14a054c0"
+    },
+    "instructor\nDie Brücke liegt an der L": {
+      "file": "27205f876dee2832a8e9aff0.ogg",
+      "bytes": 5607,
+      "sha256": "c95318f80389bf151fec50b4529fae1a2458a945a77c8b5bbcaff2cab19cb17e"
+    },
+    "instructor\nüber die Blaulach.": {
+      "file": "13949a4417d6bf9beaa29f1c.ogg",
+      "bytes": 4361,
+      "sha256": "4b8f760d374658eaf4758d7648c8fd7ba8801d416dea0d06380ab9c8ba7f8172"
+    },
+    "instructor\nAm westlichen Brückenkopf steht das Kontrollschild; mit E können Sie die Beschriftung lesen.": {
+      "file": "a39c5edefb74816cc81664db.ogg",
+      "bytes": 18113,
+      "sha256": "cb9cabeb554d1e9a86f59d1643cc8dbb79ba3d6b36e9ef471bad69a9be4057e6"
+    },
+    "instructor\nErkunden Sie Brückenkontrolle vor Ort.": {
+      "file": "8196ef0a294dd812ae06eb13.ogg",
+      "bytes": 8276,
+      "sha256": "2c871431e933abab429bebd791a1a63c28d05ce8d6bb0b846a612f84a72a3528"
+    },
+    "instructor\nSprechen oder lesen Sie bei Brückenkontrolle mit E.": {
+      "file": "af3f77ed83140c9108388407.ogg",
+      "bytes": 11910,
+      "sha256": "be968fdd3df01c1ecdedd57714e532078429bbc468b9f0de47e0851e61edc5c9"
+    },
+    "instructor\nDie Angabe „Ostwert Bruecke“ fehlt oder ist keine gültige Zahl.": {
+      "file": "c8f443e4bdd191109d8b5533.ogg",
+      "bytes": 16716,
+      "sha256": "544a90984aa0ee5b9524def8bf55cecd75348aa7ab7712cf59349b4cb8606071"
+    },
+    "instructor\nDer Ostwert für Brückenkontrolle liegt zu weit westlich.": {
+      "file": "fc04266565895a953ab593be.ogg",
+      "bytes": 12530,
+      "sha256": "ac05ae0ee5d6e4c1ffab11ed62944cac4102bdda873e7186ee431dd9f764df1b"
+    },
+    "instructor\nDer Ostwert für Brückenkontrolle liegt zu weit östlich.": {
+      "file": "6836319026317ceff60d2cd7.ogg",
+      "bytes": 13380,
+      "sha256": "ae29e87385b2e10e26ada3fe1579f7dcdf5b674d3676ed4d13e7d921bc15f100"
+    },
+    "instructor\nDer Nordwert für Brückenkontrolle liegt zu weit südlich.": {
+      "file": "dabd47e2fc87aeb971bf3c10.ogg",
+      "bytes": 14255,
+      "sha256": "9719aec46869554d5e96ba63f4f575bf68443f3c1e5bd04eef8b5db6fc4dbada"
+    },
+    "instructor\nDer Nordwert für Brückenkontrolle liegt zu weit nördlich.": {
+      "file": "21aaf4a6121f00a5008b1cfa.ogg",
+      "bytes": 13850,
+      "sha256": "496b70e6d8db59a6c8cb2195aad6148920864b215747e17d875c499d3f218cb5"
+    },
+    "instructor\nDie Angabe „Passierbare Breite in Metern“ fehlt oder ist keine gültige Zahl.": {
+      "file": "b3309810d8e65c9c706bd302.ogg",
+      "bytes": 16960,
+      "sha256": "bbaac901f64a2aebe7c79c4e52b26153b132497fd806cf78fa3f1a752d65fa41"
+    },
+    "instructor\nDie Angabe „Passierbare Breite in Metern“ ist zu niedrig.": {
+      "file": "a0e8ace42f98306aa140e2e7.ogg",
+      "bytes": 12794,
+      "sha256": "8cb172ed05b209c114655b0acd207b8e10cf1deb09ce963689f65cd32c507b0f"
+    },
+    "instructor\nDie Angabe „Passierbare Breite in Metern“ ist zu hoch.": {
+      "file": "3b0d415ad113cd00146e796e.ogg",
+      "bytes": 12466,
+      "sha256": "f2bfe1f2b67fd6123f2a823e8be9987dab41bb27abc4d576faa7076f1e41e425"
+    },
+    "instructor\nErkunden Sie den Bereich Unter den Funkmasten.": {
+      "file": "ceda18d7ac2075879bcdb7b3.ogg",
+      "bytes": 9225,
+      "sha256": "bf70ab74ea9058991f6ec0ecd3ff61be3aa31d8981bb74714e731f680d3265e7"
+    },
+    "instructor\nMelden Sie den Standort der markierten Beschädigung und wie viele Masten betroffen sind.": {
+      "file": "78e0ec74998496ad0538f3f4.ogg",
+      "bytes": 17459,
+      "sha256": "25e23c0418b8e1199607e1521d6f433cdb4a4cb464b773c24a41c2633b667db0"
+    },
+    "instructor\nSuchen Sie im südwestlichen Kartenteil beim hohen Funkmast.": {
+      "file": "307698231054990d533cbb67.ogg",
+      "bytes": 13621,
+      "sha256": "71af93e48dc3c4986f9b7cc3f06e74dccc2d4d12103fdc6274f9b33a7f7afce0"
+    },
+    "instructor\nDie orange Markierung steht neben dem beschädigten Übungsmast.": {
+      "file": "7942ce5171183a500862e577.ogg",
+      "bytes": 13038,
+      "sha256": "b8fe784275738eed14c8f65809b641b8c14cec60e619b9cea09dbf2431894326"
+    },
+    "instructor\nErkunden Sie Mastschaden vor Ort.": {
+      "file": "0805c41458e624f3f1c8795f.ogg",
+      "bytes": 8212,
+      "sha256": "0ecc858d29b20e70741654d112702e0803e3fbae63015e78a0f98e2a701cd4a0"
+    },
+    "instructor\nSprechen oder lesen Sie bei Mastschaden mit E.": {
+      "file": "e3ca27c701add75516e766e2.ogg",
+      "bytes": 9858,
+      "sha256": "99580107b9a53ee1b32d4d7dd371bd5dc6e86541a24ba1484ec9d566f8132be2"
+    },
+    "instructor\nDie Angabe „Ostwert Mast“ fehlt oder ist keine gültige Zahl.": {
+      "file": "56991d408998ae81e0a04577.ogg",
+      "bytes": 15093,
+      "sha256": "2fac6027aae9790e9fdfebc62f741e63d079405ac8772c4ad27bc27832765c18"
+    },
+    "instructor\nDer Ostwert für Mastschaden liegt zu weit westlich.": {
+      "file": "f4d3ffbf435c012a643bde10.ogg",
+      "bytes": 11311,
+      "sha256": "976a8f2a790ebdfaba11229d92e3c6328c1c0eb9cbacaf0c7b8f046ec0b3a122"
+    },
+    "instructor\nDer Ostwert für Mastschaden liegt zu weit östlich.": {
+      "file": "2b49223ba1ef7bfabc829fc6.ogg",
+      "bytes": 13816,
+      "sha256": "b69b22ae47ce12fa3961952ef43230b02eddc7435431e3cd7988236f34c343c3"
+    },
+    "instructor\nDer Nordwert für Mastschaden liegt zu weit südlich.": {
+      "file": "128922ca9bd74ef6b48a3262.ogg",
+      "bytes": 13987,
+      "sha256": "6c3435d08d1919b7b737697b4149479c9ba7e36ebd4049428721d1d93eda1a54"
+    },
+    "instructor\nDer Nordwert für Mastschaden liegt zu weit nördlich.": {
+      "file": "68e0d6273a8ebabcab119ed2.ogg",
+      "bytes": 12770,
+      "sha256": "92e90abd47382febd868d8356b054d92838ee9b6c990751616bcf0435c49fc62"
+    },
+    "instructor\nDie Angabe „Betroffene Masten“ fehlt oder ist keine gültige Zahl.": {
+      "file": "21773564636ad3ef5990d3dc.ogg",
+      "bytes": 15402,
+      "sha256": "2881f7c84411bb414089b0c2931a9c9b6a4ebf7330ad9ac93d14950f2c37d75f"
+    },
+    "instructor\nDie Angabe „Betroffene Masten“ ist zu niedrig.": {
+      "file": "0d53116b7b41fabd3ff59a87.ogg",
+      "bytes": 10369,
+      "sha256": "833f3b84edd6490c7db0344eb915c16f214b5e286879a023f17ff077cdcb8f17"
+    },
+    "instructor\nDie Angabe „Betroffene Masten“ ist zu hoch.": {
+      "file": "79a70c4bc71347759ef2fb57.ogg",
+      "bytes": 11026,
+      "sha256": "a0671eca5482d7496a5554b58002ea4682b7f6a4b876db50fc6614fc97b9aa5f"
+    },
+    "instructor\nErkunden Sie den Pegel am östlichen Zugang zur Kupplungsbrücke.": {
+      "file": "5018ac531dd5b695c96d987a.ogg",
+      "bytes": 12689,
+      "sha256": "67cefae519ac4f831863acb9e37d7e532c3bd76387637b15b4a61663dcce7b9e"
+    },
+    "instructor\nMelden Sie die Koordinate und den abgelesenen Wasserstand.": {
+      "file": "bed45fb31d4457e94f021b3f.ogg",
+      "bytes": 11710,
+      "sha256": "0f7067d626971a4adb1c5e542fd5335fceb61f74891dfedeccc2ef52d636cdf5"
+    },
+    "instructor\nFolgen Sie der L": {
+      "file": "74b6ae9953fd2be8b2b8e8d5.ogg",
+      "bytes": 5011,
+      "sha256": "0ab4cf0b6bb51815d08def7208335ccc214e9e810e3685d23917b9613009476e"
+    },
+    "instructor\nüber die Brücke nach Osten.": {
+      "file": "d968f0e0b7e569c942cea45f.ogg",
+      "bytes": 5517,
+      "sha256": "4f1df31a3f08e9ee740ef9ce59be87e62399283df5e1350bb77df50b69709d46"
+    },
+    "instructor\nDie Pegeltafel steht am östlichen Ufer auf sicherem Boden.": {
+      "file": "4666bfc096e46ed03bc7d269.ogg",
+      "bytes": 13827,
+      "sha256": "6cef746a9811c9740fbbaba448f556341262b97e399e7880df710748f1b35b65"
+    },
+    "instructor\nErkunden Sie Pegel Blaulach vor Ort.": {
+      "file": "5710f0163fef927c4f4073a6.ogg",
+      "bytes": 7123,
+      "sha256": "be798ba8169f1a8656fc658abb565ae3cce8f6662ad55f2b98e10a2f13d9405f"
+    },
+    "instructor\nSprechen oder lesen Sie bei Pegel Blaulach mit E.": {
+      "file": "85621ec864d8a60c46da1504.ogg",
+      "bytes": 12218,
+      "sha256": "ea118989be6d7df4462574716f968d8e258ceaf234d5af0a82e74742ebf05c66"
+    },
+    "instructor\nDie Angabe „Ostwert Pegel“ fehlt oder ist keine gültige Zahl.": {
+      "file": "b1418da6eef70e7b81f870bb.ogg",
+      "bytes": 13303,
+      "sha256": "27ab897bb1c28288e2a80851463a51e40398b42621a5b2e4bb738a823296251a"
+    },
+    "instructor\nDer Ostwert für Pegel Blaulach liegt zu weit westlich.": {
+      "file": "026d5571fc0994c2eaa3ac94.ogg",
+      "bytes": 11785,
+      "sha256": "11346e0114dc954862291934b35ba10df6d89fea57af33b816c996f5589f4fdb"
+    },
+    "instructor\nDer Ostwert für Pegel Blaulach liegt zu weit östlich.": {
+      "file": "0fc6867a672b214ee534970f.ogg",
+      "bytes": 13062,
+      "sha256": "a0e82bf2e7271595ef5a0f6f03f0bfe6f176d92736a8312d0b8d47eb06ae9924"
+    },
+    "instructor\nDer Nordwert für Pegel Blaulach liegt zu weit südlich.": {
+      "file": "d99a3390692e8775e1e6ac98.ogg",
+      "bytes": 13587,
+      "sha256": "ad56ec7650133a82c33ef57c889e1b10968d1e676c5416ac64ea6226cd20c2d6"
+    },
+    "instructor\nDer Nordwert für Pegel Blaulach liegt zu weit nördlich.": {
+      "file": "b01d31110971c01366484f4f.ogg",
+      "bytes": 13767,
+      "sha256": "9b719812c97a40f5f51ba86b0e1b7e8b88c8acd83fa24db5b084d6c32a97cb95"
+    },
+    "instructor\nDie Angabe „Wasserstand in Metern“ fehlt oder ist keine gültige Zahl.": {
+      "file": "1972a751163706792ce7421c.ogg",
+      "bytes": 14283,
+      "sha256": "0cc75ecbf981f6a1378be38f66f9e83bcbde5d9f22f746d0c5cd2bf1d25cc04b"
+    },
+    "instructor\nDie Angabe „Wasserstand in Metern“ ist zu niedrig.": {
+      "file": "2bc2e564daa73d2e5f7ddfdd.ogg",
+      "bytes": 11729,
+      "sha256": "eaca617c37f3d526df039eeab6249cd061db853d46502c53e0237c76686c07bb"
+    },
+    "instructor\nDie Angabe „Wasserstand in Metern“ ist zu hoch.": {
+      "file": "cab388336b3359e3a4830d70.ogg",
+      "bytes": 11719,
+      "sha256": "d21149abe4114915efcf22c133e264876c3748bcfc51a81ff571f82e58f143b0"
+    },
+    "instructor\nSuchen Sie eine vermisste Person im südlichen Rüstholz.": {
+      "file": "98a0791c0a545580ee932d68.ogg",
+      "bytes": 12680,
+      "sha256": "346f149c732324e1eacf6c70f376f0a99cbf0fcb7de51e874b73e9bf23c9a1d6"
+    },
+    "instructor\nBefragen Sie die Person und melden Sie ihren Standort sowie die Anzahl der Personen, die noch vermisst werden.": {
+      "file": "ba3f9a8f09b13e77ec700b17.ogg",
+      "bytes": 22752,
+      "sha256": "c39efdf023983820c28b73502978f9966b11cec936d476d8723dd7796b87ed46"
+    },
+    "instructor\nDas Suchgebiet liegt am südlichen Waldsaum östlich des Wasserturms.": {
+      "file": "fd35c4da00e9178ac962bf62.ogg",
+      "bytes": 13723,
+      "sha256": "60e11efcca09700cdc0758c4d85385da2c274d204a43f4a4881cd656dc92290c"
+    },
+    "instructor\nNutzen Sie Karte und Fernglas; die Person trägt eine orange Jacke.": {
+      "file": "b5627efb98a21899d644eae4.ogg",
+      "bytes": 14040,
+      "sha256": "47cb39278811289b74222ff032e299de3767c8250c2ff28b2f82f968ca67e905"
+    },
+    "instructor\nErkunden Sie Vermisste Person vor Ort.": {
+      "file": "a7eb86d45ff0d275afb5cad8.ogg",
+      "bytes": 9427,
+      "sha256": "c523a3df09ce5e3b775e11310a0578854e131b1297eb8eab33d3d71f53b16e9f"
+    },
+    "instructor\nSprechen oder lesen Sie bei Vermisste Person mit E.": {
+      "file": "bcdbeeed6ddd6f5f3f3b2110.ogg",
+      "bytes": 11015,
+      "sha256": "68e627681d6115fb77b7da4a0d89c21cd23494849a0f4391f4c063e27a558d16"
+    },
+    "instructor\nDie Angabe „Ostwert Person“ fehlt oder ist keine gültige Zahl.": {
+      "file": "1626d43d15d8aa408e758e64.ogg",
+      "bytes": 14926,
+      "sha256": "fc31b1aa433002b0c14d2fb18eb31a783b4986b5d5afa3083122be1b2e4490e9"
+    },
+    "instructor\nDer Ostwert für Vermisste Person liegt zu weit westlich.": {
+      "file": "9436b6b7412e38bfbd8cba5a.ogg",
+      "bytes": 13779,
+      "sha256": "32a77cd8d0ffc6cfb55f12ab3e9ed48c3b42d88b2cec48bd9ef25a365f2861c7"
+    },
+    "instructor\nDer Ostwert für Vermisste Person liegt zu weit östlich.": {
+      "file": "30e7def1f6919fcfb5ac4e61.ogg",
+      "bytes": 12260,
+      "sha256": "26766c576fa62d0bd5fa7fe86f07d83bc3410c20799f9aa9a133f276dfcbac09"
+    },
+    "instructor\nDer Nordwert für Vermisste Person liegt zu weit südlich.": {
+      "file": "4e05c81a51324c0e611617db.ogg",
+      "bytes": 13143,
+      "sha256": "385ea28d1197611151c04585d24525fc446327b39e73b1a100600904572dcc43"
+    },
+    "instructor\nDer Nordwert für Vermisste Person liegt zu weit nördlich.": {
+      "file": "6708e1be5f48932dbf98342c.ogg",
+      "bytes": 12815,
+      "sha256": "6eb03d3c1d043aa7f4e97311ec4a91b01af1b2141b3f90f9b2a8818175e8d6e6"
+    },
+    "instructor\nDie Angabe „Weitere vermisste Personen“ fehlt oder ist keine gültige Zahl.": {
+      "file": "0461f12cd1b89ebb78c7251d.ogg",
+      "bytes": 17927,
+      "sha256": "aa9ac20f9b26ec4d5ba8a7da9a351afdad2103e98e5ac5624b8de0b610edace5"
+    },
+    "instructor\nDie Angabe „Weitere vermisste Personen“ ist zu hoch.": {
+      "file": "b0991da17540e9685928a02a.ogg",
+      "bytes": 12577,
+      "sha256": "ce1d889cc48b078547b5fd1b7ddf559f5ed8ca24043a8437cc570ead7040e55e"
+    },
+    "instructor\nErkunden Sie die Zuwegung zu den westlichen beiden Anlagen des Windparks Lange Leitung.": {
+      "file": "85a95adaf9da2769af54c708.ogg",
+      "bytes": 21020,
+      "sha256": "2c1510f04c02cbba3958039fc1a63285fbb45eeaeb04bff0e3d1cee89ff84df8"
+    },
+    "instructor\nMelden Sie die beiden beschädigten Wegmarkierungen.": {
+      "file": "6c463d566ce25956f83d325b.ogg",
+      "bytes": 11133,
+      "sha256": "89035d379874dab3442ef86027ee67fd729c594f91263bd9820833c52d6da9a0"
+    },
+    "instructor\nDer Weg Unter den Flügeln führt vom Ort in den Windpark.": {
+      "file": "52b4a7082aa112895b434ee1.ogg",
+      "bytes": 11542,
+      "sha256": "f1889e41e28d968feb2444544ca73d0eee335037a860f0f051c464d480e56985"
+    },
+    "instructor\nDie Schäden liegen jeweils an der Zufahrt zur westlichen und zur mittleren Anlage.": {
+      "file": "f714a3aa241a153b37561a77.ogg",
+      "bytes": 17922,
+      "sha256": "df2950070a9b0ba337d6a83674256511c8f5a9e212f11618bccbba4be796ea48"
+    },
+    "instructor\nErkunden Sie Wegschaden West vor Ort.": {
+      "file": "48093f554853923dc62705b6.ogg",
+      "bytes": 8224,
+      "sha256": "3ea12f07003ab2d59cf42aafe55f7439129e2a4928b9184f605e090b1ee17520"
+    },
+    "instructor\nErkunden Sie die markierten Umleitungspunkte an der L": {
+      "file": "77ca0fb5dd90e804107a04f6.ogg",
+      "bytes": 14134,
+      "sha256": "73fb9630868a0e4af61a8db3c476a8dcddbb6293b894cd06d14162ad750239cf"
+    },
+    "instructor\nMelden Sie beide Koordinaten und die magnetische Richtung vom westlichen zum östlichen Punkt.": {
+      "file": "e8539aa27de1f852e665a248.ogg",
+      "bytes": 18887,
+      "sha256": "46369a689c61a3192fca69b6bdb24c58a9f432177416a581ff4f1e750f7110aa"
+    },
+    "instructor\nDie beiden Kontrollschilder stehen am östlichen Rand von Sankt Florian und beim Abzweig Am Eigenschutz.": {
+      "file": "c3132e96e2b396bae2306c3d.ogg",
+      "bytes": 22690,
+      "sha256": "3bc3a6aae9ae247ca76a1afa3331a0c5914e7a9903487b08b87df8940f29c09f"
+    },
+    "instructor\nVerbinden Sie die Punkte auf der Karte und bestimmen Sie die Richtung mit dem Kartenkompass.": {
+      "file": "2f459554e4fff357af22b404.ogg",
+      "bytes": 18445,
+      "sha256": "a22204eada238f0840dadf1c64a8a1485bdae924ba8213426809520fa0b9b308"
+    },
+    "instructor\nErkunden Sie Umleitung Anfang vor Ort.": {
+      "file": "8f736cf5e8fb1b7320561c66.ogg",
+      "bytes": 8738,
+      "sha256": "09cf45a7a7be9ada220fb6de77298dc0f1af0a934dd8f81bfb7faa41021e6200"
+    },
+    "instructor\nDie Angabe „Magnetische Richtung Anfang → Ende in Grad“ fehlt oder ist keine gültige Zahl.": {
+      "file": "7ab5c14d964a7e4839c3bfff.ogg",
+      "bytes": 20763,
+      "sha256": "c1d4639fbc4656838631ce5114c6422c57a3ae5fd89aca11b5ae72ad36ce1014"
+    },
+    "instructor\nDie Peilung „Magnetische Richtung Anfang → Ende in Grad“ passt noch nicht.": {
+      "file": "2b56d8aa669015b471ec80fe.ogg",
+      "bytes": 16830,
+      "sha256": "9b52f46b4eec8faa5a0a2b150020f8ae987a5f9d8f3e6bb6fdaf47b554c382da"
+    },
+    "instructor\nErkunden Sie den Bevölkerungsschutz-Stützpunkt.": {
+      "file": "cef2ccfe2351af5851f79721.ogg",
+      "bytes": 10930,
+      "sha256": "3bdf566acfcf56b3bdc382ba96856522269c24265dd00ae9d818bedf257202f6"
+    },
+    "instructor\nMelden Sie Bereitstellungsraum, Helipad und Ansprechpartner.": {
+      "file": "e514229c6f0acc1ca7285643.ogg",
+      "bytes": 13738,
+      "sha256": "8dc37cabf2e6b872f2e7b1675f980c756909be5df68039b05d25b94e7d4144dc"
+    },
+    "instructor\nErfragen Sie, wie viele Fahrzeuge im Bereitstellungsraum Platz haben.": {
+      "file": "9923e7a12fec1ee332e21c8d.ogg",
+      "bytes": 15444,
+      "sha256": "4d5457f24ef31d0b503b5990bb7ce20da3fdd0fb1dfc47c51e08f8c0c6c96864"
+    },
+    "instructor\nDie Leitstelle erwartet drei Standorte und die Kapazität des Bereitstellungsraums.": {
+      "file": "fa2c1dbc8d858da5a0bdbb52.ogg",
+      "bytes": 20501,
+      "sha256": "de7d6fd96edd21c7ed65737fc28af8a46fb1a15f46be127b182d32d87544e7fa"
+    },
+    "instructor\nBefragen Sie den Ansprechpartner auf dem Hof nördlich der Klinik mit E.": {
+      "file": "eba8750d9047f7a464db242a.ogg",
+      "bytes": 15068,
+      "sha256": "86af60976d127dc35c35dab79a59f23ca2c8a0b58992ca03b304847d76f40010"
+    },
+    "instructor\nErkunden Sie Bereitstellungsraum vor Ort.": {
+      "file": "e61773586e611460103e690e.ogg",
+      "bytes": 10532,
+      "sha256": "6018690cecb80ed5f797cef3b4c3517346a4c2467ff4ef3690976e665d58c2c1"
+    },
+    "instructor\nSprechen oder lesen Sie bei Ansprechpartner Klinik mit E.": {
+      "file": "a56e6872e4ed7496ea370a24.ogg",
+      "bytes": 12513,
+      "sha256": "80d2d517de38ce28d56e505b8ad6644becaa2f9e4de95909ed20a113e25e7b02"
+    },
+    "instructor\nLagemeldung korrekt.": {
+      "file": "e30731043d0b9b28bca72713.ogg",
+      "bytes": 5224,
+      "sha256": "9e4c27c9992fd1d0d1d487a96b2af223a8cdde2ba8d59e74d9db2fd278163c38"
+    },
+    "instructor\nAlle zehn Einsatzübungen sind erfolgreich abgeschlossen.": {
+      "file": "a8a8a54144b1a6267069850c.ogg",
+      "bytes": 14691,
+      "sha256": "f39001453174fb8b5407ec0570e678cfa3cd0419138dae7a8444f0f68618c720"
+    },
+    "instructor\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ fehlt oder ist keine gültige Zahl.": {
+      "file": "2a22383ed7a8e00d0dd16dfe.ogg",
+      "bytes": 18340,
+      "sha256": "886082e58d74e6385142fa51191dd24e25954099a7eabc19c127f01ee5a2afc2"
+    },
+    "instructor\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ ist zu niedrig.": {
+      "file": "3e351dbfbb7842c7121f2d03.ogg",
+      "bytes": 14584,
+      "sha256": "22ccb28b588796822bf57a5af420a85bea2970aed21e020b2c3bdee8068e0367"
+    },
+    "instructor\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ ist zu hoch.": {
+      "file": "0e3dfc17415387e3a6f4c7ed.ogg",
+      "bytes": 15682,
+      "sha256": "0d628eca551aba80ff037015e490d889e8f154f551e7f1fda1ce400d6aba1ad8"
+    },
+    "instructor\nFordern Sie über das Funkgerät den nächsten Auftrag an.": {
+      "file": "47d875edda899c18fc300732.ogg",
+      "bytes": 11479,
+      "sha256": "a8392b90aad45f47d0c6d8a8b579b7e43bb08252cffd034c442c450369b240a2"
+    },
+    "instructor\nWillkommen im Ausbildungszentrum für Bevölkerungsschutz von Kartenkunde.app.": {
+      "file": "0a6555da91b50546b68422a5.ogg",
+      "bytes": 16976,
+      "sha256": "d51214d06e5df2b56c187568e8d8269643fc54d8519c01be5abd227a3d4ab1bf"
+    },
+    "instructor\nAufträge und Hinweise erhalten Sie über das Funkgerät auf Platz neun.": {
+      "file": "e42b5a78a5d0890699bc166d.ogg",
+      "bytes": 16992,
+      "sha256": "15d7259695125d42c7c1690b11a85f2be4d566f29bb6cfcb01a199c089c48636"
+    },
+    "instructor\nIhren aktuellen Auftrag sehen Sie links.": {
+      "file": "674b2cae1e1ba8578030ff26.ogg",
+      "bytes": 9259,
+      "sha256": "31d17bebbb628897f9b367859e376faa0121570f610f3a524f75653abf32e30a"
+    },
+    "instructor\nMit fünf öffnen Sie Ihren Notizblock.": {
+      "file": "2b0795602a418127bbb6fdc0.ogg",
+      "bytes": 7990,
+      "sha256": "c37703f4d901abd98433651663bf3b16619024be5a7dddac7959897f7d601a64"
+    },
+    "instructor\nBitte geben Sie Gradangaben immer dreistellig durch, zum Beispiel": {
+      "file": "00c476daac59e8714d18965b.ogg",
+      "bytes": 14784,
+      "sha256": "cdb1d2605761a4081b0c5ba251d5ed896966d8f3de3020d86eaf3d21cf421148"
+    },
+    "instructor\nnull vier fünf": {
+      "file": "68f0837c58b8bbc70469b3a7.ogg",
+      "bytes": 5319,
+      "sha256": "21965b74c11a70124010100d95daa4bd55618afbe13d80e5581e060e7845a057"
+    },
+    "instructor\nIhre Ergebnisse sind richtig.": {
+      "file": "e0093712aa1230c869b6ef2d.ogg",
+      "bytes": 6396,
+      "sha256": "747ec560e0ec787d72c39b577a0da7ca384526851c154569d9938826738d4bcf"
+    },
+    "instructor\nSie können sie jetzt über das Funkgerät an die Leitstelle melden.": {
+      "file": "1cfd5bb93a818f4427e2cdf9.ogg",
+      "bytes": 11521,
+      "sha256": "6adf88aedc7818d0609c881aafc38ef7ad43ff03ba18876c2ec2cc6dc240b9ca"
+    },
+    "instructor\nist zu ungenau.": {
+      "file": "3ca2f9218e49e571b28b3622.ogg",
+      "bytes": 3918,
+      "sha256": "285e280b7e0af6461fd58580760381e67ff068452981276cae5403c757b6558e"
+    },
+    "dispatch\nHier Leitstelle Sankt Florian – kommen.": {
+      "file": "36accec02c8fd392ce776821.ogg",
+      "bytes": 8464,
+      "sha256": "e69093a18cee4696c226f5dd404a3308603c4cd3f50caf64d6b07dd145d38573"
+    },
+    "dispatch\nVerstanden – kommen.": {
+      "file": "287ee8d69b8f55fb8a5f91b2.ogg",
+      "bytes": 5318,
+      "sha256": "99180c5e0ad2b1349971d8eedabc02c7e5759cdb6f5c7334a4235a887406c508"
+    },
+    "dispatch\nVerstanden.": {
+      "file": "91c0efeb4e0a77aac019e494.ogg",
+      "bytes": 3105,
+      "sha256": "554b7709d99f0745b443ce68c5a40fe31b046bea6faa3a8a28e0435fa833eb80"
+    },
+    "dispatch\nWir schicken Ihnen ein Fahrzeug an Ihren Standort – kommen.": {
+      "file": "405ebcdb3998a9cf722966ae.ogg",
+      "bytes": 11440,
+      "sha256": "7c859e3720741c99c897fcddbd1b4cf97fc89b49eda9c754c042788bdaac957f"
+    },
+    "dispatch\nWir entsenden einen Rettungshubschrauber an einen geeigneten Landeplatz in Ihrer Nähe – kommen.": {
+      "file": "a7d0cd6f4ed1f28d725289d8.ogg",
+      "bytes": 25201,
+      "sha256": "7f13629acfcffcf0de362e7c514831b89d1e741111ec5007ba461f62317a28eb"
+    },
+    "dispatch\nIhr Navigationsmaterial wird an Sie zurückgegeben – kommen.": {
+      "file": "bbdc4dfbf0428b01c45eb10d.ogg",
+      "bytes": 15381,
+      "sha256": "acf84731636ead552de19f4e38d1f71238bdb27a3fccc0b62e62ad5dae26b42e"
+    },
+    "dispatch\nSie werden mit Ihrer Ausbilderin zum Ausbildungsort versetzt – kommen.": {
+      "file": "9ab18dd6ec774c728460465b.ogg",
+      "bytes": 16927,
+      "sha256": "0a4d04e416a9d7753147b78165350415823659ecf5900fea5845d1ea6704b494"
+    },
+    "dispatch\nDer aktuelle Auftrag ist noch nicht abgeschlossen.": {
+      "file": "ae958898c34181ae17d20098.ogg",
+      "bytes": 10871,
+      "sha256": "d6af034c6ddb986c1030a0b4c73b688efd44c1602c81fb02bf4290dc5cc79add"
+    },
+    "dispatch\nMelden Sie zuerst Ihre Ergebnisse – kommen.": {
+      "file": "0d98b42d530cc5524d7e3549.ogg",
+      "bytes": 9642,
+      "sha256": "007223f9d597ee5c2fb1bef4dbd6be7e47b2bd458b8aeb182ed75e9f30960f35"
+    },
+    "dispatch\nAlle Aufträge dieser Kampagne sind abgeschlossen – kommen.": {
+      "file": "ab99155688af4861aa7e2630.ogg",
+      "bytes": 13900,
+      "sha256": "72fec20c77d4080cf07ff1436b77b78f35eaaddfaadec840b1c66ba95ebab41a"
+    },
+    "dispatch\nIhr Auftrag lautet: Sprechen Sie mit der Ausbilderin im Lehrsaal.": {
+      "file": "67b9fcc6f9ead9a68e34065e.ogg",
+      "bytes": 15179,
+      "sha256": "2f106ac428cd6f7bb3897f4ba4598e9fc8d72c6434abaa8c212d9eac49123e3b"
+    },
+    "dispatch\nLassen Sie sich Steuerung und Ausrüstung erklären.": {
+      "file": "b939261f673c7dfc813673ff.ogg",
+      "bytes": 11274,
+      "sha256": "42a41009636429c341efc53a6f43c30c7a471c481dbc0e25e133495805f6ecee"
+    },
+    "dispatch\nBestätigen Sie die Einführung anschließend über Funk – kommen.": {
+      "file": "a2fa4306944fcc74a5f49aab.ogg",
+      "bytes": 15366,
+      "sha256": "8f8900d7f660640860cffb89eecc7f0382edcf75bdc4b3077adf64d84b778756"
+    },
+    "dispatch\nDie Ausbilderin steht vorne im Mittelgang.": {
+      "file": "bab000c1fee11f2d9a0d7a02.ogg",
+      "bytes": 10026,
+      "sha256": "072a2b8eb234e6a59d459fbdced033d12d453ad8dda046b7b51f0a998942efa0"
+    },
+    "dispatch\nMit E sprechen Sie sie an – kommen.": {
+      "file": "e1548a1ee9d9fb3869c60f6d.ogg",
+      "bytes": 7058,
+      "sha256": "1969df041d566ee6f6be0eefeb1c5fcaea0e84ff4e6e3130bf36cb88f3d8698a"
+    },
+    "dispatch\nInventar: Karte": {
+      "file": "cf49446578388fc4b05b4c2f.ogg",
+      "bytes": 6116,
+      "sha256": "f769c4bdcf91d80fb4c51dc50116a7cd6a8efb4ac098d91eb24990d12dde42a3"
+    },
+    "dispatch\n1": {
+      "file": "92629ce2d4f0924ca3949ef4.ogg",
+      "bytes": 2273,
+      "sha256": "44cb929a8f77ba966f503bf1b712d8e43315188123c4c50ba91e79dd478381e3"
+    },
+    "dispatch\n, Kompass": {
+      "file": "6a09a0af596928dff7555596.ogg",
+      "bytes": 2294,
+      "sha256": "f2e88a85caad6ed049ca9a933aa8626f6a421e1fbe8cd61876e0c71b51882989"
+    },
+    "dispatch\n2": {
+      "file": "2723ca40e4eea500d4e05dc0.ogg",
+      "bytes": 1712,
+      "sha256": "77ca0344caa5ce170d0d49688c4dc51db7c2c1e009d0fd1b0a3ebabb5a18c084"
+    },
+    "dispatch\n, Planzeiger": {
+      "file": "f094308ad08d987dbdaf10f5.ogg",
+      "bytes": 2824,
+      "sha256": "af360488e08459837db08fe7abf445e8c5d9f7765246681a69fb2d58865ad619"
+    },
+    "dispatch\n3": {
+      "file": "a6713b8ef0fac0b77cf90501.ogg",
+      "bytes": 2272,
+      "sha256": "aee17c6a29abfafdc9b4261da86b69d3e06bf3ed16971fa30c282ce7c60c0546"
+    },
+    "dispatch\n, Bleistift": {
+      "file": "d5c6404268525e9aac3ea974.ogg",
+      "bytes": 2334,
+      "sha256": "31d41d50e00c95fd5db404dc5df35f7451efbc0fa28da2b14ca7dea444177710"
+    },
+    "dispatch\n4": {
+      "file": "24a18ecdadc31737abcf7b9e.ogg",
+      "bytes": 1547,
+      "sha256": "983e8703d2166d0c04d0d5b8b17216954d604e1e8dabf27f58e5864ee268d68a"
+    },
+    "dispatch\n, Notizblock": {
+      "file": "48df83cdba8f90cbbedc737a.ogg",
+      "bytes": 3863,
+      "sha256": "9e4722e72bdd7853eae60a8d220f82d9ec8ad9bd674eb06ff0db788b06b20976"
+    },
+    "dispatch\n5": {
+      "file": "0639ec8183d7a4595256715d.ogg",
+      "bytes": 1428,
+      "sha256": "fe802955b25178a4c40292762ea729d5d0badb8b64a246d1999c32e145d0ad70"
+    },
+    "dispatch\n, Fernglas": {
+      "file": "e2e12371ec608ccf0114d708.ogg",
+      "bytes": 2815,
+      "sha256": "9b82dd5e97ecc4a66f56da4f1c7d74fb64bbf41bef0efe079a4adea189251b56"
+    },
+    "dispatch\n6": {
+      "file": "1c71c8407a2d5fe8b5800543.ogg",
+      "bytes": 2084,
+      "sha256": "cd5fa5c6736c44c9c84ad765cc3feb003929d530d5b0ee262a591a514f4b81a4"
+    },
+    "dispatch\n, Funkgerät": {
+      "file": "81bbcd15b6c892983059112f.ogg",
+      "bytes": 2730,
+      "sha256": "d256329bd1e215e36233534440140b50abb5057496c802ccc64d5437062d1113"
+    },
+    "dispatch\n9": {
+      "file": "7025875ab1d812e7b5f80e87.ogg",
+      "bytes": 2513,
+      "sha256": "05147ca5c582bc427082ce39a0ca30a51fa5dcf63a279eb9e3ec5b13e6a29cd8"
+    },
+    "dispatch\n– kommen.": {
+      "file": "97b92ec668e3e1e3f445f947.ogg",
+      "bytes": 2438,
+      "sha256": "3ddaf4fab4c0826e2dd6eeb47b15e53e03f90b8aafee67f0bf9e440bcd0b850d"
+    },
+    "dispatch\nIhre Ergebnisse sind korrekt.": {
+      "file": "80e8b5eff75011727e9e39a5.ogg",
+      "bytes": 6568,
+      "sha256": "e21a2c89b3e1cc101dde6316ca8004ab6f5798914ef176803ee8426d9502947d"
+    },
+    "dispatch\nAuftrag abgeschlossen.": {
+      "file": "1bf9fa98918ea4bb3ad778e9.ogg",
+      "bytes": 5710,
+      "sha256": "7c2ffb2ad6825c5410205aed5a00a8a55044b3342ea9104e2e050caecdc5ed50"
+    },
+    "dispatch\nFordern Sie den nächsten Auftrag an – kommen.": {
+      "file": "93ba3d21be7db034e770044e.ogg",
+      "bytes": 8432,
+      "sha256": "a89148afd86382b358293246d7944cfa2bbeb78b55fa09121e28290fe061a235"
+    },
+    "dispatch\nIhr Auftrag lautet: Gehen Sie mit der Ausbilderin zur großen Wandkarte.": {
+      "file": "cc8ece40442c236262e6eeb5.ogg",
+      "bytes": 16429,
+      "sha256": "e9e79e2da98d4aec8493b3461b095267496a08511e8a1e589aa3f2367996c6ef"
+    },
+    "dispatch\nTragen Sie Maßstabsnenner, Gitterabstand und Äquidistanz im Notizblock ein – kommen.": {
+      "file": "f2698363db025478ed11440c.ogg",
+      "bytes": 20987,
+      "sha256": "14a92e99560278b9d3dcd3ac1b1b81a3dc072917ec56230760b22ce473576383"
+    },
+    "dispatch\nKartenrand, Legende und Höhenlinien liefern die gesuchten Angaben – kommen.": {
+      "file": "1832141f15e027d071835b87.ogg",
+      "bytes": 17223,
+      "sha256": "e183ca6c8867e9e7b703d0cade4d270ce1f0a6294a3ff4ee0cfcf267b7b837b2"
+    },
+    "dispatch\nDer Nenner gehört hinter die": {
+      "file": "42e0cf720e197466e57ba919.ogg",
+      "bytes": 5886,
+      "sha256": "190350272f3d39a83bc658821bb870eaa66af36dc0f7bd6637c30ed46141e1c6"
+    },
+    "dispatch\nim Maßstab; Gitterlinien liegen einen Kilometer auseinander – kommen.": {
+      "file": "fd31e78e6d8e2b70745719cc.ogg",
+      "bytes": 16707,
+      "sha256": "ab5eefca79bd34dbb5a37da35ff5df7515927f5945cc70d37f50534d028d0b4f"
+    },
+    "dispatch\nDie Angabe „Maßstabsnenner“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "2f01a973e3df417837a71b28.ogg",
+      "bytes": 16385,
+      "sha256": "43fcfbc838a8aae5bbcdfa968fd56c9cbd3bd3234d4c4c58b5d3d1df4e833053"
+    },
+    "dispatch\nDie Angabe „Maßstabsnenner“ ist zu niedrig.": {
+      "file": "ffc0b50af853e38541c3be85.ogg",
+      "bytes": 10008,
+      "sha256": "771c9a18dce2cec9f0f00774aceab1dced5254440af4019249a742a28ea07930"
+    },
+    "dispatch\nPrüfen Sie die Einheit und lesen Sie die Beobachtung oder die Lehrtafel erneut – kommen.": {
+      "file": "80ef32b5ccab62ff977105a3.ogg",
+      "bytes": 21312,
+      "sha256": "cf3ee9ce710e8b340fab753fc329b6d0722766c28e251514553c7f8d5415d607"
+    },
+    "dispatch\nDie Angabe „Maßstabsnenner“ ist zu hoch.": {
+      "file": "aa7598beb20140c4d60cc4b8.ogg",
+      "bytes": 9294,
+      "sha256": "b7d9c9d0349856fd0862a2e17129d10de3d6730e6a50a65e853c448ba6472970"
+    },
+    "dispatch\nDie Angabe „Gitterabstand in Metern“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "d2e0d946545404fc92612d09.ogg",
+      "bytes": 19258,
+      "sha256": "5e3c08c8cdee08dbc489f49b78d9fe7121fa5d0aaea73f3b4437ae5248b7ab29"
+    },
+    "dispatch\nDie Angabe „Gitterabstand in Metern“ ist zu niedrig.": {
+      "file": "a011133ab229215917d23d46.ogg",
+      "bytes": 12487,
+      "sha256": "2e5b424f5466c9791c6b865a0f614cac57a71fe13755612b5946a98bd1cec40f"
+    },
+    "dispatch\nDie Angabe „Gitterabstand in Metern“ ist zu hoch.": {
+      "file": "f80ba30d4d2c15abf93b3af1.ogg",
+      "bytes": 10766,
+      "sha256": "df6c9141ce7111738143d4f00927a83c61bd75fd5b44c29e8ec1c2fabf76e8df"
+    },
+    "dispatch\nDie Angabe „Äquidistanz in Metern“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "da723f6fca3531a8a0678e25.ogg",
+      "bytes": 19686,
+      "sha256": "71714cd9a04bd5959d32702a4082cc8e176bea62dc1a092110ca5b765fc195d4"
+    },
+    "dispatch\nDie Angabe „Äquidistanz in Metern“ ist zu niedrig.": {
+      "file": "88d673523c7e52b089733d23.ogg",
+      "bytes": 11669,
+      "sha256": "1e6fa256aceae804296e8617aa60f4e71514da73d5184caecb34df35c60458c1"
+    },
+    "dispatch\nDie Angabe „Äquidistanz in Metern“ ist zu hoch.": {
+      "file": "0859e8df2d805a75d599ea76.ogg",
+      "bytes": 10998,
+      "sha256": "93c605c6820bfd33b8561b9950910fd46279d1207b19e4f90e153e5a72583dc8"
+    },
+    "dispatch\nIhr Auftrag lautet: Norden Sie die Karte erst mit dem Kompass ein.": {
+      "file": "1378d6f56731f218049cd316.ogg",
+      "bytes": 13372,
+      "sha256": "7931d6d3d2d55d5fc9f29e5d9a2a4019e00b2e61ff1e028fc501f4293051e29b"
+    },
+    "dispatch\nRichten Sie sie anschließend anhand des Kirchturms Sankt Florian aus.": {
+      "file": "3d48b3c2a026d1193663a2ac.ogg",
+      "bytes": 17372,
+      "sha256": "9382ea02b4c8e92c28afecbf0fe0cd88cc80dfc54f666253ea0e90b62e0662df"
+    },
+    "dispatch\nBeide Verfahren werden am Instrument geprüft.": {
+      "file": "5ec94a29befdcf195fe1b3a9.ogg",
+      "bytes": 10060,
+      "sha256": "bbaca51cb916ebfca4f69ad80f8195881d831d233af016827a535c62642189fd"
+    },
+    "dispatch\nMelden Sie den Abschluss über Funk – kommen.": {
+      "file": "449ebfc58339fc1a1e527bc5.ogg",
+      "bytes": 8797,
+      "sha256": "f50f669256a5cce9b7dd2c6f3845aade62b1ea4447d35ea0572ece3e8619a962"
+    },
+    "dispatch\nMit": {
+      "file": "8326149de4fe528232b14255.ogg",
+      "bytes": 1855,
+      "sha256": "efe5837758abf10feeaa7d0fc1b348fc4c068c23b55a86cda4015470030743a4"
+    },
+    "dispatch\ndie Karte halten und mit": {
+      "file": "50c495898c7d5fc786e05787.ogg",
+      "bytes": 5382,
+      "sha256": "afd74fb8af08473618404626eb356aa56e07ac0fd32d62edd2f1f39e64f8da3d"
+    },
+    "dispatch\nden Kompass nehmen.": {
+      "file": "f4849c3bb64c37ff30ca93d8.ogg",
+      "bytes": 4988,
+      "sha256": "6028393d298c7e2015cea5e133f2e1e525562495863f817726b541d7c86923bc"
+    },
+    "dispatch\nF öffnet die Kartenarbeit; Karte am Drehgriff ausrichten – kommen.": {
+      "file": "6f711bee457157c1bd4c95ad.ogg",
+      "bytes": 14416,
+      "sha256": "87f9a86f4dee764cad269024659fba9902c106a8c77ec35362f6c61e632f5470"
+    },
+    "dispatch\nDie rote Nadel zeigt zum eingestellten magnetischen Norden.": {
+      "file": "268aaf9c5bda68a1292198be.ogg",
+      "bytes": 14458,
+      "sha256": "6ca7ecf9455264c0fba3bac6aea8af57321387e391b02f23ade9a397137d1c6d"
+    },
+    "dispatch\nBeim Landmarkenverfahren muss die Kartenrichtung zum Kirchturm mit dem Gelände übereinstimmen – kommen.": {
+      "file": "a4aee8589a88a933ead61aae.ogg",
+      "bytes": 24306,
+      "sha256": "e17deada6ccd84eea3fe6151bc1a3e0b965748c21d40f0ef24ff185d0aa40005"
+    },
+    "dispatch\nErkunden Sie Übungspunkt": {
+      "file": "77669660cb540ed71cd67eb8.ogg",
+      "bytes": 5886,
+      "sha256": "a1fc18d28c62a14cc3cc4c13e4405783438c77a4b390610212aa89afe1ed8ed8"
+    },
+    "dispatch\nvor Ort – kommen.": {
+      "file": "e849d9ac976f4d188f4826ad.ogg",
+      "bytes": 4566,
+      "sha256": "ff7b66b7beb77990cd77da64beff8442e10475ccdf40c84fa4c5aa5f74788aad"
+    },
+    "dispatch\nDas Einnorden muss sowohl mit Kompass als auch anhand des Kirchturms gezeigt werden – kommen.": {
+      "file": "83d9bbe1eac53cbbfaa947f8.ogg",
+      "bytes": 20514,
+      "sha256": "ab14a531381bad2198e6b9ba5a49e50d038f7499eeb77a7f98cba072d45728fb"
+    },
+    "dispatch\nIhr Auftrag lautet: Bestimmen Sie am Schild Übungspunkt": {
+      "file": "9907126c22b23c510d138b3d.ogg",
+      "bytes": 13045,
+      "sha256": "70d07e583fae004009da758c8eb593edaa87a60c08c313a868f9df1112b41dad"
+    },
+    "dispatch\nIhre Position aus der Topokarte mit dem Rahmenplanzeiger.": {
+      "file": "6d0e1807247f93d5161435ed.ogg",
+      "bytes": 14747,
+      "sha256": "29b19450813d8551089d6e1af2900d2fbe32abb37b1f97b5c093d5028b089872"
+    },
+    "dispatch\nNotieren Sie die vollständige UTMREF-Koordinate mit drei Ziffern je Wert, zuerst Ostwert, dann Nordwert – kommen.": {
+      "file": "5bc7880eddf5fe364add6d4f.ogg",
+      "bytes": 30990,
+      "sha256": "934bfdcc76da8a37443bb3bc67f5d227bc9b4204bd5d360224fdf1226f32f5ea"
+    },
+    "dispatch\nÜbungspunkt": {
+      "file": "60a52f18b5d7b7ea4022df80.ogg",
+      "bytes": 2895,
+      "sha256": "60a40efdfc739ab40e7f3aa744011333b7f249cf6a2de8d8547f2fe14faeeac7"
+    },
+    "dispatch\nist auf der Topokarte markiert.": {
+      "file": "c27831f45aba42580547a7d5.ogg",
+      "bytes": 7708,
+      "sha256": "9a4d59a406f9c74f0a3025be924611c899381e0bf80238107d7bc4369c2da01c"
+    },
+    "dispatch\nden Planzeiger nehmen, mit": {
+      "file": "03533d168c0715cd6b0a98f8.ogg",
+      "bytes": 6368,
+      "sha256": "10e44c425558a26cdb324f85e890b978a7ca2e339d6867645f851e61b2d576fc"
+    },
+    "dispatch\ndie Werte notieren – kommen.": {
+      "file": "0fc6d60f2dde227b1485d269.ogg",
+      "bytes": 6649,
+      "sha256": "ddb5826481b5bede0f3d0a2161261a3d4698cdbb4fe03b10ec2c1f1f9a712fde"
+    },
+    "dispatch\nZuerst Ostwert, dann Nordwert: Kilometerquadrat lesen und die restlichen Meter mit dem Planzeiger bestimmen – kommen.": {
+      "file": "456d64f45aec2b6cf87d9e84.ogg",
+      "bytes": 27693,
+      "sha256": "04955b6e01d48d2f9957d44d92f6a5cb4bc4e7c8e0a086cf139d8c63fcd11a5d"
+    },
+    "dispatch\nBenutzen Sie den Rahmenplanzeiger zur Positionsbestimmung – kommen.": {
+      "file": "9e6df8ca3d69d735494a348a.ogg",
+      "bytes": 15554,
+      "sha256": "ee9fdfa2f558069797a7a984240944bc9578094e2bf0f3c841c9a489b689d2c7"
+    },
+    "dispatch\nDie Angabe „Ostwert P2“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "d10974cd02bea4b453817dcd.ogg",
+      "bytes": 16977,
+      "sha256": "7bccc7fceda677820aae96b9d7d01b0da8b8f714772c171859bd33d29f0013df"
+    },
+    "dispatch\nDer Ostwert für Übungspunkt": {
+      "file": "bc28684e102357d753ba7add.ogg",
+      "bytes": 7194,
+      "sha256": "6e8d76ca1781e723319c6dd41883508099c624a23d6e705da3d2f9aafcad9295"
+    },
+    "dispatch\nliegt zu weit westlich.": {
+      "file": "e8645abb3f990b5bd2376454.ogg",
+      "bytes": 6281,
+      "sha256": "bcacacfbe3c069391aaa8d2d319ffc073528e2e2989dff9af801262e438e14d6"
+    },
+    "dispatch\nPrüfen Sie die linke beziehungsweise untere Kilometerlinie und die Reststrecke mit dem Planzeiger – kommen.": {
+      "file": "ec0c015fe443a1a75aaf579b.ogg",
+      "bytes": 23771,
+      "sha256": "be5e24d974ff8709b880b0fff9d0705e84c6c65fb64472d1179636568d13a594"
+    },
+    "dispatch\nliegt zu weit östlich.": {
+      "file": "c4c4189df1232ada3b598762.ogg",
+      "bytes": 6217,
+      "sha256": "5045c1b00057673ee0180bcbdf55432220f4f55378984cd5f301d53f76024df5"
+    },
+    "dispatch\nUTMREF: Tragen Sie nach zweiunddreißig Ulrich": {
+      "file": "1d99eb4b9c5f9e95cbc7a33b.ogg",
+      "bytes": 12601,
+      "sha256": "e5afca4079b8f8776c044234047ef4660ad653114910128b10f1f5c0fec0f411"
+    },
+    "dispatch\nKaufmann Anton zwei gleich lange Zahlengruppen mit jeweils drei oder vier Ziffern ein – kommen.": {
+      "file": "536c849466e0265a4e8d371a.ogg",
+      "bytes": 24727,
+      "sha256": "4c3cb14fac6ba5fc4dac0e0dd6f198db082fd7fdb321cd6d8e3b9d6ce1b56f4f"
+    },
+    "dispatch\nDer Nordwert für Übungspunkt": {
+      "file": "ced00fe6068e4db25e702100.ogg",
+      "bytes": 8057,
+      "sha256": "de23dfdae289af5d85670f0299e0dbf366eb182ea88f8128b8d182ec4c0149e5"
+    },
+    "dispatch\nliegt zu weit südlich.": {
+      "file": "65b0201a0ff8e06ddb698925.ogg",
+      "bytes": 5640,
+      "sha256": "bb4c10cc193dd6987740d63af6a1ce47ce6a0288f629a921384ee5fdc68c8ebc"
+    },
+    "dispatch\nliegt zu weit nördlich.": {
+      "file": "3a1a65d106b7e1e738cb35f0.ogg",
+      "bytes": 5184,
+      "sha256": "bf5cc3b9c7c3517d241a60c7a05ee59c44d96e9d6d30bb7f4e52da65822d17f5"
+    },
+    "dispatch\nIhr Auftrag lautet: Suchen Sie den Kontrollpunkt bei UTMREF zweiunddreißig Ulrich": {
+      "file": "3e6d662e493e5495bc87a511.ogg",
+      "bytes": 21981,
+      "sha256": "acd5dd049ed15ac72ce976dd5d194f0dc32f85106b85765e73d46be956f7867c"
+    },
+    "dispatch\nKaufmann Anton": {
+      "file": "1abff90852b721da33334e25.ogg",
+      "bytes": 4434,
+      "sha256": "87f1ad98a78b434eab04288f0f4ac877d298fe0c8fdd67b87fa768baf2148872"
+    },
+    "dispatch\nnull eins sechs null zwei vier": {
+      "file": "52fb5986c88e8632da07aad2.ogg",
+      "bytes": 9613,
+      "sha256": "a372db6623dd8bfed8896ff101feacb9dc55c84cbed1a6cecef6bca92fc682b7"
+    },
+    "dispatch\nauf.": {
+      "file": "2bfc32a126b1334b97586cd1.ogg",
+      "bytes": 1713,
+      "sha256": "6abbfe3dd1fa1f295303a1117d17b8a944f3f79a67b9bc1529b9c94a4da1fef3"
+    },
+    "dispatch\nLesen Sie die Kontrollzahl auf dem Schild am Ziel ab, notieren Sie sie und melden Sie die Zahl über Funk – kommen.": {
+      "file": "11b07b8b3612ee38ea27917c.ogg",
+      "bytes": 27832,
+      "sha256": "6b6bce240e124e5ee5052763e9e7ef6c39fa0fda634253a3f62cc34f3e286ab1"
+    },
+    "dispatch\nDas Ziel liegt nordöstlich von Übungspunkt": {
+      "file": "32a366dd12901200024ea6e7.ogg",
+      "bytes": 10401,
+      "sha256": "51d05a23a42ab7bd758807ca0cecb179e8c6e2405b729366a4ffbac67543a9ce"
+    },
+    "dispatch\nDie Ausbilderin begleitet Sie – kommen.": {
+      "file": "1b45b3a1ec0d8d65d1900b7b.ogg",
+      "bytes": 8825,
+      "sha256": "e518badeb52417b151336a286a8922a0e9d4e3c94ff89016d53f85fe374f1989"
+    },
+    "dispatch\nÜbertragen Sie zweiunddreißig Ulrich": {
+      "file": "5586062fcb91564408d2bf26.ogg",
+      "bytes": 9808,
+      "sha256": "55baeddb7a3b00423a6dd1a5acfffd08739941e3202a697c3ceb10960d6f2f63"
+    },
+    "dispatch\nauf die Karte, bestimmen Sie die Richtung und gehen Sie etwa": {
+      "file": "e1bea1664cd02a476e7bf7c0.ogg",
+      "bytes": 13960,
+      "sha256": "fd347afed5ad9ba117ba739c2a75cce7c9cdde2f03685227bf8bc6f0420bf641"
+    },
+    "dispatch\n224": {
+      "file": "cb1ccd7b6efb08a4ff2dda25.ogg",
+      "bytes": 7728,
+      "sha256": "d34a0c7f3c2bf4cf0868efac075ff2965f47fb5ccb45d442cfcb8676c8308a3b"
+    },
+    "dispatch\nMeter – kommen.": {
+      "file": "0233bf5836d93bad4dd9d79c.ogg",
+      "bytes": 3619,
+      "sha256": "3040df2ed8744f1f7095f28444dd95878c5491bee6b306c3ed9cad925d4c44d9"
+    },
+    "dispatch\nErkunden Sie Kontrollpunkt vor Ort – kommen.": {
+      "file": "1df5ea91f5c8a4fbe7d5c859.ogg",
+      "bytes": 10036,
+      "sha256": "0c194ebc9cc3ffcfec890d3575b3717716b17809de22b2f2350a122903c96868"
+    },
+    "dispatch\nDie Angabe „Kontrollzahl am Schild“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "224a9fdbe99f2e07f6ef4577.ogg",
+      "bytes": 18953,
+      "sha256": "d3fa484dd9a1436019c5d5810333428f447921b3c8a5cb86644784d0006fbd73"
+    },
+    "dispatch\nDie Angabe „Kontrollzahl am Schild“ ist zu niedrig.": {
+      "file": "ad86f1be020760ef9699ac3c.ogg",
+      "bytes": 11588,
+      "sha256": "4c82829870d2499b2ed06a2171e3d734df6a05ebaf8755b62546cb269b2311e5"
+    },
+    "dispatch\nDie Angabe „Kontrollzahl am Schild“ ist zu hoch.": {
+      "file": "f36105c672690f9ce093d155.ogg",
+      "bytes": 10471,
+      "sha256": "94dab19de89988cb026c8a40c115a299c7299c117a16ff25fce1fff4ad2f0e2e"
+    },
+    "dispatch\nIhr Auftrag lautet: Bestimmen Sie Ihren Standort durch Peilung zum Kirchturm Sankt Florian und zur Melderwarte.": {
+      "file": "60c0a68b1e9d10aa0fcaddf6.ogg",
+      "bytes": 30214,
+      "sha256": "15fd08c510229a4880a04002767e219a36b2cf9645bbf2c805d94b29c3708f85"
+    },
+    "dispatch\nNotieren Sie beide magnetischen Peilungen in Grad und den ermittelten Standort – kommen.": {
+      "file": "3e7730cfe8956814bb79194e.ogg",
+      "bytes": 19511,
+      "sha256": "b8a96f27ae479bce7ce1cd2bb0cb3631a2c4e7d98ce128af45378bd0cdabe128"
+    },
+    "dispatch\nPeilen Sie beide eindeutig erkannten Landmarken mit Kartenkompass, Spiegel-Peilkompass oder der Kompassskala des Fernglases.": {
+      "file": "9e836bf3a1b7f0f894a729ab.ogg",
+      "bytes": 33085,
+      "sha256": "683925c75386ddf777927a34332b4541a5f641d9eb070b730dff978f0c63c635"
+    },
+    "dispatch\nNotieren Sie die Peilungen im Notizblock – kommen.": {
+      "file": "21a8d542561f889e9cb43cac.ogg",
+      "bytes": 11459,
+      "sha256": "24fc23a18afe2ef59a00a9dafeb6946cd67c1bed3112350d5d0a19a6e0564fce"
+    },
+    "dispatch\nDie Rückpeilungen sind jeweils um": {
+      "file": "29efb8ff37af3d85ee5c148a.ogg",
+      "bytes": 8249,
+      "sha256": "3e91a2091a5c46a07d22a6654a52b824b1ab99e76036478eb751f7a1b640c009"
+    },
+    "dispatch\n180": {
+      "file": "df5647723fe6367feb67f906.ogg",
+      "bytes": 5455,
+      "sha256": "708b86213724ae439e1beb7de5d352eb4f2d4eace7e64b28d7270b063b5489be"
+    },
+    "dispatch\nGrad versetzt.": {
+      "file": "6dd46a7c322c481f6a1e1c96.ogg",
+      "bytes": 3473,
+      "sha256": "f86e245d46be3104dab5b6944832400cf76c5c848d4697fa787bde812f2f0c8e"
+    },
+    "dispatch\nZwei von den bekannten Landmarken ausgehende Linien schneiden sich am gesuchten Standort – kommen.": {
+      "file": "67cadbb1d6fa9b5c0da1a98b.ogg",
+      "bytes": 22247,
+      "sha256": "9b5066c865dad45edf85d80fb120001a71c35e7780d8e30e1a20485d1c6022f9"
+    },
+    "dispatch\nAusbildung erfolgreich abgeschlossen.": {
+      "file": "42ab6a28248b8cd1a429b059.ogg",
+      "bytes": 9645,
+      "sha256": "cab1daee75a6853498f9c17de45d8823fafe126d8c5f4238f0da169417050737"
+    },
+    "dispatch\nSie können jetzt den ersten selbstständigen Einsatz anfordern – kommen.": {
+      "file": "aaa2f024ea19c71b6e081c8f.ogg",
+      "bytes": 15257,
+      "sha256": "c49ef4be62b4d69fbedd90e29693de46f7abdb16064ca5a2130e397b9d84883b"
+    },
+    "dispatch\nDie Angabe „Ostwert Standort“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "8389349df15474e93b9b5514.ogg",
+      "bytes": 17877,
+      "sha256": "b1ac5f197db96ea6e5fd14a72c30d99dceb28f4158c960d266f4f92cd7df3bc0"
+    },
+    "dispatch\nDie Angabe „Peilung Kirchturm in Grad“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "adc5e7633727b57921419008.ogg",
+      "bytes": 16854,
+      "sha256": "ecc24fded876b72c0ba743a52f65d20bbacc6bccf365ed213ab01144a3ef3892"
+    },
+    "dispatch\nDie Peilung „Peilung Kirchturm in Grad“ passt noch nicht.": {
+      "file": "4201521a017713ca013ea754.ogg",
+      "bytes": 11294,
+      "sha256": "fdfde0efa81e83ee6b061a6d17d7052a7e152bded9fdfadc698054b6c832bcaf"
+    },
+    "dispatch\nPrüfen Sie Ziel, Nordrichtung und die Gradskala – kommen.": {
+      "file": "c0a1ae2e694f931450704f3f.ogg",
+      "bytes": 12563,
+      "sha256": "c390dbe754295009f6e5cb26e809b10f4ace8d8923366ba398bdb10517c5f425"
+    },
+    "dispatch\nDie Angabe „Peilung Melderwarte in Grad“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "1b214000032136829368bea5.ogg",
+      "bytes": 20790,
+      "sha256": "5b334ef9b27b5f76188ba357cb2d7eb3334416afc1d858101bdd8009ffb50a96"
+    },
+    "dispatch\nDie Peilung „Peilung Melderwarte in Grad“ passt noch nicht.": {
+      "file": "c7f2488b02ed4ba40f100213.ogg",
+      "bytes": 13786,
+      "sha256": "d858f8b0c9e388bf2c9e3930f62248e603885cced86ddd026733680136addfc5"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie die L": {
+      "file": "c26b9de03a112ad69274e821.ogg",
+      "bytes": 10644,
+      "sha256": "8da760dee87d3744a5d8bbc82920e9a9376faf684f0303a7f06a5d68674e0674"
+    },
+    "dispatch\n112": {
+      "file": "07263f1fd9d579ff6fe5da53.ogg",
+      "bytes": 4651,
+      "sha256": "ed35c10bce1c735454aabb16251f2d195cede65da8561e4dcb5908131015e217"
+    },
+    "dispatch\nzwischen Sankt Florian und dem Abzweig Am Eigenschutz.": {
+      "file": "c8cc28c7c05179a70f9e5a95.ogg",
+      "bytes": 15076,
+      "sha256": "4a9cd57154b841abd10e707bc0221a3561e1fbaae96a7f15ff960775b87c2af7"
+    },
+    "dispatch\nMelden Sie die Koordinaten aller drei gekennzeichneten Straßenschäden – kommen.": {
+      "file": "a78fb881d58c43b00d561f58.ogg",
+      "bytes": 18269,
+      "sha256": "786f22a1febffe35e2104235fc3b1d17c05f5741c32317cd9fdfc66307ce2ace"
+    },
+    "dispatch\nBeginnen Sie am östlichen Ortsausgang von Sankt Florian und folgen Sie der L": {
+      "file": "fe6f27cbc6a608760eafe59c.ogg",
+      "bytes": 19014,
+      "sha256": "66d66219f167c16712405db62b40cc47a6e23a97fe7a93bb0f967a89fe468833"
+    },
+    "dispatch\nnach Osten – kommen.": {
+      "file": "70f26e54cab7bc5d8d504007.ogg",
+      "bytes": 5212,
+      "sha256": "477b672c89b1f3922d47dc5d80ecb1501e41c5f1ad50b1ab8290c6226fbe4333"
+    },
+    "dispatch\nDie Schäden sind durch orange Warnkegel gekennzeichnet.": {
+      "file": "abac88c43c8620028a9b5eea.ogg",
+      "bytes": 12622,
+      "sha256": "c73ea8408dab2537d875e07dc853b90eede38d4ace29485475ba15dcdfa3b5e8"
+    },
+    "dispatch\nFür jeden Schaden ist ein eigenes Koordinatenpaar erforderlich – kommen.": {
+      "file": "f679a1f2d39f1200a56883b3.ogg",
+      "bytes": 15027,
+      "sha256": "c7c17de909f2141ba0c971bd773bc1bdcf970b7b404d8818bde769a38d2bac0e"
+    },
+    "dispatch\nErkunden Sie Schadstelle": {
+      "file": "352b6e399c02141bd3dd3a5f.ogg",
+      "bytes": 6191,
+      "sha256": "0cb75c34504e44326b6b2325fe69ba60f10fb1a49505e68c03f590275e593d6f"
+    },
+    "dispatch\nKoordinate": {
+      "file": "f16c5515a3043c6eb1b6b9b2.ogg",
+      "bytes": 3734,
+      "sha256": "132f18030de7cd868c1456e5bd1942450f199a85fca21a8566b27ef4ff527aaf"
+    },
+    "dispatch\nfehlt oder hat ein ungültiges Format.": {
+      "file": "5786c73916fb3f9e178e1e4f.ogg",
+      "bytes": 10219,
+      "sha256": "5bd97088297e0315f1b209bb8c7f99cad3eb68cc0537c6619b9a1e894d4971fb"
+    },
+    "dispatch\nist korrekt.": {
+      "file": "620e55bb6813a29089cbb856.ogg",
+      "bytes": 3382,
+      "sha256": "92d90ce42379f6d383d941a6e0caa338ba624350b80c4724c2536e4ccbe67d74"
+    },
+    "dispatch\nist korrekt – kommen.": {
+      "file": "08062d37333e9e27b89f3d9d.ogg",
+      "bytes": 5108,
+      "sha256": "02a1811d4e22cbecf4dca1a9acd9001daeb3015873b4b076e1bf449ae907beb0"
+    },
+    "dispatch\nliegt komplett daneben.": {
+      "file": "97122307b68f5e846eced8ee.ogg",
+      "bytes": 5853,
+      "sha256": "905bd2b5dc25274e07fdd452fc1b18dfea8c3bda67283c1faeeb65e4e1759b71"
+    },
+    "dispatch\nfehlt oder hat ein ungültiges Format – kommen.": {
+      "file": "a7ee4d19f912127861d780de.ogg",
+      "bytes": 10624,
+      "sha256": "0cb2908644a13670c0a01e324bd66815df6050851a4b2898c882c25e3d7f0dc4"
+    },
+    "dispatch\nliegt komplett daneben – kommen.": {
+      "file": "309f08e25bd3caab52620c3e.ogg",
+      "bytes": 6936,
+      "sha256": "3629808bb7fa8a2aebd584a848e21ab0ab06cca243bffc2e7ce8e051f43ecbd5"
+    },
+    "dispatch\nIhr Auftrag lautet: Suchen Sie die gemeldete Rauchentwicklung am südlichen Rand des Rüstholzes.": {
+      "file": "a1b5b5ab1bcf8351f19b7303.ogg",
+      "bytes": 23836,
+      "sha256": "c36b5bc59fcdfdc0b9d2ae5647653f7acf204641cfdb76a5d59964ba7ceb2926"
+    },
+    "dispatch\nErkunden Sie den sichtbaren Übungsrauch und melden Sie den Standort – kommen.": {
+      "file": "9bc396f230973220468890b3.ogg",
+      "bytes": 16365,
+      "sha256": "4ae3a35ce09360615fa0217afd29150c0327add916523e1eee91c15f7552e1d1"
+    },
+    "dispatch\nVom Wasserturm aus liegt die Rauchentwicklung im nordöstlichen Waldsaum – kommen.": {
+      "file": "96ed9bb486dceb9ba9826317.ogg",
+      "bytes": 16076,
+      "sha256": "16adcb65deab710d32286847098a990f463256b52b29a8308bfc811b5c66b73a"
+    },
+    "dispatch\nMit dem Fernglas können Sie die Rauchfahne erkennen.": {
+      "file": "e60be56691901bf5ef67260c.ogg",
+      "bytes": 10536,
+      "sha256": "c7861a408eb5ed669b8a57714ccae08e660aa626cc2dff7b4d735968f21adc24"
+    },
+    "dispatch\nNähern Sie sich anschließend zur genauen Verortung – kommen.": {
+      "file": "da519836006e9b829ca413db.ogg",
+      "bytes": 13494,
+      "sha256": "7af2f10fccfc7c47b793067e90e739cebaa12a981e315687da74d730a78bdcca"
+    },
+    "dispatch\nErkunden Sie Rauchentwicklung vor Ort – kommen.": {
+      "file": "3416e0fb7fe8bc85c4e3a320.ogg",
+      "bytes": 10892,
+      "sha256": "0370eae2537c9932eb8b2f59837071e0ea501e3e0f0f0ad82541014957c819d2"
+    },
+    "dispatch\nDie Angabe „Ostwert Rauch“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "61983db98760d80be8972e65.ogg",
+      "bytes": 16525,
+      "sha256": "01570327e98afc44b5fefc4d5eccc1f22e850338e0df38c8325dc20c0665bd98"
+    },
+    "dispatch\nDer Ostwert für Rauchentwicklung liegt zu weit westlich.": {
+      "file": "04895d689a745cfd87d2c56c.ogg",
+      "bytes": 13313,
+      "sha256": "c6e341b3f8fe25f754154b449ee8d332c27ee7d10a3f3173aa3a9ae35ae3ee7e"
+    },
+    "dispatch\nDer Ostwert für Rauchentwicklung liegt zu weit östlich.": {
+      "file": "8427851080fde888c637750e.ogg",
+      "bytes": 13533,
+      "sha256": "986035b2d41aac9d89c81c45b540793ee5a76f5c9f24ead28726772c90413102"
+    },
+    "dispatch\nDer Nordwert für Rauchentwicklung liegt zu weit südlich.": {
+      "file": "d80629e63a8bbdcf14dc7580.ogg",
+      "bytes": 12371,
+      "sha256": "df7fe01c2fddc461b46de2384a634166c1764d8f8738baa93644704fac46f3ce"
+    },
+    "dispatch\nDer Nordwert für Rauchentwicklung liegt zu weit nördlich.": {
+      "file": "36d411d108434217d80c9b69.ogg",
+      "bytes": 12447,
+      "sha256": "88e5e2f1f5b401f7bb5aa9a738d51bfb9518c88135f15554cd7f7571ebdb2c37"
+    },
+    "dispatch\nIhr Auftrag lautet: Fahren Sie zur gemeldeten Unfallstelle zweiunddreißig Ulrich": {
+      "file": "7a1cfaf02ce6015fa267a011.ogg",
+      "bytes": 19769,
+      "sha256": "6e4aee730b35a2d395d70a1bed8a52e9afa280d217ad91c10fcea86fbbb8d9d1"
+    },
+    "dispatch\nnull fünf sechs null zwei drei": {
+      "file": "267eb932b2519d37827d0174.ogg",
+      "bytes": 8059,
+      "sha256": "c50d88466953827159167ab7a867d6f0be02d1bef744a89ce207c3e603b3b27c"
+    },
+    "dispatch\nin Kupplingen.": {
+      "file": "1583850e2c424fde1ec621ec.ogg",
+      "bytes": 3343,
+      "sha256": "7ff566a99ff14e88316dba82c4ff7ae8df962ca438e0a8a3f83a5d5725960edd"
+    },
+    "dispatch\nSprechen Sie vor Ort mit der betroffenen Person und melden Sie Standort und Anzahl der Verletzten – kommen.": {
+      "file": "6f9e5a908448e6b8993e4c82.ogg",
+      "bytes": 23159,
+      "sha256": "80b19837507d0fbaea249ecff0038a7164c462a6f5596d75188783b755f3cf32"
+    },
+    "dispatch\nDie Unfallstelle liegt an der Langen Leitung im Ortskern von Kupplingen – kommen.": {
+      "file": "a611967595021f6f26bdb79f.ogg",
+      "bytes": 17221,
+      "sha256": "0fe291071d9f3ae1e984e314015700e346fd35ae74f31b1545b3ca4356dae531"
+    },
+    "dispatch\nSteigen Sie aus und sprechen Sie die Person mit E an.": {
+      "file": "f7977178067dde046ed1bd11.ogg",
+      "bytes": 11037,
+      "sha256": "25e424215d25607b38716722117be4df574edc87afc7f9ac0cfdd571aa43e1de"
+    },
+    "dispatch\nIhre Aussage gehört in den Notizblock – kommen.": {
+      "file": "a3f4c71674a75ba8185c2014.ogg",
+      "bytes": 11715,
+      "sha256": "0791467df49408f5e28ed80c65e6171ee71791ce93f8c4d00c66e9e404ad5398"
+    },
+    "dispatch\nErkunden Sie Unfallstelle vor Ort – kommen.": {
+      "file": "7fd6640bdc69187af1201260.ogg",
+      "bytes": 10530,
+      "sha256": "cf05e926e9b70604f4323b28d7406bbaaa0703e612efe73d5124d1e77fdc9c31"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Unfallstelle mit E – kommen.": {
+      "file": "8843dc815d84235ea76d44e8.ogg",
+      "bytes": 12591,
+      "sha256": "ffae0bcecafd722135bde0be959fd3578fe5526c13641809d095fdcf201892dc"
+    },
+    "dispatch\nDie Angabe „Ostwert Unfall“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "b622714174e6b15dcafbee40.ogg",
+      "bytes": 18372,
+      "sha256": "fb69488e3698c9c6f840b59bde2a5de9f5592ad6c1732a6b096f8c6ddc62aeda"
+    },
+    "dispatch\nDer Ostwert für Unfallstelle liegt zu weit westlich.": {
+      "file": "50a41faeab61d52a8f8dc9b7.ogg",
+      "bytes": 13073,
+      "sha256": "79b0c0c1bec090787de4876db09bcba60549116c3e9709a18479a96737a6e784"
+    },
+    "dispatch\nDer Ostwert für Unfallstelle liegt zu weit östlich.": {
+      "file": "058fa3a787b5e152210de4aa.ogg",
+      "bytes": 12180,
+      "sha256": "6572b53020b39d103ab9210b6c8edc6a48ad30ff7372732083f25093846efd8a"
+    },
+    "dispatch\nDer Nordwert für Unfallstelle liegt zu weit südlich.": {
+      "file": "83438e8deccf0821e07f78d3.ogg",
+      "bytes": 12486,
+      "sha256": "74bc3079aed2a273dc26a60b56654bc444f95361d9ffc14a84c674fdd7d4bfce"
+    },
+    "dispatch\nDer Nordwert für Unfallstelle liegt zu weit nördlich.": {
+      "file": "d4c2c3145a6950f369ff27ae.ogg",
+      "bytes": 11477,
+      "sha256": "2c86183b6e8b83c2764620c4eb4b21344aa6f1434338bb73c7b49d51d9bb27cf"
+    },
+    "dispatch\nDie Angabe „Anzahl Verletzte“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "ac8d1c27ccad27c171417fcd.ogg",
+      "bytes": 18315,
+      "sha256": "c45a05ed2b10508bd97a81c6a339e40ccfd4b4aa045140564c59281bbbeec331"
+    },
+    "dispatch\nDie Angabe „Anzahl Verletzte“ ist zu niedrig.": {
+      "file": "b73fa6e3942593757008d7d3.ogg",
+      "bytes": 10857,
+      "sha256": "8f461a1f0188186d769e5405f3dc066b3c6c6870d59960af5ad7c4384bd50143"
+    },
+    "dispatch\nDie Angabe „Anzahl Verletzte“ ist zu hoch.": {
+      "file": "10d5d971b087843f971715d0.ogg",
+      "bytes": 10050,
+      "sha256": "7948ae97268eacb4c27ee24455dd78e4b2b42adc211d564534c3fcc5df24a75f"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie die Kupplungsbrücke.": {
+      "file": "f9ce8bbf5cf090a4fbc1a815.ogg",
+      "bytes": 12737,
+      "sha256": "27ad9d5c48c3dc5163cdfd75f4449f3b78ded3a17f0bc15070834ab9d1d326c7"
+    },
+    "dispatch\nLesen Sie die verbliebene Durchfahrtsbreite am Kontrollschild ab und melden Sie Standort und Breite – kommen.": {
+      "file": "e6b2b3329e12edd51fddb78f.ogg",
+      "bytes": 24302,
+      "sha256": "85d48c79e5b136af231ff9d149a0d3cd6c4d233c6b43a186ca64a104d27a793b"
+    },
+    "dispatch\nDie Brücke liegt an der L": {
+      "file": "20754bb24dc79d27fae63eda.ogg",
+      "bytes": 6096,
+      "sha256": "3966b3da780eb2f2e36ba8496a95c347208c0b7d6803193956aa0de3aa7442ce"
+    },
+    "dispatch\nüber die Blaulach – kommen.": {
+      "file": "e562ffda41cd949276331744.ogg",
+      "bytes": 5633,
+      "sha256": "858ce48e43d3a5b19aeb3b69cc268f3d5900b0a335572f64cd4da9ccbfe62309"
+    },
+    "dispatch\nAm westlichen Brückenkopf steht das Kontrollschild; mit E können Sie die Beschriftung lesen – kommen.": {
+      "file": "e5754a0bd1cfa92c8fe211b2.ogg",
+      "bytes": 21084,
+      "sha256": "42430855bfbfec1bb9e285d561e44b841f208425c97b952e4ea747bf7277d400"
+    },
+    "dispatch\nErkunden Sie Brückenkontrolle vor Ort – kommen.": {
+      "file": "052faa77cb7037f15cdf35d4.ogg",
+      "bytes": 11492,
+      "sha256": "8cf5b781059b39450ae3a39e9a36f956e1fd872ea76d888a604fe78658407cac"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Brückenkontrolle mit E – kommen.": {
+      "file": "4201106859d978764e5db904.ogg",
+      "bytes": 13716,
+      "sha256": "9db5ff1e463d39a94e2efcf500f4b96f582811fa960a827559b9ea1d24d8aef6"
+    },
+    "dispatch\nDie Angabe „Ostwert Bruecke“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "a5bf86d7b0a2afcbc573037f.ogg",
+      "bytes": 16674,
+      "sha256": "576f796ab31b8268933fad2720593d00c652c5d9b576e5b815d2e12c513500d5"
+    },
+    "dispatch\nDer Ostwert für Brückenkontrolle liegt zu weit westlich.": {
+      "file": "08f886d3e2f19f5a83aedafe.ogg",
+      "bytes": 13514,
+      "sha256": "fef05a4c05515484ea9ab747f3cf73ed5a5def04ee1fe08596c2ee220321fb8c"
+    },
+    "dispatch\nDer Ostwert für Brückenkontrolle liegt zu weit östlich.": {
+      "file": "a7937e22e78c257f356ec959.ogg",
+      "bytes": 13179,
+      "sha256": "30246944c9d40a3715f13283cbd131a0122f98c966a3e45b23ebead3e85760f6"
+    },
+    "dispatch\nDer Nordwert für Brückenkontrolle liegt zu weit südlich.": {
+      "file": "ad68f82746b8c276c7b795ac.ogg",
+      "bytes": 13059,
+      "sha256": "f7f9aa14f8e33dceb71013cc62510307fe37d01bcb6d47164f5569050a0d1dc1"
+    },
+    "dispatch\nDer Nordwert für Brückenkontrolle liegt zu weit nördlich.": {
+      "file": "8b17e098db253c8238bbb4d1.ogg",
+      "bytes": 13616,
+      "sha256": "acf0d96a3b842310225de578af8699b7c888daa09c360040041b0b643b4cadb8"
+    },
+    "dispatch\nDie Angabe „Passierbare Breite in Metern“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "af3a457973fb00e946ffc40d.ogg",
+      "bytes": 20517,
+      "sha256": "efa5b460ddbba9682ed48da75fdc603aedd61f9fd86c237a0a73edf8ab9dab96"
+    },
+    "dispatch\nDie Angabe „Passierbare Breite in Metern“ ist zu niedrig.": {
+      "file": "9458509955c0da3f003019a2.ogg",
+      "bytes": 12965,
+      "sha256": "7cb3279f324d911c83336cd75bc68829fa88abd1e57a33e9ffa84c7d3f801ca2"
+    },
+    "dispatch\nDie Angabe „Passierbare Breite in Metern“ ist zu hoch.": {
+      "file": "12e94b2900dd2e98d677a03e.ogg",
+      "bytes": 11951,
+      "sha256": "c83fe8d3498b8727c84babb1ced1902ff3f46f7225ced650bdf7372b65edd9b8"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie den Bereich Unter den Funkmasten.": {
+      "file": "58a445a717c1349fd7be46e2.ogg",
+      "bytes": 15045,
+      "sha256": "4e027e27288ba009fe50a79e0bb4a8a36f8de6b71260b85dc0c66daf4583dafe"
+    },
+    "dispatch\nMelden Sie den Standort der markierten Beschädigung und wie viele Masten betroffen sind – kommen.": {
+      "file": "d9452fbaf145c15069533569.ogg",
+      "bytes": 24446,
+      "sha256": "bdd9f4ad20e4f1ff8f56034b97881f24c266b79d68c2d90212db52e672dc1efa"
+    },
+    "dispatch\nSuchen Sie im südwestlichen Kartenteil beim hohen Funkmast – kommen.": {
+      "file": "a90b5e8248189d0d65b6deb6.ogg",
+      "bytes": 16613,
+      "sha256": "e2da12cee329f2108ca27f7a4a1b1538658b614a8c1d78cdf742f138a560a264"
+    },
+    "dispatch\nDie orange Markierung steht neben dem beschädigten Übungsmast – kommen.": {
+      "file": "5a2c8dcd630e341bda380895.ogg",
+      "bytes": 14573,
+      "sha256": "b2a465be82d72c466945014aaa3261a57877ffc7fae5a0b93cdbd263329d6a1d"
+    },
+    "dispatch\nErkunden Sie Mastschaden vor Ort – kommen.": {
+      "file": "96e7c33c6244033d60ba79d4.ogg",
+      "bytes": 8073,
+      "sha256": "3504f44056c6db0b04d956046b013f7b26af7f7d6c9c46ef1a17dbd56f5742b3"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Mastschaden mit E – kommen.": {
+      "file": "853562f547b2638607f4d5e4.ogg",
+      "bytes": 11526,
+      "sha256": "97cfb48f1d4e131a0f78fce04e1449757ab564f1e8a3835b714d7108199d3dfe"
+    },
+    "dispatch\nDie Angabe „Ostwert Mast“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "8f94eb6f0d831651fd470976.ogg",
+      "bytes": 14141,
+      "sha256": "7f6381bb7bde6990239d8f2974f5aec9981bb4fe909f58256852a94dd1bd2f0a"
+    },
+    "dispatch\nDer Ostwert für Mastschaden liegt zu weit westlich.": {
+      "file": "b9e0e90a8cea6143f88c6084.ogg",
+      "bytes": 10485,
+      "sha256": "ea199ce8445b13c35447e70f6ee73d56ca4abef3a87273c1d25b2be9865fdf1d"
+    },
+    "dispatch\nDer Ostwert für Mastschaden liegt zu weit östlich.": {
+      "file": "d56444a451d537c568144525.ogg",
+      "bytes": 11233,
+      "sha256": "07a1ac14f72490d9bf449728ae0b440d83177dd8915c38dec87b11a5bdc1ac95"
+    },
+    "dispatch\nDer Nordwert für Mastschaden liegt zu weit südlich.": {
+      "file": "302b5696dd43e1754fab6638.ogg",
+      "bytes": 11047,
+      "sha256": "cc90b02d4117bb2211768f5142761c572e0872f9ab135ea57864f08593a18b51"
+    },
+    "dispatch\nDer Nordwert für Mastschaden liegt zu weit nördlich.": {
+      "file": "c8e188774110f4aa3f7099a9.ogg",
+      "bytes": 11110,
+      "sha256": "7769c50d55d92100987739816a069a7830b9b37978873a65b23a82e244c2e189"
+    },
+    "dispatch\nDie Angabe „Betroffene Masten“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "a95e2ff0945c5f548b9062af.ogg",
+      "bytes": 17217,
+      "sha256": "b050156681b140efb01dcafb3db065fe3cecb0b5cdec1c84666d4f13969ee6c4"
+    },
+    "dispatch\nDie Angabe „Betroffene Masten“ ist zu niedrig.": {
+      "file": "c8934383660d2aebd19a31dd.ogg",
+      "bytes": 10098,
+      "sha256": "c899957051fa2ed532b0d8775fd9663f0acbd9c296536cd9a52bd6f0c65ea2c7"
+    },
+    "dispatch\nDie Angabe „Betroffene Masten“ ist zu hoch.": {
+      "file": "f2b613a13d32908b6162b44c.ogg",
+      "bytes": 10143,
+      "sha256": "48b38ab2d9977f3ab24d03579ce9c3e86fad4a5fac37fd5bba320487f5eda0c3"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie den Pegel am östlichen Zugang zur Kupplungsbrücke.": {
+      "file": "31c9dff4586dc3b80060896d.ogg",
+      "bytes": 18288,
+      "sha256": "e9c09d4bc0d470289f70fde6a809a9c1c993ceb0cf4f2db999aa9ce2c8a4cc18"
+    },
+    "dispatch\nMelden Sie die Koordinate und den abgelesenen Wasserstand – kommen.": {
+      "file": "5d1b77d0ac8add28169a7c1f.ogg",
+      "bytes": 14704,
+      "sha256": "79b8aab85d3b3b314e906bf5e099311adf84d84ea9c4272e3d2dce16fe871e9c"
+    },
+    "dispatch\nFolgen Sie der L": {
+      "file": "e61888315f289837e885e0bd.ogg",
+      "bytes": 4674,
+      "sha256": "5907eda7460c77e0b7d3f79f23b3ec602e75a7e1be3b8672e86fbd2ad8b401d7"
+    },
+    "dispatch\nüber die Brücke nach Osten – kommen.": {
+      "file": "14c6f495cd10cdff79b4fdd5.ogg",
+      "bytes": 7570,
+      "sha256": "6393b075b07ec8944bf633760ffba5a52efee0b53dd040d573a76eac28bd9416"
+    },
+    "dispatch\nDie Pegeltafel steht am östlichen Ufer auf sicherem Boden – kommen.": {
+      "file": "e932bd5e4dc6d062ec62dcc4.ogg",
+      "bytes": 15125,
+      "sha256": "9bf8c063b22159e604ee1b7714a70adf34bbe3ae5cb2ef5206867613b0e352c1"
+    },
+    "dispatch\nErkunden Sie Pegel Blaulach vor Ort – kommen.": {
+      "file": "e2630f1e6870bab6111131ea.ogg",
+      "bytes": 10300,
+      "sha256": "7a101cc188b1186a964be998adedc25d84e009cba7ad14940cfcb8bf11b5aa2e"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Pegel Blaulach mit E – kommen.": {
+      "file": "856ea6e5e7eb9b0aa24e1142.ogg",
+      "bytes": 13320,
+      "sha256": "bf211b4f5591fa5bf85d2f522d9310be528db83be4086eb7f921df886c24245c"
+    },
+    "dispatch\nDie Angabe „Ostwert Pegel“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "1b91e3d6a94276a92537e606.ogg",
+      "bytes": 16363,
+      "sha256": "03c558f2344e7900e5ff1190028e97caf449519e6823c16595f8895e0cec79eb"
+    },
+    "dispatch\nDer Ostwert für Pegel Blaulach liegt zu weit westlich.": {
+      "file": "0ac303a0f97e1bbd24ce2b96.ogg",
+      "bytes": 11708,
+      "sha256": "becd8a6a22df177216a73070943ac71c9af91cb3fe1e473330415cbcd68218f0"
+    },
+    "dispatch\nDer Ostwert für Pegel Blaulach liegt zu weit östlich.": {
+      "file": "bc21dd3ad67e4376b0ae5896.ogg",
+      "bytes": 12955,
+      "sha256": "f436e4436ea3e56ccb8dc016390751a9caed7978462e00348c73eb0d261f7c8f"
+    },
+    "dispatch\nDer Nordwert für Pegel Blaulach liegt zu weit südlich.": {
+      "file": "fc0a0a40b83df7fdff05aac6.ogg",
+      "bytes": 12304,
+      "sha256": "9f2d35c59e680caf34731716b4bd28586eda79a6fd99ff5418799b7f1dce5d66"
+    },
+    "dispatch\nDer Nordwert für Pegel Blaulach liegt zu weit nördlich.": {
+      "file": "51a073c4ccee8e91094d1298.ogg",
+      "bytes": 12005,
+      "sha256": "f80b28ce56e60c44103ff9821535d3735f418c9b926d498a31e384d4a4a7b032"
+    },
+    "dispatch\nDie Angabe „Wasserstand in Metern“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "c3f69f01189fd99ba3fe0a7c.ogg",
+      "bytes": 17732,
+      "sha256": "c5f17beec8277e7060f2b9da2d05372631bb474a46a7e3b2c55983152fad1b20"
+    },
+    "dispatch\nDie Angabe „Wasserstand in Metern“ ist zu niedrig.": {
+      "file": "f2ea17821fa77ada4fba283e.ogg",
+      "bytes": 10623,
+      "sha256": "bb27227e7d07d5757184754fa10e90c9e309fbb34c78d0a64e7c5df4f5711537"
+    },
+    "dispatch\nDie Angabe „Wasserstand in Metern“ ist zu hoch.": {
+      "file": "24a182266639227f4d58293c.ogg",
+      "bytes": 10132,
+      "sha256": "05e815c4e478225aa482c2eacb854ab2745c2a654761840bdc0c378f27f2a5b5"
+    },
+    "dispatch\nIhr Auftrag lautet: Suchen Sie eine vermisste Person im südlichen Rüstholz.": {
+      "file": "348bbe17c16927d35faaaaa6.ogg",
+      "bytes": 19492,
+      "sha256": "3412705026440c0ea658d57875b30dc40c624149f6c6a6ee815cabb48eeec2f9"
+    },
+    "dispatch\nBefragen Sie die Person und melden Sie ihren Standort sowie die Anzahl der Personen, die noch vermisst werden – kommen.": {
+      "file": "3286ddc5dc8be49d168732a9.ogg",
+      "bytes": 27520,
+      "sha256": "56aaebf3227e062827081d07f2695c671683118948d4be061a9683a811afbb2f"
+    },
+    "dispatch\nDas Suchgebiet liegt am südlichen Waldsaum östlich des Wasserturms – kommen.": {
+      "file": "fa6276ad24606d0fea27e47a.ogg",
+      "bytes": 17775,
+      "sha256": "a5bf6d1b9e6bc4ad124b03414f3f532c475187422af46ecca8c3c3c834011f06"
+    },
+    "dispatch\nNutzen Sie Karte und Fernglas; die Person trägt eine orange Jacke – kommen.": {
+      "file": "c4ca0a4c1f05bdd15d9124f0.ogg",
+      "bytes": 17056,
+      "sha256": "fab5d2717f61450a3fc1710b9910b288c1471dbeb0bf0ef093f0a99ab891526b"
+    },
+    "dispatch\nErkunden Sie Vermisste Person vor Ort – kommen.": {
+      "file": "9a58a831f12c6d3690814739.ogg",
+      "bytes": 10417,
+      "sha256": "7ebcaeb327f27896481af35de26b0f86c16a38a709d200441ddcf56b223a2d0f"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Vermisste Person mit E – kommen.": {
+      "file": "a97eba2a7fdaf98116fbeb1b.ogg",
+      "bytes": 12858,
+      "sha256": "8dda50d68158022d7efd8e8fef3ab489208452fbcb8395b0b1e6ff5a745b5678"
+    },
+    "dispatch\nDie Angabe „Ostwert Person“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "18b1910f935e10500300fdbd.ogg",
+      "bytes": 16849,
+      "sha256": "93caaff6617bccee926eb5ffc7a2b1bc3e4e22c2e09f7453aeab155d5500dff6"
+    },
+    "dispatch\nDer Ostwert für Vermisste Person liegt zu weit westlich.": {
+      "file": "d2f98c05c7104650a5252749.ogg",
+      "bytes": 13249,
+      "sha256": "7812d453ba2cf80d2bef4f5a244e4ef027a4eaf0e2b315146dfd72cc99b2100c"
+    },
+    "dispatch\nDer Ostwert für Vermisste Person liegt zu weit östlich.": {
+      "file": "7441a06a0647b5562b805a9e.ogg",
+      "bytes": 13080,
+      "sha256": "ad3e9cf189847e3d8baceaae810eb0b5795734944e3971a014fc141d17d397ef"
+    },
+    "dispatch\nDer Nordwert für Vermisste Person liegt zu weit südlich.": {
+      "file": "6f7d74e018dd2397c910d9e8.ogg",
+      "bytes": 13235,
+      "sha256": "ce5ec74acb5dfc938600f547328ea2c71f9387c4bc73dbe354ed1c48bd06cfc7"
+    },
+    "dispatch\nDer Nordwert für Vermisste Person liegt zu weit nördlich.": {
+      "file": "ed4650d900fd4b681de22185.ogg",
+      "bytes": 15632,
+      "sha256": "f37ce0f2801b5be644e96f01b448b5ac51c3b528f6cd863259c02df54bad847a"
+    },
+    "dispatch\nDie Angabe „Weitere vermisste Personen“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "de837a6b2c110d522f790710.ogg",
+      "bytes": 19954,
+      "sha256": "b91d00662b18b3463f5d5fc19b707600a024989d9650d1ccb6d3c182a2322680"
+    },
+    "dispatch\nDie Angabe „Weitere vermisste Personen“ ist zu hoch.": {
+      "file": "c158b324b61404655851f034.ogg",
+      "bytes": 12583,
+      "sha256": "5a7ee8b0825a32142f763f6f4cd75cdcb930c07736fcf0d0d9fd87b523d9f5d2"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie die Zuwegung zu den westlichen beiden Anlagen des Windparks Lange Leitung.": {
+      "file": "f25a0677f3c66c0e39e5ae38.ogg",
+      "bytes": 25332,
+      "sha256": "7833da2948a9847c7ef2725beef618899d633cae5fb943a1a6cca9ce0defbdd3"
+    },
+    "dispatch\nMelden Sie die beiden beschädigten Wegmarkierungen – kommen.": {
+      "file": "10ff30d0e412fb2020dfdebe.ogg",
+      "bytes": 12085,
+      "sha256": "11e6323ae6e93cd169c3fb7342870a07e893eb473ad8d35b38860aee970c4f01"
+    },
+    "dispatch\nDer Weg Unter den Flügeln führt vom Ort in den Windpark – kommen.": {
+      "file": "888688dae0ba7270590d2759.ogg",
+      "bytes": 13053,
+      "sha256": "340e2d297ec760517a61f5f827396c04a4812d0d094b8d201adc451b9b9f1edd"
+    },
+    "dispatch\nDie Schäden liegen jeweils an der Zufahrt zur westlichen und zur mittleren Anlage – kommen.": {
+      "file": "fccaef905ba059d4310918db.ogg",
+      "bytes": 20201,
+      "sha256": "e0db7545528fd3528b9ee9ab0f4f8b4d07e6fb9e8e3cc7fafeb7128f179a58e0"
+    },
+    "dispatch\nErkunden Sie Wegschaden West vor Ort – kommen.": {
+      "file": "cc63a2e5c80a88b30269b4e6.ogg",
+      "bytes": 9556,
+      "sha256": "edc8b4e1a917a27238303c908c7d2f094bd20e12694b678f6394806303f24ecd"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie die markierten Umleitungspunkte an der L": {
+      "file": "73baf208c3ee0c439a9d81c0.ogg",
+      "bytes": 19711,
+      "sha256": "13615c34941079465b2d2ef8d81f69c6044c0e69e2835ca6ce0ba512ce65fc25"
+    },
+    "dispatch\nMelden Sie beide Koordinaten und die magnetische Richtung vom westlichen zum östlichen Punkt – kommen.": {
+      "file": "b2c3d2cfcfde183e59c88ded.ogg",
+      "bytes": 23413,
+      "sha256": "63833cb8ec40b536f714be0a4b9ae4f52fc7fd597e52bcea07ba4fd676bf9452"
+    },
+    "dispatch\nDie beiden Kontrollschilder stehen am östlichen Rand von Sankt Florian und beim Abzweig Am Eigenschutz – kommen.": {
+      "file": "658177dabecb7bb4bcc13616.ogg",
+      "bytes": 28904,
+      "sha256": "3cfd3a409e7b0b8fda35be8a6b16f1f73b4d30fc1de7e3b4a78fdbb74022400a"
+    },
+    "dispatch\nVerbinden Sie die Punkte auf der Karte und bestimmen Sie die Richtung mit dem Kartenkompass – kommen.": {
+      "file": "da457e013ae75969dead6a70.ogg",
+      "bytes": 21823,
+      "sha256": "e01a9d0400adbd6a6a39d93870d167547bd481cdf69254fb4d6a57edbfa54503"
+    },
+    "dispatch\nErkunden Sie Umleitung Anfang vor Ort – kommen.": {
+      "file": "a659f666200020269d8bff6e.ogg",
+      "bytes": 11487,
+      "sha256": "d39f43bb03dd207b187c996922e66c022d16e9fccf5ce1256236c4a464a44c2c"
+    },
+    "dispatch\nDie Angabe „Magnetische Richtung Anfang → Ende in Grad“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "0b95014910950bbb7fd168c6.ogg",
+      "bytes": 24812,
+      "sha256": "a863a4332dd6b5e71fafbb28bc66d6f063d68a9ec2f9b86eb1cc57a9baf3ae4b"
+    },
+    "dispatch\nDie Peilung „Magnetische Richtung Anfang → Ende in Grad“ passt noch nicht.": {
+      "file": "dfda2c7a033dfdf9cdcf0f36.ogg",
+      "bytes": 19817,
+      "sha256": "473e6a9b518234c95f220eb6de7ff45a44b211f861f20796e3190f797045e78c"
+    },
+    "dispatch\nIhr Auftrag lautet: Erkunden Sie den Bevölkerungsschutz-Stützpunkt.": {
+      "file": "4e75457c1db0b48129e0d977.ogg",
+      "bytes": 14715,
+      "sha256": "3db97ac543ffc30669a9afd2cd7cc67f77097f68b64b15c809926895b8ecdf94"
+    },
+    "dispatch\nMelden Sie Bereitstellungsraum, Helipad und Ansprechpartner.": {
+      "file": "b4295a0e7d199cbac5fc3e70.ogg",
+      "bytes": 15322,
+      "sha256": "3dc3b052d000d1dde1442cbae95418139868deae4892fa7b5e4c304127afc749"
+    },
+    "dispatch\nErfragen Sie, wie viele Fahrzeuge im Bereitstellungsraum Platz haben – kommen.": {
+      "file": "dee3d6cd36919d2e0a49c223.ogg",
+      "bytes": 19331,
+      "sha256": "37e6c1247b180f2fd2e6f0dba8b8cc304fbb1241202e0795d889e3ca98ebcab3"
+    },
+    "dispatch\nDie Leitstelle erwartet drei Standorte und die Kapazität des Bereitstellungsraums – kommen.": {
+      "file": "601a9aa3d26730a4225bdd9a.ogg",
+      "bytes": 23724,
+      "sha256": "5c7abd379d648b134bd99af65759e88596b21de5ec6df6d5eb1d7c113c8ef5f0"
+    },
+    "dispatch\nBefragen Sie den Ansprechpartner auf dem Hof nördlich der Klinik mit E – kommen.": {
+      "file": "371a1c32a47a08bf6f30b52c.ogg",
+      "bytes": 17849,
+      "sha256": "b07b2acb30af9800ea523aea21f545a811df54d7a6cafa42c68f0137d1e634cc"
+    },
+    "dispatch\nLagemeldung korrekt.": {
+      "file": "2903e3024053e4ae586a3fe1.ogg",
+      "bytes": 5846,
+      "sha256": "42553cb1adb54d194476493f6f79fb54aeebbee35be4f6f621e8c088221f7d16"
+    },
+    "dispatch\nAlle zehn Einsatzübungen sind erfolgreich abgeschlossen – kommen.": {
+      "file": "a9a8b9001ff68a68cc1bc5b0.ogg",
+      "bytes": 16311,
+      "sha256": "c0eedc200916ca69a1dc03e079849d335a60a283f29649c6646c2aa0c38ec10c"
+    },
+    "dispatch\nErkunden Sie Bereitstellungsraum vor Ort – kommen.": {
+      "file": "9ddd7030f34985f432b2f916.ogg",
+      "bytes": 10519,
+      "sha256": "f597fdbac7ed7bc5c0bfa21eb5a9760123eea1c79d7063252d6d9ef5401b3414"
+    },
+    "dispatch\nSprechen oder lesen Sie bei Ansprechpartner Klinik mit E – kommen.": {
+      "file": "af151419734b1de95e34111c.ogg",
+      "bytes": 14223,
+      "sha256": "86cac1b7c5e4e407928195a77eeeaf72d3d4d331511cfd9940b75eed13650f85"
+    },
+    "dispatch\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ fehlt oder ist keine gültige Zahl – kommen.": {
+      "file": "03802b1ea8fb07f328e5a8bb.ogg",
+      "bytes": 21701,
+      "sha256": "2a4f34e08bf51ec0b964726238f85881fcb5605c13b1b8a773779281ee9d55cb"
+    },
+    "dispatch\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ ist zu niedrig.": {
+      "file": "594eb1dbc490fe8958b00f95.ogg",
+      "bytes": 14798,
+      "sha256": "7657cc9b24fc5e3d17213abb3344db4a82ee0c716560acd9545da3dc6ca8affe"
+    },
+    "dispatch\nDie Angabe „Fahrzeuge im Bereitstellungsraum“ ist zu hoch.": {
+      "file": "b775a3f44343e630e9959f90.ogg",
+      "bytes": 14299,
+      "sha256": "3e241559ea1f545cabca2b8b2f67f56fe936c182cb8d773dfc5e60b577064670"
+    },
+    "dispatch\nAn Ihren Standort können wir derzeit kein Fahrzeug senden.": {
+      "file": "69a1fb54da66db0c1c719012.ogg",
+      "bytes": 14136,
+      "sha256": "0bdfc1a0b7d54dbfdc4db9371455a1b3b894eb7f707e6d14589481476698712b"
+    },
+    "dispatch\nZum Anfordern erst aus dem Fahrzeug aussteigen – kommen.": {
+      "file": "527c4acc1b05afd86a9efec7.ogg",
+      "bytes": 11927,
+      "sha256": "512006b9764c49b8bf6454aaa83f98df82af4effa3d1dc109e2116a36c6d50bd"
+    },
+    "dispatch\nHier ist kein freier Platz für das Auto.": {
+      "file": "83a9cff23c4a82bcd927cc4b.ogg",
+      "bytes": 9507,
+      "sha256": "a9f6df5f0b98844615889bbcffe3229780b0030e509a1fb9cd5c7f9a2d48b82b"
+    },
+    "dispatch\nGehe auf eine freie Fläche – kommen.": {
+      "file": "8d8d1686be891c47670a2e10.ogg",
+      "bytes": 7689,
+      "sha256": "e4ebf069c1da9503a1b401851294a3929a857b144473f81f0eda8c63b449f885"
+    },
+    "dispatch\nAn Ihren Standort können wir derzeit kein Luftfahrzeug senden.": {
+      "file": "baa74b51ea5ce0a18e24d8ee.ogg",
+      "bytes": 13972,
+      "sha256": "517c6b1521121520e7a9d9dd37630a12ab3769d7c162d8c95f2b946e6d07daf6"
+    },
+    "dispatch\nErst auf freiem, festem Boden landen und anhalten – kommen.": {
+      "file": "49bb8245f9435614f61428e7.ogg",
+      "bytes": 13384,
+      "sha256": "9473a3c68302b4989c1b7f2e28ac9e101fd595cca2f7d4e7717b1baadc260ea9"
+    },
+    "dispatch\nKein freier Landeplatz in der Nähe.": {
+      "file": "7c88dbc573f5a0db29ac1285.ogg",
+      "bytes": 8731,
+      "sha256": "251caa992317bd336a3e2075636bc8019aa10d81c88e18c8fb01646265df9aef"
+    },
+    "dispatch\nSuche eine größere Lichtung oder Wiese – kommen.": {
+      "file": "3aa234d8f03187eb4dd5adec.ogg",
+      "bytes": 12673,
+      "sha256": "b673c9a024e317483fb7a0519c362ba77b219823c4035b1e961487d3b769bd56"
+    },
+    "dispatch\nEin Wechsel ist derzeit nicht möglich.": {
+      "file": "09de68cf0d9b2079b7a79c35.ogg",
+      "bytes": 8327,
+      "sha256": "46fae4fb08a7e3bfbef675c6b702d488029dbc1cacbd6c641a81a12e468843c8"
+    },
+    "dispatch\nSteigen Sie zuerst sicher aus dem Fahrzeug aus – kommen.": {
+      "file": "c05cc6e4a198b2f5149a7807.ogg",
+      "bytes": 12011,
+      "sha256": "62088500742fb50d664556cd7d00ef96c52301af3492e1e13a9b7b3327ef198a"
+    },
+    "dispatch\nEs liegt kein aktiver Auftrag vor – kommen.": {
+      "file": "ff0a629927d1c8586f3e7e73.ogg",
+      "bytes": 9585,
+      "sha256": "6921fe29ae3ef186f441cd4eec64558f5e4a8386287d1f85a0537aad9607064e"
+    },
+    "dispatch\nBitte geben Sie Gradangaben immer dreistellig durch, zum Beispiel": {
+      "file": "63a23281ae47e816fda9e266.ogg",
+      "bytes": 15368,
+      "sha256": "88e837f798e5386e32015d89d21db902f05d0816908f76742a4a289d6a03e5de"
+    },
+    "dispatch\nnull vier fünf": {
+      "file": "13ef16aa5e3ef500a9c9265a.ogg",
+      "bytes": 3429,
+      "sha256": "81df40b795684ac206a42bb05633339e9d168ea2817c0edea1d78c79a806d5d5"
+    },
+    "dispatch\nist zu ungenau.": {
+      "file": "0032b5e8fd843d220951906c.ogg",
+      "bytes": 4679,
+      "sha256": "1742eb3d48b3ca1f73b6a9505908cc434d6e4b6b1ac1e8bbce693d54afb8263b"
+    },
+    "self\nLeitstelle Sankt Florian von Einsatzleiter Sankt Florian – kommen.": {
+      "file": "e26d8ac1c0ddf27d31208a80.ogg",
+      "bytes": 15938,
+      "sha256": "2bbecce2d723bf453314fdd98938840415c863e5b268ac36f5f69e15666bc782"
+    },
+    "self\nBenötige ein Fahrzeug an meinem Standort – kommen.": {
+      "file": "213714ac8aa6c9cd08ee2ccf.ogg",
+      "bytes": 10958,
+      "sha256": "d41c00a72a1e34222ae4cd3657f467c8668a6182ca1c4bad5149e9050075bdec"
+    },
+    "self\nVerstanden – Ende.": {
+      "file": "0c0d16ece0fbbdb00ebe9da7.ogg",
+      "bytes": 6104,
+      "sha256": "1da7d5082c3f7dd8f699ad4e96ebdecb19e4e796674f93029f5ebd62417458a0"
+    },
+    "self\nBenötige einen Rettungshubschrauber an meinem Standort – kommen.": {
+      "file": "36c19ef2e8e26392e98f1594.ogg",
+      "bytes": 14193,
+      "sha256": "b5efd295ce119ee94fa70e8a12c9b301a2a7bb6cc0b80c8f04c12443983f0a35"
+    },
+    "self\nBenötige mein Navigationsmaterial wieder am Mann – kommen.": {
+      "file": "eaa67a72409844ee1fba3aa5.ogg",
+      "bytes": 12553,
+      "sha256": "d0432ad1d49f3f014efeeba7e770ad78d2ba80e4fccdebf78ceaf098ecd49086"
+    },
+    "self\nErbitte den nächsten Ausbildungsauftrag – kommen.": {
+      "file": "026e88e8b253a4beecd32f85.ogg",
+      "bytes": 11697,
+      "sha256": "90cdf74955f99ad35cbd3d1e6097d0d2a78da326dfc40fc053ceadd831827011"
+    },
+    "self\nErbitte einen neuen Einsatzauftrag – kommen.": {
+      "file": "d6511cca13e548cc6badea95.ogg",
+      "bytes": 10686,
+      "sha256": "cd6736b3df6c6d528be7f6f5f6d9409fbb9548f36b86d3aa191df13f9ba24b36"
+    },
+    "self\nErbitte einen Hinweis zum aktuellen Auftrag – kommen.": {
+      "file": "b4592cf38bb0fe7f7bf3497e.ogg",
+      "bytes": 12920,
+      "sha256": "84607de4f7f87e171fa6dab90132337b9c1e35140d951a418bda901382175582"
+    },
+    "self\nErbitte erneutes Aufsuchen der aktuellen Ausbildungsstation – kommen.": {
+      "file": "68b944ffe9d5de92bbb02d57.ogg",
+      "bytes": 16487,
+      "sha256": "8eab4a9225fed5e08df1c4a4c2ab70d6b20970cb07c90da72106716b24b5effb"
+    },
+    "self\nMelde Ergebnisse zu Einführung im Lehrsaal.": {
+      "file": "95f329bb8e165d357bb5a586.ogg",
+      "bytes": 10418,
+      "sha256": "606affcadfd20d6d497d4b008a66133e523c28147f38cb421aa8dbcb43137475"
+    },
+    "self\nDie Ausbildungsstation wurde durchgeführt – kommen.": {
+      "file": "61bb06a5ab85bd25cd628032.ogg",
+      "bytes": 11545,
+      "sha256": "fcdabcc83df44916bc471b68554bde508b5fd19bfa4d3b5b8ed8ee4a8cb3747c"
+    },
+    "self\nMelde Ergebnisse zu Aufbau einer Karte.": {
+      "file": "bf7802b7c805dda10a2117f4.ogg",
+      "bytes": 9350,
+      "sha256": "40883475acfe35938f73f61a5d5445995a08899d19ad129022fdb1d299d3a86a"
+    },
+    "self\nMaßstabsnenner:": {
+      "file": "2da4b70f9b68a054926fa9ed.ogg",
+      "bytes": 4953,
+      "sha256": "a42c3d5807e958ebd4b48fd29cc7f97b3a0c61f4c6b7a45495bd701a3be09f94"
+    },
+    "self\nfünf null null null null": {
+      "file": "96af5438c6f3cb2cd0b18447.ogg",
+      "bytes": 6767,
+      "sha256": "c3b970925e5dcd1262a93ebe138d6887546165ab624754aaf74107e630012094"
+    },
+    "self\nGitterabstand in Metern:": {
+      "file": "c148ca568e57e66abb9eca0b.ogg",
+      "bytes": 6388,
+      "sha256": "86d47ce42c815e9be445782d9dccafb8ee9604f04ad83bd0d2a32b81f21271bb"
+    },
+    "self\neins null null null": {
+      "file": "ba481dee8dfa99fc08124571.ogg",
+      "bytes": 6108,
+      "sha256": "0875594377eb08710edd5bc3a9c3f58a64e48d7e66c7e34a1b67b9096442bfe5"
+    },
+    "self\nÄquidistanz in Metern:": {
+      "file": "857ed6e4ecab8e5fff5ccdac.ogg",
+      "bytes": 6383,
+      "sha256": "8a481cad5688a0159a71d3b7e399a96d68c11ab14f9f21ae2899c0edcb213c3c"
+    },
+    "self\neins null": {
+      "file": "5f45966a2e01045b6d44dfb3.ogg",
+      "bytes": 3972,
+      "sha256": "b6d63438a912f104c743384f5f6b62354f5241b749e569d3e7bf8e152fef5508"
+    },
+    "self\n– kommen.": {
+      "file": "13a8a286810ea9b7aefae9d1.ogg",
+      "bytes": 2992,
+      "sha256": "18532275d8803323c382eeb5fa4a61204023ebce50fc0da52414b7b79dafcfb5"
+    },
+    "self\nMaßstabsnenner: nicht ausgefüllt.": {
+      "file": "9058b396dbb8dc5c5391747b.ogg",
+      "bytes": 9352,
+      "sha256": "26ebd2fb3305cd742d7b7c52ef5ac90d57ae58f597010ad4fb4077de5d8acc36"
+    },
+    "self\nGitterabstand in Metern: nicht ausgefüllt.": {
+      "file": "e7cfca19fbf2111bebb6c115.ogg",
+      "bytes": 10252,
+      "sha256": "811215443488fbdef73e4e04d8155d25ea2726785b680d470d62130d1373bf61"
+    },
+    "self\nÄquidistanz in Metern: nicht ausgefüllt – kommen.": {
+      "file": "55dc755ff82c0e83bcd3e5d8.ogg",
+      "bytes": 12849,
+      "sha256": "a81e3ba10fea161d2847294a72a70c29cb351766c5ddc6016128ed3fb1a1ace6"
+    },
+    "self\nMelde Ergebnisse zu Karte einnorden · Punkt": {
+      "file": "27d98ee6ff01e824199bd57d.ogg",
+      "bytes": 10027,
+      "sha256": "b34f66f9e8b36326b12684c6e8326e88b8bae3297b076ffd2435db7e57572d50"
+    },
+    "self\n1": {
+      "file": "5a71d4249ec5040a7b89ee15.ogg",
+      "bytes": 2590,
+      "sha256": "06077cec1acb130fd28d05594317d3aad6942bffa98c60925f9cbd8c3f3c09b0"
+    },
+    "self\nMelde Ergebnisse zu Position mit Planzeiger · Punkt": {
+      "file": "4445aa62e0b0d6ee442f22bc.ogg",
+      "bytes": 11766,
+      "sha256": "a60a7bb4b0f6bf744c66feda0bc4671a0a80a070bd3bb817d3bc9fcdf052f76a"
+    },
+    "self\n2": {
+      "file": "258f10f706f6a0193586488f.ogg",
+      "bytes": 2532,
+      "sha256": "10f4de0075beb484c579867dfc245189ffb16d2d18ec75664a391871021864d8"
+    },
+    "self\nP2: zweiunddreißig Ulrich": {
+      "file": "28cdd0830546568f5c6a1435.ogg",
+      "bytes": 8244,
+      "sha256": "4ed7a170bff30834f1a127e515ff902d48c5dcc9c20f381f63cd8c3d12cf32e4"
+    },
+    "self\nKaufmann Anton": {
+      "file": "4d7f1d578a5783b6351af53e.ogg",
+      "bytes": 5024,
+      "sha256": "0795195d42c44bdaa3e9798f9e841f54ffa8c99b30edbed817373c79504d6255"
+    },
+    "self\nnull eins vier null zwei drei": {
+      "file": "1e12093286efe746edf0be1c.ogg",
+      "bytes": 7819,
+      "sha256": "9df64f282d58a06e772ccae6a48f60253648d65ef711b66977909958241a7718"
+    },
+    "self\nKaufmann Anton nicht ausgefüllt": {
+      "file": "a4333704d2b1ea11e719b620.ogg",
+      "bytes": 7611,
+      "sha256": "98077ee3489719cab89a4308a15f9b0405a2e637a041603655648bcf1f429c44"
+    },
+    "self\nnull zwei drei": {
+      "file": "19957268919c104e09ae5726.ogg",
+      "bytes": 5302,
+      "sha256": "b964a5a8258ad6346acc829641d6944a89c7f5daf168f61a9ca697f04d84704f"
+    },
+    "self\nnull eins vier": {
+      "file": "81bb3fac3c99cfd8a5dc15cb.ogg",
+      "bytes": 4857,
+      "sha256": "901c99e3404c6ec6f57888fb555e671c725aa9a1374440b25d3c9e8a82e00ad7"
+    },
+    "self\nnicht ausgefüllt – kommen.": {
+      "file": "d7e2b96818426d7d56c074a7.ogg",
+      "bytes": 6772,
+      "sha256": "ff9b53555a8920db3be5386f35af859503905078e7e95746ddfb2254bcb7772d"
+    },
+    "self\nAm Kontrollpunkt steht die Kennzahl siebzehn.": {
+      "file": "45bac668289a27d06cc1049b.ogg",
+      "bytes": 10329,
+      "sha256": "c8efdbc84ba8580275b78987d0bbfe349b380bba1bfa3401ace9ff0f27be6881"
+    },
+    "self\nMelde Ergebnisse zu Eine Koordinate aufsuchen.": {
+      "file": "be0c712dbc2562e18ede676c.ogg",
+      "bytes": 10626,
+      "sha256": "4bce511655b694c7e15efab16579191462175525bc239d5aa7ad099fabd8c4d1"
+    },
+    "self\nKontrollzahl am Schild:": {
+      "file": "9f92052370861e28bb94c195.ogg",
+      "bytes": 5671,
+      "sha256": "b4bc848454711d1e58b4c3812115412640c837fe8c503892d2207343e3695b4b"
+    },
+    "self\neins sieben": {
+      "file": "fabbd7a95ce4fbab47b3eedf.ogg",
+      "bytes": 3803,
+      "sha256": "2e059fe00af4ce4dcbe2d0262b1b742d21f19c68ec9e51d533ef823748650129"
+    },
+    "self\nKontrollzahl am Schild: nicht ausgefüllt – kommen.": {
+      "file": "f0d8c50ee58b6f737fed019d.ogg",
+      "bytes": 12150,
+      "sha256": "a5d327c312be8a6a4bab7edad8d14d6e1f329c33068815811b245b7255d67e79"
+    },
+    "self\nMelde Ergebnisse zu Kreuzpeilung · Punkt": {
+      "file": "0d7042e3228e67c2c9e85850.ogg",
+      "bytes": 9390,
+      "sha256": "ac8475a24db52fbc949c28dcfee4ef45e3b4d55563e750365870f41ec1929338"
+    },
+    "self\n3": {
+      "file": "03f7506b2554a82d348da0f2.ogg",
+      "bytes": 2717,
+      "sha256": "cc3b16e56a916a0dc8d521fd8e91a5a39d58d6c2282779b89a90b2f69498238f"
+    },
+    "self\nStandort: zweiunddreißig Ulrich": {
+      "file": "3a961b85d9b47b5824c22b78.ogg",
+      "bytes": 8141,
+      "sha256": "7de0ebb45283340d378bf3d1c47e04baf4c71461bb991692384d4fda0d4682c5"
+    },
+    "self\nnull zwei vier null eins eins": {
+      "file": "9ec3b6b927166052ac0e7243.ogg",
+      "bytes": 8034,
+      "sha256": "43bdbc6e3f56161f965285958b70c3acf94535ae45d5a83339c683f665821e3a"
+    },
+    "self\nPeilung Kirchturm in Grad:": {
+      "file": "7ef20860a257342a5c3a9309.ogg",
+      "bytes": 6082,
+      "sha256": "789ad13f2e12a030242d3daf1830235f96a2fd434d8c34b8e7c5cc237336f2d1"
+    },
+    "self\ndrei eins acht": {
+      "file": "ae12e8402cb3d5357ead01a5.ogg",
+      "bytes": 4601,
+      "sha256": "2b83a486f9929a88364a441ce5461aa08dfa280f4f18ecc4114787c512f6178d"
+    },
+    "self\nPeilung Melderwarte in Grad:": {
+      "file": "806265a78600e24250339675.ogg",
+      "bytes": 7008,
+      "sha256": "795971f00960ec001f7cecf113210205381ada9c7f555ba82b90d15d44c5c54b"
+    },
+    "self\nnull zwei eins": {
+      "file": "966d9808b15d7135d55cd726.ogg",
+      "bytes": 5404,
+      "sha256": "0feeca689159b2ec140528bc89fa3e55e429f82e1557d79c05675db7816b757c"
+    },
+    "self\nnull eins eins": {
+      "file": "5e81c2270e6b8c88ea1ebf37.ogg",
+      "bytes": 4967,
+      "sha256": "4be1b6e78e0cadbb37b9e845e3add54c6c831abdb39816ebfcd865f86fb27ae9"
+    },
+    "self\nnull zwei vier": {
+      "file": "fe00c72bbeff8c1ee488a99b.ogg",
+      "bytes": 5050,
+      "sha256": "45901c5b19d8424e538aa9ff617d0106814a87b2fe4f26443b88f3d95efac2af"
+    },
+    "self\nnicht ausgefüllt.": {
+      "file": "32a58970eab9aa8850546286.ogg",
+      "bytes": 4777,
+      "sha256": "9f3fb3550758a0f6c549b6e7848f3d05b35f0d8d97d907b69aedb2a9f1c77321"
+    },
+    "self\nPeilung Kirchturm in Grad: nicht ausgefüllt.": {
+      "file": "897e2f04a1b586bf674bb281.ogg",
+      "bytes": 10621,
+      "sha256": "292a1c75a436ac118de1298b7a86178de408d24c085c8002fdf9d203575b8561"
+    },
+    "self\nPeilung Melderwarte in Grad: nicht ausgefüllt – kommen.": {
+      "file": "1560faa3fa5d6918aa0d4cda.ogg",
+      "bytes": 13674,
+      "sha256": "57572e4bd616f2fd17fe865dbc456d5200abaf59b3464695d609261a8d55603d"
+    },
+    "self\nMelde Ergebnisse zu Straßenschäden an der L": {
+      "file": "05032c1b9baf02a90c77bff9.ogg",
+      "bytes": 10873,
+      "sha256": "482792475214261caaabb0a74676e173d95c59242f0900a4803fa34e02f4e2da"
+    },
+    "self\n112": {
+      "file": "b6530295f63f4fab50c52e85.ogg",
+      "bytes": 4843,
+      "sha256": "89fea7152b7c844c4fb4595d45fe331fa5b28cce13be5bb5c25a9fac2768a80a"
+    },
+    "self\nKoordinate": {
+      "file": "94a70cea9f5b413315642b99.ogg",
+      "bytes": 3818,
+      "sha256": "9133979c385ce803bb937e38059b9ed406773e71e168c56d1f5d09e6b83c8e52"
+    },
+    "self\n: zweiunddreißig Ulrich": {
+      "file": "944e54a5348f6fee3dfc3ff5.ogg",
+      "bytes": 5774,
+      "sha256": "f672a67bc587c6320e87d97c1d2545ae1dbdd6c82c9af01e2917d8d79175fde7"
+    },
+    "self\nnull eins fünf null drei null": {
+      "file": "25a154ac36356dc99ffec877.ogg",
+      "bytes": 8547,
+      "sha256": "e2546e7aec769e1355e3b562435dbd0f9056b3c00a491c69ca4ad80041f56deb"
+    },
+    "self\nnull eins acht null drei eins": {
+      "file": "dfca094cef8de74b37c15f04.ogg",
+      "bytes": 8835,
+      "sha256": "b5854ae07f86aa05ce05e22526c3a88fc58f88563939e5ceb3bd83ff6414f2ff"
+    },
+    "self\nnull zwei zwei null drei zwei": {
+      "file": "e728cb743427bea9427f4044.ogg",
+      "bytes": 8698,
+      "sha256": "6947ba5597910111aa9412d083b085adbe4d55cce4516470d358b1e2c9e073e2"
+    },
+    "self\nnull drei null": {
+      "file": "787aa00a01b71143c4dcb01f.ogg",
+      "bytes": 5122,
+      "sha256": "a059a16c52e1b65db2730ea458380700ef26c385ad7109cd99b0e8ce32628ac5"
+    },
+    "self\nnull eins fünf": {
+      "file": "ac44e650d4bc7e7fa56fdc53.ogg",
+      "bytes": 4757,
+      "sha256": "4ac6919c978ff2e37af3a444aef35cc6fba9153890b4ed3403097521461477ff"
+    },
+    "self\nnull drei eins": {
+      "file": "1230788cdd959b08b67b9b83.ogg",
+      "bytes": 5037,
+      "sha256": "c854b51a8a61ae61804134f714c3cf94130813676481a631bc3415b78e42f7c5"
+    },
+    "self\nnull eins acht": {
+      "file": "5cf223283eb2a84f57f96f30.ogg",
+      "bytes": 5008,
+      "sha256": "0ae7ef76b42491e95432067ec3292545761ca1eacee66b84b44e803cd64f89e9"
+    },
+    "self\nnull drei zwei": {
+      "file": "40cd4ffedcd15b56be30f206.ogg",
+      "bytes": 4955,
+      "sha256": "feee93e6f898c74515df23a43118850067d43d32a456e9e326c084763446ab6b"
+    },
+    "self\nnull zwei zwei": {
+      "file": "39f5ddaefce8ddd3c7398ce0.ogg",
+      "bytes": 5103,
+      "sha256": "16f03d52371a1259d290471985f83c17597f0fe0ab4ab719b79c7b69dede55eb"
+    },
+    "self\nMelde Ergebnisse zu Gemeldeter Rauch im Rüstholz.": {
+      "file": "0bbfda1ed0cf9ae6331ec124.ogg",
+      "bytes": 11356,
+      "sha256": "b415ff477de81776ce8b92f5fcd9f60e0ba51df77e1fdf033f55ab38b77c8bb6"
+    },
+    "self\nRauch: zweiunddreißig Ulrich": {
+      "file": "bb7f01d4ce0a9bf61c60f901.ogg",
+      "bytes": 7212,
+      "sha256": "136fe1df0a26b7346c2da4c0efa3737c2eb493746700d745d23d4256f11be3ec"
+    },
+    "self\nnull zwei acht null drei neun": {
+      "file": "ed7c8b967c3c9238632be588.ogg",
+      "bytes": 9344,
+      "sha256": "03c9350cc386c4ea4dd82d24a10d5b65d473c2592fb169d71e8ceb73a6738e27"
+    },
+    "self\nnull drei neun": {
+      "file": "38911e9b99e93dbcff293550.ogg",
+      "bytes": 5198,
+      "sha256": "5e23117198df7a37e7f98c83f885c6bc38ff7af20fefac56e00ca7526b2d1761"
+    },
+    "self\nnull zwei acht": {
+      "file": "e9c69f3053c5748c429e7bbd.ogg",
+      "bytes": 5092,
+      "sha256": "9e5763d23e1782e8ddb21a0d8516036b960ecd48a4c694bcab3b28bc3bb7f61d"
+    },
+    "self\nDer Unfall ist hier passiert.": {
+      "file": "4a38af787b2f95b6feb2556d.ogg",
+      "bytes": 6389,
+      "sha256": "6182a60c1d37a83f32b795542b518ce4e39c1c901ca860c361189b6db8587226"
+    },
+    "self\nZwei Personen sind leicht verletzt.": {
+      "file": "cb3c258cacce852e7c21f13f.ogg",
+      "bytes": 7776,
+      "sha256": "dbacbc3fb9f281b11aa106d0652008038d7187eeb7b4385c9cbd67fdd05c88d8"
+    },
+    "self\nBitte melden Sie der Leitstelle zwei Verletzte.": {
+      "file": "b1bd69cbbb7bea96022c6e3a.ogg",
+      "bytes": 9925,
+      "sha256": "1933b78dcc63ca2ef727400e1df669eece79426842a6e1353f9fe236202f7bf4"
+    },
+    "self\nMelde Ergebnisse zu Verkehrsunfall in Kupplingen.": {
+      "file": "9367357d4869a68aeed717c5.ogg",
+      "bytes": 11721,
+      "sha256": "e4bb0a3453d09018cc7ff84e38ae8f0c1aed292d8587151122dacc07750140ac"
+    },
+    "self\nUnfall: zweiunddreißig Ulrich": {
+      "file": "cc9ee12c1dfeaa40b9158089.ogg",
+      "bytes": 8551,
+      "sha256": "26e377bb1e8ecbd16af745dab8afb7805c372ba475784cc92f7fcf81449bb5c3"
+    },
+    "self\nnull fünf sechs null zwei drei": {
+      "file": "4eaaddc11fd3f9298dfea97c.ogg",
+      "bytes": 8274,
+      "sha256": "a2a4bdd5251a4b4e09b07a585ed31f68449b31120d25b0a43ee8ea72241e4580"
+    },
+    "self\nAnzahl Verletzte:": {
+      "file": "8f95d45400e6ca3131f35c76.ogg",
+      "bytes": 4918,
+      "sha256": "e606edf5c0375163ba0d31f1df62bd964ab6d8544fae78fcc28b697d34b295e7"
+    },
+    "self\nnull fünf sechs": {
+      "file": "9ca9f7f4d58809f73cdc6dd3.ogg",
+      "bytes": 4292,
+      "sha256": "e37aae85ca284437630a0f828b9709701ed8665431be29dd0bb7dbb4e5347884"
+    },
+    "self\nAnzahl Verletzte: nicht ausgefüllt – kommen.": {
+      "file": "d63b8173d1dac28222cefe08.ogg",
+      "bytes": 11573,
+      "sha256": "a8461e460e16f75a42bc8af4e85d43732a69b2a8ef74168a4ad6976a07a01de6"
+    },
+    "self\nDie passierbare Breite beträgt vier Meter.": {
+      "file": "bf3692ccb9d60389790ccb3a.ogg",
+      "bytes": 10437,
+      "sha256": "4de1540605caad6fe0a146ae8d08ea67c98acd7364173f4a4e44c09a719cc658"
+    },
+    "self\nDer markierte Bereich bleibt frei.": {
+      "file": "eb9ce0f6a441e6cb61f7b6cd.ogg",
+      "bytes": 7357,
+      "sha256": "34291013ff9ab03576066334a1bf916ef61b35418c38274a06f3969d59107d6f"
+    },
+    "self\nMelde Ergebnisse zu Kupplungsbrücke erkunden.": {
+      "file": "ca0930ac08af597cf9d2b4aa.ogg",
+      "bytes": 10557,
+      "sha256": "4ef7d96e6ecb5c5d4dce4b629270f133bf155a06c2eec538b8157beb5f54c924"
+    },
+    "self\nBruecke: zweiunddreißig Ulrich": {
+      "file": "bb6c64d6daefb3cf862bb17e.ogg",
+      "bytes": 8028,
+      "sha256": "1eefa23031cda18f077ec21423fe38dbd2864c42f01ae24f24fdb55cd28fb701"
+    },
+    "self\nnull vier zwei null drei vier": {
+      "file": "6c89963ddabadbd114736a30.ogg",
+      "bytes": 7827,
+      "sha256": "3f59d3db8abf1f0879047dad0ac02e1772e865edb70c4de237c5d02004a6f58a"
+    },
+    "self\nPassierbare Breite in Metern:": {
+      "file": "14fd058dc26ffe1e47513aef.ogg",
+      "bytes": 7445,
+      "sha256": "962d063539e24f3036d75f7ae614f4db5cdd0d3f953450c2c14af20f04d40b58"
+    },
+    "self\n4": {
+      "file": "2e8c77fe5d3a619b9096c3fd.ogg",
+      "bytes": 2731,
+      "sha256": "cf766fcaa522afcbc11da7d1294df3ab3ac57559fa6030b0c3fa72136de6b928"
+    },
+    "self\nnull drei vier": {
+      "file": "00ee4abf48e3de4a2c412456.ogg",
+      "bytes": 4808,
+      "sha256": "27c6dfbb714acdce31537c52cddd528d3c2a5152863152caef51381e183af432"
+    },
+    "self\nnull vier zwei": {
+      "file": "a2978a3082f03d8fc471fa0b.ogg",
+      "bytes": 4710,
+      "sha256": "7c31cd0e13e9e5e90fb82b6e4d5c9f93b946824ccb629eda05f4798a028562e3"
+    },
+    "self\nPassierbare Breite in Metern: nicht ausgefüllt – kommen.": {
+      "file": "9fdfba023e1fa6a6f3d6d6ce.ogg",
+      "bytes": 13892,
+      "sha256": "7876b034f6c33420057ce849803e8f2890ab386fbfaf1b2f664452af6237744f"
+    },
+    "self\nEin Mast ist beschädigt.": {
+      "file": "e411c537d50ffc1a2b580e65.ogg",
+      "bytes": 5794,
+      "sha256": "d5ce4b5edf9d3002526cefd6b65893377ed3205beabf89930e84daca7e98bd8f"
+    },
+    "self\nDer Bereich ist für diese Übung gekennzeichnet.": {
+      "file": "0e477ec19155ea0b27149733.ogg",
+      "bytes": 10010,
+      "sha256": "0dd983b8578059e90f88dfe85795a1b013da0143395a6186bd31d0c36bf75918"
+    },
+    "self\nMelde Ergebnisse zu Beschädigter Funkmast.": {
+      "file": "24885d25172324321fa85c2c.ogg",
+      "bytes": 9714,
+      "sha256": "21d6ba45db1bda09e4dd1a312e1d490004d97124981d5ae16dee3aa3da72a1b7"
+    },
+    "self\nMast: zweiunddreißig Ulrich": {
+      "file": "6d4f934703e3576a8a13fbba.ogg",
+      "bytes": 7287,
+      "sha256": "c8486e8f4efb1709ba79c4770c0a8098e4371ddb008315cf48c93f0187347f17"
+    },
+    "self\nnull null sieben null null sieben": {
+      "file": "067d1e9a194ea89766b07915.ogg",
+      "bytes": 7813,
+      "sha256": "de068ec2bb65028f216aeb9a3244d3b389a207eddbe1f82b796a8d0f46609603"
+    },
+    "self\nBetroffene Masten:": {
+      "file": "291b33a1f11fcd6dd6add8d6.ogg",
+      "bytes": 4947,
+      "sha256": "7e261b47861d8845cafaf153ad8d090abf02a515b90a0eeaf15ec09af7e81ff4"
+    },
+    "self\nnull null sieben": {
+      "file": "fc308650a26d966ad8b3b919.ogg",
+      "bytes": 5262,
+      "sha256": "20daaab7b12bb5f8b999a9c0c3ce6093877bbb6e007ac16e89352b571fd77cad"
+    },
+    "self\nBetroffene Masten: nicht ausgefüllt – kommen.": {
+      "file": "2b0494f6f01a794b60610df1.ogg",
+      "bytes": 11501,
+      "sha256": "ffc60eaad49086232ebc661dbdae3fb6e9d84eec2f82e579b57f59e4b3df841d"
+    },
+    "self\nDer Übungspegel zeigt einen Wasserstand von eins Komma acht Metern.": {
+      "file": "ff5c2611a3a415c5b7d9c6c9.ogg",
+      "bytes": 15496,
+      "sha256": "73c0cce08a6f9ebfcba08b34039e7af4e73eac281963bc0a82827740c2917447"
+    },
+    "self\nMelde Ergebnisse zu Pegel an der Blaulach.": {
+      "file": "d325ec6d835e7591fbfd3300.ogg",
+      "bytes": 10318,
+      "sha256": "dad10c0313c65c690201842642f8125be1e787675619bef9b34560f6f67099b3"
+    },
+    "self\nPegel: zweiunddreißig Ulrich": {
+      "file": "65b2165b13d2deba95029584.ogg",
+      "bytes": 7781,
+      "sha256": "b2eaf78cc79abefb319653ea8afc612aa2aae9ff54eeb546b76a4c69e0a85c7e"
+    },
+    "self\nnull vier drei null drei vier": {
+      "file": "6cefd07320bf0ad26ea4fa69.ogg",
+      "bytes": 7511,
+      "sha256": "05d7d47eac7bb6ab01eb8c740cdea8294f558b5bc3a87d72d6583875202dc85b"
+    },
+    "self\nWasserstand in Metern:": {
+      "file": "9a1a51bcf529e2274b7353c9.ogg",
+      "bytes": 5804,
+      "sha256": "c9e6ec1950d9a272a277e506d2afb409944ec7fe2849f93e1cc7924f4adaba92"
+    },
+    "self\nKomma": {
+      "file": "8a8c7cfd16ad4d438558a9fb.ogg",
+      "bytes": 2815,
+      "sha256": "8130a1e2a5e74e0d1948e6d14028b5a8d83a1af91897069967db2aa517ddc189"
+    },
+    "self\n8": {
+      "file": "532c61c6cd39d769fc11326e.ogg",
+      "bytes": 2440,
+      "sha256": "b2caa72a5880408daf8795213d525ba7fc5b5b208cc16736dfdb02f01c9aa6fe"
+    },
+    "self\nnull vier drei": {
+      "file": "681ec7a8d911318df4991ee5.ogg",
+      "bytes": 4936,
+      "sha256": "a52dcec317f32cd4e580befa9dbb64bf4b83b65f1a63ce5d016fea7c516ef73c"
+    },
+    "self\nWasserstand in Metern: nicht ausgefüllt – kommen.": {
+      "file": "351f9ae7992a7b610b2fe8e6.ogg",
+      "bytes": 12218,
+      "sha256": "725bf3e56530bc9f694f9dfc66861b56d91b5a0d26ebdf41ae89d96d46ea1fe2"
+    },
+    "self\nDanke, dass Sie mich gefunden haben.": {
+      "file": "84a7845a093daf23d4daf83f.ogg",
+      "bytes": 7447,
+      "sha256": "00e17fbf8c22a7b7f57c795b92023d7ab7c19333db78e529ff2e1ec2b50070f8"
+    },
+    "self\nIch war allein unterwegs.": {
+      "file": "6ced9250f948547c13a9bb37.ogg",
+      "bytes": 5290,
+      "sha256": "4101527531403f8910601ded1b1651da6b7748c12724a125661a9ab2d6fce358"
+    },
+    "self\nEs wird keine weitere Person vermisst.": {
+      "file": "a74434c6c03aed101908e8fb.ogg",
+      "bytes": 8523,
+      "sha256": "5359ef77145563e3f8673d0e40bfe0aa5ade4a31f80e8fc03c5652d8384f339d"
+    },
+    "self\nMelde Ergebnisse zu Vermisste Person im Rüstholz.": {
+      "file": "0c8cabd4228553ab41fa4bc7.ogg",
+      "bytes": 11823,
+      "sha256": "a788b04735a2fec2469c8bd57155fd30f0391a4daecf8686e34d5ca8d3d101e6"
+    },
+    "self\nPerson: zweiunddreißig Ulrich": {
+      "file": "1cd7eafb6e35105fccae9b20.ogg",
+      "bytes": 8333,
+      "sha256": "3556ba965597c3f26d9c47cfb2b2526f18254d35bdcbe3890f14940457e45a34"
+    },
+    "self\nnull zwei neun null drei acht": {
+      "file": "b70d979e29a857100ebb7070.ogg",
+      "bytes": 8156,
+      "sha256": "f01fee13bef397eec053e5cea6d0c7541da665cb68e81197ec422118be4c7867"
+    },
+    "self\nWeitere vermisste Personen:": {
+      "file": "896c1203bcd9d597c9dc4fc8.ogg",
+      "bytes": 6940,
+      "sha256": "6cccf0740fb6aec373272098c2aa6eb5f04f89f69c62f6f6994859e6f2d3e922"
+    },
+    "self\nnull": {
+      "file": "46757d42096f16047d5fc95d.ogg",
+      "bytes": 2744,
+      "sha256": "72bf6ebcb87f311ec63c258d372ab6bdf9b06f248335a682054065f88a1ac165"
+    },
+    "self\nnull drei acht": {
+      "file": "bcd4831044b6bda21c6fda9e.ogg",
+      "bytes": 4867,
+      "sha256": "708a0d9efa13e9fe7064ff49d56079608689c731dc8fb94c90a174a6c4866990"
+    },
+    "self\nnull zwei neun": {
+      "file": "95d76ca6ec3686d18b5e04ad.ogg",
+      "bytes": 5251,
+      "sha256": "eb10b1092597a34c14465732d4fc42989038ebb1be29051f48bc2c1d5c4f5f2b"
+    },
+    "self\nWeitere vermisste Personen: nicht ausgefüllt – kommen.": {
+      "file": "62e67fba80fb07cc6f9f2e18.ogg",
+      "bytes": 13322,
+      "sha256": "4365a694803ecb0c1dccfb7e344b1d8c16a69a555c7a82ad2c9f76a1701d0014"
+    },
+    "self\nMelde Ergebnisse zu Zuwegung im Windpark.": {
+      "file": "6e75dc703cd94389c48193cb.ogg",
+      "bytes": 9650,
+      "sha256": "7a61ed4d3e8fdbaf34bdbc8bbda1117535b1d7f281780551fdeebf6e7038a296"
+    },
+    "self\nnull eins vier null vier drei": {
+      "file": "081c5a2f568e348b9aa02a11.ogg",
+      "bytes": 7595,
+      "sha256": "c7c023e666384dcee77a88e5d7d4317aa35858ec4e13c89a11a03c4a67063f9a"
+    },
+    "self\nnull eins acht null vier sechs": {
+      "file": "44a46a9f67553350735c6a7e.ogg",
+      "bytes": 7519,
+      "sha256": "769a1097e0a657d493c6235e42389937634df344045f7a8956e87757cb1fd576"
+    },
+    "self\nnull vier sechs": {
+      "file": "67c678b224529598b96342f2.ogg",
+      "bytes": 4204,
+      "sha256": "c6fef022307efd71595b7d7af9e4d5013750ba0de5ad6d9efbc1e828b299bb3e"
+    },
+    "self\nMelde Ergebnisse zu Umleitung vorbereiten.": {
+      "file": "20557f8b278c8064d6a9257f.ogg",
+      "bytes": 10526,
+      "sha256": "3de3d9bb0e618809c0fbd5400c3099cb06d28c7f4643cf6a6012fd78d4ee7d90"
+    },
+    "self\nnull eins null null zwei neun": {
+      "file": "551fe9e94ba2405b731875f6.ogg",
+      "bytes": 8903,
+      "sha256": "1ba4c45686fafa21c03333b16e03e4cb674cc9989eb2cc6888458b03cdffc223"
+    },
+    "self\nnull eins neun null drei eins": {
+      "file": "63da1150c4760ba36d0667b7.ogg",
+      "bytes": 7953,
+      "sha256": "60424e636a84daea7bca7cfb46e54e7a15bec7eaa442ee0ad331675ddf2ae8e1"
+    },
+    "self\nMagnetische Richtung Anfang → Ende in Grad:": {
+      "file": "59ee3d6062162bf6f421a6dd.ogg",
+      "bytes": 11522,
+      "sha256": "176274153fc6e9a8d373ac010411c383357c05f991e2648b2837dbc4332aecff"
+    },
+    "self\nnull sieben neun": {
+      "file": "bc7813c464e3b78f084cc677.ogg",
+      "bytes": 4625,
+      "sha256": "9d72f3a3b585c408ffc90acf0b223d40bb64f161860787077177cc8366fbf044"
+    },
+    "self\nnull eins null": {
+      "file": "43a14a46be2b18eddf9749a7.ogg",
+      "bytes": 5007,
+      "sha256": "546e0be811ae6983936f498f1221d0df4e9bbd60e9cb5fef7af38e8bac14e2e4"
+    },
+    "self\nnull eins neun": {
+      "file": "7b5d7ebd2ac8e6bfecb6e18e.ogg",
+      "bytes": 5163,
+      "sha256": "6abf327f05650e62278928ab758e7afde95bcae99ac3ecc28459946e13965217"
+    },
+    "self\nMagnetische Richtung Anfang → Ende in Grad: nicht ausgefüllt – kommen.": {
+      "file": "848f1c18e3c12e2252a38d00.ogg",
+      "bytes": 18152,
+      "sha256": "fd445a9bc1fbd8802a7754357107590a0798cf53c950ef67bc0dc4cfd958b3a1"
+    },
+    "self\nBEREITSTELLUNGSRAUM ·": {
+      "file": "21193264627fb2105d94a6b2.ogg",
+      "bytes": 5278,
+      "sha256": "3fb5f9071768932aee6910733c83b5da2909d17322894ca063a6120d88da1e9f"
+    },
+    "self\n6": {
+      "file": "0db8ef7c36703b85d1088b8f.ogg",
+      "bytes": 2323,
+      "sha256": "f660a4e39dd990984f08b9b2b5a6a05b0045a15b33422e681a91282be868ea8c"
+    },
+    "self\nFAHRZEUGE": {
+      "file": "51a9921ae9d9953f8f40ebbb.ogg",
+      "bytes": 3766,
+      "sha256": "b6c214f402761ff8cadb8da5de00abe76e1c541e920b526c8e3ddcd57707b5f1"
+    },
+    "self\nIm markierten Bereitstellungsraum können sechs Fahrzeuge aufgestellt werden.": {
+      "file": "ab89647ae9790304f286e813.ogg",
+      "bytes": 16252,
+      "sha256": "14adaa3588458e026588c0f25901fabb83fd67274fe1c9befee630f7171dcffd"
+    },
+    "self\nDer Helipad liegt östlich von hier.": {
+      "file": "90d8c6f9ddf7bc83b3965b19.ogg",
+      "bytes": 8295,
+      "sha256": "b93f02cd3d70af5b4389fefd06b87782ceb2103f0251bfd797f8996f865960f4"
+    },
+    "self\nMelde Ergebnisse zu Abschließende Lageerkundung.": {
+      "file": "1ec48445d858557ed8d28392.ogg",
+      "bytes": 10767,
+      "sha256": "aba54e7fd7e82a37b1f0201c3ff04f1dec11a70ce20632c23f406bae32a47d38"
+    },
+    "self\nnull eins fünf null zwei sieben": {
+      "file": "26c2188454fbbd22e4e4a235.ogg",
+      "bytes": 8309,
+      "sha256": "533cc41e025d92f6ecf17f0209897080058013ba7ff1502fa94519c77ea3eb85"
+    },
+    "self\nnull eins sieben null zwei acht": {
+      "file": "09ab6ef575847c0ef1ef4a9d.ogg",
+      "bytes": 7687,
+      "sha256": "ee32548dab0a6132374a93a1a75b6cf2f7c5da33a0ea68028d0a25d0d6e2768f"
+    },
+    "self\nnull eins fünf null zwei acht": {
+      "file": "893d2078040e121872fcc25e.ogg",
+      "bytes": 8311,
+      "sha256": "b321717f83f624774137605d2d9a6e813174946f614816bc430ec9542e4437d6"
+    },
+    "self\nFahrzeuge im Bereitstellungsraum:": {
+      "file": "01d53836d0f550313fe3c36c.ogg",
+      "bytes": 7879,
+      "sha256": "b59e7ce0899e33d4328dbdd83770e3acbb2ba703a2ff5e5825e03be98c3a284f"
+    },
+    "self\nnull zwei sieben": {
+      "file": "cab138033bea946d73985416.ogg",
+      "bytes": 5100,
+      "sha256": "0fdd9566466a65a0729e7b9b279c71a4f7079d72290ce71cb3fbf4b6b77e2e3a"
+    },
+    "self\nnull eins sieben": {
+      "file": "99b5e5c031206ce9ea10353d.ogg",
+      "bytes": 4755,
+      "sha256": "42b1fc9d35b2968f364ed81759867cb2648c5fa85f328679d1d6d73f8317a34c"
+    },
+    "self\nFahrzeuge im Bereitstellungsraum: nicht ausgefüllt – kommen.": {
+      "file": "e41b96269eff9b71dc73fa0f.ogg",
+      "bytes": 14638,
+      "sha256": "82bbf3592e7c4de1e3d2cb20f0cbb6e18f3d4b95b4221e0d37a33392e09bb97a"
+    },
+    "self\nIch möchte Ergebnisse melden, habe aber keinen aktiven Auftrag – kommen.": {
+      "file": "0b65313f6e0e72b71ffbb69a.ogg",
+      "bytes": 16791,
+      "sha256": "d7f717e8240e033967b0577d88d8acdc9935a2dd7fb2be6595a4f3e815102ce0"
+    }
+  }
+}

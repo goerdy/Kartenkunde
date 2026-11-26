@@ -46,3 +46,9 @@ deployment*.json
 /private/
 
 /orientierung.html
+
+# Images generated on first access by the community patch wall
+/var/
+
+# Independently deployable 3D module export
+/dist-orientation/

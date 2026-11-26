@@ -121,19 +121,19 @@ Vor dem Start zeigt eine Ladeanzeige den tatsächlichen Aufbau und die Texturber
 
 Der Einsatzleitwagen hat einen geschlossenen Innenraum, eine rot-blaue Karosserie mit weißer Bauchbinde, Beschriftung „Einsatzleitung“ und Blaulichtbalken. Höchstgeschwindigkeit etwa **120 km/h**. **B** schaltet Blaulicht, **H** das Zweiton-Einsatzhorn. Motor, Rollgeräusch und Einsatzhorn werden lokal per Web Audio synthetisiert; die Audiofreigabe erfolgt erst nach einer Eingabe. Ton lässt sich im Einsatzbuch abschalten. Der Tacho reicht bis 160 km/h. Der Tageskilometerzähler zählt ausschließlich die gefahrene Strecke in beide Fahrtrichtungen, zeigt eine Nachkommastelle in 0,1-km-Schritten, bleibt gespeichert und wird mit **T** zurückgesetzt.
 
-Radio Florian im Einsatzleitwagen wird mit **R** geschaltet (Funkgerät liegt auf Slot **9**).
+Radio Florian im Einsatzleitwagen und Rettungshubschrauber wird mit **R** geschaltet (Funkgerät liegt auf Slot **9**).
 Die originale Instrumentalschleife unter `assets/trainer/radio/` ist CC0; es werden
 keine externen Musikdienste verwendet. Für eingesprochene Wetteransagen Audiodateien
 in diesen Ordner legen und `program.json` ergänzen, zum Beispiel
-`{"src":"wetterlage.wav","atSeconds":60,"label":"Wetterlage"}` in `announcements`.
+`{"src":"wetterlage.ogg","label":"Wetterlage"}` in `announcements`.
 Die Sekunden zählen nur bei eingeschaltetem, hörbarem Radio während des Spiels.
-Ansagen laufen einmal pro Sitzung und senken die Musik automatisch ab. Ausgeschalteter
+Die 32 mit Qwen3-TTS erstellten Einspieler (22 Ansagen und 10 Jingles) laufen in einer wiederholten Sendefolge: erstmals nach 10 Sekunden, danach jeweils 30 Sekunden Musik zwischen den Beiträgen. Die Ansagen sind auf einheitliche Lautheit normalisiert und senken die Musik automatisch ab. Funkgespräche und Ausbilderin haben Vorrang; unterbrochene Radiobeiträge bleiben vorgemerkt. Der Sender ist ausschließlich im besetzten Auto oder Hubschrauber hörbar. Beim Aussteigen verstummt und pausiert er; jedes Fahrzeug behält seinen eigenen An-/Aus-Zustand, auch im gespeicherten Spielstand. Die aktuelle Durchsage, Abspielposition und verbleibende Musikpause werden unter `kartenkunde-radio-florian-v1` im Local Storage gesichert (bei Unterbrechung, Beitragsende, Verlassen der Seite und spätestens nach fünf hörbaren Sekunden). Nach dem Neuladen geht die Sendefolge weiter; gesperrter oder voller Browserspeicher verhindert die Wiedergabe nicht. Die Intervalle stehen in `program.json`. Neue Originalaufnahmen können mit `python3 tools/import-radio.py /pfad/zu/aufnahmen` importiert werden (ffmpeg erforderlich). Ausgeschalteter
 Ton oder Pause schaltet alle Geräusche stumm. Alle Programmdateien werden vor dem
 Betreten der Welt geladen; nach Änderungen neu bauen und veröffentlichen.
 
 Sankt Florian hat ein gemeinsames Straßen- und Gebäudemodell für 3D-Welt, Stadtplan
 im Einsatzbuch (Tab/Esc) und Topokarte. Feuerwehr mit sechs Toren und Schlauchturm,
-Polizeiwache, Krankenhaus und THW-Ortsverband tragen eigene Kartensymbole F/P/H/THW.
+Polizeiwache, Krankenhaus, Rettungswache und THW-Ortsverband tragen eigene Kartensymbole F/P/H/R/THW.
 Die THW-Unterkunft ist eine freie, stilisierte Interpretation des aktuellen
 THW-Bauprogramms (Verwaltungsbau, modulare Fahrzeughalle, Photovoltaik, Wärmepumpe),
 keine maßgetreue Bauzeichnung: https://bundesbau.de/projekte/das-thw-bauprogramm-eine-loesung-fuer-ganz-deutschland
@@ -162,3 +162,157 @@ eigene Web-Audio-Synthese. Hindernisse und Wasserlandungen werden berücksichtig
 Zu Fuß beträgt das Tempo **3,2 m/s**, mit **Umschalt 8 m/s**. **Leertaste springt**
 mit Schwerkraft und Kollisionen; Gedrückthalten löst keine wiederholten Sprünge aus.
 Im Auto bleibt dieselbe Taste die Bremse, im Hubschrauber der Steigflug.
+
+Sankt Florian verwendet lokale CC0-Modelle aus Kenney Car Kit, City Kit Commercial,
+City Kit Suburban und Nature Kit. Wohn- und Geschäftshäuser, Dachfarben, Vorgärten,
+Straßenmöbel, Fahrzeuge, Wald und Wegraine sind abwechslungsreich gestaltet.
+Östlich des Orts liegt der gemeinsame Bevölkerungsschutz-Stützpunkt mit Feuerwehr,
+Schlauchturm, Rettungswache, Klinik und THW. Der fahrbare Einsatzleitwagen steht auf
+dem Hof, der gelbe Rettungshubschrauber bereits auf dem markierten Helipad. Neue
+Sitzungen starten dort; bestehende Sitzungen behalten ihre Position, lediglich die
+alten unveränderten Startplätze werden migriert. Ein Kartentisch steht am Hof bereit.
+Die neue Geometriebibliothek wird vor Freigabe des Startknopfs vollständig geladen.
+Modelle reproduzieren: vier Originalpakete in gleichnamige Ordner entpacken, dann
+`python3 tools/import-kenney.py /pfad/zu/den/paketen` (Python mit Pillow).
+
+Die begehbare Ausbildungsstätte liegt westlich der Feuerwehr auf dem gemeinsamen
+Campus. Ein offener Eingang führt in den Schulungsraum: sechs Zweiertische, ein
+benutzbarer Kartentisch, die echte Topokarte als Wandkarte sowie Lehrtafeln zu
+Höhenlinien, Nordrichtung und Planzeiger. Vor dem Smartboard wechselt E zwischen
+Willkommen/Bedienung, Einnorden und Marschzahl/Kreuzpeilung. Auf der Karte trägt
+das Gebäude das Symbol A. Neue Sitzungen starten im Schulungsraum; ältere
+Fußgänger-Spielstände werden einmal dorthin versetzt, aktive Fahrten und Flüge
+bleiben erhalten. Ab Weltstand 3 werden weitere Wege wieder normal gespeichert.
+
+## Ausbildung und Einsatzkampagne
+
+Nach dem Laden stehen „Am gespeicherten Standort fortsetzen“ (bei vorhandenem
+Spielstand) und „Im Ausbildungszentrum starten“ zur Auswahl. Der Start im Zentrum
+setzt vorhandenen Fortschritt nicht zurück. Eine Ausbilderin begrüßt mit E und
+erklärt Steuerung und Ausrüstung, lesbar und per Browser-Sprachsynthese.
+
+Sechs chronologische Ausbildungsstationen: Einführung, Kartenaufbau, Einnorden
+mit Kompass und Landmarke, Planzeiger-Position, Koordinate aufsuchen und echte
+Kreuzpeilung. Neue Ausbildungsstationen versetzen Spieler und Ausbilderin zum
+Lernort; dafür vorher sicher aussteigen. Der Funkbefehl „Ausbildungsstation erneut
+aufsuchen“ bringt bei Bedarf an den aktuellen Ausbildungsort zurück.
+
+Nach der Ausbildung folgen zehn selbstständige Einsatzübungen: drei Straßenschäden
+an der L 112, Rauch im Rüstholz, Unfallbefragung, Brückenkontrolle, Mastschaden,
+Pegelablesung, Vermisstensuche, Windpark-Zuwegung, Umleitungsplanung und eine
+abschließende Lageerkundung am Stützpunkt. Szenen und Personen erscheinen jeweils
+für den aktiven Auftrag. Neue Aufträge, Hinweise, Ergebnisse, Fahrzeug-,
+Hubschrauber- und Materialanforderungen laufen vollständig über Funkgerät 9.
+Ergebnisse stehen als selbst auszufüllende Felder im Notizblock 5. Die Leitstelle
+prüft Angaben, Besuche, notwendige Gespräche und Instrumentennutzung. Keine
+automatische Übernahme von Lösungslage oder Koordinaten in die Meldefelder.
+
+Die Funkabwicklung folgt Anruf, Anrufantwort, Nachricht, Antwort und „Verstanden –
+Ende“ mit „Kommen“ bei Sprecherwechseln; Referenz FwDV/DV 810:
+https://digitalfunk-sh.de/DFSH/userfiles/files/Vorschriften/FwDV_DV_810.pdf
+Beide Funkteilnehmer werden synthetisiert und protokolliert. Wirkungen treten
+erst nach Gesprächsabschluss ein; Schließen/9/Escape bricht laufende Gespräche
+ohne spätere Wirkung ab. „Erneut vorlesen“ wiederholt nur den Text.
+
+Kampagnen- und Funktexte sind derzeit deutsch. Stimmen: Ramona (Ausbilderin),
+Karlsson (Leitstelle), Thorsten (Spieler). Feste Texte und wiederkehrende Zahlen
+werden vorab mit Piper erzeugt und unter `assets/trainer/speech/` gespeichert.
+Beim Laden der Welt werden diese kompakten Opus-Aufnahmen vorgeladen und im
+Browsercache gespeichert. Variable Zahlengruppen werden zu Beginn eines
+Funkgesprächs im Hintergrund synthetisiert und zwischengespeichert. Während der
+Anruf und die Anrufantwort laufen, kann Piper so die spätere Meldung vorbereiten.
+Die großen Sprachmodelle werden zusätzlich im Hintergrund vorbereitet; sie
+blockieren den Weltstart nicht. Bei Ladefehlern bleiben Texte lesbar und die
+lokale Synthese dient als Rückfall. Escape/9 bricht laufende Wiedergabe und
+Vorbereitung ohne nachträgliche Auftragswirkung ab.
+
+Audiodateien reproduzierbar erstellen: Python 3.11 mit `piper-tts==1.8.0`, ffmpeg,
+danach `python tools/render-trainer-speech.py`. Der Katalog wird aus den aktuellen
+Aufträgen, Erklärungen, Formularen und Rückmeldungen ermittelt; Manifest und
+SHA-256-Prüfsummen liegen neben den Aufnahmen. Modelle und Laufzeit importieren:
+`python3 tools/import-piper.py`. Echte Inferenz, vorgeladene Wiedergabe und
+Vorbereitung variabler Koordinaten prüfen: `node tools/browser-piper.mjs`.
+
+Die fiktive Übungskarte trägt das UTMREF-Zonenfeld und 100-km-Quadrat **32U KA**.
+Notizblock und Funk verwenden vollständige Koordinaten wie **32U KA 019 016**.
+Drei Ziffern je Achse stehen für ein 100-m-Feld, vier für ein 10-m-Feld;
+Nachkommastellen werden abgeschnitten. Die Ergebnisprüfung berücksichtigt die
+Feldgröße. Ältere gespeicherte fünfstellige Meterangaben werden umgewandelt.
+Die Karte bildet weiterhin eine erfundene Landschaft ab.
+
+Korrekte Ergebnisse lassen sich ohne vorheriges Ausbilderinnen-Gespräch melden.
+Die Ausbilderin kann den Auftrag erneut vorlesen, Ergebnisse samt Fehlerursache
+prüfen und die Aufgabe erklären. Diese Prüfung schließt den Auftrag nicht ab;
+die Meldung läuft weiter über Funk. Bei „Eine Koordinate aufsuchen“ wird am Ziel
+die Kontrollzahl auf einem Schild gelesen und statt der bereits bekannten
+Zielkoordinate gemeldet. Fortschritt, Formulare, freie Notizen und Funkprotokoll
+werden lokal gespeichert.
+
+Prüfung der gesamten Kampagne mit Piper-Testdoppel und realer Spiel-UI:
+`KARTENKUNDE_CAMPAIGN=1 KARTENKUNDE_FAST=1 npm run test:trainer`. Für gerenderte
+Szenen stattdessen `KARTENKUNDE_GPU=1` setzen. Die Wartezeit zwischen synthetischen
+Testäußerungen wird nur im Browser-Test verkürzt; Gesprächsreihenfolge und
+Abschlusswirkungen bleiben unverändert.
+
+Bei der Kreuzpeilung werden Peilungen und Standort unabhängig vom verwendeten
+Instrument geprüft: Kartenkompass, Spiegel-Peilkompass und Fernglas sind zulässig.
+
+Funkkoordinaten werden mit einer kurzen Pause nach „zweiunddreißig Ulrich“
+und vor „Kaufmann Anton“ gesprochen. Richtige ein-/zweistellige Gradangaben
+werden akzeptiert und mit der Bitte um dreistellige Funkdurchgabe bestätigt;
+es wird kein zusätzliches Gespräch und keine Neueingabe erzwungen.
+
+Der Notizblock ist eine temporäre Auflage über der Kartenarbeit. Karte, Werkzeug,
+Positionen und ausgewählter Inventarplatz bleiben erhalten; Schließen per Escape,
+Schaltfläche oder erneutem Inventarklick führt zur vorherigen Ansicht zurück.
+Der Kartenstift wird ausschließlich über seinen eigenen Inventarplatz ausgerüstet.
+Beim Rückweg in die Ego-Ansicht wird Pointer Lock automatisch angefordert.
+Die Kampagne verwendet die Begriffe Ostwert und Nordwert.
+
+### Patchwand im Ausbildungszentrum
+
+Die schwarze Klettwand neben dem Smartboard zeigt Bilder aus
+[`assets/trainer/patches/`](assets/trainer/patches/README.md). Dort neue PNG-, JPG-,
+WebP- oder GIF-Dateien ablegen; sie werden beim nächsten Aufruf automatisch
+proportional auf maximal 512 Pixel verkleinert, zwischengespeichert und angeordnet.
+Auf dem Beta-Server ist das `/beta/assets/trainer/patches/`; dort ist für neue Bilder
+kein Build nötig. PHP mit GD erzeugt die Vorschauen in `var/patches/`.
+Die Originaldateien bleiben unverändert. Die Wand trägt den Einsendehinweis
+„Sende uns ein Bild von eurem Patch an patch@kartenkunde.app“.
+
+### Cockpits und Kamerablick
+
+Die Fahrzeugansichten verwenden kompakte, tiefer liegende Instrumententräger,
+schlanke Scheibenrahmen und geschlossene, ausgestaltete Kabinen. Im Heli ergänzen
+Fluglage und Steigrate die Geschwindigkeits-, Höhen- und Kursanzeigen. Zum genauen
+Ablesen kann man mit der Maus nach unten sehen. Kopfbewegung und Fahrzeugneigung
+werden getrennt zusammengesetzt; nach dem Aussteigen bleibt der Horizont bei
+horizontalen Mausbewegungen waagerecht.
+
+### Fehlermeldungen aus dem 3D-Trainer
+
+Im Funkgerät (Slot 9) öffnet **Fehler / Verbesserungsvorschlag melden** eine Texteingabe mit Datenschutzhinweis und erforderlicher Einwilligung. Der Server speichert Meldungen in `var/feedback/<UTC-Zeit>-<Zufallskennung>.txt` im jeweiligen Installationsverzeichnis (Beta: `beta/var/feedback/`). Abruf und Pflege erfolgen administrativ per FTP; es gibt keine öffentliche Lese- oder Upload-Schnittstelle. Texte sind innerhalb der Textdatei JSON-kodiert, damit eingegebene Zeilen keine Diagnosefelder vortäuschen können.
+
+Der Diagnosezustand wird vor dem Öffnen des Funkgeräts erfasst: fiktiver Standort in Metern, Blickrichtung, gehaltene/abgelegte Ausrüstung, Fahrzeug/Hubschrauber, aktive Aufgabe und Build. Notizbuch, Funkprotokoll und vollständiger Spielstand werden nicht übertragen. Meldungen enthalten keine IP-Adresse; zur Begrenzung auf drei Meldungen pro zehn Minuten gibt es eine gesonderte, zeitlich begrenzte HMAC-basierte Adresszuordnung. Server-Zugriffsprotokolle sind davon unabhängig. Meldungen regelmäßig prüfen und nach Abschluss der Bearbeitung löschen; insbesondere versehentlich mitgesendete personenbezogene Angaben entfernen. Es findet keine automatische Löschung der Meldungen statt.
+
+PHP benötigt Schreibrechte für `var/feedback/`. Apache schützt `var/` über die mitgelieferte `.htaccess`; bei anderen Webservern muss dieser Ordner ebenfalls für HTTP gesperrt werden. Das Skript akzeptiert nur begrenzte JSON-Anfragen mit festem Diagnoseschema, erzeugt Dateinamen selbst und begrenzt den Speicher auf 10.000 Meldungen bzw. etwa 50 MB. Ein voller Speicher führt zu einer verständlichen Fehlermeldung; vorhandene Berichte werden nicht überschrieben.
+
+Das Funkmenü auf Slot **9** ist als robustes Feldterminal mit Antenne gestaltet. Oben bleibt das Textdisplay mit mitlaufendem Funkprotokoll sichtbar, darunter scrollen die Bedientasten, Spracheinstellungen und das Fehlerformular unabhängig.
+
+### Industriegebiet, Stützpunkt und Übungsbrand
+
+Östlich des Stützpunkts liegt der Gewerbepark **An der Schnittstelle** mit eigener Zufahrt von der L 112, umlaufendem Maschendrahtzaun und einer offenen Torzufahrt. Werkhallen, Logistik, Tanklager, Rohrbrücken, Schornstein, Verwaltung und Container verwenden dieselben Standorte wie Topokarte und Kollisionsprüfung. Die befestigte Fläche wird gemeinsam mit dem Gelände nivelliert. Der Stadtplan umfasst den Gewerbepark.
+
+Die Hallen von Feuerwehr, THW und Rettungsdienst stehen enger um den Hof und öffnen nach innen; die Fahrzeugpositionen werden aus den tatsächlichen Torachsen abgeleitet. Das Krankenhaus öffnet ebenfalls zum Hof. Am Ausbildungszentrum steht ein gekennzeichnetes Feuerwehr-Übungshaus mit Anleiterstelle, Schlauchleitung und kontrolliertem Feuer/Rauch. Die Effekte pausieren außerhalb von 800 Metern. Gespeicherte Positionen, die durch den Umbau in einem neuen Hindernis lägen, werden beim einmaligen Wechsel zu Weltlayout 4 freigesetzt; Notizen und Ausbildungsfortschritt bleiben erhalten.
+
+Beim Herausnehmen und Lesen der Karte im fahrenden Auto erinnert ein Hinweis an den Beifahrer. Im fliegenden oder schwebenden Hubschrauber verweist er auf den Copiloten; am Boden im Stillstand gibt es keinen Hinweis. Die Karte bleibt bedienbar.
+
+Feste Funkantworten für Fahrzeug-/Hubschrauberanforderungen werden über `modules/orientation/src/trainer-radio-text.js` gemeinsam von Spiel und Offline-Audiokatalog gebildet. Diese deutschen Funksprüche hängen nicht von der Systemsprache des Rechners ab, auf dem die Audiodateien erzeugt werden. So bleiben auch Ablehnungsgründe vollständig vorberechnet und durchgehend in Karlssons Leitstellenstimme.
+
+## Eigenständiges 3D-Modul
+
+Die 3D-Simulation liegt unter [`modules/orientation/`](modules/orientation/README.md).
+Die Hauptseite bleibt die Source of Truth für Sprache, Topo-Farben, Planzeiger-Skalen und Branding.
+`npm run build:orientation` erzeugt einen eigenständig hostbaren Export unter `dist-orientation/`;
+`npm run check:orientation` prüft dessen Integrität und Aktualität.
+Die vollständige Abhängigkeits- und Änderungsliste steht in der Modul-Dokumentation.

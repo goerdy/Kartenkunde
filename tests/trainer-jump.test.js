@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaultGameState,restoreGameState} from '../src/trainer-game-state.js';
-import {stepJump} from '../src/trainer-jump.js';
+import {defaultGameState,restoreGameState} from '../modules/orientation/src/trainer-game-state.js';
+import {stepJump} from '../modules/orientation/src/trainer-jump.js';
 const ready=()=>{const s=defaultGameState();s.started=true;s.paused=false;return s;};
 test('Jump rises and returns to the ground; holding Space cannot repeat or double-jump',()=>{
  const s=ready(),keys=new Set(['Space']);let peak=0;for(let i=0;i<50;i++){stepJump(s,keys,.02);peak=Math.max(peak,s.jump.offset);}assert.ok(peak>.9&&peak<1.2);assert.equal(s.jump.offset,0);assert.equal(s.jump.grounded,true);stepJump(s,keys,.02);assert.equal(s.jump.offset,0);stepJump(s,new Set(),.02);stepJump(s,keys,.02);assert.ok(s.jump.offset>0);

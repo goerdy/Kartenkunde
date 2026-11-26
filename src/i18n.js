@@ -1,4 +1,3 @@
-import {trainerMessages} from './trainer-messages.js';
 export const languages={de:'Deutsch',en:'English',fr:'Français'};
 let language='de';
 try{const stored=globalThis.window?globalThis.localStorage?.getItem('utmref-language'):null;if(languages[stored])language=stored;else if(globalThis.navigator?.language?.startsWith('fr'))language='fr';else if(globalThis.navigator?.language&&!globalThis.navigator.language.startsWith('de'))language='en';}catch{}
@@ -463,4 +462,11 @@ const hazardMessages={
 for(const [lang,entries]of Object.entries(hazardMessages))Object.assign(messages[lang],entries);
 
 
-for(const [lang,entries] of Object.entries(trainerMessages)) Object.assign(messages[lang],entries);
+// Modules register their own vocabulary; existing site keys remain authoritative.
+export function registerMessages(catalog){
+ for(const [lang,entries] of Object.entries(catalog)){
+  if(!messages[lang])continue;
+  for(const [key,value] of Object.entries(entries))if(!Object.hasOwn(messages[lang],key))messages[lang][key]=value;
+ }
+}
+for(const [lang,label] of Object.entries({de:'3D-Orientierung',en:'3D orientation',fr:'Orientation 3D'}))messages[lang].site_trainer=label;

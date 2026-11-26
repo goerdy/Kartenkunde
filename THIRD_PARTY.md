@@ -102,3 +102,23 @@ Diffuse- und OpenGL-Normalmaps, Quell-URLs und SHA-256-Prüfsummen stehen in
 `assets/trainer/dependencies.json`. Die bisherige Leafy-Grass-Oberfläche dient
 weiterhin als Waldboden, Grass Ground für offene Wiesen und Aerial Grass Rock
 für die Hochlagen.
+
+## Kenney-Modelle im Orientierungstrainer
+
+- [Car Kit](https://kenney.nl/assets/car-kit), [City Kit Commercial](https://kenney.nl/assets/city-kit-commercial), [Nature Kit](https://kenney.nl/assets/nature-kit), [City Kit Suburban](https://kenney.nl/assets/city-kit-suburban), © Kenney, jeweils **CC0 1.0**. Die vier Original-Lizenzdateien liegen unter `assets/trainer/kenney/`.
+- Eine kuratierte Auswahl wird mit `tools/import-kenney.py` aus den OBJ-Dateien in die lokale Vertexbibliothek `models.json` übertragen. Änderungen: Koordinatenkonvertierung für Babylon, eingebackene Palettenfarben, gedecktere Dächer und Vegetation sowie rot-blaue Einsatzleitungs- und blaue THW-Lackierungsvarianten.
+- Herkunft und SHA-256-Prüfsummen der Quellmodelle und des Ergebnisses: `assets/trainer/kenney/manifest.json`. Kein Modellabruf von Fremdservern während des Spiels.
+
+## Lokale Piper-Sprachausgabe
+
+- Stimmen aus [rhasspy/piper-voices](https://huggingface.co/rhasspy/piper-voices), Revision `5ec43b186ef915a195d3ddbcfd9916e76c503c3f`: **Ramona low** (M-AILABS; BSD-artige M-AILABS-Lizenz, vollständiger Originaltext in `M-AILABS-README.txt`), **Karlsson low** (M-AILABS; gleiche Lizenz wie Ramona), **Thorsten medium** ([Thorsten Müller / Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice), CC0). Original-Modellkarten liegen neben den Modellen unter `assets/trainer/piper/`.
+- **ONNX Runtime Web 1.18.0**, © Microsoft Corporation, MIT (`ONNXRUNTIME-LICENSE.txt`).
+- **piper-wasm 1.0.0**, Diffusion Studio; Phonemisierung aus **piper-phonemize** (MIT) mit **eSpeak NG** (GPL-3.0-or-later). Die separaten Worker-Dateien werden unverändert ausgeliefert. GPL-Text, Quellarchive einschließlich eSpeak-Daten und die Build-Anleitung liegen in `assets/trainer/piper/` (`ESPEAK-LICENSE.txt`, `piper-phonemize-source.tar.gz`, `espeak-ng-source.tar.gz`, `PHONEMIZER-BUILD.txt`).
+- Alle Sprachdateien werden vom eigenen Webspace geladen. Die Inferenz erfolgt auf dem Endgerät; kein Laufzeitkontakt zu Hugging Face oder einem Sprachdienst. Quellen, Versionen und SHA-256: `assets/trainer/piper/manifest.json`, Importer: `tools/import-piper.py`.
+
+Die vorab erzeugten Dialogaufnahmen unter `assets/trainer/speech/` wurden mit
+Piper TTS 1.8.0 und den oben genannten Stimmen synthetisiert und mit FFmpeg als
+Mono-Opus (32 kbit/s) codiert. Eigene Texte, keine fremden Sprachaufnahmen.
+Katalog/Erzeugung: `tools/trainer-speech-catalog.mjs`,
+`tools/render-trainer-speech.py`; Stimmen, Textzuordnung und Dateiprüfsummen stehen
+im zugehörigen `manifest.json`.

@@ -1,5 +1,200 @@
 {
   "station": "Radio Florian",
   "music": "florian-loop.wav",
-  "announcements": []
+  "firstAnnouncementSeconds": 10,
+  "announcementIntervalSeconds": 30,
+  "announcements": [
+    {
+      "src": "florian_01_senderkennung_c_sandra.ogg",
+      "label": "florian_01_senderkennung_C_sandra",
+      "durationSeconds": 7.907,
+      "sourceSha256": "390cb2fda7638b6184e6bf8e15547f020a50d016c6d74e2b22f26684c46ab6ed"
+    },
+    {
+      "src": "florian_02_musikwunsch_c_sandra.ogg",
+      "label": "florian_02_musikwunsch_C_sandra",
+      "durationSeconds": 9.906,
+      "sourceSha256": "d41b24557321434ff869b9f5905277d781ed19468636cd5aaedecbed8d2803f5"
+    },
+    {
+      "src": "florian_jingle_01_c_sandra.ogg",
+      "label": "florian_jingle_01_C_sandra",
+      "durationSeconds": 3.707,
+      "sourceSha256": "9ff16083489e2b38444d361496ac1f5eb9dc0b54d2da7b25535cc7ea7a68659d"
+    },
+    {
+      "src": "florian_03_verkehrsmeldung_d_quirlig.ogg",
+      "label": "florian_03_verkehrsmeldung_D_quirlig",
+      "durationSeconds": 9.107,
+      "sourceSha256": "05bd3779c3b66ef84c58a82a8b0efa2afa2e893cf4856cf71179483157d6a8b8"
+    },
+    {
+      "src": "florian_04_rundumdieuhr_c_sandra.ogg",
+      "label": "florian_04_rundumdieuhr_C_sandra",
+      "durationSeconds": 6.907,
+      "sourceSha256": "d78ef7b928cfc21e78f09c821279215d6a05876536ee2ca26f197a29d55baac9"
+    },
+    {
+      "src": "florian_jingle_02_d_quirlig.ogg",
+      "label": "florian_jingle_02_D_quirlig",
+      "durationSeconds": 3.406,
+      "sourceSha256": "eea321c704766179a53d65ebdc7c4f5c59798ce0a8363397041c31a8c6374c22"
+    },
+    {
+      "src": "florian_05_dienstsport_d_quirlig.ogg",
+      "label": "florian_05_dienstsport_D_quirlig",
+      "durationSeconds": 7.407,
+      "sourceSha256": "49e5ae2f006aee232ca1fb37dce3afb21b95bdd1678158f081d7af18352d04d2"
+    },
+    {
+      "src": "florian_06_technischhilfe_c_sandra.ogg",
+      "label": "florian_06_technischhilfe_C_sandra",
+      "durationSeconds": 7.506,
+      "sourceSha256": "05685c8984d573fa7dedb58f85258afc8653db01d81f109b6886be0f9b360472"
+    },
+    {
+      "src": "florian_jingle_03_c_sandra.ogg",
+      "label": "florian_jingle_03_C_sandra",
+      "durationSeconds": 3.307,
+      "sourceSha256": "fb64996b46236fd2bd0e5ebfe3b413b6b625e41b382e17cff72a319f163207c8"
+    },
+    {
+      "src": "florian_07_zusammenarbeit_d_quirlig.ogg",
+      "label": "florian_07_zusammenarbeit_D_quirlig",
+      "durationSeconds": 8.306,
+      "sourceSha256": "a5dda18204c7ce718e05ea804d13aea5961d34355cfb02724a9248003ee10e26"
+    },
+    {
+      "src": "florian_08_maschinisten_d_quirlig.ogg",
+      "label": "florian_08_maschinisten_D_quirlig",
+      "durationSeconds": 7.806,
+      "sourceSha256": "a428263e10c29ecc100310183428d62251799a386e3a7311ed6af3d7704b02aa"
+    },
+    {
+      "src": "florian_jingle_04_d_quirlig.ogg",
+      "label": "florian_jingle_04_D_quirlig",
+      "durationSeconds": 3.406,
+      "sourceSha256": "6fe9df09cb1fe6bb7c03026e951c3a20f4fc8da61f7d579e25add060537d927e"
+    },
+    {
+      "src": "florian_09_material_c_sandra.ogg",
+      "label": "florian_09_material_C_sandra",
+      "durationSeconds": 6.407,
+      "sourceSha256": "45bcec3d6cd31204d5336f0ce3777d0d0c6f41cff50cbbb3f181f8bc6594d679"
+    },
+    {
+      "src": "florian_10_nachbesprechung_d_quirlig.ogg",
+      "label": "florian_10_nachbesprechung_D_quirlig",
+      "durationSeconds": 6.106,
+      "sourceSha256": "98772e38c02cae1f6680600d62421ceab6cf5e314bbc8a3fa31a9eda77ef1109"
+    },
+    {
+      "src": "florian_jingle_05_c_sandra.ogg",
+      "label": "florian_jingle_05_C_sandra",
+      "durationSeconds": 2.727,
+      "sourceSha256": "f7a955c8b80b2ca51e97d0b59b4989ddea08ca6e38baba9104c39ab52d1f713d"
+    },
+    {
+      "src": "florian_11_funkdisziplin_c_sandra.ogg",
+      "label": "florian_11_funkdisziplin_C_sandra",
+      "durationSeconds": 7.506,
+      "sourceSha256": "95cbd2166d8af5fc50d17948c4268c22c49f690df797bb956866da3bca2c7756"
+    },
+    {
+      "src": "florian_12_regen_d_quirlig.ogg",
+      "label": "florian_12_regen_D_quirlig",
+      "durationSeconds": 9.507,
+      "sourceSha256": "89afd5d373def6f21e2fe629bbbb3d57613df1f7990616d988c4d86401330ca5"
+    },
+    {
+      "src": "florian_jingle_06_d_quirlig.ogg",
+      "label": "florian_jingle_06_D_quirlig",
+      "durationSeconds": 3.307,
+      "sourceSha256": "38f8112b45b733f547ccd3cad53c78898178d8e2e5ad32418f072e4548a92e3e"
+    },
+    {
+      "src": "florian_13_sonnenschein_c_sandra.ogg",
+      "label": "florian_13_sonnenschein_C_sandra",
+      "durationSeconds": 8.406,
+      "sourceSha256": "c90e544723e389d5f4d0fd9e4d3ed154d6fb3086891eb398321c3e6408d8b752"
+    },
+    {
+      "src": "florian_14_sturm_d_quirlig.ogg",
+      "label": "florian_14_sturm_D_quirlig",
+      "durationSeconds": 8.306,
+      "sourceSha256": "54b60752c13b93b9c3e7b10c97672969de6ecb17673ec08ac4622510caef6f89"
+    },
+    {
+      "src": "florian_jingle_07_c_sandra.ogg",
+      "label": "florian_jingle_07_C_sandra",
+      "durationSeconds": 3.406,
+      "sourceSha256": "f3659ef033e0fb5a30e8e819a8ada53e4213d248345b02252ee8302084718105"
+    },
+    {
+      "src": "florian_15_nebel_c_sandra.ogg",
+      "label": "florian_15_nebel_C_sandra",
+      "durationSeconds": 10.507,
+      "sourceSha256": "4593b6185ea1de0e16dd35d26f2f1ac03db830077b0afd22f0c8bf2cf39b79ee"
+    },
+    {
+      "src": "florian_16_wetterwochenende_d_quirlig.ogg",
+      "label": "florian_16_wetterwochenende_D_quirlig",
+      "durationSeconds": 7.306,
+      "sourceSha256": "dbf037b361846cabec4dc513497713b6425afb14859cc1c90133f79c9165aefb"
+    },
+    {
+      "src": "florian_jingle_08_d_quirlig.ogg",
+      "label": "florian_jingle_08_D_quirlig",
+      "durationSeconds": 3.207,
+      "sourceSha256": "2da88657436d49f75b74e7d4c1db65a3751892c7427a446bc84061a2675b528b"
+    },
+    {
+      "src": "florian_17_orientierung_c_sandra.ogg",
+      "label": "florian_17_orientierung_C_sandra",
+      "durationSeconds": 7.106,
+      "sourceSha256": "1af6e77a4a4a1469aeac0e50d51a8f1c20de0a64e9781819876ca10cd65a255f"
+    },
+    {
+      "src": "florian_18_koordinaten_d_quirlig.ogg",
+      "label": "florian_18_koordinaten_D_quirlig",
+      "durationSeconds": 8.707,
+      "sourceSha256": "9cd84b7d008d82bda9862c102b8186a633ab2f1ebba526d5dc6549d62957fdeb"
+    },
+    {
+      "src": "florian_jingle_09_c_sandra.ogg",
+      "label": "florian_jingle_09_C_sandra",
+      "durationSeconds": 3.607,
+      "sourceSha256": "0962b65ebfd817659bad2a588fd428d9e1cc74ee4c516ef172c4f15f045cc3e4"
+    },
+    {
+      "src": "florian_19_abkuerzung_c_sandra.ogg",
+      "label": "florian_19_abkuerzung_C_sandra",
+      "durationSeconds": 5.907,
+      "sourceSha256": "ff130894e0dc84b8ca2f7a09460a79637475ce665fce83e51bdbeed57b60867d"
+    },
+    {
+      "src": "florian_20_navigation_d_quirlig.ogg",
+      "label": "florian_20_navigation_D_quirlig",
+      "durationSeconds": 6.407,
+      "sourceSha256": "6dd54322bfc7aab86fdbf61997980617fa0886842d907c03be88e6e482911021"
+    },
+    {
+      "src": "florian_jingle_10_d_quirlig.ogg",
+      "label": "florian_jingle_10_D_quirlig",
+      "durationSeconds": 3.207,
+      "sourceSha256": "6ebed12a6e15931beecca122b0a98c20e5a938c7886688f87dcc1de604a61d2b"
+    },
+    {
+      "src": "florian_21_lageerkundung_c_sandra.ogg",
+      "label": "florian_21_lageerkundung_C_sandra",
+      "durationSeconds": 8.507,
+      "sourceSha256": "ccfcf2fb12ad650fc6bcaa663276aa99e850c85ef45d7c0f3e8d55d1602adcf0"
+    },
+    {
+      "src": "florian_22_meldekopf_d_quirlig.ogg",
+      "label": "florian_22_meldekopf_D_quirlig",
+      "durationSeconds": 7.606,
+      "sourceSha256": "fdbeb960e08c1ed7487586d0ca33cc9990d0f904aac1101cc8d33773f73dbb76"
+    }
+  ]
 }

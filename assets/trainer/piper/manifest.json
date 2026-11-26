@@ -1,0 +1,125 @@
+{
+  "revision": "5ec43b186ef915a195d3ddbcfd9916e76c503c3f",
+  "files": [
+    {
+      "file": "de_DE-ramona-low.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/ramona/low/de_DE-ramona-low.onnx",
+      "sha256": "a1068592532aad8c49bf3d1a01b8749c11d7dba726689ee28ad64e7b627ae4c5",
+      "bytes": 63104526
+    },
+    {
+      "file": "de_DE-ramona-low.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/ramona/low/de_DE-ramona-low.onnx.json",
+      "sha256": "64906ab7a050ac685fa3dcea044baa798f67ed77be164f9c668a69298c6487d2",
+      "bytes": 4157
+    },
+    {
+      "file": "ramona-MODEL_CARD.txt",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/ramona/low/MODEL_CARD",
+      "sha256": "3b6dbf2cde464e35cbdd3c06fccb34bf8cd590878c251391e9fd0a6f1bb993da",
+      "bytes": 255
+    },
+    {
+      "file": "de_DE-karlsson-low.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/karlsson/low/de_DE-karlsson-low.onnx",
+      "sha256": "f9793bf7e461a472b3916cf260774bfc9812e9eb72601b147ed649d01064e8fe",
+      "bytes": 63104526
+    },
+    {
+      "file": "de_DE-karlsson-low.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/karlsson/low/de_DE-karlsson-low.onnx.json",
+      "sha256": "3b2095adbfeede316f22007a0a09d4bfc25514b7189850740b06800a6cfb9838",
+      "bytes": 4159
+    },
+    {
+      "file": "karlsson-MODEL_CARD.txt",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/karlsson/low/MODEL_CARD",
+      "sha256": "bf2374f1a9b25b4357f3a9b4ab064c55b06c5e9af35250428ec835df9d349b3d",
+      "bytes": 289
+    },
+    {
+      "file": "de_DE-thorsten-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/thorsten/medium/de_DE-thorsten-medium.onnx",
+      "sha256": "fd270eb3d1ebf91d763f8a0f949b1b1bebdfefaea18c3aaf8577dd34536e064f",
+      "bytes": 63221984
+    },
+    {
+      "file": "de_DE-thorsten-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/thorsten/medium/de_DE-thorsten-medium.onnx.json",
+      "sha256": "e5bb7410dcbbcc0be6f4544f6bc66612b315ab5cb3099ec44bb46d860bc7cca9",
+      "bytes": 6455
+    },
+    {
+      "file": "thorsten-MODEL_CARD.txt",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/5ec43b186ef915a195d3ddbcfd9916e76c503c3f/de/de_DE/thorsten/medium/MODEL_CARD",
+      "sha256": "c638118fb06eb07d59e60270097c250cf2de81a037320a8a6306fec652ad13b0",
+      "bytes": 427
+    },
+    {
+      "file": "piper_phonemize.js",
+      "url": "https://cdn.jsdelivr.net/npm/@diffusionstudio/piper-wasm@1.0.0/build/piper_phonemize.js",
+      "sha256": "fef0c2fc442d24fdef5c7c7cc37d5da2314407640fe11ab1bfe347c723dff19b",
+      "bytes": 120714
+    },
+    {
+      "file": "piper_phonemize.wasm",
+      "url": "https://cdn.jsdelivr.net/npm/@diffusionstudio/piper-wasm@1.0.0/build/piper_phonemize.wasm",
+      "sha256": "b777cd107a91d2bcc6a1ea46f2c26a662a7407394fe84589198aeaa83dd7a9d6",
+      "bytes": 635212
+    },
+    {
+      "file": "piper_phonemize.data",
+      "url": "https://cdn.jsdelivr.net/npm/@diffusionstudio/piper-wasm@1.0.0/build/piper_phonemize.data",
+      "sha256": "29f1025eb23a5b5c192cd14a6efbce4509402ff265405072ee6f7d1a09b78f8c",
+      "bytes": 18077249
+    },
+    {
+      "file": "ort.min.js",
+      "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort.min.js",
+      "sha256": "74945866728300a05746a37387ac48863a8be5cdc3760304b47d0136d7d0dc5b",
+      "bytes": 540716
+    },
+    {
+      "file": "ort-wasm.wasm",
+      "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort-wasm.wasm",
+      "sha256": "ebe7ec327f83aabc07e3b58487522481ccff10941f24182ab0428d0123652ff2",
+      "bytes": 9758086
+    },
+    {
+      "file": "ort-wasm-simd.wasm",
+      "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/ort-wasm-simd.wasm",
+      "sha256": "f533b5f21790563d7556c611c3835ac65848ee326da2689aac54ed7d9cc8c6a4",
+      "bytes": 10595041
+    },
+    {
+      "file": "ESPEAK-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/espeak-ng/espeak-ng/master/COPYING",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147
+    },
+    {
+      "file": "M-AILABS-README.txt",
+      "url": "https://raw.githubusercontent.com/i-celeste-aurora/m-ailabs-dataset/53c4c9fe0f63cb0ae85ee7eb46a32b7316223e8e/README.md",
+      "sha256": "8cd5aee8d0b8caff7119987bc6e0e4bc7d725f7c52ccc51d7edff865caf83b25",
+      "bytes": 16523
+    },
+    {
+      "file": "PHONEMIZER-BUILD.txt",
+      "url": "https://raw.githubusercontent.com/diffusionstudio/piper-wasm/022edba0455ef024574747e1134ef893f1d71b76/README.md",
+      "sha256": "f840820a5733d096abe5ce5e526b1a74aa84ba6f47fbe96faf13606b91e106a3",
+      "bytes": 2057
+    },
+    {
+      "file": "piper-phonemize-source.tar.gz",
+      "url": "https://codeload.github.com/wide-video/piper-phonemize/tar.gz/bfc2e7549957829b0227c66a305d11cc88167bda",
+      "sha256": "cb72dd5564b292e043129d1c34b74f064dcc9ff0f713aebb3c6e44c5607de724",
+      "bytes": 9788173
+    },
+    {
+      "file": "espeak-ng-source.tar.gz",
+      "url": "https://codeload.github.com/rhasspy/espeak-ng/tar.gz/0f65aa301e0d6bae5e172cc74197d32a6182200f",
+      "sha256": "37ebbabb010200be8ec26c61b770e93f964f4503a329d7d74c239a1a40051e43",
+      "bytes": 16321475
+    }
+  ]
+}

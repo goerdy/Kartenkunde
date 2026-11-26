@@ -1,0 +1,2 @@
+# Originals are read by PHP; only converted thumbnails are served through the API.
+Require all denied

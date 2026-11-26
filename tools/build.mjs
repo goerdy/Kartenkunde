@@ -4,14 +4,21 @@ import {cp,mkdir,rm,readFile,writeFile,readdir} from 'node:fs/promises';
 import {COPY_ENTRIES,BUILD_INPUTS,snapshot,digest,verifyDist,gitState} from './build-snapshot.mjs';
 const root=new URL('../',import.meta.url),dist=new URL('dist/',root),git=gitState(root);
 const sourceFiles=await snapshot(root,BUILD_INPUTS),version=digest(JSON.stringify(sourceFiles)).slice(0,12);
-await rm(dist,{force:true,recursive:true});await mkdir(dist,{recursive:true});
+// Preserve private PHP runtime data across local rebuilds; never include it in the release.
+await mkdir(dist,{recursive:true});
+for(const name of await readdir(dist))if(name!=='var')await rm(new URL(name,dist),{force:true,recursive:true});
 for(const file of COPY_ENTRIES)await cp(new URL(file,root),new URL(file,dist),{recursive:true});
-for(const file of await readdir(new URL('src/',dist))){if(!file.endsWith('.js'))continue;
- const url=new URL('src/'+file,dist),text=await readFile(url,'utf8');
- // Version every local module import, including dynamic boot imports.
- const versioned=text.replace(/((?:from\s*|import\s*\()\s*['"])(\.\/[^'"?]+\.js)(['"])/g,`$1$2?v=${version}$3`);
- await writeFile(url,versioned);
+async function versionModules(directory){
+ for(const entry of await readdir(new URL(directory,dist),{withFileTypes:true})){
+  const path=directory+entry.name;
+  if(entry.isDirectory()){await versionModules(path+'/');continue;}
+  if(!entry.name.endsWith('.js'))continue;
+  const url=new URL(path,dist),text=await readFile(url,'utf8');
+  const versioned=text.replace(/((?:from\s*|import\s*\()\s*['"])(\.{1,2}\/[^'"?]+\.js)(['"])/g,`$1$2?v=${version}$3`);
+  await writeFile(url,versioned);
+ }
 }
+await versionModules('src/');await versionModules('modules/');
 for(const file of ['index.html','karten.html','uebungen.html','planzeiger.html','orientierung.html','lehrmaterial.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html']){
  const url=new URL(file,dist);let html=await readFile(url,'utf8');
  html=html.replace('<html lang="de"',`<html lang="de" data-build="${version}"${git?` data-commit="${git.commit}" data-dirty="${git.dirty}"`:''}`).replace('id="buildId" data-i18n-title="buildDetails" title="Versionskennung dieser Ausgabe">dev',`id="buildId" data-i18n-title="buildDetails" title="Versionskennung dieser Ausgabe">${version}`);

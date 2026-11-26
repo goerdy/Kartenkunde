@@ -14,7 +14,9 @@
     "test:simulator": "node tools/browser-simulator.mjs",
     "test:security": "node --test tests/security.test.js",
     "audit:vendor": "node tools/audit-vendor.mjs",
-    "test:trainer": "node tools/browser-trainer.mjs"
+    "test:trainer": "node tools/browser-trainer.mjs",
+    "build:orientation": "npm run build && node tools/build-orientation.mjs",
+    "check:orientation": "node tools/check-orientation.mjs"
   },
   "repository": {
     "type": "git",

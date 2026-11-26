@@ -3,8 +3,8 @@ import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
-export const COPY_ENTRIES=['index.html','karten.html','uebungen.html','planzeiger.html','orientierung.html','lehrmaterial.html','lehrunterlage.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html','src','api','assets','vendor','README.md','THIRD_PARTY.md','.htaccess'];
-export const BUILD_INPUTS=[...COPY_ENTRIES,'templates','tools/site.mjs','package.json','tools/build.mjs','tools/standalone.mjs','tools/build-snapshot.mjs'];
+export const COPY_ENTRIES=['index.html','karten.html','uebungen.html','planzeiger.html','orientierung.html','lehrmaterial.html','lehrunterlage.html','impressum.html','hilfe.html','technik.html','diagnose.html','Start.html','src','modules','api','assets','vendor','README.md','THIRD_PARTY.md','.htaccess'];
+export const BUILD_INPUTS=[...COPY_ENTRIES,'templates','tools/site.mjs','package.json','tools/build.mjs','tools/build-orientation.mjs','tools/standalone.mjs','tools/build-snapshot.mjs'];
 export const digest=buffer=>createHash('sha256').update(buffer).digest('hex');
 export async function snapshot(root,entries){
  const result={};
@@ -29,7 +29,7 @@ export async function verifyDist(root){
  const source=await snapshot(root,BUILD_INPUTS);
  if(JSON.stringify(source)!==JSON.stringify(manifest.sourceFiles))throw Error('dist ist veraltet: Quelldateien wurden geändert. Bitte npm run build ausführen.');
  if(Object.hasOwn(manifest,'git')&&JSON.stringify(manifest.git)!==JSON.stringify(gitState(root)))throw Error('dist stammt aus einem anderen Git-Stand. Bitte npm run build ausführen.');
- const files=(await readdir(dist)).filter(name=>name!=='build-info.json');const built=await snapshot(dist,files);
+ const files=(await readdir(dist)).filter(name=>name!=='build-info.json'&&name!=='var');const built=await snapshot(dist,files);
  if(JSON.stringify(built)!==JSON.stringify(manifest.files))throw Error('dist ist unvollständig oder wurde nach dem Build verändert. Bitte npm run build ausführen.');
  return manifest;
 }

@@ -1,0 +1,331 @@
+{
+  "license": "CC0-1.0",
+  "author": "Kenney",
+  "conversion": "OBJ, Z mirrored for Babylon; palette baked to vertex colours; Nature foliage toned green",
+  "packs": [
+    {
+      "id": "city-kit-commercial",
+      "url": "https://kenney.nl/assets/city-kit-commercial"
+    },
+    {
+      "id": "city-kit-suburban",
+      "url": "https://kenney.nl/assets/city-kit-suburban"
+    },
+    {
+      "id": "car-kit",
+      "url": "https://kenney.nl/assets/car-kit"
+    },
+    {
+      "id": "nature-kit",
+      "url": "https://kenney.nl/assets/nature-kit"
+    }
+  ],
+  "models": [
+    {
+      "model": "city-kit-commercial/building-a",
+      "objSha256": "ec5b3bbf725be6ea792b0cc7b543d11ac8659811264500037d2cdc398632f2ce"
+    },
+    {
+      "model": "city-kit-commercial/building-b",
+      "objSha256": "d5f4344d5be797a6ed93641d4159a630de093e0517b4b8435d9789cea141bd62"
+    },
+    {
+      "model": "city-kit-commercial/building-c",
+      "objSha256": "e7bc3677c9f7ee66a0459bc99fa6c69f60b7f9338165d91ccfd1f2ca1fcac9bd"
+    },
+    {
+      "model": "city-kit-commercial/building-d",
+      "objSha256": "9d0e71d3a3703a171961443ea1b6ec34f67a93d90731e261eb3394fe19a78147"
+    },
+    {
+      "model": "city-kit-commercial/building-e",
+      "objSha256": "4cd4f36a1914d98e9f75825727f117f41a4c11fee284c88cc2fe0c3404a1df51"
+    },
+    {
+      "model": "city-kit-commercial/building-f",
+      "objSha256": "c7398b3f2b9458f56c080fee9d977ae617ed283dc5f768dfcc61133b423fdccf"
+    },
+    {
+      "model": "city-kit-commercial/building-g",
+      "objSha256": "d8e339b38199af55b840111c09352897398c0291e836817b66fa191cbef7ac2b"
+    },
+    {
+      "model": "city-kit-commercial/building-h",
+      "objSha256": "c6d293a14bd24df16ec4bf88ed2cd1d51ce3d1e78c09b019a744e787ce7430ae"
+    },
+    {
+      "model": "city-kit-commercial/building-i",
+      "objSha256": "3965aa1da613a5521990e9c12e10bbb515ce6ec337925c44a8d5c1a6a308d5cc"
+    },
+    {
+      "model": "city-kit-commercial/building-j",
+      "objSha256": "2d7d47e3ac7258e67c4d30dbd8a2ef6cf970ceed2a252e4a8a2ffa31db24ddb8"
+    },
+    {
+      "model": "city-kit-commercial/building-k",
+      "objSha256": "c81fdbabb4f293b809be194bf6e761ba0d87a73b11f1ae9a7bf2ee0df8e67aca"
+    },
+    {
+      "model": "city-kit-commercial/building-l",
+      "objSha256": "496ac0dec43f8389467717fc1edf0c5427c7194c4e5df308bc5e7157aac81109"
+    },
+    {
+      "model": "city-kit-commercial/building-m",
+      "objSha256": "25aa82d8e19327fe68e3220ce3ac33400a125c82b69c0034e738d16b22bcabcb"
+    },
+    {
+      "model": "city-kit-commercial/building-n",
+      "objSha256": "d0390dcd3b0e62f6a8bcee8efa6109ab91d5f9bb49aad93a236b8a50489e9a18"
+    },
+    {
+      "model": "city-kit-commercial/detail-parasol-a",
+      "objSha256": "e31474f76f0898efe50733b783ec599ea11fc55ae93b2e45dc38650a0f75b375"
+    },
+    {
+      "model": "city-kit-commercial/detail-parasol-b",
+      "objSha256": "29f20da6119e527793f473ee8a2012a6b5deaf8959dbd40ffc0f6c6c0b848e79"
+    },
+    {
+      "model": "city-kit-commercial/detail-awning",
+      "objSha256": "0e8757195fbbff2a0e6fb35ff97083e0e2e5a8ce9c4c54a955e226a7573746e8"
+    },
+    {
+      "model": "city-kit-commercial/detail-awning-wide",
+      "objSha256": "e7c2acdc8e191b848f4be4ca5f89a5d8f8a13212c9f485e0317e89eb0d080e10"
+    },
+    {
+      "model": "city-kit-suburban/building-type-a",
+      "objSha256": "7027f546fbe1568c014c97d52d8ce49f41e34b5120fde12ddc4843a6be531c0d"
+    },
+    {
+      "model": "city-kit-suburban/building-type-b",
+      "objSha256": "67a76857e80c1121d0d5af1d4a186bb86c99b53b56cf644df287d6510486fd47"
+    },
+    {
+      "model": "city-kit-suburban/building-type-c",
+      "objSha256": "46c78a022bb43f44e60e950c32f6267d87a26dbe616d00505e8e2615f7d599a0"
+    },
+    {
+      "model": "city-kit-suburban/building-type-d",
+      "objSha256": "c9c1531d2974dabe30eabd970e84c21f64a85a00a523a67fb6693850def51d04"
+    },
+    {
+      "model": "city-kit-suburban/building-type-e",
+      "objSha256": "6793a57dba76b0f7a04a83a1613c0bec1799cf7eef0c8fd925a823fc693a1526"
+    },
+    {
+      "model": "city-kit-suburban/building-type-f",
+      "objSha256": "5ed4491433fd2e53865714caf8a328d3ea191fa6847e1527c4bcfb59d01eb512"
+    },
+    {
+      "model": "city-kit-suburban/building-type-g",
+      "objSha256": "c8cc99487e7cbaa02deacd59865a77551726922bd5754e8ca30e867c1f1918bd"
+    },
+    {
+      "model": "city-kit-suburban/building-type-h",
+      "objSha256": "dd60432370ccc00fbdd8f1a5248c97dbaabe8a9ed2904a75e46004091da387cc"
+    },
+    {
+      "model": "city-kit-suburban/building-type-i",
+      "objSha256": "09fe2eb38cbf8e0372700d74a7ab6e42da088c450a917fb16a2337abcd808a29"
+    },
+    {
+      "model": "city-kit-suburban/building-type-j",
+      "objSha256": "6ebf36978e47b2c23397b9d967ad6c90dcf32a7a9c71fa2aede88ac5941d09f6"
+    },
+    {
+      "model": "city-kit-suburban/building-type-k",
+      "objSha256": "c69a557d4a0287a71ff7352da84e534cf9f53ca5f5dde13508cc8203187a7112"
+    },
+    {
+      "model": "city-kit-suburban/building-type-l",
+      "objSha256": "aad3c30e32ed1fab5b44d60c5510b1e55ef9fa89962ec148aee0fc4361fa4de5"
+    },
+    {
+      "model": "city-kit-suburban/building-type-m",
+      "objSha256": "3bf6f07ca4c0144802ba1b30f8090846bf33c74a0395c459c9a046715e4ccb54"
+    },
+    {
+      "model": "city-kit-suburban/building-type-n",
+      "objSha256": "4a056dde10105abe880e337054816e050dec9f16c69619bc6e9a587b87cedb39"
+    },
+    {
+      "model": "city-kit-suburban/building-type-o",
+      "objSha256": "3386b1d28abbae8959d09d57dbee23c014b0ce59913064ae33d63d44dd6c3a8b"
+    },
+    {
+      "model": "city-kit-suburban/building-type-p",
+      "objSha256": "f5d0e7b156db4da273954da42effc7a97c4e01e923bd86ed3e68b827b452a160"
+    },
+    {
+      "model": "city-kit-suburban/building-type-q",
+      "objSha256": "36e96d3cbfb93d949ad0c36e0a026ac62a9a3acdc895ffa248dbdf921abf2591"
+    },
+    {
+      "model": "city-kit-suburban/building-type-r",
+      "objSha256": "4ed1eec9430f188e7590e1eef715d7b7b8bb0c99dc196c0fb703740daf7634c1"
+    },
+    {
+      "model": "city-kit-suburban/building-type-s",
+      "objSha256": "6990071dbbb3727a8fdd08c979bb9fda7a16cb5aa3ae4c4e4586223976fa46e8"
+    },
+    {
+      "model": "city-kit-suburban/building-type-t",
+      "objSha256": "d6f807d2b0f15e7733343f50e8798180beb8c4ee620d1f47ecee4d30b9d07145"
+    },
+    {
+      "model": "city-kit-suburban/building-type-u",
+      "objSha256": "72fafdd27e171736689a209f76f7e5f338aadb39b406ec18dfed053cdbdca531"
+    },
+    {
+      "model": "city-kit-suburban/fence",
+      "objSha256": "290a57cbc1e602ffefd2d2e29e174d455852ed23bc837889dbb14d089e6e0640"
+    },
+    {
+      "model": "city-kit-suburban/fence-low",
+      "objSha256": "81d07ea64d2d1ff835a37c04bb25da4eefd065b2af0a144a7ff3ce18a36fc7e5"
+    },
+    {
+      "model": "city-kit-suburban/planter",
+      "objSha256": "27b78bf3ede815fce1d755626ec4e2800f7a13fbec30cad4a07e6265a53febe0"
+    },
+    {
+      "model": "city-kit-suburban/tree-small",
+      "objSha256": "ea84c9f4ea2d9cdbcf34a05068e8be00f364e6b6f4c78e6f6ac3742480589023"
+    },
+    {
+      "model": "city-kit-suburban/tree-large",
+      "objSha256": "5dae05779675caa8112d68a6e26278a9a646c5d73e7252552e605c96edd76ca4"
+    },
+    {
+      "model": "city-kit-suburban/path-stones-long",
+      "objSha256": "59bf0bcff6d8c29426a8b635fe03153f57b3c9f08adc1a251cb9b0916ad715a6"
+    },
+    {
+      "model": "car-kit/ambulance",
+      "objSha256": "b9f4e847e9dbce0df7266636adf35eef0cd1277cb1fdbdd004483acd3dcb0eba"
+    },
+    {
+      "model": "car-kit/firetruck",
+      "objSha256": "6c8974721923ecc8674e387d3097041a9d9d58ca654261af1e046c3f0b63a81f"
+    },
+    {
+      "model": "car-kit/police",
+      "objSha256": "02fbebfdb7e6f8892bc9f137972482ae6eb5d44d4f84bba7fd34fae2f51479e3"
+    },
+    {
+      "model": "car-kit/truck",
+      "objSha256": "f5b43576f25445d3c5efdcc4e2ea7b983c7238c720eb9c686da0fb5db1daa388"
+    },
+    {
+      "model": "car-kit/truck-flat",
+      "objSha256": "205a8d3cabcb67243438adc59e0a81b109f987eca5f52b4fa0f60fdb9687405e"
+    },
+    {
+      "model": "car-kit/van",
+      "objSha256": "a61eecb17df24a1ae0dfc74f9a2890489af70a76b637ddc6b71906aee7ef6f0d"
+    },
+    {
+      "model": "car-kit/suv",
+      "objSha256": "57c3fceab76e002d202e6e66141140c161595aeb171968f84466ea708a591cae"
+    },
+    {
+      "model": "car-kit/suv-luxury",
+      "objSha256": "e2e5237bebd7a9835f1370d4063feaf1f504b9d293200747fb60feb43889e531"
+    },
+    {
+      "model": "car-kit/sedan",
+      "objSha256": "6c2f029d7110ffa3a572bd11a87275ae6732f701a58b8e5801fa11c75826381b"
+    },
+    {
+      "model": "car-kit/hatchback-sports",
+      "objSha256": "5fc6d0adc2193fe3eef12a6cce4a665deae322edc74f4ffef76cbc0a617cdfd9"
+    },
+    {
+      "model": "car-kit/taxi",
+      "objSha256": "097de886a4e0cf40180329fcaaf08994051177e0ada3882d4b573335b92a9514"
+    },
+    {
+      "model": "car-kit/cone",
+      "objSha256": "45ad8ba7a3abe4268f3a5b8bd92e1a86427d52cdb9fef15caeeb67c319f8d620"
+    },
+    {
+      "model": "nature-kit/tree_oak",
+      "objSha256": "1a1dba69f49a454492db2413110e0867dc6dc3d5fe412d2499047625c93a3c06"
+    },
+    {
+      "model": "nature-kit/tree_oak_dark",
+      "objSha256": "35d49ae064002b513efe3884b452737b19a61000e463c64668f4a2dbec43eef8"
+    },
+    {
+      "model": "nature-kit/tree_detailed",
+      "objSha256": "0a67913edf811aabb1c2f54b671c0626eb7c17e6818536484f34d4444030a9c7"
+    },
+    {
+      "model": "nature-kit/tree_pineTallA",
+      "objSha256": "ed5ea05290032e9afa355203b4ebe44bf81a85fa5aedbb42c2d26a970a7af001"
+    },
+    {
+      "model": "nature-kit/tree_pineTallB",
+      "objSha256": "bbfc2be7555d196174ef2c7fa0494f2ab8ba5741d99c0a3677a7a575fba47954"
+    },
+    {
+      "model": "nature-kit/tree_pineRoundA",
+      "objSha256": "00b0a07da08894872f18530086ad582cd9cf93a3da88d9f112e1b022f3ea082a"
+    },
+    {
+      "model": "nature-kit/rock_largeA",
+      "objSha256": "60e4896f0bb0077ce820aa842e48a4f50d089a0d39e38d56cbf1bd7286882136"
+    },
+    {
+      "model": "nature-kit/rock_largeB",
+      "objSha256": "928bea598f682d280893da179d6a060a2019c7b4af72d1e1c4af9ef87ca33535"
+    },
+    {
+      "model": "nature-kit/rock_tallA",
+      "objSha256": "5f6b182753c6f4f54e4b507d4b6bf9ab074775765a25a2a74c88fa7099f98374"
+    },
+    {
+      "model": "nature-kit/stone_largeC",
+      "objSha256": "c68f74d2302173ef84e9861e61f549495f991790eff6a0cb1a42350c5187de8b"
+    },
+    {
+      "model": "nature-kit/plant_bush",
+      "objSha256": "23e2015330dc397c4ebf799902560e7bb10016482f0d73cbd29d9d4d4b160f1b"
+    },
+    {
+      "model": "nature-kit/plant_bushLarge",
+      "objSha256": "2e2d31669c312c86cdd2eac7b625a30ccd8e7cd0a9161e48769279e55ee7c3a8"
+    },
+    {
+      "model": "nature-kit/grass_large",
+      "objSha256": "8a7cd258fa054bb6d3db5ecd05b746c002a51c8d0542757f3b6e1079df34567f"
+    },
+    {
+      "model": "nature-kit/flower_yellowA",
+      "objSha256": "09a81fe229ab3d60e7c3a080b39d9cbbe379af44ce4b646139c2081550692cb2"
+    },
+    {
+      "model": "nature-kit/flower_redA",
+      "objSha256": "50bcfeb7b6f8c361bc7e61ce55dfd0cc61ad95073351026476207b0db93c3121"
+    },
+    {
+      "model": "nature-kit/flower_purpleA",
+      "objSha256": "039c21db5a505edeb9d889077436b5f18055ae28b58ad89795b016ee29981479"
+    },
+    {
+      "model": "nature-kit/log",
+      "objSha256": "17187d96c38b3fdb7c0b953cbfdaee0e27ea03bba90def3ed0a61ef5aa534bc9"
+    },
+    {
+      "model": "nature-kit/stump_old",
+      "objSha256": "a6950a10df44ca0c05c57d27a181c1ed6b42e488275dc86fbfd70818d0ef31af"
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/trainer/kenney/models.json",
+      "sha256": "81b4b4d00efc8ded6657137e29ecbf35abf60ce4732142d1d972ca2d71ca2233"
+    }
+  ]
+}

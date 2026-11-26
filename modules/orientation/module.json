@@ -1,0 +1,34 @@
+{
+  "name": "kartenkunde-orientation",
+  "version": 1,
+  "entry": "modules/orientation/src/trainer-boot.js",
+  "template": "modules/orientation/template.html",
+  "styles": "modules/orientation/src/trainer.css",
+  "host": "modules/orientation/host.js",
+  "sharedSources": [
+    "src/i18n.js",
+    "src/map-palette.js",
+    "src/planzeiger-scale.js"
+  ],
+  "sharedStyles": [
+    "assets/css/site.css",
+    "src/style.css",
+    "src/site.css"
+  ],
+  "resources": [
+    "assets/trainer",
+    "vendor/babylon.js",
+    "api/patches.php",
+    "api/feedback.php",
+    "vendor/babylon-LICENSE.md"
+  ],
+  "privateRuntimeDirectories": [
+    "var/patches",
+    "var/feedback"
+  ],
+  "hostAuthority": "main website; generated exports must never be edited manually",
+  "sharedAssets": [
+    "assets/brand",
+    "assets/fonts"
+  ]
+}
