@@ -334,3 +334,13 @@ durch `Permissions-Policy: geolocation=(self)` auf die eigene Herkunft begrenzt.
 Kartenanbieter erhalten weiterhin die normalen Kartenabrufe.
 Prüfen: `node --test tests/coordinate-tool.test.js` und `npm run test:coordinates`
 (standardmäßig gegen `http://127.0.0.1:8081/dist/`).
+
+### Frühere Beta-Links
+
+Solange keine separate Beta angeboten wird, leitet die zentrale `.htaccess`
+`/beta` und `/beta/…` per HTTP 302 auf `/` bzw. denselben Pfad der Hauptseite um.
+Query-Parameter bleiben erhalten, ebenso browserseitige Sprungmarken.
+Die Weiterleitung ist vorübergehend, damit später wieder eine eigene Beta
+bereitgestellt werden kann. Vorhandene Beta-Dateien und gespeicherte
+Serverdaten bleiben auf dem Webspace erhalten. Für eine neue separate Beta
+muss die entsprechend kommentierte RewriteRule entfernt werden.

@@ -4,6 +4,9 @@ Options -Indexes
   RewriteEngine On
   RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L]
   RewriteRule (^|/)(?:var|backups?|tests|tools)(?:/|$) - [F,L,NC]
+  # No separate beta release: keep old links working on the main website.
+  # Temporary redirect allows a separate beta to be reintroduced later.
+  RewriteRule ^beta(?:/(.*))?$ /$1 [R=302,L]
 </IfModule>
 <FilesMatch "(?:^\.|\.(?:bak|old|orig|save|swp|sql|log|env|ini|ya?ml|map|pem|key|p12|pfx)$|^proxy-security\.php$)">
   Require all denied
